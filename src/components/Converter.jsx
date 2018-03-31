@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropdown from './Dropdown';
-import conversions from './constants/conversions';
+import conversions from '../constants/conversions';
 
 class Converter extends Component {
   constructor(props) {
