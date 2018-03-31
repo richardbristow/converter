@@ -8,15 +8,23 @@ class Converter extends Component {
 
     this.state = {
       conversionType: 'length',
-      unitLeft: 'foot',
-      unitRight: 'yard',
+      lengthUnitLeft: 'foot',
+      lengthUnitRight: 'yard',
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange({ target }) {
     const { name, value } = target;
-    this.setState({ [name]: value });
+    if (name === 'conversionType' && !this.state[`${value}UnitLeft`] && !this.state[`${value}UnitRight`]) {
+      this.setState({
+        [name]: value,
+        [`${value}UnitLeft`]: conversions[value].initialUnitLeft,
+        [`${value}UnitRight`]: conversions[value].initialUnitRight,
+      });
+    } else {
+      this.setState({ [name]: value });
+    }
   }
 
   render() {
@@ -38,18 +46,18 @@ class Converter extends Component {
         <br />
         <input type="text" />
         <Dropdown
-          name="unitLeft"
+          name={`${this.state.conversionType}UnitLeft`}
           menuItems={conversions[`${this.state.conversionType}`].units}
-          value={this.state.unitLeft}
+          value={this.state[`${this.state.conversionType}UnitLeft`]}
           handleChange={this.handleChange}
         />
         <br />
         <br />
         <input type="text" />
         <Dropdown
-          name="unitRight"
+          name={`${this.state.conversionType}UnitRight`}
           menuItems={conversions[`${this.state.conversionType}`].units}
-          value={this.state.unitRight}
+          value={this.state[`${this.state.conversionType}UnitRight`]}
           handleChange={this.handleChange}
         />
       </div>
