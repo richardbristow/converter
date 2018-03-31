@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
 import Dropdown from './Dropdown';
-import conversionTypes from './static/conversionTypes';
-import conversionUnits from './static/conversionUnits';
+import conversions from './constants/conversions';
 
 class Converter extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { conversionType: 'Length' };
+    this.state = {
+      conversionType: 'length',
+      unitLeft: 'foot',
+      unitRight: 'yard',
+    };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ conversionType: event.target.value });
+  handleChange({ target }) {
+    const { name, value } = target;
+    this.setState({ [name]: value });
   }
 
   render() {
     return (
       <div>
         <Dropdown
-          conversionTypes={conversionTypes}
+          name="conversionType"
+          menuItems={Object.keys(conversions).map((type) => {
+            const reformattedObject = {
+              displayName: conversions[type].displayName,
+              mathName: conversions[type].mathName,
+            };
+            return reformattedObject;
+          })}
           value={this.state.conversionType}
           handleChange={this.handleChange}
         />
@@ -27,16 +38,18 @@ class Converter extends Component {
         <br />
         <input type="text" />
         <Dropdown
-          conversionTypes={conversionUnits[`${this.state.conversionType}`]}
-          value={this.state.conversionType}
+          name="unitLeft"
+          menuItems={conversions[`${this.state.conversionType}`].units}
+          value={this.state.unitLeft}
           handleChange={this.handleChange}
         />
         <br />
         <br />
         <input type="text" />
         <Dropdown
-          conversionTypes={conversionUnits[`${this.state.conversionType}`]}
-          value={this.state.conversionType}
+          name="unitRight"
+          menuItems={conversions[`${this.state.conversionType}`].units}
+          value={this.state.unitRight}
           handleChange={this.handleChange}
         />
       </div>

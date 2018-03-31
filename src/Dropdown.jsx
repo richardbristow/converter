@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Dropdown = ({ conversionTypes, value, handleChange }) => (
-  <select value={value} onChange={handleChange}>
-    {conversionTypes.map(type =>
-      <option key={`${type}`} value={`${type}`}>{`${type}`}</option>) }
+const Dropdown = ({
+  name, menuItems, value, handleChange,
+}) => (
+  <select name={name} value={value} onChange={handleChange}>
+    {menuItems.map(({ mathName, displayName }) =>
+      <option key={`${mathName}`} value={`${mathName}`}>{`${displayName}`}</option>)}
   </select>
 );
 
