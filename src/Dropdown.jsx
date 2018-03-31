@@ -10,4 +10,11 @@ const Dropdown = ({
   </select>
 );
 
+Dropdown.propTypes = {
+  name: PropTypes.string.isRequired,
+  menuItems: PropTypes.arrayOf(PropTypes.object).isRequired,
+  value: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+};
+
 export default Dropdown;
