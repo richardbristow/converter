@@ -9,7 +9,7 @@ const surfaceArea = {
       mathName: 'm2',
     },
     {
-      displayName: 'Sqaure Inch',
+      displayName: 'Square Inch',
       mathName: 'sqin',
     },
     {
@@ -41,7 +41,7 @@ const surfaceArea = {
       mathName: 'acre',
     },
     {
-      displayName: 'Hecatare',
+      displayName: 'Hectare',
       mathName: 'hectare',
     }],
 };
