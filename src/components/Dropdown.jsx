@@ -6,7 +6,7 @@ const Dropdown = ({
 }) => (
   <select name={name} value={value} onChange={handleChange}>
     {menuItems.map(({ mathName, displayName }) =>
-      <option key={`${mathName}`} value={`${mathName}`}>{`${displayName}`}</option>)}
+      <option key={`${name}-${mathName}`} value={`${mathName}`}>{`${displayName}`}</option>)}
   </select>
 );
 
