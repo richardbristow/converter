@@ -11,6 +11,7 @@ class Converter extends Component {
       lengthUnitLeft: 'foot',
       lengthUnitRight: 'yard',
     };
+
     this.handleChange = this.handleChange.bind(this);
   }
 
