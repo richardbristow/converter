@@ -5,11 +5,11 @@ const surfaceArea = {
   initialUnitRight: 'sqin',
   units: [
     {
-      displayName: 'Meter squared',
+      displayName: 'Square metre',
       mathName: 'm2',
     },
     {
-      displayName: 'Square Inch',
+      displayName: 'Square inch',
       mathName: 'sqin',
     },
     {
@@ -25,11 +25,11 @@ const surfaceArea = {
       mathName: 'sqmi',
     },
     {
-      displayName: 'sqrd',
+      displayName: 'Square rod',
       mathName: 'sqrd',
     },
     {
-      displayName: 'sqch',
+      displayName: 'Square chain',
       mathName: 'sqch',
     },
     {

@@ -5,7 +5,7 @@ const length = {
   initialUnitRight: 'inch',
   units: [
     {
-      displayName: 'Meter',
+      displayName: 'Meter (m)',
       mathName: 'meter',
     },
     {
