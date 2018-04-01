@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Converter",
+  "name": "Converter app to convert between units",
   "icons": [
     {
       "src": "favicon.ico",
