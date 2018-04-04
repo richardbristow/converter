@@ -10,6 +10,8 @@ class Converter extends Component {
       conversionType: conversions.length.mathName,
       lengthUnitLeft: conversions.length.initialUnitLeft,
       lengthUnitRight: conversions.length.initialUnitRight,
+      inputLeft: '',
+      inputRight: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -46,7 +48,7 @@ class Converter extends Component {
         />
         <br />
         <br />
-        <input type="text" />
+        <input name="inputLeft" value={this.state.inputLeft} type="text" onChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
           name={`${this.state.conversionType}UnitLeft`}
@@ -56,7 +58,7 @@ class Converter extends Component {
         />
         <br />
         <br />
-        <input type="text" />
+        <input name="inputRight" value={this.state.inputRight} type="text" onChange={this.handleChange} />
         <Dropdown
           className="unitRight"
           name={`${this.state.conversionType}UnitRight`}
