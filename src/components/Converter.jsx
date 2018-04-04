@@ -32,6 +32,7 @@ class Converter extends Component {
     return (
       <div>
         <Dropdown
+          className="conversionType"
           name="conversionType"
           options={Object.keys(conversions).map((type) => {
             const reformattedObject = {
@@ -47,6 +48,7 @@ class Converter extends Component {
         <br />
         <input type="text" />
         <Dropdown
+          className="unitLeft"
           name={`${this.state.conversionType}UnitLeft`}
           options={conversions[`${this.state.conversionType}`].units}
           value={this.state[`${this.state.conversionType}UnitLeft`]}
@@ -56,6 +58,7 @@ class Converter extends Component {
         <br />
         <input type="text" />
         <Dropdown
+          className="unitRight"
           name={`${this.state.conversionType}UnitRight`}
           options={conversions[`${this.state.conversionType}`].units}
           value={this.state[`${this.state.conversionType}UnitRight`]}
