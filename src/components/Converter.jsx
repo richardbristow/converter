@@ -33,7 +33,7 @@ class Converter extends Component {
       <div>
         <Dropdown
           name="conversionType"
-          menuItems={Object.keys(conversions).map((type) => {
+          options={Object.keys(conversions).map((type) => {
             const reformattedObject = {
               displayName: conversions[type].displayName,
               mathName: conversions[type].mathName,
@@ -48,7 +48,7 @@ class Converter extends Component {
         <input type="text" />
         <Dropdown
           name={`${this.state.conversionType}UnitLeft`}
-          menuItems={conversions[`${this.state.conversionType}`].units}
+          options={conversions[`${this.state.conversionType}`].units}
           value={this.state[`${this.state.conversionType}UnitLeft`]}
           handleChange={this.handleChange}
         />
@@ -57,7 +57,7 @@ class Converter extends Component {
         <input type="text" />
         <Dropdown
           name={`${this.state.conversionType}UnitRight`}
-          menuItems={conversions[`${this.state.conversionType}`].units}
+          options={conversions[`${this.state.conversionType}`].units}
           value={this.state[`${this.state.conversionType}UnitRight`]}
           handleChange={this.handleChange}
         />
