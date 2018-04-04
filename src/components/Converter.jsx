@@ -7,9 +7,9 @@ class Converter extends Component {
     super(props);
 
     this.state = {
-      conversionType: 'length',
-      lengthUnitLeft: 'foot',
-      lengthUnitRight: 'yard',
+      conversionType: conversions.length.mathName,
+      lengthUnitLeft: conversions.length.initialUnitLeft,
+      lengthUnitRight: conversions.length.initialUnitRight,
     };
 
     this.handleChange = this.handleChange.bind(this);
