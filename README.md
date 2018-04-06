@@ -1,5 +1,9 @@
 # Converter App
 
+| Master |  Develop |
+| :---: | :---: |
+[![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=master)](https://travis-ci.com/richardbristow/converter) | [![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=develop)](https://travis-ci.com/richardbristow/converter) |
+
 This is an app to convert between various units of measurement.
 
 Made with:
