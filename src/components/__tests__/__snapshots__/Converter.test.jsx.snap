@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handleChange should initialise state to unit default values when the conversionType is changed 1`] = `
+Object {
+  "conversionType": "surfaceArea",
+  "inputLeft": "",
+  "inputRight": "",
+  "lengthUnitLeft": "meter",
+  "lengthUnitRight": "inch",
+  "surfaceAreaUnitLeft": "m2",
+  "surfaceAreaUnitRight": "sqin",
+}
+`;

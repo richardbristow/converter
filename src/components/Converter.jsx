@@ -48,6 +48,7 @@ class Converter extends Component {
         />
         <br />
         <br />
+        {/* TODO: Make this input a component */}
         <input name="inputLeft" value={this.state.inputLeft} type="text" onChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
@@ -58,6 +59,7 @@ class Converter extends Component {
         />
         <br />
         <br />
+        {/* TODO: Make this input a component */}
         <input name="inputRight" value={this.state.inputRight} type="text" onChange={this.handleChange} />
         <Dropdown
           className="unitRight"
