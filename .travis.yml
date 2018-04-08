@@ -1,10 +1,11 @@
 language: node_js
 node_js:
   - 6
-  - node
+  - lts/* # latest lts release
+  - node # latest current release
 cache:
   directories:
     - node_modules
 script:
-  - npm run build
   - npm test
+  - npm run build
