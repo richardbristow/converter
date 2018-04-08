@@ -9,6 +9,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "core-js": "^2.5.4",
     "mathjs": "^4.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.0",

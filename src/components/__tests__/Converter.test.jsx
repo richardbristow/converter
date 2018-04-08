@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Converter from '../Converter';
 import conversions from '../../constants/conversions';
+import '../../polyfills';
 
 describe('Converter', () => {
   it('should render 3 dropdown menus', () => {
