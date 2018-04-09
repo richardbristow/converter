@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Dropdown from './Dropdown';
+import Input from './Input';
 import conversions from '../constants/conversions';
 
 class Converter extends Component {
@@ -49,7 +50,7 @@ class Converter extends Component {
         <br />
         <br />
         {/* TODO: Make this input a component */}
-        <input name="inputLeft" value={this.state.inputLeft} type="text" onChange={this.handleChange} />
+        <Input name="inputLeft" value={this.state.inputLeft} handleChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
           name={`${this.state.conversionType}UnitLeft`}
@@ -60,7 +61,7 @@ class Converter extends Component {
         <br />
         <br />
         {/* TODO: Make this input a component */}
-        <input name="inputRight" value={this.state.inputRight} type="text" onChange={this.handleChange} />
+        <Input name="inputRight" value={this.state.inputRight} handleChange={this.handleChange} />
         <Dropdown
           className="unitRight"
           name={`${this.state.conversionType}UnitRight`}
