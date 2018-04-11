@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Dropdown from './Dropdown';
 import Input from './Input';
 import conversions from '../constants/conversions';
+import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 
 class Converter extends Component {
   constructor(props) {
@@ -32,6 +33,8 @@ class Converter extends Component {
   }
 
   render() {
+    const currentUnitLeft = `${this.state.conversionType}UnitLeft`;
+    const currentUnitRight = `${this.state.conversionType}UnitRight`;
     return (
       <div>
         <Dropdown
@@ -52,9 +55,9 @@ class Converter extends Component {
         <Input name="inputLeft" value={this.state.inputLeft} handleChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
-          name={`${this.state.conversionType}UnitLeft`}
+          name={currentUnitLeft}
           options={conversions[`${this.state.conversionType}`].units}
-          value={this.state[`${this.state.conversionType}UnitLeft`]}
+          value={this.state[currentUnitLeft]}
           handleChange={this.handleChange}
         />
         <br />
@@ -62,9 +65,9 @@ class Converter extends Component {
         <Input name="inputRight" value={this.state.inputRight} handleChange={this.handleChange} />
         <Dropdown
           className="unitRight"
-          name={`${this.state.conversionType}UnitRight`}
+          name={currentUnitRight}
           options={conversions[`${this.state.conversionType}`].units}
-          value={this.state[`${this.state.conversionType}UnitRight`]}
+          value={this.state[currentUnitRight]}
           handleChange={this.handleChange}
         />
       </div>
