@@ -49,7 +49,6 @@ class Converter extends Component {
         />
         <br />
         <br />
-        {/* TODO: Make this input a component */}
         <Input name="inputLeft" value={this.state.inputLeft} handleChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
@@ -60,7 +59,6 @@ class Converter extends Component {
         />
         <br />
         <br />
-        {/* TODO: Make this input a component */}
         <Input name="inputRight" value={this.state.inputRight} handleChange={this.handleChange} />
         <Dropdown
           className="unitRight"
