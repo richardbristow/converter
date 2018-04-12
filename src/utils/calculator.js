@@ -2,12 +2,12 @@ import math from 'mathjs';
 
 export const leftToRight = (input, leftUnit, rightUnit) => {
   const inputUnit = math.unit(input, leftUnit);
-  return inputUnit.to(rightUnit);
+  return inputUnit.toNumber(rightUnit);
 };
 
 export const rightToLeft = (input, leftUnit, rightUnit) => {
   const inputUnit = math.unit(input, rightUnit);
-  return inputUnit.to(leftUnit);
+  return inputUnit.toNumber(leftUnit);
 };
 
 export const tryConvert = (val, leftUnit, rightUnit, convert) => {
