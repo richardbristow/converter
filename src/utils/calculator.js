@@ -15,6 +15,6 @@ export const tryConvert = (val, leftUnit, rightUnit, convert) => {
   if (Number.isNaN(input)) {
     return '';
   }
-  const output = convert(input, leftUnit, rightUnit);
+  const output = math.round(convert(input, leftUnit, rightUnit), 4);
   return output.toString();
 };
