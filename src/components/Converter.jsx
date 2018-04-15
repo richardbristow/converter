@@ -35,8 +35,11 @@ class Converter extends Component {
   }
 
   render() {
-    const currentUnitLeft = `${this.state.conversionType}UnitLeft`;
-    const currentUnitRight = `${this.state.conversionType}UnitRight`;
+    const { inputLeft, inputRight, conversionType } = this.state;
+    const unitNameLeft = `${conversionType}UnitLeft`;
+    const unitNameRight = `${conversionType}UnitRight`;
+    const unitValueLeft = this.state[unitNameLeft];
+    const unitValueRight = this.state[unitNameRight];
     return (
       <div>
         <Dropdown
@@ -49,27 +52,27 @@ class Converter extends Component {
             };
             return reformattedObject;
           })}
-          value={this.state.conversionType}
+          value={conversionType}
           handleChange={this.handleChange}
         />
         <br />
         <br />
-        <Input name="inputLeft" value={this.state.inputLeft} handleChange={this.handleChange} />
+        <Input name="inputLeft" value={inputLeft} handleChange={this.handleChange} />
         <Dropdown
           className="unitLeft"
-          name={currentUnitLeft}
-          options={conversions[`${this.state.conversionType}`].units}
-          value={this.state[currentUnitLeft]}
+          name={unitNameLeft}
+          options={conversions[conversionType].units}
+          value={unitValueLeft}
           handleChange={this.handleChange}
         />
         <br />
         <br />
-        <Input name="inputRight" value={this.state.inputRight} handleChange={this.handleChange} />
+        <Input name="inputRight" value={inputRight} handleChange={this.handleChange} />
         <Dropdown
           className="unitRight"
-          name={currentUnitRight}
-          options={conversions[`${this.state.conversionType}`].units}
-          value={this.state[currentUnitRight]}
+          name={unitNameRight}
+          options={conversions[conversionType].units}
+          value={unitValueRight}
           handleChange={this.handleChange}
         />
       </div>
