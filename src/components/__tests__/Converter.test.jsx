@@ -1,29 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Converter from '../Converter';
-import conversions from '../../constants/conversions';
 import '../../polyfills';
-
-describe('Converter', () => {
-  it('should render 3 dropdown menus', () => {
-    const wrapper = shallow(<Converter />);
-    expect(wrapper.find('Dropdown')).toHaveLength(3);
-  });
-
-  it('should mount dropdowns with default values', () => {
-    const {
-      mathName: defaultType,
-      initialUnitLeft: defaultUnitLeft,
-      initialUnitRight: defaultUnitRight,
-    } = conversions.length;
-
-    const wrapper = shallow(<Converter />);
-    expect(wrapper.find('Dropdown.conversionType').props().value).toBe(defaultType);
-    expect(wrapper.find('Dropdown.unitLeft').props().value).toBe(defaultUnitLeft);
-    expect(wrapper.find('Dropdown.unitRight').props().value).toBe(defaultUnitRight);
-  });
-});
-
 
 describe('handleChange', () => {
   it('should initialise state to unit default values when the conversionType is changed', () => {
