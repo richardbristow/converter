@@ -3,7 +3,7 @@ import Dropdown from './Dropdown';
 import Input from './Input';
 import conversions from '../constants/conversions';
 import currentUnits from '../utils/currentUnits';
-import Sidebar from '../components/Sidebar';
+import Sidebar from './Sidebar';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 
 class Converter extends Component {
