@@ -10,17 +10,16 @@ const Sidebar = ({ items }) => (
   </div>
 );
 
+const typeProps = {
+  displayName: PropTypes.string,
+  mathName: PropTypes.string,
+};
+
 Sidebar.propTypes = {
   items: PropTypes.shape({
-    length: PropTypes.shape({
-      displayName: PropTypes.string,
-      mathName: PropTypes.string,
-    }),
+    length: PropTypes.shape(...typeProps),
   }, {
-    surfaceArea: PropTypes.shape({
-      displayName: PropTypes.string,
-      mathName: PropTypes.string,
-    }),
+    surfaceArea: PropTypes.shape(...typeProps),
   }).isRequired,
 };
 
