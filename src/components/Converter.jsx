@@ -21,13 +21,15 @@ class Converter extends Component {
 
   handleChange({ target }) {
     const { name, value } = target;
-    const unitLeft = `${value}UnitLeft`;
-    const unitRight = `${value}UnitRight`;
-    if (name === 'conversionType' && !this.state[unitLeft] && !this.state[unitRight]) {
+    const unitNameLeft = `${value}UnitLeft`;
+    const unitNameRight = `${value}UnitRight`;
+    const unitValueLeft = this.state[unitNameLeft];
+    const unitValueRight = this.state[unitNameRight];
+    if (name === 'conversionType' && !unitValueLeft && !unitValueRight) {
       this.setState({
         [name]: value,
-        [unitLeft]: conversions[value].initialUnitLeft,
-        [unitRight]: conversions[value].initialUnitRight,
+        [unitNameLeft]: conversions[value].initialUnitLeft,
+        [unitNameRight]: conversions[value].initialUnitRight,
       });
     } else {
       this.setState({ [name]: value });
