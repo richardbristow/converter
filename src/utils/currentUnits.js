@@ -1,3 +1,5 @@
+// TODO: write tests for currentUnits.js
+
 const currentUnits = (conversionType, currentState) => {
   const unitObject = {};
   unitObject.unitNameLeft = `${conversionType}UnitLeft`;

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// TODO: add  tests for the Sidebar
+
 const Sidebar = ({ items }) => (
   <div>
     {Object.keys(items).map((type) => {
@@ -17,9 +19,9 @@ const typeProps = {
 
 Sidebar.propTypes = {
   items: PropTypes.shape({
-    length: PropTypes.shape(...typeProps),
+    length: PropTypes.shape({ ...typeProps }),
   }, {
-    surfaceArea: PropTypes.shape(...typeProps),
+    surfaceArea: PropTypes.shape({ ...typeProps }),
   }).isRequired,
 };
 

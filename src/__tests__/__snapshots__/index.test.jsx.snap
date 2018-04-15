@@ -2,6 +2,14 @@
 
 exports[`index matches the snapshot 1`] = `
 <div>
+  <div>
+    <li>
+      Length
+    </li>
+    <li>
+      Surface Area
+    </li>
+  </div>
   <select
     name="conversionType"
     onChange={[Function]}
