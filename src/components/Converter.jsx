@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Dropdown from './Dropdown';
 import Input from './Input';
 import conversions from '../constants/conversions';
+import currentUnits from '../utils/currentUnits';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 
 class Converter extends Component {
@@ -38,10 +39,9 @@ class Converter extends Component {
 
   render() {
     const { inputLeft, inputRight, conversionType } = this.state;
-    const unitNameLeft = `${conversionType}UnitLeft`;
-    const unitNameRight = `${conversionType}UnitRight`;
-    const unitValueLeft = this.state[unitNameLeft];
-    const unitValueRight = this.state[unitNameRight];
+    const {
+      unitNameLeft, unitNameRight, unitValueLeft, unitValueRight,
+    } = currentUnits(conversionType, this.state);
     return (
       <div>
         <Dropdown
