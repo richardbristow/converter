@@ -6,7 +6,7 @@ const Dropdown = ({
 }) => (
   <select name={name} value={value} onChange={handleChange}>
     {options.map(({ mathName, displayName }) =>
-      <option key={`${name}-${mathName}`} value={`${mathName}`}>{`${displayName}`}</option>)}
+      <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
   </select>
 );
 
