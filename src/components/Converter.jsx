@@ -3,6 +3,7 @@ import Dropdown from './Dropdown';
 import Input from './Input';
 import conversions from '../constants/conversions';
 import currentUnits from '../utils/currentUnits';
+import Sidebar from '../components/Sidebar';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 
 class Converter extends Component {
@@ -44,6 +45,7 @@ class Converter extends Component {
     } = currentUnits(conversionType, this.state);
     return (
       <div>
+        <Sidebar items={conversions} />
         <Dropdown
           className="conversionType"
           name="conversionType"
