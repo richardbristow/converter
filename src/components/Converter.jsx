@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import conversions from '../constants/conversions';
 import currentUnits from '../utils/currentUnits';
 import Sidebar from './Sidebar';
-// import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
+import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 import ConverterPanel from './ConverterPanel';
 
 class Converter extends Component {
@@ -33,7 +33,17 @@ class Converter extends Component {
         [unitNameRight]: conversions[value].initialUnitRight,
       });
     } else {
-      this.setState({ [name]: value });
+      let convertInputLeft = '';
+      let convertInputRight = '';
+      if (name === 'inputRight' || name === 'inputLeft') {
+        convertInputLeft = name === 'inputRight' ? tryConvert(value, this.state[`${this.state.conversionType}UnitLeft`], this.state[`${this.state.conversionType}UnitRight`], rightToLeft) : value;
+        convertInputRight = name === 'inputLeft' ? tryConvert(value, this.state[`${this.state.conversionType}UnitLeft`], this.state[`${this.state.conversionType}UnitRight`], leftToRight) : value;
+      }
+      this.setState({
+        [name]: value,
+        inputLeft: convertInputLeft,
+        inputRight: convertInputRight,
+      });
     }
   }
 
