@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Dropdown = ({
-  name, options, value, handleChange,
+  name, options, value, handleChange, conversionType,
 }) => (
-  <select name={name} value={value} onChange={handleChange}>
+  <select name={name} value={value} onChange={e => handleChange(conversionType, e)}>
     {options.map(({ mathName, displayName }) =>
       <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
   </select>
@@ -18,6 +18,7 @@ Dropdown.propTypes = {
   })).isRequired,
   value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
+  conversionType: PropTypes.string.isRequired,
 };
 
 export default Dropdown;

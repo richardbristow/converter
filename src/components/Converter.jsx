@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import conversions from '../constants/conversions';
-import currentUnits from '../utils/currentUnits';
 import Sidebar from './Sidebar';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 import ConverterPanel from './ConverterPanel';
@@ -20,43 +20,50 @@ class Converter extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange({ target }) {
+  handleChange(ctype, { target }) {
     const { name, value } = target;
-    const unitNameLeft = `${value}UnitLeft`;
-    const unitNameRight = `${value}UnitRight`;
-    const unitValueLeft = this.state[unitNameLeft];
-    const unitValueRight = this.state[unitNameRight];
-    if (name === 'conversionType' && !unitValueLeft && !unitValueRight) {
-      this.setState({
-        [name]: value,
-        [unitNameLeft]: conversions[value].initialUnitLeft,
-        [unitNameRight]: conversions[value].initialUnitRight,
-      });
-    } else {
-      let convertInputLeft = '';
-      let convertInputRight = '';
-      if (name === 'inputRight' || name === 'inputLeft') {
-        convertInputLeft = name === 'inputRight' ? tryConvert(value, this.state[`${this.state.conversionType}UnitLeft`], this.state[`${this.state.conversionType}UnitRight`], rightToLeft) : value;
-        convertInputRight = name === 'inputLeft' ? tryConvert(value, this.state[`${this.state.conversionType}UnitLeft`], this.state[`${this.state.conversionType}UnitRight`], leftToRight) : value;
-      }
-      this.setState({
-        [name]: value,
-        inputLeft: convertInputLeft,
-        inputRight: convertInputRight,
-      });
+    let convertInputLeft = '';
+    let convertInputRight = '';
+    if (name === 'inputRight' || name === 'inputLeft') {
+      convertInputLeft = name === 'inputRight' ? tryConvert(value, this.state[`${ctype}UnitLeft`], this.state[`${ctype}UnitRight`], rightToLeft) : value;
+      convertInputRight = name === 'inputLeft' ? tryConvert(value, this.state[`${ctype}UnitLeft`], this.state[`${ctype}UnitRight`], leftToRight) : value;
     }
+    this.setState({
+      [name]: value,
+      inputLeft: convertInputLeft,
+      inputRight: convertInputRight,
+    });
   }
 
   render() {
-    const { conversionType } = this.state;
     const convertObject = {
-      ...currentUnits(conversionType, this.state), ...this.state, handleChange: this.handleChange,
+      ...this.state, handleChange: this.handleChange,
     };
     return (
-      <div>
-        <Sidebar items={conversions} />
-        <ConverterPanel convert={convertObject} />
-      </div>
+      <Router>
+        <div>
+          <Sidebar items={conversions} />
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <ConverterPanel
+                convert={convertObject}
+                conversionType="length"
+              />
+            )}
+          />
+          <Route
+            path="/:conversionType"
+            render={({ match }) => (
+              <ConverterPanel
+                convert={convertObject}
+                conversionType={match.params.conversionType}
+              />
+            )}
+          />
+        </div>
+      </Router>
     );
   }
 }
