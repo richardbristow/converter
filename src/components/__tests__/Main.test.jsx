@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ConverterPanel from '../ConverterPanel';
+import Main from '../Main';
 import conversions from '../../constants/conversions';
 
 const handleChange = jest.fn();
@@ -18,9 +18,9 @@ const props = {
   },
 };
 
-describe('ConverterPanel', () => {
+describe('Main', () => {
   it('should render 2 dropdown menus', () => {
-    const wrapper = shallow(<ConverterPanel {...props} />);
+    const wrapper = shallow(<Main {...props} />);
     expect(wrapper.find('Dropdown')).toHaveLength(2);
   });
 
@@ -31,7 +31,7 @@ describe('ConverterPanel', () => {
       initialUnitRight: defaultUnitRight,
     } = conversions.length;
 
-    const wrapper = shallow(<ConverterPanel {...props} />);
+    const wrapper = shallow(<Main {...props} />);
     expect(wrapper.find('Dropdown.conversionType').props().value).toBe(defaultType);
     expect(wrapper.find('Dropdown.unitLeft').props().value).toBe(defaultUnitLeft);
     expect(wrapper.find('Dropdown.unitRight').props().value).toBe(defaultUnitRight);

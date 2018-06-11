@@ -3,32 +3,38 @@
 exports[`index matches the snapshot 1`] = `
 <div>
   <div>
+    <a
+      href="/help"
+      onClick={[Function]}
+    >
+      Help
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+    >
+      About
+    </a>
+  </div>
+  <div>
     <li>
-      Length
+      <a
+        href="/length"
+        onClick={[Function]}
+      >
+        Length
+      </a>
     </li>
     <li>
-      Surface Area
+      <a
+        href="/surfaceArea"
+        onClick={[Function]}
+      >
+        Surface Area
+      </a>
     </li>
   </div>
   <div>
-    <select
-      name="conversionType"
-      onChange={[Function]}
-      value="length"
-    >
-      <option
-        value="length"
-      >
-        Length
-      </option>
-      <option
-        value="surfaceArea"
-      >
-        Surface Area
-      </option>
-    </select>
-    <br />
-    <br />
     <input
       name="inputLeft"
       onChange={[Function]}
