@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import Help from './navbar/Help';
 import About from './navbar/About';
 import InputGroup from './converter-inputs/InputGroup';
+import NoRoute from './NoRoute';
+import conversions from '../constants/conversions';
 
 const Main = ({ convert }) => (
   <Switch>
@@ -17,12 +19,17 @@ const Main = ({ convert }) => (
     />
     <Route path="/help" component={Help} />
     <Route path="/about" component={About} />
-    <Route
-      path="/:conversionType"
-      render={({ match }) => (
-        <InputGroup convert={convert} conversionType={match.params.conversionType} />
-      )}
-    />
+    {Object.keys(conversions).map((type) => {
+      const { mathName } = conversions[type];
+      return (<Route
+        key={`route-${mathName}`}
+        path={`/${mathName}`}
+        render={({ match }) => (
+          <InputGroup convert={convert} conversionType={match.params.conversionType} />
+        )}
+      />);
+    })}
+    <Route component={NoRoute} />
   </Switch>
 );
 
