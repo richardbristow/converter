@@ -24,8 +24,8 @@ const Main = ({ convert }) => (
       return (<Route
         key={`route-${mathName}`}
         path={`/${mathName}`}
-        render={({ match }) => (
-          <InputGroup convert={convert} conversionType={match.params.conversionType} />
+        render={() => (
+          <InputGroup convert={convert} conversionType={mathName} />
         )}
       />);
     })}
