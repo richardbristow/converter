@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import conversions from '../constants/conversions';
-import Dropdown from './Dropdown';
-import Input from './Input';
 
-const ConverterPanel = ({ convert, conversionType }) => {
+import conversions from '../../constants/conversions';
+import Input from './Input';
+import Dropdown from './Dropdown';
+
+const InputGroup = ({ convert, conversionType }) => {
   const {
     handleChange, inputLeft, inputRight,
   } = convert;
@@ -36,11 +37,11 @@ const ConverterPanel = ({ convert, conversionType }) => {
   );
 };
 
-ConverterPanel.defaultProps = {
+InputGroup.defaultProps = {
   conversionType: 'length',
 };
 
-ConverterPanel.propTypes = {
+InputGroup.propTypes = {
   convert: PropTypes.shape({
     handleChange: PropTypes.func,
     inputLeft: PropTypes.string,
@@ -49,4 +50,4 @@ ConverterPanel.propTypes = {
   conversionType: PropTypes.string,
 };
 
-export default ConverterPanel;
+export default InputGroup;

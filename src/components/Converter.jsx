@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import conversions from '../constants/conversions';
-import Header from './Header';
-import Help from './Help';
-import About from './About';
+import Header from './navbar/Header';
 import Sidebar from './Sidebar';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
-import ConverterPanel from './ConverterPanel';
+import Main from './Main';
 
 class Converter extends Component {
   constructor(props) {
@@ -48,26 +47,7 @@ class Converter extends Component {
         <div>
           <Header />
           <Sidebar items={conversions} />
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <ConverterPanel
-                convert={convertObject}
-              />
-            )}
-          />
-          <Route exact path="/help" Component={Help} />
-          <Route exact path="/about" Component={About} />
-          <Route
-            path="/:conversionType"
-            render={({ match }) => (
-              <ConverterPanel
-                convert={convertObject}
-                conversionType={match.params.conversionType}
-              />
-            )}
-          />
+          <Main convert={convertObject} />
         </div>
       </Router>
     );
