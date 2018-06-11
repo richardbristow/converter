@@ -19,9 +19,9 @@ const props = {
 };
 
 describe('ConverterPanel', () => {
-  it('should render 3 dropdown menus', () => {
+  it('should render 2 dropdown menus', () => {
     const wrapper = shallow(<ConverterPanel {...props} />);
-    expect(wrapper.find('Dropdown')).toHaveLength(3);
+    expect(wrapper.find('Dropdown')).toHaveLength(2);
   });
 
   it('should mount dropdowns with default values', () => {

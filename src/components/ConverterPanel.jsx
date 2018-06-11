@@ -8,7 +8,6 @@ const ConverterPanel = ({ convert, conversionType }) => {
   const {
     handleChange, inputLeft, inputRight,
   } = convert;
-
   const unitValueLeft = convert[`${conversionType}UnitLeft`] ? convert[`${conversionType}UnitLeft`] : conversions[conversionType].initialUnitLeft;
   const unitValueRight = convert[`${conversionType}UnitRight`] ? convert[`${conversionType}UnitRight`] : conversions[conversionType].initialUnitRight;
   return (
@@ -37,15 +36,17 @@ const ConverterPanel = ({ convert, conversionType }) => {
   );
 };
 
+ConverterPanel.defaultProps = {
+  conversionType: 'length',
+};
+
 ConverterPanel.propTypes = {
   convert: PropTypes.shape({
     handleChange: PropTypes.func,
     inputLeft: PropTypes.string,
     inputRight: PropTypes.string,
-    unitValueLeft: PropTypes.string,
-    unitValueRight: PropTypes.string,
   }).isRequired,
-  conversionType: PropTypes.string.isRequired,
+  conversionType: PropTypes.string,
 };
 
 export default ConverterPanel;

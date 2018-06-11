@@ -10,9 +10,6 @@ class Converter extends Component {
     super(props);
 
     this.state = {
-      conversionType: conversions.length.mathName,
-      lengthUnitLeft: conversions.length.initialUnitLeft,
-      lengthUnitRight: conversions.length.initialUnitRight,
       inputLeft: '',
       inputRight: '',
     };
@@ -20,13 +17,17 @@ class Converter extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(ctype, { target }) {
+  handleChange(conversionType, { target }) {
     const { name, value } = target;
     let convertInputLeft = '';
     let convertInputRight = '';
+
+    const leftUnit = this.state[`${conversionType}UnitLeft`] ? this.state[`${conversionType}UnitLeft`] : conversions[conversionType].initialUnitLeft;
+    const rightUnit = this.state[`${conversionType}UnitRight`] ? this.state[`${conversionType}UnitRight`] : conversions[conversionType].initialUnitRight;
+
     if (name === 'inputRight' || name === 'inputLeft') {
-      convertInputLeft = name === 'inputRight' ? tryConvert(value, this.state[`${ctype}UnitLeft`], this.state[`${ctype}UnitRight`], rightToLeft) : value;
-      convertInputRight = name === 'inputLeft' ? tryConvert(value, this.state[`${ctype}UnitLeft`], this.state[`${ctype}UnitRight`], leftToRight) : value;
+      convertInputLeft = name === 'inputRight' ? tryConvert(value, leftUnit, rightUnit, rightToLeft) : value;
+      convertInputRight = name === 'inputLeft' ? tryConvert(value, leftUnit, rightUnit, leftToRight) : value;
     }
     this.setState({
       [name]: value,
@@ -49,7 +50,6 @@ class Converter extends Component {
             render={() => (
               <ConverterPanel
                 convert={convertObject}
-                conversionType="length"
               />
             )}
           />
