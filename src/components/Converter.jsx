@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import conversions from '../constants/conversions';
+import Header from './Header';
+import Help from './Help';
+import About from './About';
 import Sidebar from './Sidebar';
 import { leftToRight, rightToLeft, tryConvert } from '../utils/calculator';
 import ConverterPanel from './ConverterPanel';
@@ -43,6 +46,7 @@ class Converter extends Component {
     return (
       <Router>
         <div>
+          <Header />
           <Sidebar items={conversions} />
           <Route
             exact
@@ -53,6 +57,8 @@ class Converter extends Component {
               />
             )}
           />
+          <Route exact path="/help" Component={Help} />
+          <Route exact path="/about" Component={About} />
           <Route
             path="/:conversionType"
             render={({ match }) => (
