@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import conversions from '../../constants/conversions';
 import Input from './Input';
 import Dropdown from './Dropdown';
 
-const InputGroup = ({ convert, conversionType }) => {
+const InputGroup = ({ convert, conversionType, conversions }) => {
   const {
     handleChange, inputLeft, inputRight,
   } = convert;
@@ -48,6 +47,7 @@ InputGroup.propTypes = {
     inputRight: PropTypes.string,
   }).isRequired,
   conversionType: PropTypes.string,
+  conversions: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default InputGroup;

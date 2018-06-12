@@ -47,7 +47,7 @@ class Converter extends Component {
         <div>
           <Header />
           <Sidebar items={conversions} />
-          <Main convert={convertObject} />
+          <Main convert={convertObject} conversions={conversions} />
         </div>
       </Router>
     );
