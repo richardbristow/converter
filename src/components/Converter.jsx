@@ -44,11 +44,11 @@ class Converter extends Component {
     };
     return (
       <Router>
-        <div>
+        <React.Fragment>
           <Header />
           <Sidebar items={conversions} />
           <Main convert={convertObject} conversions={conversions} />
-        </div>
+        </React.Fragment>
       </Router>
     );
   }
