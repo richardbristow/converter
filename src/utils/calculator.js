@@ -1,4 +1,5 @@
 import math from 'mathjs';
+import '../polyfills';
 
 export const leftToRight = (input, leftUnit, rightUnit) => {
   const inputUnit = math.unit(input, leftUnit);
