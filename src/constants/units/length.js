@@ -5,7 +5,7 @@ const length = {
   initialUnitRight: 'inch',
   units: [
     {
-      displayName: 'Meter (m)',
+      displayName: 'Meter',
       mathName: 'meter',
     },
     {
@@ -41,7 +41,7 @@ const length = {
       mathName: 'angstrom',
     },
     {
-      displayName: 'Mil',
+      displayName: 'Thousandth of an inch',
       mathName: 'mil',
     }],
 };

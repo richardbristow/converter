@@ -33,7 +33,7 @@ const surfaceArea = {
       mathName: 'sqch',
     },
     {
-      displayName: 'sqmil',
+      displayName: 'Square thousandth of an inch',
       mathName: 'sqmil',
     },
     {
