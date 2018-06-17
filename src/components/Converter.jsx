@@ -21,8 +21,9 @@ class Converter extends Component {
 
   handleChange(conversionType, { target }) {
     const { name, value } = target;
-    let convertInputLeft = '';
-    let convertInputRight = '';
+
+    let convertInputLeft = this.state.inputLeft;
+    let convertInputRight = this.state.inputRight;
 
     const leftUnit = this.state[`${conversionType}UnitLeft`] ? this.state[`${conversionType}UnitLeft`] : conversions[conversionType].initialUnitLeft;
     const rightUnit = this.state[`${conversionType}UnitRight`] ? this.state[`${conversionType}UnitRight`] : conversions[conversionType].initialUnitRight;
@@ -31,6 +32,12 @@ class Converter extends Component {
       convertInputLeft = name === 'inputRight' ? tryConvert(value, leftUnit, rightUnit, rightToLeft) : value;
       convertInputRight = name === 'inputLeft' ? tryConvert(value, leftUnit, rightUnit, leftToRight) : value;
     }
+
+    if (name === `${conversionType}UnitLeft` || name === `${conversionType}UnitRight`) {
+      convertInputLeft = name === `${conversionType}UnitRight` ? tryConvert(this.state.inputRight, leftUnit, value, rightToLeft) : this.state.inputLeft;
+      convertInputRight = name === `${conversionType}UnitLeft` ? tryConvert(this.state.inputLeft, value, rightUnit, leftToRight) : this.state.inputRight;
+    }
+
     this.setState({
       [name]: value,
       inputLeft: convertInputLeft,
