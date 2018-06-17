@@ -8,6 +8,7 @@ describe('Input', () => {
     name: 'InputName',
     value: 'InputValue',
     handleChange,
+    conversionType: 'type1',
   };
 
   it('should render an input element, with the correct props', () => {
