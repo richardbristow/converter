@@ -1,166 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index matches the snapshot 1`] = `
-<div>
+Array [
   <div>
     <a
-      href="/help"
-      onClick={[Function]}
+        href="/help"
+        onClick={[Function]}
     >
-      Help
+        Help
     </a>
     <a
-      href="/about"
-      onClick={[Function]}
+        href="/about"
+        onClick={[Function]}
     >
-      About
+        About
     </a>
-  </div>
+</div>,
   <div>
     <li>
-      <a
-        href="/length"
-        onClick={[Function]}
-      >
-        Length
-      </a>
+        <a
+            href="/length"
+            onClick={[Function]}
+        >
+            Length
+        </a>
     </li>
     <li>
-      <a
-        href="/surfaceArea"
-        onClick={[Function]}
-      >
-        Surface Area
-      </a>
+        <a
+            href="/surfacearea"
+            onClick={[Function]}
+        >
+            Surface Area
+        </a>
     </li>
-  </div>
+</div>,
   <div>
     <input
-      name="inputLeft"
-      onChange={[Function]}
-      type="text"
-      value=""
+        name="inputLeft"
+        onChange={[Function]}
+        type="text"
+        value=""
     />
     <select
-      name="lengthUnitLeft"
-      onChange={[Function]}
-      value="meter"
-    >
-      <option
+        name="lengthUnitLeft"
+        onChange={[Function]}
         value="meter"
-      >
-        Meter (m)
-      </option>
-      <option
-        value="inch"
-      >
-        Inch
-      </option>
-      <option
-        value="foot"
-      >
-        Foot
-      </option>
-      <option
-        value="yard"
-      >
-        Yard
-      </option>
-      <option
-        value="mile"
-      >
-        Mile
-      </option>
-      <option
-        value="link"
-      >
-        Link
-      </option>
-      <option
-        value="rod"
-      >
-        Rod
-      </option>
-      <option
-        value="chain"
-      >
-        Chain
-      </option>
-      <option
-        value="angstrom"
-      >
-        Angstrom
-      </option>
-      <option
-        value="mil"
-      >
-        Mil
-      </option>
+    >
+        <option
+            value="meter"
+        >
+            Meter (m)
+        </option>
+        <option
+            value="inch"
+        >
+            Inch
+        </option>
+        <option
+            value="foot"
+        >
+            Foot
+        </option>
+        <option
+            value="yard"
+        >
+            Yard
+        </option>
+        <option
+            value="mile"
+        >
+            Mile
+        </option>
+        <option
+            value="link"
+        >
+            Link
+        </option>
+        <option
+            value="rod"
+        >
+            Rod
+        </option>
+        <option
+            value="chain"
+        >
+            Chain
+        </option>
+        <option
+            value="angstrom"
+        >
+            Angstrom
+        </option>
+        <option
+            value="mil"
+        >
+            Mil
+        </option>
     </select>
     <br />
     <br />
     <input
-      name="inputRight"
-      onChange={[Function]}
-      type="text"
-      value=""
+        name="inputRight"
+        onChange={[Function]}
+        type="text"
+        value=""
     />
     <select
-      name="lengthUnitRight"
-      onChange={[Function]}
-      value="inch"
-    >
-      <option
-        value="meter"
-      >
-        Meter (m)
-      </option>
-      <option
+        name="lengthUnitRight"
+        onChange={[Function]}
         value="inch"
-      >
-        Inch
-      </option>
-      <option
-        value="foot"
-      >
-        Foot
-      </option>
-      <option
-        value="yard"
-      >
-        Yard
-      </option>
-      <option
-        value="mile"
-      >
-        Mile
-      </option>
-      <option
-        value="link"
-      >
-        Link
-      </option>
-      <option
-        value="rod"
-      >
-        Rod
-      </option>
-      <option
-        value="chain"
-      >
-        Chain
-      </option>
-      <option
-        value="angstrom"
-      >
-        Angstrom
-      </option>
-      <option
-        value="mil"
-      >
-        Mil
-      </option>
+    >
+        <option
+            value="meter"
+        >
+            Meter (m)
+        </option>
+        <option
+            value="inch"
+        >
+            Inch
+        </option>
+        <option
+            value="foot"
+        >
+            Foot
+        </option>
+        <option
+            value="yard"
+        >
+            Yard
+        </option>
+        <option
+            value="mile"
+        >
+            Mile
+        </option>
+        <option
+            value="link"
+        >
+            Link
+        </option>
+        <option
+            value="rod"
+        >
+            Rod
+        </option>
+        <option
+            value="chain"
+        >
+            Chain
+        </option>
+        <option
+            value="angstrom"
+        >
+            Angstrom
+        </option>
+        <option
+            value="mil"
+        >
+            Mil
+        </option>
     </select>
-  </div>
-</div>
+</div>,
+]
 `;
