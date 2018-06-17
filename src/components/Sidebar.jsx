@@ -7,7 +7,7 @@ const Sidebar = ({ items }) => (
   <div>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-      return <li key={mathName}><Link to={mathName} >{displayName}</Link></li>;
+      return <li key={mathName}><Link to={mathName.toLowerCase()} >{displayName}</Link></li>;
     })}
   </div>
 );
