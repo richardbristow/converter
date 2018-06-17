@@ -13,6 +13,7 @@ describe('Dropdown', () => {
     ],
     value: 'mathName2',
     handleChange,
+    conversionType: 'type1',
   };
 
   it('should render a dropdown menu with three options', () => {
