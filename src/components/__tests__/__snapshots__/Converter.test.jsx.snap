@@ -1,0 +1,1343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handleChange should render Converter wihout errors 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Converter />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <Unknown>
+        <Header />
+        <Sidebar
+                items={
+                        Object {
+                                "length": Object {
+                                  "displayName": "Length",
+                                  "initialUnitLeft": "meter",
+                                  "initialUnitRight": "inch",
+                                  "mathName": "length",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Meter",
+                                      "mathName": "meter",
+                                    },
+                                    Object {
+                                      "displayName": "Inch",
+                                      "mathName": "inch",
+                                    },
+                                    Object {
+                                      "displayName": "Foot",
+                                      "mathName": "foot",
+                                    },
+                                    Object {
+                                      "displayName": "Yard",
+                                      "mathName": "yard",
+                                    },
+                                    Object {
+                                      "displayName": "Mile",
+                                      "mathName": "mile",
+                                    },
+                                    Object {
+                                      "displayName": "Link",
+                                      "mathName": "link",
+                                    },
+                                    Object {
+                                      "displayName": "Rod",
+                                      "mathName": "rod",
+                                    },
+                                    Object {
+                                      "displayName": "Chain",
+                                      "mathName": "chain",
+                                    },
+                                    Object {
+                                      "displayName": "Angstrom",
+                                      "mathName": "angstrom",
+                                    },
+                                    Object {
+                                      "displayName": "Thousandth of an inch",
+                                      "mathName": "mil",
+                                    },
+                                  ],
+                                },
+                                "surfaceArea": Object {
+                                  "displayName": "Surface Area",
+                                  "initialUnitLeft": "m2",
+                                  "initialUnitRight": "sqin",
+                                  "mathName": "surfaceArea",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Square metre",
+                                      "mathName": "m2",
+                                    },
+                                    Object {
+                                      "displayName": "Square inch",
+                                      "mathName": "sqin",
+                                    },
+                                    Object {
+                                      "displayName": "Square foot",
+                                      "mathName": "sqft",
+                                    },
+                                    Object {
+                                      "displayName": "Square yard",
+                                      "mathName": "sqyd",
+                                    },
+                                    Object {
+                                      "displayName": "Square Mile",
+                                      "mathName": "sqmi",
+                                    },
+                                    Object {
+                                      "displayName": "Square rod",
+                                      "mathName": "sqrd",
+                                    },
+                                    Object {
+                                      "displayName": "Square chain",
+                                      "mathName": "sqch",
+                                    },
+                                    Object {
+                                      "displayName": "Square thousandth of an inch",
+                                      "mathName": "sqmil",
+                                    },
+                                    Object {
+                                      "displayName": "Acre",
+                                      "mathName": "acre",
+                                    },
+                                    Object {
+                                      "displayName": "Hectare",
+                                      "mathName": "hectare",
+                                    },
+                                  ],
+                                },
+                              }
+                }
+        />
+        <Main
+                conversions={
+                        Object {
+                                "length": Object {
+                                  "displayName": "Length",
+                                  "initialUnitLeft": "meter",
+                                  "initialUnitRight": "inch",
+                                  "mathName": "length",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Meter",
+                                      "mathName": "meter",
+                                    },
+                                    Object {
+                                      "displayName": "Inch",
+                                      "mathName": "inch",
+                                    },
+                                    Object {
+                                      "displayName": "Foot",
+                                      "mathName": "foot",
+                                    },
+                                    Object {
+                                      "displayName": "Yard",
+                                      "mathName": "yard",
+                                    },
+                                    Object {
+                                      "displayName": "Mile",
+                                      "mathName": "mile",
+                                    },
+                                    Object {
+                                      "displayName": "Link",
+                                      "mathName": "link",
+                                    },
+                                    Object {
+                                      "displayName": "Rod",
+                                      "mathName": "rod",
+                                    },
+                                    Object {
+                                      "displayName": "Chain",
+                                      "mathName": "chain",
+                                    },
+                                    Object {
+                                      "displayName": "Angstrom",
+                                      "mathName": "angstrom",
+                                    },
+                                    Object {
+                                      "displayName": "Thousandth of an inch",
+                                      "mathName": "mil",
+                                    },
+                                  ],
+                                },
+                                "surfaceArea": Object {
+                                  "displayName": "Surface Area",
+                                  "initialUnitLeft": "m2",
+                                  "initialUnitRight": "sqin",
+                                  "mathName": "surfaceArea",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Square metre",
+                                      "mathName": "m2",
+                                    },
+                                    Object {
+                                      "displayName": "Square inch",
+                                      "mathName": "sqin",
+                                    },
+                                    Object {
+                                      "displayName": "Square foot",
+                                      "mathName": "sqft",
+                                    },
+                                    Object {
+                                      "displayName": "Square yard",
+                                      "mathName": "sqyd",
+                                    },
+                                    Object {
+                                      "displayName": "Square Mile",
+                                      "mathName": "sqmi",
+                                    },
+                                    Object {
+                                      "displayName": "Square rod",
+                                      "mathName": "sqrd",
+                                    },
+                                    Object {
+                                      "displayName": "Square chain",
+                                      "mathName": "sqch",
+                                    },
+                                    Object {
+                                      "displayName": "Square thousandth of an inch",
+                                      "mathName": "sqmil",
+                                    },
+                                    Object {
+                                      "displayName": "Acre",
+                                      "mathName": "acre",
+                                    },
+                                    Object {
+                                      "displayName": "Hectare",
+                                      "mathName": "hectare",
+                                    },
+                                  ],
+                                },
+                              }
+                }
+        />
+</Unknown>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Header />,
+          <Sidebar
+            items={
+                        Object {
+                                    "length": Object {
+                                      "displayName": "Length",
+                                      "initialUnitLeft": "meter",
+                                      "initialUnitRight": "inch",
+                                      "mathName": "length",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Meter",
+                                          "mathName": "meter",
+                                        },
+                                        Object {
+                                          "displayName": "Inch",
+                                          "mathName": "inch",
+                                        },
+                                        Object {
+                                          "displayName": "Foot",
+                                          "mathName": "foot",
+                                        },
+                                        Object {
+                                          "displayName": "Yard",
+                                          "mathName": "yard",
+                                        },
+                                        Object {
+                                          "displayName": "Mile",
+                                          "mathName": "mile",
+                                        },
+                                        Object {
+                                          "displayName": "Link",
+                                          "mathName": "link",
+                                        },
+                                        Object {
+                                          "displayName": "Rod",
+                                          "mathName": "rod",
+                                        },
+                                        Object {
+                                          "displayName": "Chain",
+                                          "mathName": "chain",
+                                        },
+                                        Object {
+                                          "displayName": "Angstrom",
+                                          "mathName": "angstrom",
+                                        },
+                                        Object {
+                                          "displayName": "Thousandth of an inch",
+                                          "mathName": "mil",
+                                        },
+                                      ],
+                                    },
+                                    "surfaceArea": Object {
+                                      "displayName": "Surface Area",
+                                      "initialUnitLeft": "m2",
+                                      "initialUnitRight": "sqin",
+                                      "mathName": "surfaceArea",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Square metre",
+                                          "mathName": "m2",
+                                        },
+                                        Object {
+                                          "displayName": "Square inch",
+                                          "mathName": "sqin",
+                                        },
+                                        Object {
+                                          "displayName": "Square foot",
+                                          "mathName": "sqft",
+                                        },
+                                        Object {
+                                          "displayName": "Square yard",
+                                          "mathName": "sqyd",
+                                        },
+                                        Object {
+                                          "displayName": "Square Mile",
+                                          "mathName": "sqmi",
+                                        },
+                                        Object {
+                                          "displayName": "Square rod",
+                                          "mathName": "sqrd",
+                                        },
+                                        Object {
+                                          "displayName": "Square chain",
+                                          "mathName": "sqch",
+                                        },
+                                        Object {
+                                          "displayName": "Square thousandth of an inch",
+                                          "mathName": "sqmil",
+                                        },
+                                        Object {
+                                          "displayName": "Acre",
+                                          "mathName": "acre",
+                                        },
+                                        Object {
+                                          "displayName": "Hectare",
+                                          "mathName": "hectare",
+                                        },
+                                      ],
+                                    },
+                                  }
+            }
+/>,
+          <Main
+            conversions={
+                        Object {
+                                    "length": Object {
+                                      "displayName": "Length",
+                                      "initialUnitLeft": "meter",
+                                      "initialUnitRight": "inch",
+                                      "mathName": "length",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Meter",
+                                          "mathName": "meter",
+                                        },
+                                        Object {
+                                          "displayName": "Inch",
+                                          "mathName": "inch",
+                                        },
+                                        Object {
+                                          "displayName": "Foot",
+                                          "mathName": "foot",
+                                        },
+                                        Object {
+                                          "displayName": "Yard",
+                                          "mathName": "yard",
+                                        },
+                                        Object {
+                                          "displayName": "Mile",
+                                          "mathName": "mile",
+                                        },
+                                        Object {
+                                          "displayName": "Link",
+                                          "mathName": "link",
+                                        },
+                                        Object {
+                                          "displayName": "Rod",
+                                          "mathName": "rod",
+                                        },
+                                        Object {
+                                          "displayName": "Chain",
+                                          "mathName": "chain",
+                                        },
+                                        Object {
+                                          "displayName": "Angstrom",
+                                          "mathName": "angstrom",
+                                        },
+                                        Object {
+                                          "displayName": "Thousandth of an inch",
+                                          "mathName": "mil",
+                                        },
+                                      ],
+                                    },
+                                    "surfaceArea": Object {
+                                      "displayName": "Surface Area",
+                                      "initialUnitLeft": "m2",
+                                      "initialUnitRight": "sqin",
+                                      "mathName": "surfaceArea",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Square metre",
+                                          "mathName": "m2",
+                                        },
+                                        Object {
+                                          "displayName": "Square inch",
+                                          "mathName": "sqin",
+                                        },
+                                        Object {
+                                          "displayName": "Square foot",
+                                          "mathName": "sqft",
+                                        },
+                                        Object {
+                                          "displayName": "Square yard",
+                                          "mathName": "sqyd",
+                                        },
+                                        Object {
+                                          "displayName": "Square Mile",
+                                          "mathName": "sqmi",
+                                        },
+                                        Object {
+                                          "displayName": "Square rod",
+                                          "mathName": "sqrd",
+                                        },
+                                        Object {
+                                          "displayName": "Square chain",
+                                          "mathName": "sqch",
+                                        },
+                                        Object {
+                                          "displayName": "Square thousandth of an inch",
+                                          "mathName": "sqmil",
+                                        },
+                                        Object {
+                                          "displayName": "Acre",
+                                          "mathName": "acre",
+                                        },
+                                        Object {
+                                          "displayName": "Hectare",
+                                          "mathName": "hectare",
+                                        },
+                                      ],
+                                    },
+                                  }
+            }
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "items": Object {
+              "length": Object {
+                "displayName": "Length",
+                "initialUnitLeft": "meter",
+                "initialUnitRight": "inch",
+                "mathName": "length",
+                "units": Array [
+                  Object {
+                    "displayName": "Meter",
+                    "mathName": "meter",
+                  },
+                  Object {
+                    "displayName": "Inch",
+                    "mathName": "inch",
+                  },
+                  Object {
+                    "displayName": "Foot",
+                    "mathName": "foot",
+                  },
+                  Object {
+                    "displayName": "Yard",
+                    "mathName": "yard",
+                  },
+                  Object {
+                    "displayName": "Mile",
+                    "mathName": "mile",
+                  },
+                  Object {
+                    "displayName": "Link",
+                    "mathName": "link",
+                  },
+                  Object {
+                    "displayName": "Rod",
+                    "mathName": "rod",
+                  },
+                  Object {
+                    "displayName": "Chain",
+                    "mathName": "chain",
+                  },
+                  Object {
+                    "displayName": "Angstrom",
+                    "mathName": "angstrom",
+                  },
+                  Object {
+                    "displayName": "Thousandth of an inch",
+                    "mathName": "mil",
+                  },
+                ],
+              },
+              "surfaceArea": Object {
+                "displayName": "Surface Area",
+                "initialUnitLeft": "m2",
+                "initialUnitRight": "sqin",
+                "mathName": "surfaceArea",
+                "units": Array [
+                  Object {
+                    "displayName": "Square metre",
+                    "mathName": "m2",
+                  },
+                  Object {
+                    "displayName": "Square inch",
+                    "mathName": "sqin",
+                  },
+                  Object {
+                    "displayName": "Square foot",
+                    "mathName": "sqft",
+                  },
+                  Object {
+                    "displayName": "Square yard",
+                    "mathName": "sqyd",
+                  },
+                  Object {
+                    "displayName": "Square Mile",
+                    "mathName": "sqmi",
+                  },
+                  Object {
+                    "displayName": "Square rod",
+                    "mathName": "sqrd",
+                  },
+                  Object {
+                    "displayName": "Square chain",
+                    "mathName": "sqch",
+                  },
+                  Object {
+                    "displayName": "Square thousandth of an inch",
+                    "mathName": "sqmil",
+                  },
+                  Object {
+                    "displayName": "Acre",
+                    "mathName": "acre",
+                  },
+                  Object {
+                    "displayName": "Hectare",
+                    "mathName": "hectare",
+                  },
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "conversions": Object {
+              "length": Object {
+                "displayName": "Length",
+                "initialUnitLeft": "meter",
+                "initialUnitRight": "inch",
+                "mathName": "length",
+                "units": Array [
+                  Object {
+                    "displayName": "Meter",
+                    "mathName": "meter",
+                  },
+                  Object {
+                    "displayName": "Inch",
+                    "mathName": "inch",
+                  },
+                  Object {
+                    "displayName": "Foot",
+                    "mathName": "foot",
+                  },
+                  Object {
+                    "displayName": "Yard",
+                    "mathName": "yard",
+                  },
+                  Object {
+                    "displayName": "Mile",
+                    "mathName": "mile",
+                  },
+                  Object {
+                    "displayName": "Link",
+                    "mathName": "link",
+                  },
+                  Object {
+                    "displayName": "Rod",
+                    "mathName": "rod",
+                  },
+                  Object {
+                    "displayName": "Chain",
+                    "mathName": "chain",
+                  },
+                  Object {
+                    "displayName": "Angstrom",
+                    "mathName": "angstrom",
+                  },
+                  Object {
+                    "displayName": "Thousandth of an inch",
+                    "mathName": "mil",
+                  },
+                ],
+              },
+              "surfaceArea": Object {
+                "displayName": "Surface Area",
+                "initialUnitLeft": "m2",
+                "initialUnitRight": "sqin",
+                "mathName": "surfaceArea",
+                "units": Array [
+                  Object {
+                    "displayName": "Square metre",
+                    "mathName": "m2",
+                  },
+                  Object {
+                    "displayName": "Square inch",
+                    "mathName": "sqin",
+                  },
+                  Object {
+                    "displayName": "Square foot",
+                    "mathName": "sqft",
+                  },
+                  Object {
+                    "displayName": "Square yard",
+                    "mathName": "sqyd",
+                  },
+                  Object {
+                    "displayName": "Square Mile",
+                    "mathName": "sqmi",
+                  },
+                  Object {
+                    "displayName": "Square rod",
+                    "mathName": "sqrd",
+                  },
+                  Object {
+                    "displayName": "Square chain",
+                    "mathName": "sqch",
+                  },
+                  Object {
+                    "displayName": "Square thousandth of an inch",
+                    "mathName": "sqmil",
+                  },
+                  Object {
+                    "displayName": "Acre",
+                    "mathName": "acre",
+                  },
+                  Object {
+                    "displayName": "Hectare",
+                    "mathName": "hectare",
+                  },
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <Unknown>
+          <Header />
+          <Sidebar
+                    items={
+                              Object {
+                                        "length": Object {
+                                          "displayName": "Length",
+                                          "initialUnitLeft": "meter",
+                                          "initialUnitRight": "inch",
+                                          "mathName": "length",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Meter",
+                                              "mathName": "meter",
+                                            },
+                                            Object {
+                                              "displayName": "Inch",
+                                              "mathName": "inch",
+                                            },
+                                            Object {
+                                              "displayName": "Foot",
+                                              "mathName": "foot",
+                                            },
+                                            Object {
+                                              "displayName": "Yard",
+                                              "mathName": "yard",
+                                            },
+                                            Object {
+                                              "displayName": "Mile",
+                                              "mathName": "mile",
+                                            },
+                                            Object {
+                                              "displayName": "Link",
+                                              "mathName": "link",
+                                            },
+                                            Object {
+                                              "displayName": "Rod",
+                                              "mathName": "rod",
+                                            },
+                                            Object {
+                                              "displayName": "Chain",
+                                              "mathName": "chain",
+                                            },
+                                            Object {
+                                              "displayName": "Angstrom",
+                                              "mathName": "angstrom",
+                                            },
+                                            Object {
+                                              "displayName": "Thousandth of an inch",
+                                              "mathName": "mil",
+                                            },
+                                          ],
+                                        },
+                                        "surfaceArea": Object {
+                                          "displayName": "Surface Area",
+                                          "initialUnitLeft": "m2",
+                                          "initialUnitRight": "sqin",
+                                          "mathName": "surfaceArea",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Square metre",
+                                              "mathName": "m2",
+                                            },
+                                            Object {
+                                              "displayName": "Square inch",
+                                              "mathName": "sqin",
+                                            },
+                                            Object {
+                                              "displayName": "Square foot",
+                                              "mathName": "sqft",
+                                            },
+                                            Object {
+                                              "displayName": "Square yard",
+                                              "mathName": "sqyd",
+                                            },
+                                            Object {
+                                              "displayName": "Square Mile",
+                                              "mathName": "sqmi",
+                                            },
+                                            Object {
+                                              "displayName": "Square rod",
+                                              "mathName": "sqrd",
+                                            },
+                                            Object {
+                                              "displayName": "Square chain",
+                                              "mathName": "sqch",
+                                            },
+                                            Object {
+                                              "displayName": "Square thousandth of an inch",
+                                              "mathName": "sqmil",
+                                            },
+                                            Object {
+                                              "displayName": "Acre",
+                                              "mathName": "acre",
+                                            },
+                                            Object {
+                                              "displayName": "Hectare",
+                                              "mathName": "hectare",
+                                            },
+                                          ],
+                                        },
+                                      }
+                    }
+          />
+          <Main
+                    conversions={
+                              Object {
+                                        "length": Object {
+                                          "displayName": "Length",
+                                          "initialUnitLeft": "meter",
+                                          "initialUnitRight": "inch",
+                                          "mathName": "length",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Meter",
+                                              "mathName": "meter",
+                                            },
+                                            Object {
+                                              "displayName": "Inch",
+                                              "mathName": "inch",
+                                            },
+                                            Object {
+                                              "displayName": "Foot",
+                                              "mathName": "foot",
+                                            },
+                                            Object {
+                                              "displayName": "Yard",
+                                              "mathName": "yard",
+                                            },
+                                            Object {
+                                              "displayName": "Mile",
+                                              "mathName": "mile",
+                                            },
+                                            Object {
+                                              "displayName": "Link",
+                                              "mathName": "link",
+                                            },
+                                            Object {
+                                              "displayName": "Rod",
+                                              "mathName": "rod",
+                                            },
+                                            Object {
+                                              "displayName": "Chain",
+                                              "mathName": "chain",
+                                            },
+                                            Object {
+                                              "displayName": "Angstrom",
+                                              "mathName": "angstrom",
+                                            },
+                                            Object {
+                                              "displayName": "Thousandth of an inch",
+                                              "mathName": "mil",
+                                            },
+                                          ],
+                                        },
+                                        "surfaceArea": Object {
+                                          "displayName": "Surface Area",
+                                          "initialUnitLeft": "m2",
+                                          "initialUnitRight": "sqin",
+                                          "mathName": "surfaceArea",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Square metre",
+                                              "mathName": "m2",
+                                            },
+                                            Object {
+                                              "displayName": "Square inch",
+                                              "mathName": "sqin",
+                                            },
+                                            Object {
+                                              "displayName": "Square foot",
+                                              "mathName": "sqft",
+                                            },
+                                            Object {
+                                              "displayName": "Square yard",
+                                              "mathName": "sqyd",
+                                            },
+                                            Object {
+                                              "displayName": "Square Mile",
+                                              "mathName": "sqmi",
+                                            },
+                                            Object {
+                                              "displayName": "Square rod",
+                                              "mathName": "sqrd",
+                                            },
+                                            Object {
+                                              "displayName": "Square chain",
+                                              "mathName": "sqch",
+                                            },
+                                            Object {
+                                              "displayName": "Square thousandth of an inch",
+                                              "mathName": "sqmil",
+                                            },
+                                            Object {
+                                              "displayName": "Acre",
+                                              "mathName": "acre",
+                                            },
+                                            Object {
+                                              "displayName": "Hectare",
+                                              "mathName": "hectare",
+                                            },
+                                          ],
+                                        },
+                                      }
+                    }
+          />
+</Unknown>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Header />,
+            <Sidebar
+              items={
+                            Object {
+                                          "length": Object {
+                                            "displayName": "Length",
+                                            "initialUnitLeft": "meter",
+                                            "initialUnitRight": "inch",
+                                            "mathName": "length",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Meter",
+                                                "mathName": "meter",
+                                              },
+                                              Object {
+                                                "displayName": "Inch",
+                                                "mathName": "inch",
+                                              },
+                                              Object {
+                                                "displayName": "Foot",
+                                                "mathName": "foot",
+                                              },
+                                              Object {
+                                                "displayName": "Yard",
+                                                "mathName": "yard",
+                                              },
+                                              Object {
+                                                "displayName": "Mile",
+                                                "mathName": "mile",
+                                              },
+                                              Object {
+                                                "displayName": "Link",
+                                                "mathName": "link",
+                                              },
+                                              Object {
+                                                "displayName": "Rod",
+                                                "mathName": "rod",
+                                              },
+                                              Object {
+                                                "displayName": "Chain",
+                                                "mathName": "chain",
+                                              },
+                                              Object {
+                                                "displayName": "Angstrom",
+                                                "mathName": "angstrom",
+                                              },
+                                              Object {
+                                                "displayName": "Thousandth of an inch",
+                                                "mathName": "mil",
+                                              },
+                                            ],
+                                          },
+                                          "surfaceArea": Object {
+                                            "displayName": "Surface Area",
+                                            "initialUnitLeft": "m2",
+                                            "initialUnitRight": "sqin",
+                                            "mathName": "surfaceArea",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Square metre",
+                                                "mathName": "m2",
+                                              },
+                                              Object {
+                                                "displayName": "Square inch",
+                                                "mathName": "sqin",
+                                              },
+                                              Object {
+                                                "displayName": "Square foot",
+                                                "mathName": "sqft",
+                                              },
+                                              Object {
+                                                "displayName": "Square yard",
+                                                "mathName": "sqyd",
+                                              },
+                                              Object {
+                                                "displayName": "Square Mile",
+                                                "mathName": "sqmi",
+                                              },
+                                              Object {
+                                                "displayName": "Square rod",
+                                                "mathName": "sqrd",
+                                              },
+                                              Object {
+                                                "displayName": "Square chain",
+                                                "mathName": "sqch",
+                                              },
+                                              Object {
+                                                "displayName": "Square thousandth of an inch",
+                                                "mathName": "sqmil",
+                                              },
+                                              Object {
+                                                "displayName": "Acre",
+                                                "mathName": "acre",
+                                              },
+                                              Object {
+                                                "displayName": "Hectare",
+                                                "mathName": "hectare",
+                                              },
+                                            ],
+                                          },
+                                        }
+              }
+/>,
+            <Main
+              conversions={
+                            Object {
+                                          "length": Object {
+                                            "displayName": "Length",
+                                            "initialUnitLeft": "meter",
+                                            "initialUnitRight": "inch",
+                                            "mathName": "length",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Meter",
+                                                "mathName": "meter",
+                                              },
+                                              Object {
+                                                "displayName": "Inch",
+                                                "mathName": "inch",
+                                              },
+                                              Object {
+                                                "displayName": "Foot",
+                                                "mathName": "foot",
+                                              },
+                                              Object {
+                                                "displayName": "Yard",
+                                                "mathName": "yard",
+                                              },
+                                              Object {
+                                                "displayName": "Mile",
+                                                "mathName": "mile",
+                                              },
+                                              Object {
+                                                "displayName": "Link",
+                                                "mathName": "link",
+                                              },
+                                              Object {
+                                                "displayName": "Rod",
+                                                "mathName": "rod",
+                                              },
+                                              Object {
+                                                "displayName": "Chain",
+                                                "mathName": "chain",
+                                              },
+                                              Object {
+                                                "displayName": "Angstrom",
+                                                "mathName": "angstrom",
+                                              },
+                                              Object {
+                                                "displayName": "Thousandth of an inch",
+                                                "mathName": "mil",
+                                              },
+                                            ],
+                                          },
+                                          "surfaceArea": Object {
+                                            "displayName": "Surface Area",
+                                            "initialUnitLeft": "m2",
+                                            "initialUnitRight": "sqin",
+                                            "mathName": "surfaceArea",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Square metre",
+                                                "mathName": "m2",
+                                              },
+                                              Object {
+                                                "displayName": "Square inch",
+                                                "mathName": "sqin",
+                                              },
+                                              Object {
+                                                "displayName": "Square foot",
+                                                "mathName": "sqft",
+                                              },
+                                              Object {
+                                                "displayName": "Square yard",
+                                                "mathName": "sqyd",
+                                              },
+                                              Object {
+                                                "displayName": "Square Mile",
+                                                "mathName": "sqmi",
+                                              },
+                                              Object {
+                                                "displayName": "Square rod",
+                                                "mathName": "sqrd",
+                                              },
+                                              Object {
+                                                "displayName": "Square chain",
+                                                "mathName": "sqch",
+                                              },
+                                              Object {
+                                                "displayName": "Square thousandth of an inch",
+                                                "mathName": "sqmil",
+                                              },
+                                              Object {
+                                                "displayName": "Acre",
+                                                "mathName": "acre",
+                                              },
+                                              Object {
+                                                "displayName": "Hectare",
+                                                "mathName": "hectare",
+                                              },
+                                            ],
+                                          },
+                                        }
+              }
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "items": Object {
+                "length": Object {
+                  "displayName": "Length",
+                  "initialUnitLeft": "meter",
+                  "initialUnitRight": "inch",
+                  "mathName": "length",
+                  "units": Array [
+                    Object {
+                      "displayName": "Meter",
+                      "mathName": "meter",
+                    },
+                    Object {
+                      "displayName": "Inch",
+                      "mathName": "inch",
+                    },
+                    Object {
+                      "displayName": "Foot",
+                      "mathName": "foot",
+                    },
+                    Object {
+                      "displayName": "Yard",
+                      "mathName": "yard",
+                    },
+                    Object {
+                      "displayName": "Mile",
+                      "mathName": "mile",
+                    },
+                    Object {
+                      "displayName": "Link",
+                      "mathName": "link",
+                    },
+                    Object {
+                      "displayName": "Rod",
+                      "mathName": "rod",
+                    },
+                    Object {
+                      "displayName": "Chain",
+                      "mathName": "chain",
+                    },
+                    Object {
+                      "displayName": "Angstrom",
+                      "mathName": "angstrom",
+                    },
+                    Object {
+                      "displayName": "Thousandth of an inch",
+                      "mathName": "mil",
+                    },
+                  ],
+                },
+                "surfaceArea": Object {
+                  "displayName": "Surface Area",
+                  "initialUnitLeft": "m2",
+                  "initialUnitRight": "sqin",
+                  "mathName": "surfaceArea",
+                  "units": Array [
+                    Object {
+                      "displayName": "Square metre",
+                      "mathName": "m2",
+                    },
+                    Object {
+                      "displayName": "Square inch",
+                      "mathName": "sqin",
+                    },
+                    Object {
+                      "displayName": "Square foot",
+                      "mathName": "sqft",
+                    },
+                    Object {
+                      "displayName": "Square yard",
+                      "mathName": "sqyd",
+                    },
+                    Object {
+                      "displayName": "Square Mile",
+                      "mathName": "sqmi",
+                    },
+                    Object {
+                      "displayName": "Square rod",
+                      "mathName": "sqrd",
+                    },
+                    Object {
+                      "displayName": "Square chain",
+                      "mathName": "sqch",
+                    },
+                    Object {
+                      "displayName": "Square thousandth of an inch",
+                      "mathName": "sqmil",
+                    },
+                    Object {
+                      "displayName": "Acre",
+                      "mathName": "acre",
+                    },
+                    Object {
+                      "displayName": "Hectare",
+                      "mathName": "hectare",
+                    },
+                  ],
+                },
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "conversions": Object {
+                "length": Object {
+                  "displayName": "Length",
+                  "initialUnitLeft": "meter",
+                  "initialUnitRight": "inch",
+                  "mathName": "length",
+                  "units": Array [
+                    Object {
+                      "displayName": "Meter",
+                      "mathName": "meter",
+                    },
+                    Object {
+                      "displayName": "Inch",
+                      "mathName": "inch",
+                    },
+                    Object {
+                      "displayName": "Foot",
+                      "mathName": "foot",
+                    },
+                    Object {
+                      "displayName": "Yard",
+                      "mathName": "yard",
+                    },
+                    Object {
+                      "displayName": "Mile",
+                      "mathName": "mile",
+                    },
+                    Object {
+                      "displayName": "Link",
+                      "mathName": "link",
+                    },
+                    Object {
+                      "displayName": "Rod",
+                      "mathName": "rod",
+                    },
+                    Object {
+                      "displayName": "Chain",
+                      "mathName": "chain",
+                    },
+                    Object {
+                      "displayName": "Angstrom",
+                      "mathName": "angstrom",
+                    },
+                    Object {
+                      "displayName": "Thousandth of an inch",
+                      "mathName": "mil",
+                    },
+                  ],
+                },
+                "surfaceArea": Object {
+                  "displayName": "Surface Area",
+                  "initialUnitLeft": "m2",
+                  "initialUnitRight": "sqin",
+                  "mathName": "surfaceArea",
+                  "units": Array [
+                    Object {
+                      "displayName": "Square metre",
+                      "mathName": "m2",
+                    },
+                    Object {
+                      "displayName": "Square inch",
+                      "mathName": "sqin",
+                    },
+                    Object {
+                      "displayName": "Square foot",
+                      "mathName": "sqft",
+                    },
+                    Object {
+                      "displayName": "Square yard",
+                      "mathName": "sqyd",
+                    },
+                    Object {
+                      "displayName": "Square Mile",
+                      "mathName": "sqmi",
+                    },
+                    Object {
+                      "displayName": "Square rod",
+                      "mathName": "sqrd",
+                    },
+                    Object {
+                      "displayName": "Square chain",
+                      "mathName": "sqch",
+                    },
+                    Object {
+                      "displayName": "Square thousandth of an inch",
+                      "mathName": "sqmil",
+                    },
+                    Object {
+                      "displayName": "Acre",
+                      "mathName": "acre",
+                    },
+                    Object {
+                      "displayName": "Hectare",
+                      "mathName": "hectare",
+                    },
+                  ],
+                },
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

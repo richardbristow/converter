@@ -42,14 +42,14 @@ Array [
         value=""
     />
     <select
-        name="lengthUnitLeft"
+        name="unitLeft"
         onChange={[Function]}
         value="meter"
     >
         <option
             value="meter"
         >
-            Meter (m)
+            Meter
         </option>
         <option
             value="inch"
@@ -94,7 +94,7 @@ Array [
         <option
             value="mil"
         >
-            Mil
+            Thousandth of an inch
         </option>
     </select>
     <br />
@@ -106,14 +106,14 @@ Array [
         value=""
     />
     <select
-        name="lengthUnitRight"
+        name="unitRight"
         onChange={[Function]}
         value="inch"
     >
         <option
             value="meter"
         >
-            Meter (m)
+            Meter
         </option>
         <option
             value="inch"
@@ -158,7 +158,7 @@ Array [
         <option
             value="mil"
         >
-            Mil
+            Thousandth of an inch
         </option>
     </select>
 </div>,

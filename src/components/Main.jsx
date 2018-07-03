@@ -7,13 +7,13 @@ import About from './navbar/About';
 import InputGroup from './converter-inputs/InputGroup';
 import NoRoute from './NoRoute';
 
-const Main = ({ convert, conversions }) => (
+const Main = ({ conversions }) => (
   <Switch>
     <Route
       exact
       path="/"
       render={() => (
-        <InputGroup convert={convert} conversions={conversions} />
+        <InputGroup conversions={conversions} />
       )}
     />
     <Route path="/help" component={Help} />
@@ -25,7 +25,7 @@ const Main = ({ convert, conversions }) => (
           key={`route-${mathName}`}
           path={`/${mathName}`}
           render={() => (
-            <InputGroup convert={convert} conversionType={mathName} conversions={conversions} />
+            <InputGroup conversionType={mathName} conversions={conversions} />
           )}
         />);
     })}
@@ -34,11 +34,6 @@ const Main = ({ convert, conversions }) => (
 );
 
 Main.propTypes = {
-  convert: PropTypes.shape({
-    handleChange: PropTypes.func,
-    inputLeft: PropTypes.string,
-    inputRight: PropTypes.string,
-  }).isRequired,
   conversions: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
