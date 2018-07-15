@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Help from './navbar/Help';
 import About from './navbar/About';
-import InputGroup from './converter-inputs/InputGroup';
+import InputPanel from './converter-inputs/InputPanel';
 import NoRoute from './NoRoute';
 
 const Main = ({ conversions }) => (
@@ -13,7 +13,7 @@ const Main = ({ conversions }) => (
       exact
       path="/"
       render={() => (
-        <InputGroup conversions={conversions} />
+        <InputPanel conversions={conversions} />
       )}
     />
     <Route path="/help" component={Help} />
@@ -25,7 +25,7 @@ const Main = ({ conversions }) => (
           key={`route-${mathName}`}
           path={`/${mathName}`}
           render={() => (
-            <InputGroup conversionType={mathName} conversions={conversions} />
+            <InputPanel conversionType={mathName} conversions={conversions} />
           )}
         />);
     })}

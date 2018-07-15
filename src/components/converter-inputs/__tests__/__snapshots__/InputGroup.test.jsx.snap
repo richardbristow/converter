@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup should render an input element, with the correct props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <InputGroup
+    conversionType="type1"
+    dropdownValue="mathName2"
+    handleChange={[Function]}
+    name="name"
+    options={
+        Array [
+            Object {
+              "displayName": "display1",
+              "mathName": "mathName1",
+            },
+            Object {
+              "displayName": "display2",
+              "mathName": "mathName2",
+            },
+            Object {
+              "displayName": "display3",
+              "mathName": "mathName3",
+            },
+          ]
+    }
+    textValue="InputValue"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <input
+          name="inputname"
+          onChange={[Function]}
+          type="text"
+          value="InputValue"
+/>,
+        <select
+          name="unitname"
+          onChange={[Function]}
+          value="mathName2"
+>
+          <option
+                    value="mathName1"
+          >
+                    display1
+          </option>
+          <option
+                    value="mathName2"
+          >
+                    display2
+          </option>
+          <option
+                    value="mathName3"
+          >
+                    display3
+          </option>
+</select>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "name": "inputname",
+          "onChange": [Function],
+          "type": "text",
+          "value": "InputValue",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="mathName1"
+>
+              display1
+</option>,
+            <option
+              value="mathName2"
+>
+              display2
+</option>,
+            <option
+              value="mathName3"
+>
+              display3
+</option>,
+          ],
+          "name": "unitname",
+          "onChange": [Function],
+          "value": "mathName2",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "name-mathName1",
+            "nodeType": "host",
+            "props": Object {
+              "children": "display1",
+              "value": "mathName1",
+            },
+            "ref": null,
+            "rendered": "display1",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "name-mathName2",
+            "nodeType": "host",
+            "props": Object {
+              "children": "display2",
+              "value": "mathName2",
+            },
+            "ref": null,
+            "rendered": "display2",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "name-mathName3",
+            "nodeType": "host",
+            "props": Object {
+              "children": "display3",
+              "value": "mathName3",
+            },
+            "ref": null,
+            "rendered": "display3",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            name="inputname"
+            onChange={[Function]}
+            type="text"
+            value="InputValue"
+/>,
+          <select
+            name="unitname"
+            onChange={[Function]}
+            value="mathName2"
+>
+            <option
+                        value="mathName1"
+            >
+                        display1
+            </option>
+            <option
+                        value="mathName2"
+            >
+                        display2
+            </option>
+            <option
+                        value="mathName3"
+            >
+                        display3
+            </option>
+</select>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "name": "inputname",
+            "onChange": [Function],
+            "type": "text",
+            "value": "InputValue",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="mathName1"
+>
+                display1
+</option>,
+              <option
+                value="mathName2"
+>
+                display2
+</option>,
+              <option
+                value="mathName3"
+>
+                display3
+</option>,
+            ],
+            "name": "unitname",
+            "onChange": [Function],
+            "value": "mathName2",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "name-mathName1",
+              "nodeType": "host",
+              "props": Object {
+                "children": "display1",
+                "value": "mathName1",
+              },
+              "ref": null,
+              "rendered": "display1",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "name-mathName2",
+              "nodeType": "host",
+              "props": Object {
+                "children": "display2",
+                "value": "mathName2",
+              },
+              "ref": null,
+              "rendered": "display2",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "name-mathName3",
+              "nodeType": "host",
+              "props": Object {
+                "children": "display3",
+                "value": "mathName3",
+              },
+              "ref": null,
+              "rendered": "display3",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
