@@ -1,7 +1,7 @@
-import length from './units/length';
-import surfaceArea from './units/surfaceArea';
+import length from './unitTypes/length';
+import surfaceArea from './unitTypes/surfaceArea';
 
-const conversions = {
+const baseUnits = {
   length,
   surfaceArea,
   // volume,
@@ -23,4 +23,4 @@ const conversions = {
   // binary,
 };
 
-export default conversions;
+export default baseUnits;

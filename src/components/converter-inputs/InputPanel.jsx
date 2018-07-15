@@ -40,7 +40,7 @@ class InputPanel extends Component {
   }
 
   render() {
-    const { conversionType, conversions } = this.props;
+    const { conversionType, baseUnits } = this.props;
     const { leftInput, rightInput } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
 
@@ -50,7 +50,7 @@ class InputPanel extends Component {
           name="left"
           textValue={leftInput}
           dropdownValue={leftUnit}
-          options={conversions[conversionType].units}
+          options={baseUnits[conversionType].units}
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
@@ -58,7 +58,7 @@ class InputPanel extends Component {
           name="right"
           textValue={rightInput}
           dropdownValue={rightUnit}
-          options={conversions[conversionType].units}
+          options={baseUnits[conversionType].units}
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
@@ -73,7 +73,7 @@ InputPanel.defaultProps = {
 
 InputPanel.propTypes = {
   conversionType: PropTypes.string,
-  conversions: PropTypes.objectOf(PropTypes.object).isRequired,
+  baseUnits: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default InputPanel;

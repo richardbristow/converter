@@ -2,12 +2,12 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import InputPanel from '../InputPanel';
-import conversions from '../../../constants/conversions';
+import baseUnits from '../../../units/baseUnits';
 
 // const handleChange = jest.fn();
 
 const props = {
-  conversions,
+  baseUnits,
 };
 
 describe('InputPanel', () => {
@@ -20,7 +20,7 @@ describe('InputPanel', () => {
     // const {
     //   initialUnitLeft: defaultUnitLeft,
     //   initialUnitRight: defaultUnitRight,
-    // } = conversions.surfaceArea;
+    // } = baseUnits.surfaceArea;
     const wrapper = shallow(<InputPanel {...props} />);
     expect(wrapper.find('InputGroup[name="left"]').props().dropdownValue).toBe('meter');
     expect(wrapper.find('InputGroup[name="right"]').props().dropdownValue).toBe('inch');

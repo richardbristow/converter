@@ -1,11 +1,11 @@
-import conversions from '../constants/conversions';
+import baseUnits from '../units/baseUnits';
 
 const getUnits = (inputUnits, conversionType) => {
   const units = {};
   units.leftUnit = inputUnits.leftUnit ?
-    inputUnits.leftUnit : conversions[conversionType].initialUnitLeft;
+    inputUnits.leftUnit : baseUnits[conversionType].initialUnitLeft;
   units.rightUnit = inputUnits.rightUnit ?
-    inputUnits.rightUnit : conversions[conversionType].initialUnitRight;
+    inputUnits.rightUnit : baseUnits[conversionType].initialUnitRight;
   return units;
 };
 

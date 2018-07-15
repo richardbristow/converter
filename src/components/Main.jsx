@@ -7,25 +7,25 @@ import About from './navbar/About';
 import InputPanel from './converter-inputs/InputPanel';
 import NoRoute from './NoRoute';
 
-const Main = ({ conversions }) => (
+const Main = ({ baseUnits }) => (
   <Switch>
     <Route
       exact
       path="/"
       render={() => (
-        <InputPanel conversions={conversions} />
+        <InputPanel baseUnits={baseUnits} />
       )}
     />
     <Route path="/help" component={Help} />
     <Route path="/about" component={About} />
-    {Object.keys(conversions).map((type) => {
-      const { mathName } = conversions[type];
+    {Object.keys(baseUnits).map((type) => {
+      const { mathName } = baseUnits[type];
       return (
         <Route
           key={`route-${mathName}`}
           path={`/${mathName}`}
           render={() => (
-            <InputPanel conversionType={mathName} conversions={conversions} />
+            <InputPanel conversionType={mathName} baseUnits={baseUnits} />
           )}
         />);
     })}
@@ -34,7 +34,7 @@ const Main = ({ conversions }) => (
 );
 
 Main.propTypes = {
-  conversions: PropTypes.objectOf(PropTypes.object).isRequired,
+  baseUnits: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default Main;
