@@ -5,8 +5,8 @@ const InputGroup = ({
   name, textValue, dropdownValue, options, handleChange, conversionType,
 }) => (
   <div>
-    <input name={`input${name}`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
-    <select name={`unit${name}`} value={dropdownValue} onChange={e => handleChange(conversionType, e)}>
+    <input name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
+    <select name={`${name}Unit`} value={dropdownValue} onChange={e => handleChange(conversionType, e)}>
       {options.map(({ mathName, displayName }) =>
         <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
     </select>
