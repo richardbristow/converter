@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import InputGroup from './InputGroup';
 import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
+import getUnits from '../../utils/getUnits';
 
 class InputPanel extends Component {
   constructor(props) {
@@ -18,24 +19,24 @@ class InputPanel extends Component {
 
   handleChange(conversionType, { target }) {
     const { name, value } = target;
-    const { conversions } = this.props;
     let { inputLeft, inputRight } = this.state;
-
-    const leftUnit = this.state.unitLeft ?
-      this.state.unitLeft : conversions[conversionType].initialUnitLeft;
-    const rightUnit = this.state.unitRight ?
-      this.state.unitRight : conversions[conversionType].initialUnitRight;
+    const { unitLeft, unitRight } = getUnits(this.state, conversionType);
 
     if (name === 'inputRight' || name === 'inputLeft') {
-      inputLeft = name === 'inputRight' ? tryConvert(value, leftUnit, rightUnit, rightToLeft) : value;
-      inputRight = name === 'inputLeft' ? tryConvert(value, leftUnit, rightUnit, leftToRight) : value;
+      inputLeft = name === 'inputRight' ? tryConvert(value, unitLeft, unitRight, rightToLeft) : value;
+      inputRight = name === 'inputLeft' ? tryConvert(value, unitLeft, unitRight, leftToRight) : value;
     }
 
     if (name === 'unitLeft' || name === 'unitRight') {
-      inputLeft = name === 'unitRight' ? tryConvert(this.state.inputRight, leftUnit, value, rightToLeft) : this.state.inputLeft;
-      inputRight = name === 'unitLeft' ? tryConvert(this.state.inputLeft, value, rightUnit, leftToRight) : this.state.inputRight;
+      inputLeft = name === 'unitRight' ? tryConvert(this.state.inputRight, unitLeft, value, rightToLeft) : this.state.inputLeft;
+      inputRight = name === 'unitLeft' ? tryConvert(this.state.inputLeft, value, unitRight, leftToRight) : this.state.inputRight;
     }
 
+    console.log({ inputLeft });
+    console.log({ inputRight });
+    
+    console.log(this.state);
+    
     this.setState({
       [name]: value,
       inputLeft,
@@ -45,20 +46,15 @@ class InputPanel extends Component {
 
   render() {
     const { conversionType, conversions } = this.props;
-    const convert = this.state;
     const { inputLeft, inputRight } = this.state;
-
-    const unitValueLeft = convert.unitLeft ?
-      convert.unitLeft : conversions[conversionType].initialUnitLeft;
-    const unitValueRight = convert.unitRight ?
-      convert.unitRight : conversions[conversionType].initialUnitRight;
+    const { unitLeft, unitRight } = getUnits(this.state, conversionType);
 
     return (
       <div>
         <InputGroup
           name="Left"
           textValue={inputLeft}
-          dropdownValue={unitValueLeft}
+          dropdownValue={unitLeft}
           options={conversions[conversionType].units}
           handleChange={this.handleChange}
           conversionType={conversionType}
@@ -66,7 +62,7 @@ class InputPanel extends Component {
         <InputGroup
           name="Right"
           textValue={inputRight}
-          dropdownValue={unitValueRight}
+          dropdownValue={unitRight}
           options={conversions[conversionType].units}
           handleChange={this.handleChange}
           conversionType={conversionType}
