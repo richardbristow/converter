@@ -22,8 +22,8 @@ describe('InputPanel', () => {
     //   initialUnitRight: defaultUnitRight,
     // } = conversions.surfaceArea;
     const wrapper = shallow(<InputPanel {...props} />);
-    expect(wrapper.find('InputGroup[name="Left"]').props().dropdownValue).toBe('meter');
-    expect(wrapper.find('InputGroup[name="Right"]').props().dropdownValue).toBe('inch');
+    expect(wrapper.find('InputGroup[name="left"]').props().dropdownValue).toBe('meter');
+    expect(wrapper.find('InputGroup[name="right"]').props().dropdownValue).toBe('inch');
   });
 
   // it('should mount dropdowns with default values when the conversion type changes', () => {

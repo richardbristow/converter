@@ -37,13 +37,13 @@ Array [
   <div>
     <div>
         <input
-            name="inputLeft"
+            name="leftInput"
             onChange={[Function]}
             type="text"
             value=""
         />
         <select
-            name="unitLeft"
+            name="leftUnit"
             onChange={[Function]}
             value="meter"
         >
@@ -101,13 +101,13 @@ Array [
     </div>
     <div>
         <input
-            name="inputRight"
+            name="rightInput"
             onChange={[Function]}
             type="text"
             value=""
         />
         <select
-            name="unitRight"
+            name="rightUnit"
             onChange={[Function]}
             value="inch"
         >

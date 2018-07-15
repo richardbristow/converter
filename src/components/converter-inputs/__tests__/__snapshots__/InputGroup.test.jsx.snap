@@ -41,13 +41,13 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <input
-          name="inputname"
+          name="nameInput"
           onChange={[Function]}
           type="text"
           value="InputValue"
 />,
         <select
-          name="unitname"
+          name="nameUnit"
           onChange={[Function]}
           value="mathName2"
 >
@@ -76,7 +76,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "inputname",
+          "name": "nameInput",
           "onChange": [Function],
           "type": "text",
           "value": "InputValue",
@@ -107,7 +107,7 @@ ShallowWrapper {
               display3
 </option>,
           ],
-          "name": "unitname",
+          "name": "nameUnit",
           "onChange": [Function],
           "value": "mathName2",
         },
@@ -163,13 +163,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <input
-            name="inputname"
+            name="nameInput"
             onChange={[Function]}
             type="text"
             value="InputValue"
 />,
           <select
-            name="unitname"
+            name="nameUnit"
             onChange={[Function]}
             value="mathName2"
 >
@@ -198,7 +198,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "inputname",
+            "name": "nameInput",
             "onChange": [Function],
             "type": "text",
             "value": "InputValue",
@@ -229,7 +229,7 @@ ShallowWrapper {
                 display3
 </option>,
             ],
-            "name": "unitname",
+            "name": "nameUnit",
             "onChange": [Function],
             "value": "mathName2",
           },
