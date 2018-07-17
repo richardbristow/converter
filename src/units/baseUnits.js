@@ -1,6 +1,7 @@
 import length from './unitTypes/length';
 import surfaceArea from './unitTypes/surfaceArea';
 import time from './unitTypes/time';
+import temperature from './unitTypes/temperature';
 
 const baseUnits = {
   length,
@@ -12,7 +13,7 @@ const baseUnits = {
   // frequency,
   // mass,
   // electricCurrent,
-  // temperature,
+  temperature,
   // amountOfSubstance,
   // luminousIntensity,
   // currency,
