@@ -1,5 +1,6 @@
 import length from './unitTypes/length';
 import surfaceArea from './unitTypes/surfaceArea';
+import angles from './unitTypes/angles';
 import time from './unitTypes/time';
 import temperature from './unitTypes/temperature';
 
@@ -8,7 +9,7 @@ const baseUnits = {
   surfaceArea,
   // volume,
   // liquidVolume,
-  // angles,
+  angles,
   time,
   // frequency,
   // mass,
