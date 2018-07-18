@@ -22,6 +22,38 @@ ShallowWrapper {
         <Sidebar
                 items={
                         Object {
+                                "angles": Object {
+                                  "displayName": "Angles",
+                                  "initialUnitLeft": "degree",
+                                  "initialUnitRight": "radian",
+                                  "mathName": "angles",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Radian",
+                                      "mathName": "radian",
+                                    },
+                                    Object {
+                                      "displayName": "Degree",
+                                      "mathName": "degree",
+                                    },
+                                    Object {
+                                      "displayName": "Gradian",
+                                      "mathName": "gradian",
+                                    },
+                                    Object {
+                                      "displayName": "Cycle",
+                                      "mathName": "cycle",
+                                    },
+                                    Object {
+                                      "displayName": "Second of arc",
+                                      "mathName": "arcsecond",
+                                    },
+                                    Object {
+                                      "displayName": "Minute of arc",
+                                      "mathName": "arcmin",
+                                    },
+                                  ],
+                                },
                                 "length": Object {
                                   "displayName": "Length",
                                   "initialUnitLeft": "meter",
@@ -70,6 +102,54 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
+                                "mass": Object {
+                                  "displayName": "Mass",
+                                  "initialUnitLeft": "g",
+                                  "initialUnitRight": "oz",
+                                  "mathName": "mass",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Gram",
+                                      "mathName": "g",
+                                    },
+                                    Object {
+                                      "displayName": "tonne",
+                                      "mathName": "tonne",
+                                    },
+                                    Object {
+                                      "displayName": "Ton",
+                                      "mathName": "ton",
+                                    },
+                                    Object {
+                                      "displayName": "Grain",
+                                      "mathName": "gr",
+                                    },
+                                    Object {
+                                      "displayName": "Dram",
+                                      "mathName": "dr",
+                                    },
+                                    Object {
+                                      "displayName": "Ounce",
+                                      "mathName": "oz",
+                                    },
+                                    Object {
+                                      "displayName": "Pound",
+                                      "mathName": "lb",
+                                    },
+                                    Object {
+                                      "displayName": "Hundredweight",
+                                      "mathName": "cwt",
+                                    },
+                                    Object {
+                                      "displayName": "Stick",
+                                      "mathName": "stick",
+                                    },
+                                    Object {
+                                      "displayName": "Stone",
+                                      "mathName": "stone",
+                                    },
+                                  ],
+                                },
                                 "surfaceArea": Object {
                                   "displayName": "Surface Area",
                                   "initialUnitLeft": "m2",
@@ -115,6 +195,78 @@ ShallowWrapper {
                                     Object {
                                       "displayName": "Hectare",
                                       "mathName": "hectare",
+                                    },
+                                  ],
+                                },
+                                "temperature": Object {
+                                  "displayName": "Temperature",
+                                  "initialUnitLeft": "degC",
+                                  "initialUnitRight": "degF",
+                                  "mathName": "temperature",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Kelvin",
+                                      "mathName": "K",
+                                    },
+                                    Object {
+                                      "displayName": "Celsius",
+                                      "mathName": "degC",
+                                    },
+                                    Object {
+                                      "displayName": "Fahrenheit",
+                                      "mathName": "degF",
+                                    },
+                                    Object {
+                                      "displayName": "Rankine",
+                                      "mathName": "degR",
+                                    },
+                                  ],
+                                },
+                                "time": Object {
+                                  "displayName": "Time",
+                                  "initialUnitLeft": "secs",
+                                  "initialUnitRight": "mins",
+                                  "mathName": "time",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Second",
+                                      "mathName": "secs",
+                                    },
+                                    Object {
+                                      "displayName": "Minute",
+                                      "mathName": "mins",
+                                    },
+                                    Object {
+                                      "displayName": "Hour",
+                                      "mathName": "hrs",
+                                    },
+                                    Object {
+                                      "displayName": "Day",
+                                      "mathName": "days",
+                                    },
+                                    Object {
+                                      "displayName": "Week",
+                                      "mathName": "weeks",
+                                    },
+                                    Object {
+                                      "displayName": "Month",
+                                      "mathName": "months",
+                                    },
+                                    Object {
+                                      "displayName": "Year",
+                                      "mathName": "years",
+                                    },
+                                    Object {
+                                      "displayName": "Decade",
+                                      "mathName": "decades",
+                                    },
+                                    Object {
+                                      "displayName": "Century",
+                                      "mathName": "centuries",
+                                    },
+                                    Object {
+                                      "displayName": "Millennium",
+                                      "mathName": "millennia",
                                     },
                                   ],
                                 },
@@ -124,6 +276,38 @@ ShallowWrapper {
         <Main
                 baseUnits={
                         Object {
+                                "angles": Object {
+                                  "displayName": "Angles",
+                                  "initialUnitLeft": "degree",
+                                  "initialUnitRight": "radian",
+                                  "mathName": "angles",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Radian",
+                                      "mathName": "radian",
+                                    },
+                                    Object {
+                                      "displayName": "Degree",
+                                      "mathName": "degree",
+                                    },
+                                    Object {
+                                      "displayName": "Gradian",
+                                      "mathName": "gradian",
+                                    },
+                                    Object {
+                                      "displayName": "Cycle",
+                                      "mathName": "cycle",
+                                    },
+                                    Object {
+                                      "displayName": "Second of arc",
+                                      "mathName": "arcsecond",
+                                    },
+                                    Object {
+                                      "displayName": "Minute of arc",
+                                      "mathName": "arcmin",
+                                    },
+                                  ],
+                                },
                                 "length": Object {
                                   "displayName": "Length",
                                   "initialUnitLeft": "meter",
@@ -172,6 +356,54 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
+                                "mass": Object {
+                                  "displayName": "Mass",
+                                  "initialUnitLeft": "g",
+                                  "initialUnitRight": "oz",
+                                  "mathName": "mass",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Gram",
+                                      "mathName": "g",
+                                    },
+                                    Object {
+                                      "displayName": "tonne",
+                                      "mathName": "tonne",
+                                    },
+                                    Object {
+                                      "displayName": "Ton",
+                                      "mathName": "ton",
+                                    },
+                                    Object {
+                                      "displayName": "Grain",
+                                      "mathName": "gr",
+                                    },
+                                    Object {
+                                      "displayName": "Dram",
+                                      "mathName": "dr",
+                                    },
+                                    Object {
+                                      "displayName": "Ounce",
+                                      "mathName": "oz",
+                                    },
+                                    Object {
+                                      "displayName": "Pound",
+                                      "mathName": "lb",
+                                    },
+                                    Object {
+                                      "displayName": "Hundredweight",
+                                      "mathName": "cwt",
+                                    },
+                                    Object {
+                                      "displayName": "Stick",
+                                      "mathName": "stick",
+                                    },
+                                    Object {
+                                      "displayName": "Stone",
+                                      "mathName": "stone",
+                                    },
+                                  ],
+                                },
                                 "surfaceArea": Object {
                                   "displayName": "Surface Area",
                                   "initialUnitLeft": "m2",
@@ -217,6 +449,78 @@ ShallowWrapper {
                                     Object {
                                       "displayName": "Hectare",
                                       "mathName": "hectare",
+                                    },
+                                  ],
+                                },
+                                "temperature": Object {
+                                  "displayName": "Temperature",
+                                  "initialUnitLeft": "degC",
+                                  "initialUnitRight": "degF",
+                                  "mathName": "temperature",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Kelvin",
+                                      "mathName": "K",
+                                    },
+                                    Object {
+                                      "displayName": "Celsius",
+                                      "mathName": "degC",
+                                    },
+                                    Object {
+                                      "displayName": "Fahrenheit",
+                                      "mathName": "degF",
+                                    },
+                                    Object {
+                                      "displayName": "Rankine",
+                                      "mathName": "degR",
+                                    },
+                                  ],
+                                },
+                                "time": Object {
+                                  "displayName": "Time",
+                                  "initialUnitLeft": "secs",
+                                  "initialUnitRight": "mins",
+                                  "mathName": "time",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Second",
+                                      "mathName": "secs",
+                                    },
+                                    Object {
+                                      "displayName": "Minute",
+                                      "mathName": "mins",
+                                    },
+                                    Object {
+                                      "displayName": "Hour",
+                                      "mathName": "hrs",
+                                    },
+                                    Object {
+                                      "displayName": "Day",
+                                      "mathName": "days",
+                                    },
+                                    Object {
+                                      "displayName": "Week",
+                                      "mathName": "weeks",
+                                    },
+                                    Object {
+                                      "displayName": "Month",
+                                      "mathName": "months",
+                                    },
+                                    Object {
+                                      "displayName": "Year",
+                                      "mathName": "years",
+                                    },
+                                    Object {
+                                      "displayName": "Decade",
+                                      "mathName": "decades",
+                                    },
+                                    Object {
+                                      "displayName": "Century",
+                                      "mathName": "centuries",
+                                    },
+                                    Object {
+                                      "displayName": "Millennium",
+                                      "mathName": "millennia",
                                     },
                                   ],
                                 },
@@ -236,6 +540,38 @@ ShallowWrapper {
           <Sidebar
             items={
                         Object {
+                                    "angles": Object {
+                                      "displayName": "Angles",
+                                      "initialUnitLeft": "degree",
+                                      "initialUnitRight": "radian",
+                                      "mathName": "angles",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Radian",
+                                          "mathName": "radian",
+                                        },
+                                        Object {
+                                          "displayName": "Degree",
+                                          "mathName": "degree",
+                                        },
+                                        Object {
+                                          "displayName": "Gradian",
+                                          "mathName": "gradian",
+                                        },
+                                        Object {
+                                          "displayName": "Cycle",
+                                          "mathName": "cycle",
+                                        },
+                                        Object {
+                                          "displayName": "Second of arc",
+                                          "mathName": "arcsecond",
+                                        },
+                                        Object {
+                                          "displayName": "Minute of arc",
+                                          "mathName": "arcmin",
+                                        },
+                                      ],
+                                    },
                                     "length": Object {
                                       "displayName": "Length",
                                       "initialUnitLeft": "meter",
@@ -284,6 +620,54 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
+                                    "mass": Object {
+                                      "displayName": "Mass",
+                                      "initialUnitLeft": "g",
+                                      "initialUnitRight": "oz",
+                                      "mathName": "mass",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Gram",
+                                          "mathName": "g",
+                                        },
+                                        Object {
+                                          "displayName": "tonne",
+                                          "mathName": "tonne",
+                                        },
+                                        Object {
+                                          "displayName": "Ton",
+                                          "mathName": "ton",
+                                        },
+                                        Object {
+                                          "displayName": "Grain",
+                                          "mathName": "gr",
+                                        },
+                                        Object {
+                                          "displayName": "Dram",
+                                          "mathName": "dr",
+                                        },
+                                        Object {
+                                          "displayName": "Ounce",
+                                          "mathName": "oz",
+                                        },
+                                        Object {
+                                          "displayName": "Pound",
+                                          "mathName": "lb",
+                                        },
+                                        Object {
+                                          "displayName": "Hundredweight",
+                                          "mathName": "cwt",
+                                        },
+                                        Object {
+                                          "displayName": "Stick",
+                                          "mathName": "stick",
+                                        },
+                                        Object {
+                                          "displayName": "Stone",
+                                          "mathName": "stone",
+                                        },
+                                      ],
+                                    },
                                     "surfaceArea": Object {
                                       "displayName": "Surface Area",
                                       "initialUnitLeft": "m2",
@@ -329,6 +713,78 @@ ShallowWrapper {
                                         Object {
                                           "displayName": "Hectare",
                                           "mathName": "hectare",
+                                        },
+                                      ],
+                                    },
+                                    "temperature": Object {
+                                      "displayName": "Temperature",
+                                      "initialUnitLeft": "degC",
+                                      "initialUnitRight": "degF",
+                                      "mathName": "temperature",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Kelvin",
+                                          "mathName": "K",
+                                        },
+                                        Object {
+                                          "displayName": "Celsius",
+                                          "mathName": "degC",
+                                        },
+                                        Object {
+                                          "displayName": "Fahrenheit",
+                                          "mathName": "degF",
+                                        },
+                                        Object {
+                                          "displayName": "Rankine",
+                                          "mathName": "degR",
+                                        },
+                                      ],
+                                    },
+                                    "time": Object {
+                                      "displayName": "Time",
+                                      "initialUnitLeft": "secs",
+                                      "initialUnitRight": "mins",
+                                      "mathName": "time",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Second",
+                                          "mathName": "secs",
+                                        },
+                                        Object {
+                                          "displayName": "Minute",
+                                          "mathName": "mins",
+                                        },
+                                        Object {
+                                          "displayName": "Hour",
+                                          "mathName": "hrs",
+                                        },
+                                        Object {
+                                          "displayName": "Day",
+                                          "mathName": "days",
+                                        },
+                                        Object {
+                                          "displayName": "Week",
+                                          "mathName": "weeks",
+                                        },
+                                        Object {
+                                          "displayName": "Month",
+                                          "mathName": "months",
+                                        },
+                                        Object {
+                                          "displayName": "Year",
+                                          "mathName": "years",
+                                        },
+                                        Object {
+                                          "displayName": "Decade",
+                                          "mathName": "decades",
+                                        },
+                                        Object {
+                                          "displayName": "Century",
+                                          "mathName": "centuries",
+                                        },
+                                        Object {
+                                          "displayName": "Millennium",
+                                          "mathName": "millennia",
                                         },
                                       ],
                                     },
@@ -338,6 +794,38 @@ ShallowWrapper {
           <Main
             baseUnits={
                         Object {
+                                    "angles": Object {
+                                      "displayName": "Angles",
+                                      "initialUnitLeft": "degree",
+                                      "initialUnitRight": "radian",
+                                      "mathName": "angles",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Radian",
+                                          "mathName": "radian",
+                                        },
+                                        Object {
+                                          "displayName": "Degree",
+                                          "mathName": "degree",
+                                        },
+                                        Object {
+                                          "displayName": "Gradian",
+                                          "mathName": "gradian",
+                                        },
+                                        Object {
+                                          "displayName": "Cycle",
+                                          "mathName": "cycle",
+                                        },
+                                        Object {
+                                          "displayName": "Second of arc",
+                                          "mathName": "arcsecond",
+                                        },
+                                        Object {
+                                          "displayName": "Minute of arc",
+                                          "mathName": "arcmin",
+                                        },
+                                      ],
+                                    },
                                     "length": Object {
                                       "displayName": "Length",
                                       "initialUnitLeft": "meter",
@@ -386,6 +874,54 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
+                                    "mass": Object {
+                                      "displayName": "Mass",
+                                      "initialUnitLeft": "g",
+                                      "initialUnitRight": "oz",
+                                      "mathName": "mass",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Gram",
+                                          "mathName": "g",
+                                        },
+                                        Object {
+                                          "displayName": "tonne",
+                                          "mathName": "tonne",
+                                        },
+                                        Object {
+                                          "displayName": "Ton",
+                                          "mathName": "ton",
+                                        },
+                                        Object {
+                                          "displayName": "Grain",
+                                          "mathName": "gr",
+                                        },
+                                        Object {
+                                          "displayName": "Dram",
+                                          "mathName": "dr",
+                                        },
+                                        Object {
+                                          "displayName": "Ounce",
+                                          "mathName": "oz",
+                                        },
+                                        Object {
+                                          "displayName": "Pound",
+                                          "mathName": "lb",
+                                        },
+                                        Object {
+                                          "displayName": "Hundredweight",
+                                          "mathName": "cwt",
+                                        },
+                                        Object {
+                                          "displayName": "Stick",
+                                          "mathName": "stick",
+                                        },
+                                        Object {
+                                          "displayName": "Stone",
+                                          "mathName": "stone",
+                                        },
+                                      ],
+                                    },
                                     "surfaceArea": Object {
                                       "displayName": "Surface Area",
                                       "initialUnitLeft": "m2",
@@ -431,6 +967,78 @@ ShallowWrapper {
                                         Object {
                                           "displayName": "Hectare",
                                           "mathName": "hectare",
+                                        },
+                                      ],
+                                    },
+                                    "temperature": Object {
+                                      "displayName": "Temperature",
+                                      "initialUnitLeft": "degC",
+                                      "initialUnitRight": "degF",
+                                      "mathName": "temperature",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Kelvin",
+                                          "mathName": "K",
+                                        },
+                                        Object {
+                                          "displayName": "Celsius",
+                                          "mathName": "degC",
+                                        },
+                                        Object {
+                                          "displayName": "Fahrenheit",
+                                          "mathName": "degF",
+                                        },
+                                        Object {
+                                          "displayName": "Rankine",
+                                          "mathName": "degR",
+                                        },
+                                      ],
+                                    },
+                                    "time": Object {
+                                      "displayName": "Time",
+                                      "initialUnitLeft": "secs",
+                                      "initialUnitRight": "mins",
+                                      "mathName": "time",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Second",
+                                          "mathName": "secs",
+                                        },
+                                        Object {
+                                          "displayName": "Minute",
+                                          "mathName": "mins",
+                                        },
+                                        Object {
+                                          "displayName": "Hour",
+                                          "mathName": "hrs",
+                                        },
+                                        Object {
+                                          "displayName": "Day",
+                                          "mathName": "days",
+                                        },
+                                        Object {
+                                          "displayName": "Week",
+                                          "mathName": "weeks",
+                                        },
+                                        Object {
+                                          "displayName": "Month",
+                                          "mathName": "months",
+                                        },
+                                        Object {
+                                          "displayName": "Year",
+                                          "mathName": "years",
+                                        },
+                                        Object {
+                                          "displayName": "Decade",
+                                          "mathName": "decades",
+                                        },
+                                        Object {
+                                          "displayName": "Century",
+                                          "mathName": "centuries",
+                                        },
+                                        Object {
+                                          "displayName": "Millennium",
+                                          "mathName": "millennia",
                                         },
                                       ],
                                     },
@@ -456,6 +1064,38 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "items": Object {
+              "angles": Object {
+                "displayName": "Angles",
+                "initialUnitLeft": "degree",
+                "initialUnitRight": "radian",
+                "mathName": "angles",
+                "units": Array [
+                  Object {
+                    "displayName": "Radian",
+                    "mathName": "radian",
+                  },
+                  Object {
+                    "displayName": "Degree",
+                    "mathName": "degree",
+                  },
+                  Object {
+                    "displayName": "Gradian",
+                    "mathName": "gradian",
+                  },
+                  Object {
+                    "displayName": "Cycle",
+                    "mathName": "cycle",
+                  },
+                  Object {
+                    "displayName": "Second of arc",
+                    "mathName": "arcsecond",
+                  },
+                  Object {
+                    "displayName": "Minute of arc",
+                    "mathName": "arcmin",
+                  },
+                ],
+              },
               "length": Object {
                 "displayName": "Length",
                 "initialUnitLeft": "meter",
@@ -504,6 +1144,54 @@ ShallowWrapper {
                   },
                 ],
               },
+              "mass": Object {
+                "displayName": "Mass",
+                "initialUnitLeft": "g",
+                "initialUnitRight": "oz",
+                "mathName": "mass",
+                "units": Array [
+                  Object {
+                    "displayName": "Gram",
+                    "mathName": "g",
+                  },
+                  Object {
+                    "displayName": "tonne",
+                    "mathName": "tonne",
+                  },
+                  Object {
+                    "displayName": "Ton",
+                    "mathName": "ton",
+                  },
+                  Object {
+                    "displayName": "Grain",
+                    "mathName": "gr",
+                  },
+                  Object {
+                    "displayName": "Dram",
+                    "mathName": "dr",
+                  },
+                  Object {
+                    "displayName": "Ounce",
+                    "mathName": "oz",
+                  },
+                  Object {
+                    "displayName": "Pound",
+                    "mathName": "lb",
+                  },
+                  Object {
+                    "displayName": "Hundredweight",
+                    "mathName": "cwt",
+                  },
+                  Object {
+                    "displayName": "Stick",
+                    "mathName": "stick",
+                  },
+                  Object {
+                    "displayName": "Stone",
+                    "mathName": "stone",
+                  },
+                ],
+              },
               "surfaceArea": Object {
                 "displayName": "Surface Area",
                 "initialUnitLeft": "m2",
@@ -549,6 +1237,78 @@ ShallowWrapper {
                   Object {
                     "displayName": "Hectare",
                     "mathName": "hectare",
+                  },
+                ],
+              },
+              "temperature": Object {
+                "displayName": "Temperature",
+                "initialUnitLeft": "degC",
+                "initialUnitRight": "degF",
+                "mathName": "temperature",
+                "units": Array [
+                  Object {
+                    "displayName": "Kelvin",
+                    "mathName": "K",
+                  },
+                  Object {
+                    "displayName": "Celsius",
+                    "mathName": "degC",
+                  },
+                  Object {
+                    "displayName": "Fahrenheit",
+                    "mathName": "degF",
+                  },
+                  Object {
+                    "displayName": "Rankine",
+                    "mathName": "degR",
+                  },
+                ],
+              },
+              "time": Object {
+                "displayName": "Time",
+                "initialUnitLeft": "secs",
+                "initialUnitRight": "mins",
+                "mathName": "time",
+                "units": Array [
+                  Object {
+                    "displayName": "Second",
+                    "mathName": "secs",
+                  },
+                  Object {
+                    "displayName": "Minute",
+                    "mathName": "mins",
+                  },
+                  Object {
+                    "displayName": "Hour",
+                    "mathName": "hrs",
+                  },
+                  Object {
+                    "displayName": "Day",
+                    "mathName": "days",
+                  },
+                  Object {
+                    "displayName": "Week",
+                    "mathName": "weeks",
+                  },
+                  Object {
+                    "displayName": "Month",
+                    "mathName": "months",
+                  },
+                  Object {
+                    "displayName": "Year",
+                    "mathName": "years",
+                  },
+                  Object {
+                    "displayName": "Decade",
+                    "mathName": "decades",
+                  },
+                  Object {
+                    "displayName": "Century",
+                    "mathName": "centuries",
+                  },
+                  Object {
+                    "displayName": "Millennium",
+                    "mathName": "millennia",
                   },
                 ],
               },
@@ -564,6 +1324,38 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "baseUnits": Object {
+              "angles": Object {
+                "displayName": "Angles",
+                "initialUnitLeft": "degree",
+                "initialUnitRight": "radian",
+                "mathName": "angles",
+                "units": Array [
+                  Object {
+                    "displayName": "Radian",
+                    "mathName": "radian",
+                  },
+                  Object {
+                    "displayName": "Degree",
+                    "mathName": "degree",
+                  },
+                  Object {
+                    "displayName": "Gradian",
+                    "mathName": "gradian",
+                  },
+                  Object {
+                    "displayName": "Cycle",
+                    "mathName": "cycle",
+                  },
+                  Object {
+                    "displayName": "Second of arc",
+                    "mathName": "arcsecond",
+                  },
+                  Object {
+                    "displayName": "Minute of arc",
+                    "mathName": "arcmin",
+                  },
+                ],
+              },
               "length": Object {
                 "displayName": "Length",
                 "initialUnitLeft": "meter",
@@ -612,6 +1404,54 @@ ShallowWrapper {
                   },
                 ],
               },
+              "mass": Object {
+                "displayName": "Mass",
+                "initialUnitLeft": "g",
+                "initialUnitRight": "oz",
+                "mathName": "mass",
+                "units": Array [
+                  Object {
+                    "displayName": "Gram",
+                    "mathName": "g",
+                  },
+                  Object {
+                    "displayName": "tonne",
+                    "mathName": "tonne",
+                  },
+                  Object {
+                    "displayName": "Ton",
+                    "mathName": "ton",
+                  },
+                  Object {
+                    "displayName": "Grain",
+                    "mathName": "gr",
+                  },
+                  Object {
+                    "displayName": "Dram",
+                    "mathName": "dr",
+                  },
+                  Object {
+                    "displayName": "Ounce",
+                    "mathName": "oz",
+                  },
+                  Object {
+                    "displayName": "Pound",
+                    "mathName": "lb",
+                  },
+                  Object {
+                    "displayName": "Hundredweight",
+                    "mathName": "cwt",
+                  },
+                  Object {
+                    "displayName": "Stick",
+                    "mathName": "stick",
+                  },
+                  Object {
+                    "displayName": "Stone",
+                    "mathName": "stone",
+                  },
+                ],
+              },
               "surfaceArea": Object {
                 "displayName": "Surface Area",
                 "initialUnitLeft": "m2",
@@ -657,6 +1497,78 @@ ShallowWrapper {
                   Object {
                     "displayName": "Hectare",
                     "mathName": "hectare",
+                  },
+                ],
+              },
+              "temperature": Object {
+                "displayName": "Temperature",
+                "initialUnitLeft": "degC",
+                "initialUnitRight": "degF",
+                "mathName": "temperature",
+                "units": Array [
+                  Object {
+                    "displayName": "Kelvin",
+                    "mathName": "K",
+                  },
+                  Object {
+                    "displayName": "Celsius",
+                    "mathName": "degC",
+                  },
+                  Object {
+                    "displayName": "Fahrenheit",
+                    "mathName": "degF",
+                  },
+                  Object {
+                    "displayName": "Rankine",
+                    "mathName": "degR",
+                  },
+                ],
+              },
+              "time": Object {
+                "displayName": "Time",
+                "initialUnitLeft": "secs",
+                "initialUnitRight": "mins",
+                "mathName": "time",
+                "units": Array [
+                  Object {
+                    "displayName": "Second",
+                    "mathName": "secs",
+                  },
+                  Object {
+                    "displayName": "Minute",
+                    "mathName": "mins",
+                  },
+                  Object {
+                    "displayName": "Hour",
+                    "mathName": "hrs",
+                  },
+                  Object {
+                    "displayName": "Day",
+                    "mathName": "days",
+                  },
+                  Object {
+                    "displayName": "Week",
+                    "mathName": "weeks",
+                  },
+                  Object {
+                    "displayName": "Month",
+                    "mathName": "months",
+                  },
+                  Object {
+                    "displayName": "Year",
+                    "mathName": "years",
+                  },
+                  Object {
+                    "displayName": "Decade",
+                    "mathName": "decades",
+                  },
+                  Object {
+                    "displayName": "Century",
+                    "mathName": "centuries",
+                  },
+                  Object {
+                    "displayName": "Millennium",
+                    "mathName": "millennia",
                   },
                 ],
               },
@@ -682,6 +1594,38 @@ ShallowWrapper {
           <Sidebar
                     items={
                               Object {
+                                        "angles": Object {
+                                          "displayName": "Angles",
+                                          "initialUnitLeft": "degree",
+                                          "initialUnitRight": "radian",
+                                          "mathName": "angles",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Radian",
+                                              "mathName": "radian",
+                                            },
+                                            Object {
+                                              "displayName": "Degree",
+                                              "mathName": "degree",
+                                            },
+                                            Object {
+                                              "displayName": "Gradian",
+                                              "mathName": "gradian",
+                                            },
+                                            Object {
+                                              "displayName": "Cycle",
+                                              "mathName": "cycle",
+                                            },
+                                            Object {
+                                              "displayName": "Second of arc",
+                                              "mathName": "arcsecond",
+                                            },
+                                            Object {
+                                              "displayName": "Minute of arc",
+                                              "mathName": "arcmin",
+                                            },
+                                          ],
+                                        },
                                         "length": Object {
                                           "displayName": "Length",
                                           "initialUnitLeft": "meter",
@@ -730,6 +1674,54 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "mass": Object {
+                                          "displayName": "Mass",
+                                          "initialUnitLeft": "g",
+                                          "initialUnitRight": "oz",
+                                          "mathName": "mass",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Gram",
+                                              "mathName": "g",
+                                            },
+                                            Object {
+                                              "displayName": "tonne",
+                                              "mathName": "tonne",
+                                            },
+                                            Object {
+                                              "displayName": "Ton",
+                                              "mathName": "ton",
+                                            },
+                                            Object {
+                                              "displayName": "Grain",
+                                              "mathName": "gr",
+                                            },
+                                            Object {
+                                              "displayName": "Dram",
+                                              "mathName": "dr",
+                                            },
+                                            Object {
+                                              "displayName": "Ounce",
+                                              "mathName": "oz",
+                                            },
+                                            Object {
+                                              "displayName": "Pound",
+                                              "mathName": "lb",
+                                            },
+                                            Object {
+                                              "displayName": "Hundredweight",
+                                              "mathName": "cwt",
+                                            },
+                                            Object {
+                                              "displayName": "Stick",
+                                              "mathName": "stick",
+                                            },
+                                            Object {
+                                              "displayName": "Stone",
+                                              "mathName": "stone",
+                                            },
+                                          ],
+                                        },
                                         "surfaceArea": Object {
                                           "displayName": "Surface Area",
                                           "initialUnitLeft": "m2",
@@ -775,6 +1767,78 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Hectare",
                                               "mathName": "hectare",
+                                            },
+                                          ],
+                                        },
+                                        "temperature": Object {
+                                          "displayName": "Temperature",
+                                          "initialUnitLeft": "degC",
+                                          "initialUnitRight": "degF",
+                                          "mathName": "temperature",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Kelvin",
+                                              "mathName": "K",
+                                            },
+                                            Object {
+                                              "displayName": "Celsius",
+                                              "mathName": "degC",
+                                            },
+                                            Object {
+                                              "displayName": "Fahrenheit",
+                                              "mathName": "degF",
+                                            },
+                                            Object {
+                                              "displayName": "Rankine",
+                                              "mathName": "degR",
+                                            },
+                                          ],
+                                        },
+                                        "time": Object {
+                                          "displayName": "Time",
+                                          "initialUnitLeft": "secs",
+                                          "initialUnitRight": "mins",
+                                          "mathName": "time",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Second",
+                                              "mathName": "secs",
+                                            },
+                                            Object {
+                                              "displayName": "Minute",
+                                              "mathName": "mins",
+                                            },
+                                            Object {
+                                              "displayName": "Hour",
+                                              "mathName": "hrs",
+                                            },
+                                            Object {
+                                              "displayName": "Day",
+                                              "mathName": "days",
+                                            },
+                                            Object {
+                                              "displayName": "Week",
+                                              "mathName": "weeks",
+                                            },
+                                            Object {
+                                              "displayName": "Month",
+                                              "mathName": "months",
+                                            },
+                                            Object {
+                                              "displayName": "Year",
+                                              "mathName": "years",
+                                            },
+                                            Object {
+                                              "displayName": "Decade",
+                                              "mathName": "decades",
+                                            },
+                                            Object {
+                                              "displayName": "Century",
+                                              "mathName": "centuries",
+                                            },
+                                            Object {
+                                              "displayName": "Millennium",
+                                              "mathName": "millennia",
                                             },
                                           ],
                                         },
@@ -784,6 +1848,38 @@ ShallowWrapper {
           <Main
                     baseUnits={
                               Object {
+                                        "angles": Object {
+                                          "displayName": "Angles",
+                                          "initialUnitLeft": "degree",
+                                          "initialUnitRight": "radian",
+                                          "mathName": "angles",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Radian",
+                                              "mathName": "radian",
+                                            },
+                                            Object {
+                                              "displayName": "Degree",
+                                              "mathName": "degree",
+                                            },
+                                            Object {
+                                              "displayName": "Gradian",
+                                              "mathName": "gradian",
+                                            },
+                                            Object {
+                                              "displayName": "Cycle",
+                                              "mathName": "cycle",
+                                            },
+                                            Object {
+                                              "displayName": "Second of arc",
+                                              "mathName": "arcsecond",
+                                            },
+                                            Object {
+                                              "displayName": "Minute of arc",
+                                              "mathName": "arcmin",
+                                            },
+                                          ],
+                                        },
                                         "length": Object {
                                           "displayName": "Length",
                                           "initialUnitLeft": "meter",
@@ -832,6 +1928,54 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "mass": Object {
+                                          "displayName": "Mass",
+                                          "initialUnitLeft": "g",
+                                          "initialUnitRight": "oz",
+                                          "mathName": "mass",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Gram",
+                                              "mathName": "g",
+                                            },
+                                            Object {
+                                              "displayName": "tonne",
+                                              "mathName": "tonne",
+                                            },
+                                            Object {
+                                              "displayName": "Ton",
+                                              "mathName": "ton",
+                                            },
+                                            Object {
+                                              "displayName": "Grain",
+                                              "mathName": "gr",
+                                            },
+                                            Object {
+                                              "displayName": "Dram",
+                                              "mathName": "dr",
+                                            },
+                                            Object {
+                                              "displayName": "Ounce",
+                                              "mathName": "oz",
+                                            },
+                                            Object {
+                                              "displayName": "Pound",
+                                              "mathName": "lb",
+                                            },
+                                            Object {
+                                              "displayName": "Hundredweight",
+                                              "mathName": "cwt",
+                                            },
+                                            Object {
+                                              "displayName": "Stick",
+                                              "mathName": "stick",
+                                            },
+                                            Object {
+                                              "displayName": "Stone",
+                                              "mathName": "stone",
+                                            },
+                                          ],
+                                        },
                                         "surfaceArea": Object {
                                           "displayName": "Surface Area",
                                           "initialUnitLeft": "m2",
@@ -877,6 +2021,78 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Hectare",
                                               "mathName": "hectare",
+                                            },
+                                          ],
+                                        },
+                                        "temperature": Object {
+                                          "displayName": "Temperature",
+                                          "initialUnitLeft": "degC",
+                                          "initialUnitRight": "degF",
+                                          "mathName": "temperature",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Kelvin",
+                                              "mathName": "K",
+                                            },
+                                            Object {
+                                              "displayName": "Celsius",
+                                              "mathName": "degC",
+                                            },
+                                            Object {
+                                              "displayName": "Fahrenheit",
+                                              "mathName": "degF",
+                                            },
+                                            Object {
+                                              "displayName": "Rankine",
+                                              "mathName": "degR",
+                                            },
+                                          ],
+                                        },
+                                        "time": Object {
+                                          "displayName": "Time",
+                                          "initialUnitLeft": "secs",
+                                          "initialUnitRight": "mins",
+                                          "mathName": "time",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Second",
+                                              "mathName": "secs",
+                                            },
+                                            Object {
+                                              "displayName": "Minute",
+                                              "mathName": "mins",
+                                            },
+                                            Object {
+                                              "displayName": "Hour",
+                                              "mathName": "hrs",
+                                            },
+                                            Object {
+                                              "displayName": "Day",
+                                              "mathName": "days",
+                                            },
+                                            Object {
+                                              "displayName": "Week",
+                                              "mathName": "weeks",
+                                            },
+                                            Object {
+                                              "displayName": "Month",
+                                              "mathName": "months",
+                                            },
+                                            Object {
+                                              "displayName": "Year",
+                                              "mathName": "years",
+                                            },
+                                            Object {
+                                              "displayName": "Decade",
+                                              "mathName": "decades",
+                                            },
+                                            Object {
+                                              "displayName": "Century",
+                                              "mathName": "centuries",
+                                            },
+                                            Object {
+                                              "displayName": "Millennium",
+                                              "mathName": "millennia",
                                             },
                                           ],
                                         },
@@ -896,6 +2112,38 @@ ShallowWrapper {
             <Sidebar
               items={
                             Object {
+                                          "angles": Object {
+                                            "displayName": "Angles",
+                                            "initialUnitLeft": "degree",
+                                            "initialUnitRight": "radian",
+                                            "mathName": "angles",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Radian",
+                                                "mathName": "radian",
+                                              },
+                                              Object {
+                                                "displayName": "Degree",
+                                                "mathName": "degree",
+                                              },
+                                              Object {
+                                                "displayName": "Gradian",
+                                                "mathName": "gradian",
+                                              },
+                                              Object {
+                                                "displayName": "Cycle",
+                                                "mathName": "cycle",
+                                              },
+                                              Object {
+                                                "displayName": "Second of arc",
+                                                "mathName": "arcsecond",
+                                              },
+                                              Object {
+                                                "displayName": "Minute of arc",
+                                                "mathName": "arcmin",
+                                              },
+                                            ],
+                                          },
                                           "length": Object {
                                             "displayName": "Length",
                                             "initialUnitLeft": "meter",
@@ -944,6 +2192,54 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "mass": Object {
+                                            "displayName": "Mass",
+                                            "initialUnitLeft": "g",
+                                            "initialUnitRight": "oz",
+                                            "mathName": "mass",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Gram",
+                                                "mathName": "g",
+                                              },
+                                              Object {
+                                                "displayName": "tonne",
+                                                "mathName": "tonne",
+                                              },
+                                              Object {
+                                                "displayName": "Ton",
+                                                "mathName": "ton",
+                                              },
+                                              Object {
+                                                "displayName": "Grain",
+                                                "mathName": "gr",
+                                              },
+                                              Object {
+                                                "displayName": "Dram",
+                                                "mathName": "dr",
+                                              },
+                                              Object {
+                                                "displayName": "Ounce",
+                                                "mathName": "oz",
+                                              },
+                                              Object {
+                                                "displayName": "Pound",
+                                                "mathName": "lb",
+                                              },
+                                              Object {
+                                                "displayName": "Hundredweight",
+                                                "mathName": "cwt",
+                                              },
+                                              Object {
+                                                "displayName": "Stick",
+                                                "mathName": "stick",
+                                              },
+                                              Object {
+                                                "displayName": "Stone",
+                                                "mathName": "stone",
+                                              },
+                                            ],
+                                          },
                                           "surfaceArea": Object {
                                             "displayName": "Surface Area",
                                             "initialUnitLeft": "m2",
@@ -989,6 +2285,78 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Hectare",
                                                 "mathName": "hectare",
+                                              },
+                                            ],
+                                          },
+                                          "temperature": Object {
+                                            "displayName": "Temperature",
+                                            "initialUnitLeft": "degC",
+                                            "initialUnitRight": "degF",
+                                            "mathName": "temperature",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Kelvin",
+                                                "mathName": "K",
+                                              },
+                                              Object {
+                                                "displayName": "Celsius",
+                                                "mathName": "degC",
+                                              },
+                                              Object {
+                                                "displayName": "Fahrenheit",
+                                                "mathName": "degF",
+                                              },
+                                              Object {
+                                                "displayName": "Rankine",
+                                                "mathName": "degR",
+                                              },
+                                            ],
+                                          },
+                                          "time": Object {
+                                            "displayName": "Time",
+                                            "initialUnitLeft": "secs",
+                                            "initialUnitRight": "mins",
+                                            "mathName": "time",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Second",
+                                                "mathName": "secs",
+                                              },
+                                              Object {
+                                                "displayName": "Minute",
+                                                "mathName": "mins",
+                                              },
+                                              Object {
+                                                "displayName": "Hour",
+                                                "mathName": "hrs",
+                                              },
+                                              Object {
+                                                "displayName": "Day",
+                                                "mathName": "days",
+                                              },
+                                              Object {
+                                                "displayName": "Week",
+                                                "mathName": "weeks",
+                                              },
+                                              Object {
+                                                "displayName": "Month",
+                                                "mathName": "months",
+                                              },
+                                              Object {
+                                                "displayName": "Year",
+                                                "mathName": "years",
+                                              },
+                                              Object {
+                                                "displayName": "Decade",
+                                                "mathName": "decades",
+                                              },
+                                              Object {
+                                                "displayName": "Century",
+                                                "mathName": "centuries",
+                                              },
+                                              Object {
+                                                "displayName": "Millennium",
+                                                "mathName": "millennia",
                                               },
                                             ],
                                           },
@@ -998,6 +2366,38 @@ ShallowWrapper {
             <Main
               baseUnits={
                             Object {
+                                          "angles": Object {
+                                            "displayName": "Angles",
+                                            "initialUnitLeft": "degree",
+                                            "initialUnitRight": "radian",
+                                            "mathName": "angles",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Radian",
+                                                "mathName": "radian",
+                                              },
+                                              Object {
+                                                "displayName": "Degree",
+                                                "mathName": "degree",
+                                              },
+                                              Object {
+                                                "displayName": "Gradian",
+                                                "mathName": "gradian",
+                                              },
+                                              Object {
+                                                "displayName": "Cycle",
+                                                "mathName": "cycle",
+                                              },
+                                              Object {
+                                                "displayName": "Second of arc",
+                                                "mathName": "arcsecond",
+                                              },
+                                              Object {
+                                                "displayName": "Minute of arc",
+                                                "mathName": "arcmin",
+                                              },
+                                            ],
+                                          },
                                           "length": Object {
                                             "displayName": "Length",
                                             "initialUnitLeft": "meter",
@@ -1046,6 +2446,54 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "mass": Object {
+                                            "displayName": "Mass",
+                                            "initialUnitLeft": "g",
+                                            "initialUnitRight": "oz",
+                                            "mathName": "mass",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Gram",
+                                                "mathName": "g",
+                                              },
+                                              Object {
+                                                "displayName": "tonne",
+                                                "mathName": "tonne",
+                                              },
+                                              Object {
+                                                "displayName": "Ton",
+                                                "mathName": "ton",
+                                              },
+                                              Object {
+                                                "displayName": "Grain",
+                                                "mathName": "gr",
+                                              },
+                                              Object {
+                                                "displayName": "Dram",
+                                                "mathName": "dr",
+                                              },
+                                              Object {
+                                                "displayName": "Ounce",
+                                                "mathName": "oz",
+                                              },
+                                              Object {
+                                                "displayName": "Pound",
+                                                "mathName": "lb",
+                                              },
+                                              Object {
+                                                "displayName": "Hundredweight",
+                                                "mathName": "cwt",
+                                              },
+                                              Object {
+                                                "displayName": "Stick",
+                                                "mathName": "stick",
+                                              },
+                                              Object {
+                                                "displayName": "Stone",
+                                                "mathName": "stone",
+                                              },
+                                            ],
+                                          },
                                           "surfaceArea": Object {
                                             "displayName": "Surface Area",
                                             "initialUnitLeft": "m2",
@@ -1091,6 +2539,78 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Hectare",
                                                 "mathName": "hectare",
+                                              },
+                                            ],
+                                          },
+                                          "temperature": Object {
+                                            "displayName": "Temperature",
+                                            "initialUnitLeft": "degC",
+                                            "initialUnitRight": "degF",
+                                            "mathName": "temperature",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Kelvin",
+                                                "mathName": "K",
+                                              },
+                                              Object {
+                                                "displayName": "Celsius",
+                                                "mathName": "degC",
+                                              },
+                                              Object {
+                                                "displayName": "Fahrenheit",
+                                                "mathName": "degF",
+                                              },
+                                              Object {
+                                                "displayName": "Rankine",
+                                                "mathName": "degR",
+                                              },
+                                            ],
+                                          },
+                                          "time": Object {
+                                            "displayName": "Time",
+                                            "initialUnitLeft": "secs",
+                                            "initialUnitRight": "mins",
+                                            "mathName": "time",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Second",
+                                                "mathName": "secs",
+                                              },
+                                              Object {
+                                                "displayName": "Minute",
+                                                "mathName": "mins",
+                                              },
+                                              Object {
+                                                "displayName": "Hour",
+                                                "mathName": "hrs",
+                                              },
+                                              Object {
+                                                "displayName": "Day",
+                                                "mathName": "days",
+                                              },
+                                              Object {
+                                                "displayName": "Week",
+                                                "mathName": "weeks",
+                                              },
+                                              Object {
+                                                "displayName": "Month",
+                                                "mathName": "months",
+                                              },
+                                              Object {
+                                                "displayName": "Year",
+                                                "mathName": "years",
+                                              },
+                                              Object {
+                                                "displayName": "Decade",
+                                                "mathName": "decades",
+                                              },
+                                              Object {
+                                                "displayName": "Century",
+                                                "mathName": "centuries",
+                                              },
+                                              Object {
+                                                "displayName": "Millennium",
+                                                "mathName": "millennia",
                                               },
                                             ],
                                           },
@@ -1116,6 +2636,38 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "items": Object {
+                "angles": Object {
+                  "displayName": "Angles",
+                  "initialUnitLeft": "degree",
+                  "initialUnitRight": "radian",
+                  "mathName": "angles",
+                  "units": Array [
+                    Object {
+                      "displayName": "Radian",
+                      "mathName": "radian",
+                    },
+                    Object {
+                      "displayName": "Degree",
+                      "mathName": "degree",
+                    },
+                    Object {
+                      "displayName": "Gradian",
+                      "mathName": "gradian",
+                    },
+                    Object {
+                      "displayName": "Cycle",
+                      "mathName": "cycle",
+                    },
+                    Object {
+                      "displayName": "Second of arc",
+                      "mathName": "arcsecond",
+                    },
+                    Object {
+                      "displayName": "Minute of arc",
+                      "mathName": "arcmin",
+                    },
+                  ],
+                },
                 "length": Object {
                   "displayName": "Length",
                   "initialUnitLeft": "meter",
@@ -1164,6 +2716,54 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "mass": Object {
+                  "displayName": "Mass",
+                  "initialUnitLeft": "g",
+                  "initialUnitRight": "oz",
+                  "mathName": "mass",
+                  "units": Array [
+                    Object {
+                      "displayName": "Gram",
+                      "mathName": "g",
+                    },
+                    Object {
+                      "displayName": "tonne",
+                      "mathName": "tonne",
+                    },
+                    Object {
+                      "displayName": "Ton",
+                      "mathName": "ton",
+                    },
+                    Object {
+                      "displayName": "Grain",
+                      "mathName": "gr",
+                    },
+                    Object {
+                      "displayName": "Dram",
+                      "mathName": "dr",
+                    },
+                    Object {
+                      "displayName": "Ounce",
+                      "mathName": "oz",
+                    },
+                    Object {
+                      "displayName": "Pound",
+                      "mathName": "lb",
+                    },
+                    Object {
+                      "displayName": "Hundredweight",
+                      "mathName": "cwt",
+                    },
+                    Object {
+                      "displayName": "Stick",
+                      "mathName": "stick",
+                    },
+                    Object {
+                      "displayName": "Stone",
+                      "mathName": "stone",
+                    },
+                  ],
+                },
                 "surfaceArea": Object {
                   "displayName": "Surface Area",
                   "initialUnitLeft": "m2",
@@ -1209,6 +2809,78 @@ ShallowWrapper {
                     Object {
                       "displayName": "Hectare",
                       "mathName": "hectare",
+                    },
+                  ],
+                },
+                "temperature": Object {
+                  "displayName": "Temperature",
+                  "initialUnitLeft": "degC",
+                  "initialUnitRight": "degF",
+                  "mathName": "temperature",
+                  "units": Array [
+                    Object {
+                      "displayName": "Kelvin",
+                      "mathName": "K",
+                    },
+                    Object {
+                      "displayName": "Celsius",
+                      "mathName": "degC",
+                    },
+                    Object {
+                      "displayName": "Fahrenheit",
+                      "mathName": "degF",
+                    },
+                    Object {
+                      "displayName": "Rankine",
+                      "mathName": "degR",
+                    },
+                  ],
+                },
+                "time": Object {
+                  "displayName": "Time",
+                  "initialUnitLeft": "secs",
+                  "initialUnitRight": "mins",
+                  "mathName": "time",
+                  "units": Array [
+                    Object {
+                      "displayName": "Second",
+                      "mathName": "secs",
+                    },
+                    Object {
+                      "displayName": "Minute",
+                      "mathName": "mins",
+                    },
+                    Object {
+                      "displayName": "Hour",
+                      "mathName": "hrs",
+                    },
+                    Object {
+                      "displayName": "Day",
+                      "mathName": "days",
+                    },
+                    Object {
+                      "displayName": "Week",
+                      "mathName": "weeks",
+                    },
+                    Object {
+                      "displayName": "Month",
+                      "mathName": "months",
+                    },
+                    Object {
+                      "displayName": "Year",
+                      "mathName": "years",
+                    },
+                    Object {
+                      "displayName": "Decade",
+                      "mathName": "decades",
+                    },
+                    Object {
+                      "displayName": "Century",
+                      "mathName": "centuries",
+                    },
+                    Object {
+                      "displayName": "Millennium",
+                      "mathName": "millennia",
                     },
                   ],
                 },
@@ -1224,6 +2896,38 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "baseUnits": Object {
+                "angles": Object {
+                  "displayName": "Angles",
+                  "initialUnitLeft": "degree",
+                  "initialUnitRight": "radian",
+                  "mathName": "angles",
+                  "units": Array [
+                    Object {
+                      "displayName": "Radian",
+                      "mathName": "radian",
+                    },
+                    Object {
+                      "displayName": "Degree",
+                      "mathName": "degree",
+                    },
+                    Object {
+                      "displayName": "Gradian",
+                      "mathName": "gradian",
+                    },
+                    Object {
+                      "displayName": "Cycle",
+                      "mathName": "cycle",
+                    },
+                    Object {
+                      "displayName": "Second of arc",
+                      "mathName": "arcsecond",
+                    },
+                    Object {
+                      "displayName": "Minute of arc",
+                      "mathName": "arcmin",
+                    },
+                  ],
+                },
                 "length": Object {
                   "displayName": "Length",
                   "initialUnitLeft": "meter",
@@ -1272,6 +2976,54 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "mass": Object {
+                  "displayName": "Mass",
+                  "initialUnitLeft": "g",
+                  "initialUnitRight": "oz",
+                  "mathName": "mass",
+                  "units": Array [
+                    Object {
+                      "displayName": "Gram",
+                      "mathName": "g",
+                    },
+                    Object {
+                      "displayName": "tonne",
+                      "mathName": "tonne",
+                    },
+                    Object {
+                      "displayName": "Ton",
+                      "mathName": "ton",
+                    },
+                    Object {
+                      "displayName": "Grain",
+                      "mathName": "gr",
+                    },
+                    Object {
+                      "displayName": "Dram",
+                      "mathName": "dr",
+                    },
+                    Object {
+                      "displayName": "Ounce",
+                      "mathName": "oz",
+                    },
+                    Object {
+                      "displayName": "Pound",
+                      "mathName": "lb",
+                    },
+                    Object {
+                      "displayName": "Hundredweight",
+                      "mathName": "cwt",
+                    },
+                    Object {
+                      "displayName": "Stick",
+                      "mathName": "stick",
+                    },
+                    Object {
+                      "displayName": "Stone",
+                      "mathName": "stone",
+                    },
+                  ],
+                },
                 "surfaceArea": Object {
                   "displayName": "Surface Area",
                   "initialUnitLeft": "m2",
@@ -1317,6 +3069,78 @@ ShallowWrapper {
                     Object {
                       "displayName": "Hectare",
                       "mathName": "hectare",
+                    },
+                  ],
+                },
+                "temperature": Object {
+                  "displayName": "Temperature",
+                  "initialUnitLeft": "degC",
+                  "initialUnitRight": "degF",
+                  "mathName": "temperature",
+                  "units": Array [
+                    Object {
+                      "displayName": "Kelvin",
+                      "mathName": "K",
+                    },
+                    Object {
+                      "displayName": "Celsius",
+                      "mathName": "degC",
+                    },
+                    Object {
+                      "displayName": "Fahrenheit",
+                      "mathName": "degF",
+                    },
+                    Object {
+                      "displayName": "Rankine",
+                      "mathName": "degR",
+                    },
+                  ],
+                },
+                "time": Object {
+                  "displayName": "Time",
+                  "initialUnitLeft": "secs",
+                  "initialUnitRight": "mins",
+                  "mathName": "time",
+                  "units": Array [
+                    Object {
+                      "displayName": "Second",
+                      "mathName": "secs",
+                    },
+                    Object {
+                      "displayName": "Minute",
+                      "mathName": "mins",
+                    },
+                    Object {
+                      "displayName": "Hour",
+                      "mathName": "hrs",
+                    },
+                    Object {
+                      "displayName": "Day",
+                      "mathName": "days",
+                    },
+                    Object {
+                      "displayName": "Week",
+                      "mathName": "weeks",
+                    },
+                    Object {
+                      "displayName": "Month",
+                      "mathName": "months",
+                    },
+                    Object {
+                      "displayName": "Year",
+                      "mathName": "years",
+                    },
+                    Object {
+                      "displayName": "Decade",
+                      "mathName": "decades",
+                    },
+                    Object {
+                      "displayName": "Century",
+                      "mathName": "centuries",
+                    },
+                    Object {
+                      "displayName": "Millennium",
+                      "mathName": "millennia",
                     },
                   ],
                 },

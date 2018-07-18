@@ -17,10 +17,120 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "This is the about page.",
+      "children": Array [
+        <h1>
+          About
+</h1>,
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
+</p>,
+        <h2>
+          Credits
+</h2>,
+        <ul>
+          <li>
+                    react
+          </li>
+          <li>
+                    math.js
+          </li>
+          <li>
+                    fixe
+          </li>
+</ul>,
+      ],
     },
     "ref": null,
-    "rendered": "This is the about page.",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "About",
+        },
+        "ref": null,
+        "rendered": "About",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+        },
+        "ref": null,
+        "rendered": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Credits",
+        },
+        "ref": null,
+        "rendered": "Credits",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              react
+</li>,
+            <li>
+              math.js
+</li>,
+            <li>
+              fixe
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "react",
+            },
+            "ref": null,
+            "rendered": "react",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "math.js",
+            },
+            "ref": null,
+            "rendered": "math.js",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "fixe",
+            },
+            "ref": null,
+            "rendered": "fixe",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +139,120 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "This is the about page.",
+        "children": Array [
+          <h1>
+            About
+</h1>,
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
+</p>,
+          <h2>
+            Credits
+</h2>,
+          <ul>
+            <li>
+                        react
+            </li>
+            <li>
+                        math.js
+            </li>
+            <li>
+                        fixe
+            </li>
+</ul>,
+        ],
       },
       "ref": null,
-      "rendered": "This is the about page.",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "About",
+          },
+          "ref": null,
+          "rendered": "About",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+          },
+          "ref": null,
+          "rendered": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Credits",
+          },
+          "ref": null,
+          "rendered": "Credits",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                react
+</li>,
+              <li>
+                math.js
+</li>,
+              <li>
+                fixe
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "react",
+              },
+              "ref": null,
+              "rendered": "react",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "math.js",
+              },
+              "ref": null,
+              "rendered": "math.js",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "fixe",
+              },
+              "ref": null,
+              "rendered": "fixe",
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
       "type": "div",
     },
   ],
