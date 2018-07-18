@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown>
+      "children": <styled.div>
         <Header />
         <Sidebar
                 items={
@@ -527,13 +527,13 @@ ShallowWrapper {
                               }
                 }
         />
-</Unknown>,
+</styled.div>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <Header />,
@@ -1579,7 +1579,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": Symbol(react.fragment),
+      "type": [Function],
     },
     "type": [Function],
   },
@@ -1589,7 +1589,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Unknown>
+        "children": <styled.div>
           <Header />
           <Sidebar
                     items={
@@ -2099,13 +2099,13 @@ ShallowWrapper {
                                       }
                     }
           />
-</Unknown>,
+</styled.div>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <Header />,
@@ -3151,7 +3151,7 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": Symbol(react.fragment),
+        "type": [Function],
       },
       "type": [Function],
     },

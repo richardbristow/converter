@@ -15,21 +15,23 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Link
-          replace={false}
+        <styled.h1>
+          Converter
+</styled.h1>,
+        <div />,
+        <Styled(Link)
           to="/help"
 >
           Help
-</Link>,
-        <Link
-          replace={false}
+</Styled(Link)>,
+        <Styled(Link)
           to="/about"
 >
           About
-</Link>,
+</Styled(Link)>,
       ],
     },
     "ref": null,
@@ -39,8 +41,27 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "children": "Converter",
+        },
+        "ref": null,
+        "rendered": "Converter",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "children": "Help",
-          "replace": false,
           "to": "/help",
         },
         "ref": null,
@@ -53,7 +74,6 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "About",
-          "replace": false,
           "to": "/about",
         },
         "ref": null,
@@ -61,27 +81,29 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Link
-            replace={false}
+          <styled.h1>
+            Converter
+</styled.h1>,
+          <div />,
+          <Styled(Link)
             to="/help"
 >
             Help
-</Link>,
-          <Link
-            replace={false}
+</Styled(Link)>,
+          <Styled(Link)
             to="/about"
 >
             About
-</Link>,
+</Styled(Link)>,
         ],
       },
       "ref": null,
@@ -91,8 +113,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": "Converter",
+          },
+          "ref": null,
+          "rendered": "Converter",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "children": "Help",
-            "replace": false,
             "to": "/help",
           },
           "ref": null,
@@ -105,7 +146,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "About",
-            "replace": false,
             "to": "/about",
           },
           "ref": null,
@@ -113,7 +153,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
