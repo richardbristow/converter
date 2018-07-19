@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import InputGroup from './InputGroup';
 import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
 import getUnits from '../../utils/getUnits';
+
+const StyeldInputPanel = styled.div`
+  display: grid;
+  grid-template-areas:
+    'left right';
+  grid-template-columns: 1fr 1fr;
+`;
 
 class InputPanel extends Component {
   constructor(props) {
@@ -45,7 +53,7 @@ class InputPanel extends Component {
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
 
     return (
-      <div>
+      <StyeldInputPanel>
         <InputGroup
           name="left"
           textValue={leftInput}
@@ -62,7 +70,7 @@ class InputPanel extends Component {
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
-      </div>
+      </StyeldInputPanel>
     );
   }
 }

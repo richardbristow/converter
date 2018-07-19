@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-bZQynM bfRrhK"
+  className="sc-dnqmqq etcSFV"
 >
   <div
     className="sc-bdVaJa hwHxJX"
@@ -32,42 +32,42 @@ exports[`index matches the snapshot 1`] = `
     className="sc-bxivhb jZlZmq"
   >
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/length"
       onClick={[Function]}
     >
       Length
     </a>
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/surfacearea"
       onClick={[Function]}
     >
       Surface Area
     </a>
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/angles"
       onClick={[Function]}
     >
       Angles
     </a>
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/time"
       onClick={[Function]}
     >
       Time
     </a>
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/mass"
       onClick={[Function]}
     >
       Mass
     </a>
     <a
-      className="sc-ifAKCX dntcgb"
+      className="sc-ifAKCX ecOCuU"
       href="/temperature"
       onClick={[Function]}
     >
@@ -75,10 +75,15 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-EHOje daTeYb"
+    className="sc-htoDjs iumQdy"
   >
-    <div>
-      <div>
+    <div
+      className="sc-gzVnrw gdVuxe"
+    >
+      <div
+        className="sc-bZQynM bcaWbA"
+        name="left"
+      >
         <input
           name="leftInput"
           onChange={[Function]}
@@ -142,7 +147,10 @@ exports[`index matches the snapshot 1`] = `
           </option>
         </select>
       </div>
-      <div>
+      <div
+        className="sc-bZQynM dOSoJQ"
+        name="right"
+      >
         <input
           name="rightInput"
           onChange={[Function]}

@@ -17,10 +17,28 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "This is the help page.",
+      "children": Array [
+        <h2>
+          Help
+</h2>,
+        "This is the help page.",
+      ],
     },
     "ref": null,
-    "rendered": "This is the help page.",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Help",
+        },
+        "ref": null,
+        "rendered": "Help",
+        "type": "h2",
+      },
+      "This is the help page.",
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +47,28 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "This is the help page.",
+        "children": Array [
+          <h2>
+            Help
+</h2>,
+          "This is the help page.",
+        ],
       },
       "ref": null,
-      "rendered": "This is the help page.",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Help",
+          },
+          "ref": null,
+          "rendered": "Help",
+          "type": "h2",
+        },
+        "This is the help page.",
+      ],
       "type": "div",
     },
   ],

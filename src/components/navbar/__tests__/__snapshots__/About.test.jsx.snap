@@ -15,18 +15,18 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <h1>
+        <h2>
           About
-</h1>,
+</h2>,
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
 </p>,
-        <h2>
+        <h3>
           Credits
-</h2>,
+</h3>,
         <ul>
           <li>
                     react
@@ -51,7 +51,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "About",
-        "type": "h1",
+        "type": "h2",
       },
       Object {
         "instance": null,
@@ -73,7 +73,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "Credits",
-        "type": "h2",
+        "type": "h3",
       },
       Object {
         "instance": null,
@@ -131,24 +131,24 @@ ShallowWrapper {
         "type": "ul",
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
-          <h1>
+          <h2>
             About
-</h1>,
+</h2>,
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
 </p>,
-          <h2>
+          <h3>
             Credits
-</h2>,
+</h3>,
           <ul>
             <li>
                         react
@@ -173,7 +173,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "About",
-          "type": "h1",
+          "type": "h2",
         },
         Object {
           "instance": null,
@@ -195,7 +195,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Credits",
-          "type": "h2",
+          "type": "h3",
         },
         Object {
           "instance": null,
@@ -253,7 +253,7 @@ ShallowWrapper {
           "type": "ul",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

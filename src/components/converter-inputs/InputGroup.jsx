@@ -1,16 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const StyledInputGroup = styled.div`
+  grid-area: ${props => props.name};
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 50px;
+`;
 
 const InputGroup = ({
   name, textValue, dropdownValue, options, handleChange, conversionType,
 }) => (
-  <div>
+  <StyledInputGroup name={name}>
     <input name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
     <select name={`${name}Unit`} value={dropdownValue} onChange={e => handleChange(conversionType, e)}>
       {options.map(({ mathName, displayName }) =>
         <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
     </select>
-  </div>
+  </StyledInputGroup>
 );
 
 InputGroup.propTypes = {

@@ -16,6 +16,7 @@ const StyledLink = styled(Link)`
   padding-left: 40px;
   align-items: center;
   display: flex;
+  color: black;
   &:hover {
     text-decoration: none;
     background-color: lightgrey;
