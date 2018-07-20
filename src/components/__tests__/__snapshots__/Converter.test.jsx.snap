@@ -54,6 +54,74 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
+                                "binary": Object {
+                                  "displayName": "Binary",
+                                  "initialUnitLeft": "b",
+                                  "initialUnitRight": "B",
+                                  "mathName": "binary",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "bit",
+                                      "mathName": "b",
+                                    },
+                                    Object {
+                                      "displayName": "byte",
+                                      "mathName": "B",
+                                    },
+                                  ],
+                                },
+                                "energy": Object {
+                                  "displayName": "Energy",
+                                  "initialUnitLeft": "J",
+                                  "initialUnitRight": "erg",
+                                  "mathName": "energy",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Joule",
+                                      "mathName": "J",
+                                    },
+                                    Object {
+                                      "displayName": "Erg",
+                                      "mathName": "erg",
+                                    },
+                                    Object {
+                                      "displayName": "Watt hour",
+                                      "mathName": "Wh",
+                                    },
+                                    Object {
+                                      "displayName": "British Thermal Unit",
+                                      "mathName": "BTU",
+                                    },
+                                    Object {
+                                      "displayName": "Eletronvolt",
+                                      "mathName": "eV",
+                                    },
+                                  ],
+                                },
+                                "force": Object {
+                                  "displayName": "Force",
+                                  "initialUnitLeft": "N",
+                                  "initialUnitRight": "lbf",
+                                  "mathName": "force",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Newton",
+                                      "mathName": "N",
+                                    },
+                                    Object {
+                                      "displayName": "Dyne",
+                                      "mathName": "dyn",
+                                    },
+                                    Object {
+                                      "displayName": "Pound-force",
+                                      "mathName": "lbf",
+                                    },
+                                    Object {
+                                      "displayName": "Kip",
+                                      "mathName": "kip",
+                                    },
+                                  ],
+                                },
                                 "length": Object {
                                   "displayName": "Length",
                                   "initialUnitLeft": "meter",
@@ -305,6 +373,74 @@ ShallowWrapper {
                                     Object {
                                       "displayName": "Minute of arc",
                                       "mathName": "arcmin",
+                                    },
+                                  ],
+                                },
+                                "binary": Object {
+                                  "displayName": "Binary",
+                                  "initialUnitLeft": "b",
+                                  "initialUnitRight": "B",
+                                  "mathName": "binary",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "bit",
+                                      "mathName": "b",
+                                    },
+                                    Object {
+                                      "displayName": "byte",
+                                      "mathName": "B",
+                                    },
+                                  ],
+                                },
+                                "energy": Object {
+                                  "displayName": "Energy",
+                                  "initialUnitLeft": "J",
+                                  "initialUnitRight": "erg",
+                                  "mathName": "energy",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Joule",
+                                      "mathName": "J",
+                                    },
+                                    Object {
+                                      "displayName": "Erg",
+                                      "mathName": "erg",
+                                    },
+                                    Object {
+                                      "displayName": "Watt hour",
+                                      "mathName": "Wh",
+                                    },
+                                    Object {
+                                      "displayName": "British Thermal Unit",
+                                      "mathName": "BTU",
+                                    },
+                                    Object {
+                                      "displayName": "Eletronvolt",
+                                      "mathName": "eV",
+                                    },
+                                  ],
+                                },
+                                "force": Object {
+                                  "displayName": "Force",
+                                  "initialUnitLeft": "N",
+                                  "initialUnitRight": "lbf",
+                                  "mathName": "force",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Newton",
+                                      "mathName": "N",
+                                    },
+                                    Object {
+                                      "displayName": "Dyne",
+                                      "mathName": "dyn",
+                                    },
+                                    Object {
+                                      "displayName": "Pound-force",
+                                      "mathName": "lbf",
+                                    },
+                                    Object {
+                                      "displayName": "Kip",
+                                      "mathName": "kip",
                                     },
                                   ],
                                 },
@@ -572,6 +708,74 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
+                                    "binary": Object {
+                                      "displayName": "Binary",
+                                      "initialUnitLeft": "b",
+                                      "initialUnitRight": "B",
+                                      "mathName": "binary",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "bit",
+                                          "mathName": "b",
+                                        },
+                                        Object {
+                                          "displayName": "byte",
+                                          "mathName": "B",
+                                        },
+                                      ],
+                                    },
+                                    "energy": Object {
+                                      "displayName": "Energy",
+                                      "initialUnitLeft": "J",
+                                      "initialUnitRight": "erg",
+                                      "mathName": "energy",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Joule",
+                                          "mathName": "J",
+                                        },
+                                        Object {
+                                          "displayName": "Erg",
+                                          "mathName": "erg",
+                                        },
+                                        Object {
+                                          "displayName": "Watt hour",
+                                          "mathName": "Wh",
+                                        },
+                                        Object {
+                                          "displayName": "British Thermal Unit",
+                                          "mathName": "BTU",
+                                        },
+                                        Object {
+                                          "displayName": "Eletronvolt",
+                                          "mathName": "eV",
+                                        },
+                                      ],
+                                    },
+                                    "force": Object {
+                                      "displayName": "Force",
+                                      "initialUnitLeft": "N",
+                                      "initialUnitRight": "lbf",
+                                      "mathName": "force",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Newton",
+                                          "mathName": "N",
+                                        },
+                                        Object {
+                                          "displayName": "Dyne",
+                                          "mathName": "dyn",
+                                        },
+                                        Object {
+                                          "displayName": "Pound-force",
+                                          "mathName": "lbf",
+                                        },
+                                        Object {
+                                          "displayName": "Kip",
+                                          "mathName": "kip",
+                                        },
+                                      ],
+                                    },
                                     "length": Object {
                                       "displayName": "Length",
                                       "initialUnitLeft": "meter",
@@ -823,6 +1027,74 @@ ShallowWrapper {
                                         Object {
                                           "displayName": "Minute of arc",
                                           "mathName": "arcmin",
+                                        },
+                                      ],
+                                    },
+                                    "binary": Object {
+                                      "displayName": "Binary",
+                                      "initialUnitLeft": "b",
+                                      "initialUnitRight": "B",
+                                      "mathName": "binary",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "bit",
+                                          "mathName": "b",
+                                        },
+                                        Object {
+                                          "displayName": "byte",
+                                          "mathName": "B",
+                                        },
+                                      ],
+                                    },
+                                    "energy": Object {
+                                      "displayName": "Energy",
+                                      "initialUnitLeft": "J",
+                                      "initialUnitRight": "erg",
+                                      "mathName": "energy",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Joule",
+                                          "mathName": "J",
+                                        },
+                                        Object {
+                                          "displayName": "Erg",
+                                          "mathName": "erg",
+                                        },
+                                        Object {
+                                          "displayName": "Watt hour",
+                                          "mathName": "Wh",
+                                        },
+                                        Object {
+                                          "displayName": "British Thermal Unit",
+                                          "mathName": "BTU",
+                                        },
+                                        Object {
+                                          "displayName": "Eletronvolt",
+                                          "mathName": "eV",
+                                        },
+                                      ],
+                                    },
+                                    "force": Object {
+                                      "displayName": "Force",
+                                      "initialUnitLeft": "N",
+                                      "initialUnitRight": "lbf",
+                                      "mathName": "force",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Newton",
+                                          "mathName": "N",
+                                        },
+                                        Object {
+                                          "displayName": "Dyne",
+                                          "mathName": "dyn",
+                                        },
+                                        Object {
+                                          "displayName": "Pound-force",
+                                          "mathName": "lbf",
+                                        },
+                                        Object {
+                                          "displayName": "Kip",
+                                          "mathName": "kip",
                                         },
                                       ],
                                     },
@@ -1096,6 +1368,74 @@ ShallowWrapper {
                   },
                 ],
               },
+              "binary": Object {
+                "displayName": "Binary",
+                "initialUnitLeft": "b",
+                "initialUnitRight": "B",
+                "mathName": "binary",
+                "units": Array [
+                  Object {
+                    "displayName": "bit",
+                    "mathName": "b",
+                  },
+                  Object {
+                    "displayName": "byte",
+                    "mathName": "B",
+                  },
+                ],
+              },
+              "energy": Object {
+                "displayName": "Energy",
+                "initialUnitLeft": "J",
+                "initialUnitRight": "erg",
+                "mathName": "energy",
+                "units": Array [
+                  Object {
+                    "displayName": "Joule",
+                    "mathName": "J",
+                  },
+                  Object {
+                    "displayName": "Erg",
+                    "mathName": "erg",
+                  },
+                  Object {
+                    "displayName": "Watt hour",
+                    "mathName": "Wh",
+                  },
+                  Object {
+                    "displayName": "British Thermal Unit",
+                    "mathName": "BTU",
+                  },
+                  Object {
+                    "displayName": "Eletronvolt",
+                    "mathName": "eV",
+                  },
+                ],
+              },
+              "force": Object {
+                "displayName": "Force",
+                "initialUnitLeft": "N",
+                "initialUnitRight": "lbf",
+                "mathName": "force",
+                "units": Array [
+                  Object {
+                    "displayName": "Newton",
+                    "mathName": "N",
+                  },
+                  Object {
+                    "displayName": "Dyne",
+                    "mathName": "dyn",
+                  },
+                  Object {
+                    "displayName": "Pound-force",
+                    "mathName": "lbf",
+                  },
+                  Object {
+                    "displayName": "Kip",
+                    "mathName": "kip",
+                  },
+                ],
+              },
               "length": Object {
                 "displayName": "Length",
                 "initialUnitLeft": "meter",
@@ -1353,6 +1693,74 @@ ShallowWrapper {
                   Object {
                     "displayName": "Minute of arc",
                     "mathName": "arcmin",
+                  },
+                ],
+              },
+              "binary": Object {
+                "displayName": "Binary",
+                "initialUnitLeft": "b",
+                "initialUnitRight": "B",
+                "mathName": "binary",
+                "units": Array [
+                  Object {
+                    "displayName": "bit",
+                    "mathName": "b",
+                  },
+                  Object {
+                    "displayName": "byte",
+                    "mathName": "B",
+                  },
+                ],
+              },
+              "energy": Object {
+                "displayName": "Energy",
+                "initialUnitLeft": "J",
+                "initialUnitRight": "erg",
+                "mathName": "energy",
+                "units": Array [
+                  Object {
+                    "displayName": "Joule",
+                    "mathName": "J",
+                  },
+                  Object {
+                    "displayName": "Erg",
+                    "mathName": "erg",
+                  },
+                  Object {
+                    "displayName": "Watt hour",
+                    "mathName": "Wh",
+                  },
+                  Object {
+                    "displayName": "British Thermal Unit",
+                    "mathName": "BTU",
+                  },
+                  Object {
+                    "displayName": "Eletronvolt",
+                    "mathName": "eV",
+                  },
+                ],
+              },
+              "force": Object {
+                "displayName": "Force",
+                "initialUnitLeft": "N",
+                "initialUnitRight": "lbf",
+                "mathName": "force",
+                "units": Array [
+                  Object {
+                    "displayName": "Newton",
+                    "mathName": "N",
+                  },
+                  Object {
+                    "displayName": "Dyne",
+                    "mathName": "dyn",
+                  },
+                  Object {
+                    "displayName": "Pound-force",
+                    "mathName": "lbf",
+                  },
+                  Object {
+                    "displayName": "Kip",
+                    "mathName": "kip",
                   },
                 ],
               },
@@ -1626,6 +2034,74 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "binary": Object {
+                                          "displayName": "Binary",
+                                          "initialUnitLeft": "b",
+                                          "initialUnitRight": "B",
+                                          "mathName": "binary",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "bit",
+                                              "mathName": "b",
+                                            },
+                                            Object {
+                                              "displayName": "byte",
+                                              "mathName": "B",
+                                            },
+                                          ],
+                                        },
+                                        "energy": Object {
+                                          "displayName": "Energy",
+                                          "initialUnitLeft": "J",
+                                          "initialUnitRight": "erg",
+                                          "mathName": "energy",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Joule",
+                                              "mathName": "J",
+                                            },
+                                            Object {
+                                              "displayName": "Erg",
+                                              "mathName": "erg",
+                                            },
+                                            Object {
+                                              "displayName": "Watt hour",
+                                              "mathName": "Wh",
+                                            },
+                                            Object {
+                                              "displayName": "British Thermal Unit",
+                                              "mathName": "BTU",
+                                            },
+                                            Object {
+                                              "displayName": "Eletronvolt",
+                                              "mathName": "eV",
+                                            },
+                                          ],
+                                        },
+                                        "force": Object {
+                                          "displayName": "Force",
+                                          "initialUnitLeft": "N",
+                                          "initialUnitRight": "lbf",
+                                          "mathName": "force",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Newton",
+                                              "mathName": "N",
+                                            },
+                                            Object {
+                                              "displayName": "Dyne",
+                                              "mathName": "dyn",
+                                            },
+                                            Object {
+                                              "displayName": "Pound-force",
+                                              "mathName": "lbf",
+                                            },
+                                            Object {
+                                              "displayName": "Kip",
+                                              "mathName": "kip",
+                                            },
+                                          ],
+                                        },
                                         "length": Object {
                                           "displayName": "Length",
                                           "initialUnitLeft": "meter",
@@ -1877,6 +2353,74 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Minute of arc",
                                               "mathName": "arcmin",
+                                            },
+                                          ],
+                                        },
+                                        "binary": Object {
+                                          "displayName": "Binary",
+                                          "initialUnitLeft": "b",
+                                          "initialUnitRight": "B",
+                                          "mathName": "binary",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "bit",
+                                              "mathName": "b",
+                                            },
+                                            Object {
+                                              "displayName": "byte",
+                                              "mathName": "B",
+                                            },
+                                          ],
+                                        },
+                                        "energy": Object {
+                                          "displayName": "Energy",
+                                          "initialUnitLeft": "J",
+                                          "initialUnitRight": "erg",
+                                          "mathName": "energy",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Joule",
+                                              "mathName": "J",
+                                            },
+                                            Object {
+                                              "displayName": "Erg",
+                                              "mathName": "erg",
+                                            },
+                                            Object {
+                                              "displayName": "Watt hour",
+                                              "mathName": "Wh",
+                                            },
+                                            Object {
+                                              "displayName": "British Thermal Unit",
+                                              "mathName": "BTU",
+                                            },
+                                            Object {
+                                              "displayName": "Eletronvolt",
+                                              "mathName": "eV",
+                                            },
+                                          ],
+                                        },
+                                        "force": Object {
+                                          "displayName": "Force",
+                                          "initialUnitLeft": "N",
+                                          "initialUnitRight": "lbf",
+                                          "mathName": "force",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Newton",
+                                              "mathName": "N",
+                                            },
+                                            Object {
+                                              "displayName": "Dyne",
+                                              "mathName": "dyn",
+                                            },
+                                            Object {
+                                              "displayName": "Pound-force",
+                                              "mathName": "lbf",
+                                            },
+                                            Object {
+                                              "displayName": "Kip",
+                                              "mathName": "kip",
                                             },
                                           ],
                                         },
@@ -2144,6 +2688,74 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "binary": Object {
+                                            "displayName": "Binary",
+                                            "initialUnitLeft": "b",
+                                            "initialUnitRight": "B",
+                                            "mathName": "binary",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "bit",
+                                                "mathName": "b",
+                                              },
+                                              Object {
+                                                "displayName": "byte",
+                                                "mathName": "B",
+                                              },
+                                            ],
+                                          },
+                                          "energy": Object {
+                                            "displayName": "Energy",
+                                            "initialUnitLeft": "J",
+                                            "initialUnitRight": "erg",
+                                            "mathName": "energy",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Joule",
+                                                "mathName": "J",
+                                              },
+                                              Object {
+                                                "displayName": "Erg",
+                                                "mathName": "erg",
+                                              },
+                                              Object {
+                                                "displayName": "Watt hour",
+                                                "mathName": "Wh",
+                                              },
+                                              Object {
+                                                "displayName": "British Thermal Unit",
+                                                "mathName": "BTU",
+                                              },
+                                              Object {
+                                                "displayName": "Eletronvolt",
+                                                "mathName": "eV",
+                                              },
+                                            ],
+                                          },
+                                          "force": Object {
+                                            "displayName": "Force",
+                                            "initialUnitLeft": "N",
+                                            "initialUnitRight": "lbf",
+                                            "mathName": "force",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Newton",
+                                                "mathName": "N",
+                                              },
+                                              Object {
+                                                "displayName": "Dyne",
+                                                "mathName": "dyn",
+                                              },
+                                              Object {
+                                                "displayName": "Pound-force",
+                                                "mathName": "lbf",
+                                              },
+                                              Object {
+                                                "displayName": "Kip",
+                                                "mathName": "kip",
+                                              },
+                                            ],
+                                          },
                                           "length": Object {
                                             "displayName": "Length",
                                             "initialUnitLeft": "meter",
@@ -2395,6 +3007,74 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Minute of arc",
                                                 "mathName": "arcmin",
+                                              },
+                                            ],
+                                          },
+                                          "binary": Object {
+                                            "displayName": "Binary",
+                                            "initialUnitLeft": "b",
+                                            "initialUnitRight": "B",
+                                            "mathName": "binary",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "bit",
+                                                "mathName": "b",
+                                              },
+                                              Object {
+                                                "displayName": "byte",
+                                                "mathName": "B",
+                                              },
+                                            ],
+                                          },
+                                          "energy": Object {
+                                            "displayName": "Energy",
+                                            "initialUnitLeft": "J",
+                                            "initialUnitRight": "erg",
+                                            "mathName": "energy",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Joule",
+                                                "mathName": "J",
+                                              },
+                                              Object {
+                                                "displayName": "Erg",
+                                                "mathName": "erg",
+                                              },
+                                              Object {
+                                                "displayName": "Watt hour",
+                                                "mathName": "Wh",
+                                              },
+                                              Object {
+                                                "displayName": "British Thermal Unit",
+                                                "mathName": "BTU",
+                                              },
+                                              Object {
+                                                "displayName": "Eletronvolt",
+                                                "mathName": "eV",
+                                              },
+                                            ],
+                                          },
+                                          "force": Object {
+                                            "displayName": "Force",
+                                            "initialUnitLeft": "N",
+                                            "initialUnitRight": "lbf",
+                                            "mathName": "force",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Newton",
+                                                "mathName": "N",
+                                              },
+                                              Object {
+                                                "displayName": "Dyne",
+                                                "mathName": "dyn",
+                                              },
+                                              Object {
+                                                "displayName": "Pound-force",
+                                                "mathName": "lbf",
+                                              },
+                                              Object {
+                                                "displayName": "Kip",
+                                                "mathName": "kip",
                                               },
                                             ],
                                           },
@@ -2668,6 +3348,74 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "binary": Object {
+                  "displayName": "Binary",
+                  "initialUnitLeft": "b",
+                  "initialUnitRight": "B",
+                  "mathName": "binary",
+                  "units": Array [
+                    Object {
+                      "displayName": "bit",
+                      "mathName": "b",
+                    },
+                    Object {
+                      "displayName": "byte",
+                      "mathName": "B",
+                    },
+                  ],
+                },
+                "energy": Object {
+                  "displayName": "Energy",
+                  "initialUnitLeft": "J",
+                  "initialUnitRight": "erg",
+                  "mathName": "energy",
+                  "units": Array [
+                    Object {
+                      "displayName": "Joule",
+                      "mathName": "J",
+                    },
+                    Object {
+                      "displayName": "Erg",
+                      "mathName": "erg",
+                    },
+                    Object {
+                      "displayName": "Watt hour",
+                      "mathName": "Wh",
+                    },
+                    Object {
+                      "displayName": "British Thermal Unit",
+                      "mathName": "BTU",
+                    },
+                    Object {
+                      "displayName": "Eletronvolt",
+                      "mathName": "eV",
+                    },
+                  ],
+                },
+                "force": Object {
+                  "displayName": "Force",
+                  "initialUnitLeft": "N",
+                  "initialUnitRight": "lbf",
+                  "mathName": "force",
+                  "units": Array [
+                    Object {
+                      "displayName": "Newton",
+                      "mathName": "N",
+                    },
+                    Object {
+                      "displayName": "Dyne",
+                      "mathName": "dyn",
+                    },
+                    Object {
+                      "displayName": "Pound-force",
+                      "mathName": "lbf",
+                    },
+                    Object {
+                      "displayName": "Kip",
+                      "mathName": "kip",
+                    },
+                  ],
+                },
                 "length": Object {
                   "displayName": "Length",
                   "initialUnitLeft": "meter",
@@ -2925,6 +3673,74 @@ ShallowWrapper {
                     Object {
                       "displayName": "Minute of arc",
                       "mathName": "arcmin",
+                    },
+                  ],
+                },
+                "binary": Object {
+                  "displayName": "Binary",
+                  "initialUnitLeft": "b",
+                  "initialUnitRight": "B",
+                  "mathName": "binary",
+                  "units": Array [
+                    Object {
+                      "displayName": "bit",
+                      "mathName": "b",
+                    },
+                    Object {
+                      "displayName": "byte",
+                      "mathName": "B",
+                    },
+                  ],
+                },
+                "energy": Object {
+                  "displayName": "Energy",
+                  "initialUnitLeft": "J",
+                  "initialUnitRight": "erg",
+                  "mathName": "energy",
+                  "units": Array [
+                    Object {
+                      "displayName": "Joule",
+                      "mathName": "J",
+                    },
+                    Object {
+                      "displayName": "Erg",
+                      "mathName": "erg",
+                    },
+                    Object {
+                      "displayName": "Watt hour",
+                      "mathName": "Wh",
+                    },
+                    Object {
+                      "displayName": "British Thermal Unit",
+                      "mathName": "BTU",
+                    },
+                    Object {
+                      "displayName": "Eletronvolt",
+                      "mathName": "eV",
+                    },
+                  ],
+                },
+                "force": Object {
+                  "displayName": "Force",
+                  "initialUnitLeft": "N",
+                  "initialUnitRight": "lbf",
+                  "mathName": "force",
+                  "units": Array [
+                    Object {
+                      "displayName": "Newton",
+                      "mathName": "N",
+                    },
+                    Object {
+                      "displayName": "Dyne",
+                      "mathName": "dyn",
+                    },
+                    Object {
+                      "displayName": "Pound-force",
+                      "mathName": "lbf",
+                    },
+                    Object {
+                      "displayName": "Kip",
+                      "mathName": "kip",
                     },
                   ],
                 },

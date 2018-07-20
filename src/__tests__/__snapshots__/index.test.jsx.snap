@@ -73,6 +73,27 @@ exports[`index matches the snapshot 1`] = `
     >
       Temperature
     </a>
+    <a
+      className="sc-ifAKCX ecOCuU"
+      href="/force"
+      onClick={[Function]}
+    >
+      Force
+    </a>
+    <a
+      className="sc-ifAKCX ecOCuU"
+      href="/energy"
+      onClick={[Function]}
+    >
+      Energy
+    </a>
+    <a
+      className="sc-ifAKCX ecOCuU"
+      href="/binary"
+      onClick={[Function]}
+    >
+      Binary
+    </a>
   </div>
   <div
     className="sc-htoDjs iumQdy"

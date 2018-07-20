@@ -6,6 +6,7 @@ import mass from './unitTypes/mass';
 import temperature from './unitTypes/temperature';
 import force from './unitTypes/force';
 import energy from './unitTypes/energy';
+import binary from './unitTypes/binary';
 
 const baseUnits = {
   length,
@@ -26,7 +27,7 @@ const baseUnits = {
   // power,
   // pressure,
   // electricityAndMagnetism,
-  // binary,
+  binary,
 };
 
 export default baseUnits;
