@@ -5,6 +5,7 @@ import time from './unitTypes/time';
 import mass from './unitTypes/mass';
 import temperature from './unitTypes/temperature';
 import force from './unitTypes/force';
+import energy from './unitTypes/energy';
 
 const baseUnits = {
   length,
@@ -21,7 +22,7 @@ const baseUnits = {
   // luminousIntensity,
   // currency,
   force,
-  // energy,
+  energy,
   // power,
   // pressure,
   // electricityAndMagnetism,
