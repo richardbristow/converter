@@ -4,6 +4,7 @@ import angles from './unitTypes/angles';
 import time from './unitTypes/time';
 import mass from './unitTypes/mass';
 import temperature from './unitTypes/temperature';
+import force from './unitTypes/force';
 
 const baseUnits = {
   length,
@@ -19,7 +20,7 @@ const baseUnits = {
   // amountOfSubstance,
   // luminousIntensity,
   // currency,
-  // force,
+  force,
   // energy,
   // power,
   // pressure,
