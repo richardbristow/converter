@@ -2,14 +2,14 @@ const binary = {
   displayName: 'Binary',
   mathName: 'binary',
   initialUnitLeft: 'b',
-  initialUnitRight: 'B',
+  initialUnitRight: 'kB',
   units: [
     {
-      displayName: 'bit',
+      displayName: 'Bit',
       mathName: 'b',
     },
     {
-      displayName: 'byte',
+      displayName: 'Byte',
       mathName: 'B',
     }],
 };

@@ -57,16 +57,144 @@ ShallowWrapper {
                                 "binary": Object {
                                   "displayName": "Binary",
                                   "initialUnitLeft": "b",
-                                  "initialUnitRight": "B",
+                                  "initialUnitRight": "kB",
                                   "mathName": "binary",
                                   "units": Array [
                                     Object {
-                                      "displayName": "bit",
+                                      "displayName": "Bit",
                                       "mathName": "b",
                                     },
                                     Object {
-                                      "displayName": "byte",
+                                      "displayName": "Kilobit",
+                                      "mathName": "kb",
+                                    },
+                                    Object {
+                                      "displayName": "Kibibit",
+                                      "mathName": "Kib",
+                                    },
+                                    Object {
+                                      "displayName": "Megabit",
+                                      "mathName": "Mb",
+                                    },
+                                    Object {
+                                      "displayName": "Mebibit",
+                                      "mathName": "Mib",
+                                    },
+                                    Object {
+                                      "displayName": "Gigabit",
+                                      "mathName": "Gb",
+                                    },
+                                    Object {
+                                      "displayName": "Gibibit",
+                                      "mathName": "Gib",
+                                    },
+                                    Object {
+                                      "displayName": "Terabit",
+                                      "mathName": "Tb",
+                                    },
+                                    Object {
+                                      "displayName": "Tebibit",
+                                      "mathName": "Tib",
+                                    },
+                                    Object {
+                                      "displayName": "Petabit",
+                                      "mathName": "Pb",
+                                    },
+                                    Object {
+                                      "displayName": "Pebibit",
+                                      "mathName": "Pib",
+                                    },
+                                    Object {
+                                      "displayName": "Exabit",
+                                      "mathName": "Eb",
+                                    },
+                                    Object {
+                                      "displayName": "Exibit",
+                                      "mathName": "Eib",
+                                    },
+                                    Object {
+                                      "displayName": "Zettabit",
+                                      "mathName": "Zb",
+                                    },
+                                    Object {
+                                      "displayName": "Zebibit",
+                                      "mathName": "Zib",
+                                    },
+                                    Object {
+                                      "displayName": "Yottabit",
+                                      "mathName": "Yb",
+                                    },
+                                    Object {
+                                      "displayName": "Yobibit",
+                                      "mathName": "Yib",
+                                    },
+                                    Object {
+                                      "displayName": "Byte",
                                       "mathName": "B",
+                                    },
+                                    Object {
+                                      "displayName": "Kilobyte",
+                                      "mathName": "kB",
+                                    },
+                                    Object {
+                                      "displayName": "Kibibyte",
+                                      "mathName": "KiB",
+                                    },
+                                    Object {
+                                      "displayName": "Megabyte",
+                                      "mathName": "MB",
+                                    },
+                                    Object {
+                                      "displayName": "Mebibyte",
+                                      "mathName": "MiB",
+                                    },
+                                    Object {
+                                      "displayName": "Gigabyte",
+                                      "mathName": "GB",
+                                    },
+                                    Object {
+                                      "displayName": "Gibibyte",
+                                      "mathName": "GiB",
+                                    },
+                                    Object {
+                                      "displayName": "Terabyte",
+                                      "mathName": "TB",
+                                    },
+                                    Object {
+                                      "displayName": "Tebibyte",
+                                      "mathName": "TiB",
+                                    },
+                                    Object {
+                                      "displayName": "Petabyte",
+                                      "mathName": "PB",
+                                    },
+                                    Object {
+                                      "displayName": "Pebibyte",
+                                      "mathName": "PiB",
+                                    },
+                                    Object {
+                                      "displayName": "Exabyte",
+                                      "mathName": "EB",
+                                    },
+                                    Object {
+                                      "displayName": "Exibyte",
+                                      "mathName": "EiB",
+                                    },
+                                    Object {
+                                      "displayName": "Zettabyte",
+                                      "mathName": "ZB",
+                                    },
+                                    Object {
+                                      "displayName": "Zebibyte",
+                                      "mathName": "ZiB",
+                                    },
+                                    Object {
+                                      "displayName": "Yottabyte",
+                                      "mathName": "YB",
+                                    },
+                                    Object {
+                                      "displayName": "Yobibyte",
+                                      "mathName": "YiB",
                                     },
                                   ],
                                 },
@@ -379,16 +507,144 @@ ShallowWrapper {
                                 "binary": Object {
                                   "displayName": "Binary",
                                   "initialUnitLeft": "b",
-                                  "initialUnitRight": "B",
+                                  "initialUnitRight": "kB",
                                   "mathName": "binary",
                                   "units": Array [
                                     Object {
-                                      "displayName": "bit",
+                                      "displayName": "Bit",
                                       "mathName": "b",
                                     },
                                     Object {
-                                      "displayName": "byte",
+                                      "displayName": "Kilobit",
+                                      "mathName": "kb",
+                                    },
+                                    Object {
+                                      "displayName": "Kibibit",
+                                      "mathName": "Kib",
+                                    },
+                                    Object {
+                                      "displayName": "Megabit",
+                                      "mathName": "Mb",
+                                    },
+                                    Object {
+                                      "displayName": "Mebibit",
+                                      "mathName": "Mib",
+                                    },
+                                    Object {
+                                      "displayName": "Gigabit",
+                                      "mathName": "Gb",
+                                    },
+                                    Object {
+                                      "displayName": "Gibibit",
+                                      "mathName": "Gib",
+                                    },
+                                    Object {
+                                      "displayName": "Terabit",
+                                      "mathName": "Tb",
+                                    },
+                                    Object {
+                                      "displayName": "Tebibit",
+                                      "mathName": "Tib",
+                                    },
+                                    Object {
+                                      "displayName": "Petabit",
+                                      "mathName": "Pb",
+                                    },
+                                    Object {
+                                      "displayName": "Pebibit",
+                                      "mathName": "Pib",
+                                    },
+                                    Object {
+                                      "displayName": "Exabit",
+                                      "mathName": "Eb",
+                                    },
+                                    Object {
+                                      "displayName": "Exibit",
+                                      "mathName": "Eib",
+                                    },
+                                    Object {
+                                      "displayName": "Zettabit",
+                                      "mathName": "Zb",
+                                    },
+                                    Object {
+                                      "displayName": "Zebibit",
+                                      "mathName": "Zib",
+                                    },
+                                    Object {
+                                      "displayName": "Yottabit",
+                                      "mathName": "Yb",
+                                    },
+                                    Object {
+                                      "displayName": "Yobibit",
+                                      "mathName": "Yib",
+                                    },
+                                    Object {
+                                      "displayName": "Byte",
                                       "mathName": "B",
+                                    },
+                                    Object {
+                                      "displayName": "Kilobyte",
+                                      "mathName": "kB",
+                                    },
+                                    Object {
+                                      "displayName": "Kibibyte",
+                                      "mathName": "KiB",
+                                    },
+                                    Object {
+                                      "displayName": "Megabyte",
+                                      "mathName": "MB",
+                                    },
+                                    Object {
+                                      "displayName": "Mebibyte",
+                                      "mathName": "MiB",
+                                    },
+                                    Object {
+                                      "displayName": "Gigabyte",
+                                      "mathName": "GB",
+                                    },
+                                    Object {
+                                      "displayName": "Gibibyte",
+                                      "mathName": "GiB",
+                                    },
+                                    Object {
+                                      "displayName": "Terabyte",
+                                      "mathName": "TB",
+                                    },
+                                    Object {
+                                      "displayName": "Tebibyte",
+                                      "mathName": "TiB",
+                                    },
+                                    Object {
+                                      "displayName": "Petabyte",
+                                      "mathName": "PB",
+                                    },
+                                    Object {
+                                      "displayName": "Pebibyte",
+                                      "mathName": "PiB",
+                                    },
+                                    Object {
+                                      "displayName": "Exabyte",
+                                      "mathName": "EB",
+                                    },
+                                    Object {
+                                      "displayName": "Exibyte",
+                                      "mathName": "EiB",
+                                    },
+                                    Object {
+                                      "displayName": "Zettabyte",
+                                      "mathName": "ZB",
+                                    },
+                                    Object {
+                                      "displayName": "Zebibyte",
+                                      "mathName": "ZiB",
+                                    },
+                                    Object {
+                                      "displayName": "Yottabyte",
+                                      "mathName": "YB",
+                                    },
+                                    Object {
+                                      "displayName": "Yobibyte",
+                                      "mathName": "YiB",
                                     },
                                   ],
                                 },
@@ -711,16 +967,144 @@ ShallowWrapper {
                                     "binary": Object {
                                       "displayName": "Binary",
                                       "initialUnitLeft": "b",
-                                      "initialUnitRight": "B",
+                                      "initialUnitRight": "kB",
                                       "mathName": "binary",
                                       "units": Array [
                                         Object {
-                                          "displayName": "bit",
+                                          "displayName": "Bit",
                                           "mathName": "b",
                                         },
                                         Object {
-                                          "displayName": "byte",
+                                          "displayName": "Kilobit",
+                                          "mathName": "kb",
+                                        },
+                                        Object {
+                                          "displayName": "Kibibit",
+                                          "mathName": "Kib",
+                                        },
+                                        Object {
+                                          "displayName": "Megabit",
+                                          "mathName": "Mb",
+                                        },
+                                        Object {
+                                          "displayName": "Mebibit",
+                                          "mathName": "Mib",
+                                        },
+                                        Object {
+                                          "displayName": "Gigabit",
+                                          "mathName": "Gb",
+                                        },
+                                        Object {
+                                          "displayName": "Gibibit",
+                                          "mathName": "Gib",
+                                        },
+                                        Object {
+                                          "displayName": "Terabit",
+                                          "mathName": "Tb",
+                                        },
+                                        Object {
+                                          "displayName": "Tebibit",
+                                          "mathName": "Tib",
+                                        },
+                                        Object {
+                                          "displayName": "Petabit",
+                                          "mathName": "Pb",
+                                        },
+                                        Object {
+                                          "displayName": "Pebibit",
+                                          "mathName": "Pib",
+                                        },
+                                        Object {
+                                          "displayName": "Exabit",
+                                          "mathName": "Eb",
+                                        },
+                                        Object {
+                                          "displayName": "Exibit",
+                                          "mathName": "Eib",
+                                        },
+                                        Object {
+                                          "displayName": "Zettabit",
+                                          "mathName": "Zb",
+                                        },
+                                        Object {
+                                          "displayName": "Zebibit",
+                                          "mathName": "Zib",
+                                        },
+                                        Object {
+                                          "displayName": "Yottabit",
+                                          "mathName": "Yb",
+                                        },
+                                        Object {
+                                          "displayName": "Yobibit",
+                                          "mathName": "Yib",
+                                        },
+                                        Object {
+                                          "displayName": "Byte",
                                           "mathName": "B",
+                                        },
+                                        Object {
+                                          "displayName": "Kilobyte",
+                                          "mathName": "kB",
+                                        },
+                                        Object {
+                                          "displayName": "Kibibyte",
+                                          "mathName": "KiB",
+                                        },
+                                        Object {
+                                          "displayName": "Megabyte",
+                                          "mathName": "MB",
+                                        },
+                                        Object {
+                                          "displayName": "Mebibyte",
+                                          "mathName": "MiB",
+                                        },
+                                        Object {
+                                          "displayName": "Gigabyte",
+                                          "mathName": "GB",
+                                        },
+                                        Object {
+                                          "displayName": "Gibibyte",
+                                          "mathName": "GiB",
+                                        },
+                                        Object {
+                                          "displayName": "Terabyte",
+                                          "mathName": "TB",
+                                        },
+                                        Object {
+                                          "displayName": "Tebibyte",
+                                          "mathName": "TiB",
+                                        },
+                                        Object {
+                                          "displayName": "Petabyte",
+                                          "mathName": "PB",
+                                        },
+                                        Object {
+                                          "displayName": "Pebibyte",
+                                          "mathName": "PiB",
+                                        },
+                                        Object {
+                                          "displayName": "Exabyte",
+                                          "mathName": "EB",
+                                        },
+                                        Object {
+                                          "displayName": "Exibyte",
+                                          "mathName": "EiB",
+                                        },
+                                        Object {
+                                          "displayName": "Zettabyte",
+                                          "mathName": "ZB",
+                                        },
+                                        Object {
+                                          "displayName": "Zebibyte",
+                                          "mathName": "ZiB",
+                                        },
+                                        Object {
+                                          "displayName": "Yottabyte",
+                                          "mathName": "YB",
+                                        },
+                                        Object {
+                                          "displayName": "Yobibyte",
+                                          "mathName": "YiB",
                                         },
                                       ],
                                     },
@@ -1033,16 +1417,144 @@ ShallowWrapper {
                                     "binary": Object {
                                       "displayName": "Binary",
                                       "initialUnitLeft": "b",
-                                      "initialUnitRight": "B",
+                                      "initialUnitRight": "kB",
                                       "mathName": "binary",
                                       "units": Array [
                                         Object {
-                                          "displayName": "bit",
+                                          "displayName": "Bit",
                                           "mathName": "b",
                                         },
                                         Object {
-                                          "displayName": "byte",
+                                          "displayName": "Kilobit",
+                                          "mathName": "kb",
+                                        },
+                                        Object {
+                                          "displayName": "Kibibit",
+                                          "mathName": "Kib",
+                                        },
+                                        Object {
+                                          "displayName": "Megabit",
+                                          "mathName": "Mb",
+                                        },
+                                        Object {
+                                          "displayName": "Mebibit",
+                                          "mathName": "Mib",
+                                        },
+                                        Object {
+                                          "displayName": "Gigabit",
+                                          "mathName": "Gb",
+                                        },
+                                        Object {
+                                          "displayName": "Gibibit",
+                                          "mathName": "Gib",
+                                        },
+                                        Object {
+                                          "displayName": "Terabit",
+                                          "mathName": "Tb",
+                                        },
+                                        Object {
+                                          "displayName": "Tebibit",
+                                          "mathName": "Tib",
+                                        },
+                                        Object {
+                                          "displayName": "Petabit",
+                                          "mathName": "Pb",
+                                        },
+                                        Object {
+                                          "displayName": "Pebibit",
+                                          "mathName": "Pib",
+                                        },
+                                        Object {
+                                          "displayName": "Exabit",
+                                          "mathName": "Eb",
+                                        },
+                                        Object {
+                                          "displayName": "Exibit",
+                                          "mathName": "Eib",
+                                        },
+                                        Object {
+                                          "displayName": "Zettabit",
+                                          "mathName": "Zb",
+                                        },
+                                        Object {
+                                          "displayName": "Zebibit",
+                                          "mathName": "Zib",
+                                        },
+                                        Object {
+                                          "displayName": "Yottabit",
+                                          "mathName": "Yb",
+                                        },
+                                        Object {
+                                          "displayName": "Yobibit",
+                                          "mathName": "Yib",
+                                        },
+                                        Object {
+                                          "displayName": "Byte",
                                           "mathName": "B",
+                                        },
+                                        Object {
+                                          "displayName": "Kilobyte",
+                                          "mathName": "kB",
+                                        },
+                                        Object {
+                                          "displayName": "Kibibyte",
+                                          "mathName": "KiB",
+                                        },
+                                        Object {
+                                          "displayName": "Megabyte",
+                                          "mathName": "MB",
+                                        },
+                                        Object {
+                                          "displayName": "Mebibyte",
+                                          "mathName": "MiB",
+                                        },
+                                        Object {
+                                          "displayName": "Gigabyte",
+                                          "mathName": "GB",
+                                        },
+                                        Object {
+                                          "displayName": "Gibibyte",
+                                          "mathName": "GiB",
+                                        },
+                                        Object {
+                                          "displayName": "Terabyte",
+                                          "mathName": "TB",
+                                        },
+                                        Object {
+                                          "displayName": "Tebibyte",
+                                          "mathName": "TiB",
+                                        },
+                                        Object {
+                                          "displayName": "Petabyte",
+                                          "mathName": "PB",
+                                        },
+                                        Object {
+                                          "displayName": "Pebibyte",
+                                          "mathName": "PiB",
+                                        },
+                                        Object {
+                                          "displayName": "Exabyte",
+                                          "mathName": "EB",
+                                        },
+                                        Object {
+                                          "displayName": "Exibyte",
+                                          "mathName": "EiB",
+                                        },
+                                        Object {
+                                          "displayName": "Zettabyte",
+                                          "mathName": "ZB",
+                                        },
+                                        Object {
+                                          "displayName": "Zebibyte",
+                                          "mathName": "ZiB",
+                                        },
+                                        Object {
+                                          "displayName": "Yottabyte",
+                                          "mathName": "YB",
+                                        },
+                                        Object {
+                                          "displayName": "Yobibyte",
+                                          "mathName": "YiB",
                                         },
                                       ],
                                     },
@@ -1371,16 +1883,144 @@ ShallowWrapper {
               "binary": Object {
                 "displayName": "Binary",
                 "initialUnitLeft": "b",
-                "initialUnitRight": "B",
+                "initialUnitRight": "kB",
                 "mathName": "binary",
                 "units": Array [
                   Object {
-                    "displayName": "bit",
+                    "displayName": "Bit",
                     "mathName": "b",
                   },
                   Object {
-                    "displayName": "byte",
+                    "displayName": "Kilobit",
+                    "mathName": "kb",
+                  },
+                  Object {
+                    "displayName": "Kibibit",
+                    "mathName": "Kib",
+                  },
+                  Object {
+                    "displayName": "Megabit",
+                    "mathName": "Mb",
+                  },
+                  Object {
+                    "displayName": "Mebibit",
+                    "mathName": "Mib",
+                  },
+                  Object {
+                    "displayName": "Gigabit",
+                    "mathName": "Gb",
+                  },
+                  Object {
+                    "displayName": "Gibibit",
+                    "mathName": "Gib",
+                  },
+                  Object {
+                    "displayName": "Terabit",
+                    "mathName": "Tb",
+                  },
+                  Object {
+                    "displayName": "Tebibit",
+                    "mathName": "Tib",
+                  },
+                  Object {
+                    "displayName": "Petabit",
+                    "mathName": "Pb",
+                  },
+                  Object {
+                    "displayName": "Pebibit",
+                    "mathName": "Pib",
+                  },
+                  Object {
+                    "displayName": "Exabit",
+                    "mathName": "Eb",
+                  },
+                  Object {
+                    "displayName": "Exibit",
+                    "mathName": "Eib",
+                  },
+                  Object {
+                    "displayName": "Zettabit",
+                    "mathName": "Zb",
+                  },
+                  Object {
+                    "displayName": "Zebibit",
+                    "mathName": "Zib",
+                  },
+                  Object {
+                    "displayName": "Yottabit",
+                    "mathName": "Yb",
+                  },
+                  Object {
+                    "displayName": "Yobibit",
+                    "mathName": "Yib",
+                  },
+                  Object {
+                    "displayName": "Byte",
                     "mathName": "B",
+                  },
+                  Object {
+                    "displayName": "Kilobyte",
+                    "mathName": "kB",
+                  },
+                  Object {
+                    "displayName": "Kibibyte",
+                    "mathName": "KiB",
+                  },
+                  Object {
+                    "displayName": "Megabyte",
+                    "mathName": "MB",
+                  },
+                  Object {
+                    "displayName": "Mebibyte",
+                    "mathName": "MiB",
+                  },
+                  Object {
+                    "displayName": "Gigabyte",
+                    "mathName": "GB",
+                  },
+                  Object {
+                    "displayName": "Gibibyte",
+                    "mathName": "GiB",
+                  },
+                  Object {
+                    "displayName": "Terabyte",
+                    "mathName": "TB",
+                  },
+                  Object {
+                    "displayName": "Tebibyte",
+                    "mathName": "TiB",
+                  },
+                  Object {
+                    "displayName": "Petabyte",
+                    "mathName": "PB",
+                  },
+                  Object {
+                    "displayName": "Pebibyte",
+                    "mathName": "PiB",
+                  },
+                  Object {
+                    "displayName": "Exabyte",
+                    "mathName": "EB",
+                  },
+                  Object {
+                    "displayName": "Exibyte",
+                    "mathName": "EiB",
+                  },
+                  Object {
+                    "displayName": "Zettabyte",
+                    "mathName": "ZB",
+                  },
+                  Object {
+                    "displayName": "Zebibyte",
+                    "mathName": "ZiB",
+                  },
+                  Object {
+                    "displayName": "Yottabyte",
+                    "mathName": "YB",
+                  },
+                  Object {
+                    "displayName": "Yobibyte",
+                    "mathName": "YiB",
                   },
                 ],
               },
@@ -1699,16 +2339,144 @@ ShallowWrapper {
               "binary": Object {
                 "displayName": "Binary",
                 "initialUnitLeft": "b",
-                "initialUnitRight": "B",
+                "initialUnitRight": "kB",
                 "mathName": "binary",
                 "units": Array [
                   Object {
-                    "displayName": "bit",
+                    "displayName": "Bit",
                     "mathName": "b",
                   },
                   Object {
-                    "displayName": "byte",
+                    "displayName": "Kilobit",
+                    "mathName": "kb",
+                  },
+                  Object {
+                    "displayName": "Kibibit",
+                    "mathName": "Kib",
+                  },
+                  Object {
+                    "displayName": "Megabit",
+                    "mathName": "Mb",
+                  },
+                  Object {
+                    "displayName": "Mebibit",
+                    "mathName": "Mib",
+                  },
+                  Object {
+                    "displayName": "Gigabit",
+                    "mathName": "Gb",
+                  },
+                  Object {
+                    "displayName": "Gibibit",
+                    "mathName": "Gib",
+                  },
+                  Object {
+                    "displayName": "Terabit",
+                    "mathName": "Tb",
+                  },
+                  Object {
+                    "displayName": "Tebibit",
+                    "mathName": "Tib",
+                  },
+                  Object {
+                    "displayName": "Petabit",
+                    "mathName": "Pb",
+                  },
+                  Object {
+                    "displayName": "Pebibit",
+                    "mathName": "Pib",
+                  },
+                  Object {
+                    "displayName": "Exabit",
+                    "mathName": "Eb",
+                  },
+                  Object {
+                    "displayName": "Exibit",
+                    "mathName": "Eib",
+                  },
+                  Object {
+                    "displayName": "Zettabit",
+                    "mathName": "Zb",
+                  },
+                  Object {
+                    "displayName": "Zebibit",
+                    "mathName": "Zib",
+                  },
+                  Object {
+                    "displayName": "Yottabit",
+                    "mathName": "Yb",
+                  },
+                  Object {
+                    "displayName": "Yobibit",
+                    "mathName": "Yib",
+                  },
+                  Object {
+                    "displayName": "Byte",
                     "mathName": "B",
+                  },
+                  Object {
+                    "displayName": "Kilobyte",
+                    "mathName": "kB",
+                  },
+                  Object {
+                    "displayName": "Kibibyte",
+                    "mathName": "KiB",
+                  },
+                  Object {
+                    "displayName": "Megabyte",
+                    "mathName": "MB",
+                  },
+                  Object {
+                    "displayName": "Mebibyte",
+                    "mathName": "MiB",
+                  },
+                  Object {
+                    "displayName": "Gigabyte",
+                    "mathName": "GB",
+                  },
+                  Object {
+                    "displayName": "Gibibyte",
+                    "mathName": "GiB",
+                  },
+                  Object {
+                    "displayName": "Terabyte",
+                    "mathName": "TB",
+                  },
+                  Object {
+                    "displayName": "Tebibyte",
+                    "mathName": "TiB",
+                  },
+                  Object {
+                    "displayName": "Petabyte",
+                    "mathName": "PB",
+                  },
+                  Object {
+                    "displayName": "Pebibyte",
+                    "mathName": "PiB",
+                  },
+                  Object {
+                    "displayName": "Exabyte",
+                    "mathName": "EB",
+                  },
+                  Object {
+                    "displayName": "Exibyte",
+                    "mathName": "EiB",
+                  },
+                  Object {
+                    "displayName": "Zettabyte",
+                    "mathName": "ZB",
+                  },
+                  Object {
+                    "displayName": "Zebibyte",
+                    "mathName": "ZiB",
+                  },
+                  Object {
+                    "displayName": "Yottabyte",
+                    "mathName": "YB",
+                  },
+                  Object {
+                    "displayName": "Yobibyte",
+                    "mathName": "YiB",
                   },
                 ],
               },
@@ -2037,16 +2805,144 @@ ShallowWrapper {
                                         "binary": Object {
                                           "displayName": "Binary",
                                           "initialUnitLeft": "b",
-                                          "initialUnitRight": "B",
+                                          "initialUnitRight": "kB",
                                           "mathName": "binary",
                                           "units": Array [
                                             Object {
-                                              "displayName": "bit",
+                                              "displayName": "Bit",
                                               "mathName": "b",
                                             },
                                             Object {
-                                              "displayName": "byte",
+                                              "displayName": "Kilobit",
+                                              "mathName": "kb",
+                                            },
+                                            Object {
+                                              "displayName": "Kibibit",
+                                              "mathName": "Kib",
+                                            },
+                                            Object {
+                                              "displayName": "Megabit",
+                                              "mathName": "Mb",
+                                            },
+                                            Object {
+                                              "displayName": "Mebibit",
+                                              "mathName": "Mib",
+                                            },
+                                            Object {
+                                              "displayName": "Gigabit",
+                                              "mathName": "Gb",
+                                            },
+                                            Object {
+                                              "displayName": "Gibibit",
+                                              "mathName": "Gib",
+                                            },
+                                            Object {
+                                              "displayName": "Terabit",
+                                              "mathName": "Tb",
+                                            },
+                                            Object {
+                                              "displayName": "Tebibit",
+                                              "mathName": "Tib",
+                                            },
+                                            Object {
+                                              "displayName": "Petabit",
+                                              "mathName": "Pb",
+                                            },
+                                            Object {
+                                              "displayName": "Pebibit",
+                                              "mathName": "Pib",
+                                            },
+                                            Object {
+                                              "displayName": "Exabit",
+                                              "mathName": "Eb",
+                                            },
+                                            Object {
+                                              "displayName": "Exibit",
+                                              "mathName": "Eib",
+                                            },
+                                            Object {
+                                              "displayName": "Zettabit",
+                                              "mathName": "Zb",
+                                            },
+                                            Object {
+                                              "displayName": "Zebibit",
+                                              "mathName": "Zib",
+                                            },
+                                            Object {
+                                              "displayName": "Yottabit",
+                                              "mathName": "Yb",
+                                            },
+                                            Object {
+                                              "displayName": "Yobibit",
+                                              "mathName": "Yib",
+                                            },
+                                            Object {
+                                              "displayName": "Byte",
                                               "mathName": "B",
+                                            },
+                                            Object {
+                                              "displayName": "Kilobyte",
+                                              "mathName": "kB",
+                                            },
+                                            Object {
+                                              "displayName": "Kibibyte",
+                                              "mathName": "KiB",
+                                            },
+                                            Object {
+                                              "displayName": "Megabyte",
+                                              "mathName": "MB",
+                                            },
+                                            Object {
+                                              "displayName": "Mebibyte",
+                                              "mathName": "MiB",
+                                            },
+                                            Object {
+                                              "displayName": "Gigabyte",
+                                              "mathName": "GB",
+                                            },
+                                            Object {
+                                              "displayName": "Gibibyte",
+                                              "mathName": "GiB",
+                                            },
+                                            Object {
+                                              "displayName": "Terabyte",
+                                              "mathName": "TB",
+                                            },
+                                            Object {
+                                              "displayName": "Tebibyte",
+                                              "mathName": "TiB",
+                                            },
+                                            Object {
+                                              "displayName": "Petabyte",
+                                              "mathName": "PB",
+                                            },
+                                            Object {
+                                              "displayName": "Pebibyte",
+                                              "mathName": "PiB",
+                                            },
+                                            Object {
+                                              "displayName": "Exabyte",
+                                              "mathName": "EB",
+                                            },
+                                            Object {
+                                              "displayName": "Exibyte",
+                                              "mathName": "EiB",
+                                            },
+                                            Object {
+                                              "displayName": "Zettabyte",
+                                              "mathName": "ZB",
+                                            },
+                                            Object {
+                                              "displayName": "Zebibyte",
+                                              "mathName": "ZiB",
+                                            },
+                                            Object {
+                                              "displayName": "Yottabyte",
+                                              "mathName": "YB",
+                                            },
+                                            Object {
+                                              "displayName": "Yobibyte",
+                                              "mathName": "YiB",
                                             },
                                           ],
                                         },
@@ -2359,16 +3255,144 @@ ShallowWrapper {
                                         "binary": Object {
                                           "displayName": "Binary",
                                           "initialUnitLeft": "b",
-                                          "initialUnitRight": "B",
+                                          "initialUnitRight": "kB",
                                           "mathName": "binary",
                                           "units": Array [
                                             Object {
-                                              "displayName": "bit",
+                                              "displayName": "Bit",
                                               "mathName": "b",
                                             },
                                             Object {
-                                              "displayName": "byte",
+                                              "displayName": "Kilobit",
+                                              "mathName": "kb",
+                                            },
+                                            Object {
+                                              "displayName": "Kibibit",
+                                              "mathName": "Kib",
+                                            },
+                                            Object {
+                                              "displayName": "Megabit",
+                                              "mathName": "Mb",
+                                            },
+                                            Object {
+                                              "displayName": "Mebibit",
+                                              "mathName": "Mib",
+                                            },
+                                            Object {
+                                              "displayName": "Gigabit",
+                                              "mathName": "Gb",
+                                            },
+                                            Object {
+                                              "displayName": "Gibibit",
+                                              "mathName": "Gib",
+                                            },
+                                            Object {
+                                              "displayName": "Terabit",
+                                              "mathName": "Tb",
+                                            },
+                                            Object {
+                                              "displayName": "Tebibit",
+                                              "mathName": "Tib",
+                                            },
+                                            Object {
+                                              "displayName": "Petabit",
+                                              "mathName": "Pb",
+                                            },
+                                            Object {
+                                              "displayName": "Pebibit",
+                                              "mathName": "Pib",
+                                            },
+                                            Object {
+                                              "displayName": "Exabit",
+                                              "mathName": "Eb",
+                                            },
+                                            Object {
+                                              "displayName": "Exibit",
+                                              "mathName": "Eib",
+                                            },
+                                            Object {
+                                              "displayName": "Zettabit",
+                                              "mathName": "Zb",
+                                            },
+                                            Object {
+                                              "displayName": "Zebibit",
+                                              "mathName": "Zib",
+                                            },
+                                            Object {
+                                              "displayName": "Yottabit",
+                                              "mathName": "Yb",
+                                            },
+                                            Object {
+                                              "displayName": "Yobibit",
+                                              "mathName": "Yib",
+                                            },
+                                            Object {
+                                              "displayName": "Byte",
                                               "mathName": "B",
+                                            },
+                                            Object {
+                                              "displayName": "Kilobyte",
+                                              "mathName": "kB",
+                                            },
+                                            Object {
+                                              "displayName": "Kibibyte",
+                                              "mathName": "KiB",
+                                            },
+                                            Object {
+                                              "displayName": "Megabyte",
+                                              "mathName": "MB",
+                                            },
+                                            Object {
+                                              "displayName": "Mebibyte",
+                                              "mathName": "MiB",
+                                            },
+                                            Object {
+                                              "displayName": "Gigabyte",
+                                              "mathName": "GB",
+                                            },
+                                            Object {
+                                              "displayName": "Gibibyte",
+                                              "mathName": "GiB",
+                                            },
+                                            Object {
+                                              "displayName": "Terabyte",
+                                              "mathName": "TB",
+                                            },
+                                            Object {
+                                              "displayName": "Tebibyte",
+                                              "mathName": "TiB",
+                                            },
+                                            Object {
+                                              "displayName": "Petabyte",
+                                              "mathName": "PB",
+                                            },
+                                            Object {
+                                              "displayName": "Pebibyte",
+                                              "mathName": "PiB",
+                                            },
+                                            Object {
+                                              "displayName": "Exabyte",
+                                              "mathName": "EB",
+                                            },
+                                            Object {
+                                              "displayName": "Exibyte",
+                                              "mathName": "EiB",
+                                            },
+                                            Object {
+                                              "displayName": "Zettabyte",
+                                              "mathName": "ZB",
+                                            },
+                                            Object {
+                                              "displayName": "Zebibyte",
+                                              "mathName": "ZiB",
+                                            },
+                                            Object {
+                                              "displayName": "Yottabyte",
+                                              "mathName": "YB",
+                                            },
+                                            Object {
+                                              "displayName": "Yobibyte",
+                                              "mathName": "YiB",
                                             },
                                           ],
                                         },
@@ -2691,16 +3715,144 @@ ShallowWrapper {
                                           "binary": Object {
                                             "displayName": "Binary",
                                             "initialUnitLeft": "b",
-                                            "initialUnitRight": "B",
+                                            "initialUnitRight": "kB",
                                             "mathName": "binary",
                                             "units": Array [
                                               Object {
-                                                "displayName": "bit",
+                                                "displayName": "Bit",
                                                 "mathName": "b",
                                               },
                                               Object {
-                                                "displayName": "byte",
+                                                "displayName": "Kilobit",
+                                                "mathName": "kb",
+                                              },
+                                              Object {
+                                                "displayName": "Kibibit",
+                                                "mathName": "Kib",
+                                              },
+                                              Object {
+                                                "displayName": "Megabit",
+                                                "mathName": "Mb",
+                                              },
+                                              Object {
+                                                "displayName": "Mebibit",
+                                                "mathName": "Mib",
+                                              },
+                                              Object {
+                                                "displayName": "Gigabit",
+                                                "mathName": "Gb",
+                                              },
+                                              Object {
+                                                "displayName": "Gibibit",
+                                                "mathName": "Gib",
+                                              },
+                                              Object {
+                                                "displayName": "Terabit",
+                                                "mathName": "Tb",
+                                              },
+                                              Object {
+                                                "displayName": "Tebibit",
+                                                "mathName": "Tib",
+                                              },
+                                              Object {
+                                                "displayName": "Petabit",
+                                                "mathName": "Pb",
+                                              },
+                                              Object {
+                                                "displayName": "Pebibit",
+                                                "mathName": "Pib",
+                                              },
+                                              Object {
+                                                "displayName": "Exabit",
+                                                "mathName": "Eb",
+                                              },
+                                              Object {
+                                                "displayName": "Exibit",
+                                                "mathName": "Eib",
+                                              },
+                                              Object {
+                                                "displayName": "Zettabit",
+                                                "mathName": "Zb",
+                                              },
+                                              Object {
+                                                "displayName": "Zebibit",
+                                                "mathName": "Zib",
+                                              },
+                                              Object {
+                                                "displayName": "Yottabit",
+                                                "mathName": "Yb",
+                                              },
+                                              Object {
+                                                "displayName": "Yobibit",
+                                                "mathName": "Yib",
+                                              },
+                                              Object {
+                                                "displayName": "Byte",
                                                 "mathName": "B",
+                                              },
+                                              Object {
+                                                "displayName": "Kilobyte",
+                                                "mathName": "kB",
+                                              },
+                                              Object {
+                                                "displayName": "Kibibyte",
+                                                "mathName": "KiB",
+                                              },
+                                              Object {
+                                                "displayName": "Megabyte",
+                                                "mathName": "MB",
+                                              },
+                                              Object {
+                                                "displayName": "Mebibyte",
+                                                "mathName": "MiB",
+                                              },
+                                              Object {
+                                                "displayName": "Gigabyte",
+                                                "mathName": "GB",
+                                              },
+                                              Object {
+                                                "displayName": "Gibibyte",
+                                                "mathName": "GiB",
+                                              },
+                                              Object {
+                                                "displayName": "Terabyte",
+                                                "mathName": "TB",
+                                              },
+                                              Object {
+                                                "displayName": "Tebibyte",
+                                                "mathName": "TiB",
+                                              },
+                                              Object {
+                                                "displayName": "Petabyte",
+                                                "mathName": "PB",
+                                              },
+                                              Object {
+                                                "displayName": "Pebibyte",
+                                                "mathName": "PiB",
+                                              },
+                                              Object {
+                                                "displayName": "Exabyte",
+                                                "mathName": "EB",
+                                              },
+                                              Object {
+                                                "displayName": "Exibyte",
+                                                "mathName": "EiB",
+                                              },
+                                              Object {
+                                                "displayName": "Zettabyte",
+                                                "mathName": "ZB",
+                                              },
+                                              Object {
+                                                "displayName": "Zebibyte",
+                                                "mathName": "ZiB",
+                                              },
+                                              Object {
+                                                "displayName": "Yottabyte",
+                                                "mathName": "YB",
+                                              },
+                                              Object {
+                                                "displayName": "Yobibyte",
+                                                "mathName": "YiB",
                                               },
                                             ],
                                           },
@@ -3013,16 +4165,144 @@ ShallowWrapper {
                                           "binary": Object {
                                             "displayName": "Binary",
                                             "initialUnitLeft": "b",
-                                            "initialUnitRight": "B",
+                                            "initialUnitRight": "kB",
                                             "mathName": "binary",
                                             "units": Array [
                                               Object {
-                                                "displayName": "bit",
+                                                "displayName": "Bit",
                                                 "mathName": "b",
                                               },
                                               Object {
-                                                "displayName": "byte",
+                                                "displayName": "Kilobit",
+                                                "mathName": "kb",
+                                              },
+                                              Object {
+                                                "displayName": "Kibibit",
+                                                "mathName": "Kib",
+                                              },
+                                              Object {
+                                                "displayName": "Megabit",
+                                                "mathName": "Mb",
+                                              },
+                                              Object {
+                                                "displayName": "Mebibit",
+                                                "mathName": "Mib",
+                                              },
+                                              Object {
+                                                "displayName": "Gigabit",
+                                                "mathName": "Gb",
+                                              },
+                                              Object {
+                                                "displayName": "Gibibit",
+                                                "mathName": "Gib",
+                                              },
+                                              Object {
+                                                "displayName": "Terabit",
+                                                "mathName": "Tb",
+                                              },
+                                              Object {
+                                                "displayName": "Tebibit",
+                                                "mathName": "Tib",
+                                              },
+                                              Object {
+                                                "displayName": "Petabit",
+                                                "mathName": "Pb",
+                                              },
+                                              Object {
+                                                "displayName": "Pebibit",
+                                                "mathName": "Pib",
+                                              },
+                                              Object {
+                                                "displayName": "Exabit",
+                                                "mathName": "Eb",
+                                              },
+                                              Object {
+                                                "displayName": "Exibit",
+                                                "mathName": "Eib",
+                                              },
+                                              Object {
+                                                "displayName": "Zettabit",
+                                                "mathName": "Zb",
+                                              },
+                                              Object {
+                                                "displayName": "Zebibit",
+                                                "mathName": "Zib",
+                                              },
+                                              Object {
+                                                "displayName": "Yottabit",
+                                                "mathName": "Yb",
+                                              },
+                                              Object {
+                                                "displayName": "Yobibit",
+                                                "mathName": "Yib",
+                                              },
+                                              Object {
+                                                "displayName": "Byte",
                                                 "mathName": "B",
+                                              },
+                                              Object {
+                                                "displayName": "Kilobyte",
+                                                "mathName": "kB",
+                                              },
+                                              Object {
+                                                "displayName": "Kibibyte",
+                                                "mathName": "KiB",
+                                              },
+                                              Object {
+                                                "displayName": "Megabyte",
+                                                "mathName": "MB",
+                                              },
+                                              Object {
+                                                "displayName": "Mebibyte",
+                                                "mathName": "MiB",
+                                              },
+                                              Object {
+                                                "displayName": "Gigabyte",
+                                                "mathName": "GB",
+                                              },
+                                              Object {
+                                                "displayName": "Gibibyte",
+                                                "mathName": "GiB",
+                                              },
+                                              Object {
+                                                "displayName": "Terabyte",
+                                                "mathName": "TB",
+                                              },
+                                              Object {
+                                                "displayName": "Tebibyte",
+                                                "mathName": "TiB",
+                                              },
+                                              Object {
+                                                "displayName": "Petabyte",
+                                                "mathName": "PB",
+                                              },
+                                              Object {
+                                                "displayName": "Pebibyte",
+                                                "mathName": "PiB",
+                                              },
+                                              Object {
+                                                "displayName": "Exabyte",
+                                                "mathName": "EB",
+                                              },
+                                              Object {
+                                                "displayName": "Exibyte",
+                                                "mathName": "EiB",
+                                              },
+                                              Object {
+                                                "displayName": "Zettabyte",
+                                                "mathName": "ZB",
+                                              },
+                                              Object {
+                                                "displayName": "Zebibyte",
+                                                "mathName": "ZiB",
+                                              },
+                                              Object {
+                                                "displayName": "Yottabyte",
+                                                "mathName": "YB",
+                                              },
+                                              Object {
+                                                "displayName": "Yobibyte",
+                                                "mathName": "YiB",
                                               },
                                             ],
                                           },
@@ -3351,16 +4631,144 @@ ShallowWrapper {
                 "binary": Object {
                   "displayName": "Binary",
                   "initialUnitLeft": "b",
-                  "initialUnitRight": "B",
+                  "initialUnitRight": "kB",
                   "mathName": "binary",
                   "units": Array [
                     Object {
-                      "displayName": "bit",
+                      "displayName": "Bit",
                       "mathName": "b",
                     },
                     Object {
-                      "displayName": "byte",
+                      "displayName": "Kilobit",
+                      "mathName": "kb",
+                    },
+                    Object {
+                      "displayName": "Kibibit",
+                      "mathName": "Kib",
+                    },
+                    Object {
+                      "displayName": "Megabit",
+                      "mathName": "Mb",
+                    },
+                    Object {
+                      "displayName": "Mebibit",
+                      "mathName": "Mib",
+                    },
+                    Object {
+                      "displayName": "Gigabit",
+                      "mathName": "Gb",
+                    },
+                    Object {
+                      "displayName": "Gibibit",
+                      "mathName": "Gib",
+                    },
+                    Object {
+                      "displayName": "Terabit",
+                      "mathName": "Tb",
+                    },
+                    Object {
+                      "displayName": "Tebibit",
+                      "mathName": "Tib",
+                    },
+                    Object {
+                      "displayName": "Petabit",
+                      "mathName": "Pb",
+                    },
+                    Object {
+                      "displayName": "Pebibit",
+                      "mathName": "Pib",
+                    },
+                    Object {
+                      "displayName": "Exabit",
+                      "mathName": "Eb",
+                    },
+                    Object {
+                      "displayName": "Exibit",
+                      "mathName": "Eib",
+                    },
+                    Object {
+                      "displayName": "Zettabit",
+                      "mathName": "Zb",
+                    },
+                    Object {
+                      "displayName": "Zebibit",
+                      "mathName": "Zib",
+                    },
+                    Object {
+                      "displayName": "Yottabit",
+                      "mathName": "Yb",
+                    },
+                    Object {
+                      "displayName": "Yobibit",
+                      "mathName": "Yib",
+                    },
+                    Object {
+                      "displayName": "Byte",
                       "mathName": "B",
+                    },
+                    Object {
+                      "displayName": "Kilobyte",
+                      "mathName": "kB",
+                    },
+                    Object {
+                      "displayName": "Kibibyte",
+                      "mathName": "KiB",
+                    },
+                    Object {
+                      "displayName": "Megabyte",
+                      "mathName": "MB",
+                    },
+                    Object {
+                      "displayName": "Mebibyte",
+                      "mathName": "MiB",
+                    },
+                    Object {
+                      "displayName": "Gigabyte",
+                      "mathName": "GB",
+                    },
+                    Object {
+                      "displayName": "Gibibyte",
+                      "mathName": "GiB",
+                    },
+                    Object {
+                      "displayName": "Terabyte",
+                      "mathName": "TB",
+                    },
+                    Object {
+                      "displayName": "Tebibyte",
+                      "mathName": "TiB",
+                    },
+                    Object {
+                      "displayName": "Petabyte",
+                      "mathName": "PB",
+                    },
+                    Object {
+                      "displayName": "Pebibyte",
+                      "mathName": "PiB",
+                    },
+                    Object {
+                      "displayName": "Exabyte",
+                      "mathName": "EB",
+                    },
+                    Object {
+                      "displayName": "Exibyte",
+                      "mathName": "EiB",
+                    },
+                    Object {
+                      "displayName": "Zettabyte",
+                      "mathName": "ZB",
+                    },
+                    Object {
+                      "displayName": "Zebibyte",
+                      "mathName": "ZiB",
+                    },
+                    Object {
+                      "displayName": "Yottabyte",
+                      "mathName": "YB",
+                    },
+                    Object {
+                      "displayName": "Yobibyte",
+                      "mathName": "YiB",
                     },
                   ],
                 },
@@ -3679,16 +5087,144 @@ ShallowWrapper {
                 "binary": Object {
                   "displayName": "Binary",
                   "initialUnitLeft": "b",
-                  "initialUnitRight": "B",
+                  "initialUnitRight": "kB",
                   "mathName": "binary",
                   "units": Array [
                     Object {
-                      "displayName": "bit",
+                      "displayName": "Bit",
                       "mathName": "b",
                     },
                     Object {
-                      "displayName": "byte",
+                      "displayName": "Kilobit",
+                      "mathName": "kb",
+                    },
+                    Object {
+                      "displayName": "Kibibit",
+                      "mathName": "Kib",
+                    },
+                    Object {
+                      "displayName": "Megabit",
+                      "mathName": "Mb",
+                    },
+                    Object {
+                      "displayName": "Mebibit",
+                      "mathName": "Mib",
+                    },
+                    Object {
+                      "displayName": "Gigabit",
+                      "mathName": "Gb",
+                    },
+                    Object {
+                      "displayName": "Gibibit",
+                      "mathName": "Gib",
+                    },
+                    Object {
+                      "displayName": "Terabit",
+                      "mathName": "Tb",
+                    },
+                    Object {
+                      "displayName": "Tebibit",
+                      "mathName": "Tib",
+                    },
+                    Object {
+                      "displayName": "Petabit",
+                      "mathName": "Pb",
+                    },
+                    Object {
+                      "displayName": "Pebibit",
+                      "mathName": "Pib",
+                    },
+                    Object {
+                      "displayName": "Exabit",
+                      "mathName": "Eb",
+                    },
+                    Object {
+                      "displayName": "Exibit",
+                      "mathName": "Eib",
+                    },
+                    Object {
+                      "displayName": "Zettabit",
+                      "mathName": "Zb",
+                    },
+                    Object {
+                      "displayName": "Zebibit",
+                      "mathName": "Zib",
+                    },
+                    Object {
+                      "displayName": "Yottabit",
+                      "mathName": "Yb",
+                    },
+                    Object {
+                      "displayName": "Yobibit",
+                      "mathName": "Yib",
+                    },
+                    Object {
+                      "displayName": "Byte",
                       "mathName": "B",
+                    },
+                    Object {
+                      "displayName": "Kilobyte",
+                      "mathName": "kB",
+                    },
+                    Object {
+                      "displayName": "Kibibyte",
+                      "mathName": "KiB",
+                    },
+                    Object {
+                      "displayName": "Megabyte",
+                      "mathName": "MB",
+                    },
+                    Object {
+                      "displayName": "Mebibyte",
+                      "mathName": "MiB",
+                    },
+                    Object {
+                      "displayName": "Gigabyte",
+                      "mathName": "GB",
+                    },
+                    Object {
+                      "displayName": "Gibibyte",
+                      "mathName": "GiB",
+                    },
+                    Object {
+                      "displayName": "Terabyte",
+                      "mathName": "TB",
+                    },
+                    Object {
+                      "displayName": "Tebibyte",
+                      "mathName": "TiB",
+                    },
+                    Object {
+                      "displayName": "Petabyte",
+                      "mathName": "PB",
+                    },
+                    Object {
+                      "displayName": "Pebibyte",
+                      "mathName": "PiB",
+                    },
+                    Object {
+                      "displayName": "Exabyte",
+                      "mathName": "EB",
+                    },
+                    Object {
+                      "displayName": "Exibyte",
+                      "mathName": "EiB",
+                    },
+                    Object {
+                      "displayName": "Zettabyte",
+                      "mathName": "ZB",
+                    },
+                    Object {
+                      "displayName": "Zebibyte",
+                      "mathName": "ZiB",
+                    },
+                    Object {
+                      "displayName": "Yottabyte",
+                      "mathName": "YB",
+                    },
+                    Object {
+                      "displayName": "Yobibyte",
+                      "mathName": "YiB",
                     },
                   ],
                 },
