@@ -54,11 +54,11 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
-                                "binary": Object {
-                                  "displayName": "Binary",
-                                  "initialUnitLeft": "b",
+                                "datastorage": Object {
+                                  "displayName": "Data Storage",
+                                  "initialUnitLeft": "B",
                                   "initialUnitRight": "kB",
-                                  "mathName": "binary",
+                                  "mathName": "datastorage",
                                   "units": Array [
                                     Object {
                                       "displayName": "Bit",
@@ -504,11 +504,11 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
-                                "binary": Object {
-                                  "displayName": "Binary",
-                                  "initialUnitLeft": "b",
+                                "datastorage": Object {
+                                  "displayName": "Data Storage",
+                                  "initialUnitLeft": "B",
                                   "initialUnitRight": "kB",
-                                  "mathName": "binary",
+                                  "mathName": "datastorage",
                                   "units": Array [
                                     Object {
                                       "displayName": "Bit",
@@ -964,11 +964,11 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
-                                    "binary": Object {
-                                      "displayName": "Binary",
-                                      "initialUnitLeft": "b",
+                                    "datastorage": Object {
+                                      "displayName": "Data Storage",
+                                      "initialUnitLeft": "B",
                                       "initialUnitRight": "kB",
-                                      "mathName": "binary",
+                                      "mathName": "datastorage",
                                       "units": Array [
                                         Object {
                                           "displayName": "Bit",
@@ -1414,11 +1414,11 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
-                                    "binary": Object {
-                                      "displayName": "Binary",
-                                      "initialUnitLeft": "b",
+                                    "datastorage": Object {
+                                      "displayName": "Data Storage",
+                                      "initialUnitLeft": "B",
                                       "initialUnitRight": "kB",
-                                      "mathName": "binary",
+                                      "mathName": "datastorage",
                                       "units": Array [
                                         Object {
                                           "displayName": "Bit",
@@ -1880,11 +1880,11 @@ ShallowWrapper {
                   },
                 ],
               },
-              "binary": Object {
-                "displayName": "Binary",
-                "initialUnitLeft": "b",
+              "datastorage": Object {
+                "displayName": "Data Storage",
+                "initialUnitLeft": "B",
                 "initialUnitRight": "kB",
-                "mathName": "binary",
+                "mathName": "datastorage",
                 "units": Array [
                   Object {
                     "displayName": "Bit",
@@ -2336,11 +2336,11 @@ ShallowWrapper {
                   },
                 ],
               },
-              "binary": Object {
-                "displayName": "Binary",
-                "initialUnitLeft": "b",
+              "datastorage": Object {
+                "displayName": "Data Storage",
+                "initialUnitLeft": "B",
                 "initialUnitRight": "kB",
-                "mathName": "binary",
+                "mathName": "datastorage",
                 "units": Array [
                   Object {
                     "displayName": "Bit",
@@ -2802,11 +2802,11 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
-                                        "binary": Object {
-                                          "displayName": "Binary",
-                                          "initialUnitLeft": "b",
+                                        "datastorage": Object {
+                                          "displayName": "Data Storage",
+                                          "initialUnitLeft": "B",
                                           "initialUnitRight": "kB",
-                                          "mathName": "binary",
+                                          "mathName": "datastorage",
                                           "units": Array [
                                             Object {
                                               "displayName": "Bit",
@@ -3252,11 +3252,11 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
-                                        "binary": Object {
-                                          "displayName": "Binary",
-                                          "initialUnitLeft": "b",
+                                        "datastorage": Object {
+                                          "displayName": "Data Storage",
+                                          "initialUnitLeft": "B",
                                           "initialUnitRight": "kB",
-                                          "mathName": "binary",
+                                          "mathName": "datastorage",
                                           "units": Array [
                                             Object {
                                               "displayName": "Bit",
@@ -3712,11 +3712,11 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
-                                          "binary": Object {
-                                            "displayName": "Binary",
-                                            "initialUnitLeft": "b",
+                                          "datastorage": Object {
+                                            "displayName": "Data Storage",
+                                            "initialUnitLeft": "B",
                                             "initialUnitRight": "kB",
-                                            "mathName": "binary",
+                                            "mathName": "datastorage",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Bit",
@@ -4162,11 +4162,11 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
-                                          "binary": Object {
-                                            "displayName": "Binary",
-                                            "initialUnitLeft": "b",
+                                          "datastorage": Object {
+                                            "displayName": "Data Storage",
+                                            "initialUnitLeft": "B",
                                             "initialUnitRight": "kB",
-                                            "mathName": "binary",
+                                            "mathName": "datastorage",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Bit",
@@ -4628,11 +4628,11 @@ ShallowWrapper {
                     },
                   ],
                 },
-                "binary": Object {
-                  "displayName": "Binary",
-                  "initialUnitLeft": "b",
+                "datastorage": Object {
+                  "displayName": "Data Storage",
+                  "initialUnitLeft": "B",
                   "initialUnitRight": "kB",
-                  "mathName": "binary",
+                  "mathName": "datastorage",
                   "units": Array [
                     Object {
                       "displayName": "Bit",
@@ -5084,11 +5084,11 @@ ShallowWrapper {
                     },
                   ],
                 },
-                "binary": Object {
-                  "displayName": "Binary",
-                  "initialUnitLeft": "b",
+                "datastorage": Object {
+                  "displayName": "Data Storage",
+                  "initialUnitLeft": "B",
                   "initialUnitRight": "kB",
-                  "mathName": "binary",
+                  "mathName": "datastorage",
                   "units": Array [
                     Object {
                       "displayName": "Bit",

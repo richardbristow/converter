@@ -89,10 +89,10 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       className="sc-ifAKCX ecOCuU"
-      href="/binary"
+      href="/datastorage"
       onClick={[Function]}
     >
-      Binary
+      Data Storage
     </a>
   </div>
   <div

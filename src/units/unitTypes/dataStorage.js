@@ -1,7 +1,7 @@
-const binary = {
-  displayName: 'Binary',
-  mathName: 'binary',
-  initialUnitLeft: 'b',
+const dataStorage = {
+  displayName: 'Data Storage',
+  mathName: 'datastorage',
+  initialUnitLeft: 'B',
   initialUnitRight: 'kB',
   units: [
     {
@@ -14,4 +14,4 @@ const binary = {
     }],
 };
 
-export default binary;
+export default dataStorage;

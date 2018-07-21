@@ -1,4 +1,4 @@
-const binaryPrefixes = [
+const dataStoragePrefixes = [
   {
     name: 'Kilo',
     abbreviation: 'k',
@@ -50,4 +50,4 @@ const binaryPrefixes = [
   },
 ];
 
-export default binaryPrefixes;
+export default dataStoragePrefixes;

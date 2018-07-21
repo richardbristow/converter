@@ -8,11 +8,11 @@ import mass from './unitTypes/mass';
 import temperature from './unitTypes/temperature';
 import force from './unitTypes/force';
 import energy from './unitTypes/energy';
-import binary from './unitTypes/binary';
+import datastorage from './unitTypes/dataStorage';
 
 // import smallPrefixes from './prefixes/smallPrefixes';
 // import largePrefixes from './prefixes/largePrefixes';
-import binaryPrefixes from './prefixes/binaryPrefixes';
+import datastoragePrefixes from './prefixes/dataStoragePrefixes';
 
 const baseUnits = {
   length,
@@ -33,7 +33,7 @@ const baseUnits = {
   // power,
   // pressure,
   // electricityAndMagnetism,
-  binary: addPrefixes(binaryPrefixes, binary),
+  datastorage: addPrefixes(datastoragePrefixes, datastorage),
 };
 
 export default baseUnits;
