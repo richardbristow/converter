@@ -20,7 +20,13 @@ const InputGroup = ({
       {options.map(({ mathName, displayName }) =>
         <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
     </select>
-    <FilterDropdown options={options} name={name} />
+    <FilterDropdown
+      options={options}
+      name={name}
+      handleChange={handleChange}
+      conversionType={conversionType}
+      dropdownValue={textValue}
+    />
   </StyledInputGroup>
 );
 
