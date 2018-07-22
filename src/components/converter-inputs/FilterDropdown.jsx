@@ -41,10 +41,12 @@ class FilterDropdown extends Component {
         <input name="filter" type="text" value={this.state.filter} onChange={this.updateFilter} />
         <button name="arrow" onClick={this.handleOpenDropdownClick}>{arrowIcon}</button>
         {this.state.open && (
-          <ul>
-            {filteredOptions.map(({ mathName, displayName }) =>
-              <button name={`${name}Unit`} key={`${name}-${mathName}`} value={mathName} onClick={e => handleChange(conversionType, e)}>{displayName}</button>)}
-          </ul>)}
+          <div>
+            {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }) => (
+              <button name={`${name}Unit`} key={`${name}-${mathName}`} value={mathName} onClick={e => handleChange(conversionType, e)}>
+                {displayName}
+              </button>))) : <p>No units found.</p>}
+          </div>)}
       </div>
     );
   }
