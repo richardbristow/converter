@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import FilterDropdown from './FilterDropdown';
+
 const StyledInputGroup = styled.div`
   grid-area: ${props => props.name};
   display: grid;
@@ -18,6 +20,7 @@ const InputGroup = ({
       {options.map(({ mathName, displayName }) =>
         <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
     </select>
+    <FilterDropdown options={options} name={name} />
   </StyledInputGroup>
 );
 
