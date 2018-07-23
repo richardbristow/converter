@@ -7,7 +7,7 @@ class FilterDropdown extends Component {
 
     this.state = {
       filter: '',
-      open: false,
+      dropdownOpen: false,
     };
 
     this.handleOpenDropdownClick = this.handleOpenDropdownClick.bind(this);
@@ -17,7 +17,7 @@ class FilterDropdown extends Component {
   handleOpenDropdownClick(e) {
     e.preventDefault();
     this.setState(prevState => ({
-      open: !prevState.open,
+      dropdownOpen: !prevState.dropdownOpen,
     }));
   }
 
@@ -35,12 +35,12 @@ class FilterDropdown extends Component {
     const filteredOptions = options.filter(option => (
       option.displayName.toLowerCase().indexOf(this.state.filter.toLowerCase()) !== -1
     ));
-    const arrowIcon = this.state.open === false ? 'ˇ' : 'ˆ';
+    const arrowIcon = this.state.dropdownOpen === false ? 'ˇ' : 'ˆ';
     return (
       <div>
         <input name="filter" type="text" value={this.state.filter} onChange={this.updateFilter} />
         <button name="arrow" onClick={this.handleOpenDropdownClick}>{arrowIcon}</button>
-        {this.state.open && (
+        {this.state.dropdownOpen && (
           <div>
             {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }) => (
               <button name={`${name}Unit`} key={`${name}-${mathName}`} value={mathName} onClick={e => handleChange(conversionType, e)}>
