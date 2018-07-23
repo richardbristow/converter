@@ -25,6 +25,7 @@ const InputGroup = ({
       name={name}
       handleChange={handleChange}
       conversionType={conversionType}
+      dropdownValue={dropdownValue}
     />
   </StyledInputGroup>
 );

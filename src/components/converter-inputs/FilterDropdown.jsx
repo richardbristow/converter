@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import FilterOptions from './FilterOptions';
+
 class FilterDropdown extends Component {
   constructor(props) {
     super(props);
@@ -10,15 +12,31 @@ class FilterDropdown extends Component {
       dropdownOpen: false,
     };
 
-    this.handleOpenDropdownClick = this.handleOpenDropdownClick.bind(this);
+    this.handleDropdownClick = this.handleDropdownClick.bind(this);
     this.updateFilter = this.updateFilter.bind(this);
+    this.handleDropdownItemClick = this.handleDropdownItemClick.bind(this);
   }
 
-  handleOpenDropdownClick(e) {
+  handleDropdownClick(e) {
     e.preventDefault();
-    this.setState(prevState => ({
-      dropdownOpen: !prevState.dropdownOpen,
-    }));
+    const clicked = e.target.getAttribute('name');
+    if (clicked === 'header') {
+      this.setState({
+        dropdownOpen: true,
+      });
+    } else {
+      this.setState(prevState => ({
+        dropdownOpen: !prevState.dropdownOpen,
+      }));
+    }
+  }
+
+  handleDropdownItemClick(conversionType, e) {
+    this.props.handleChange(conversionType, e);
+    this.setState({
+      dropdownOpen: false,
+      filter: '',
+    });
   }
 
   updateFilter({ target }) {
@@ -30,23 +48,24 @@ class FilterDropdown extends Component {
 
   render() {
     const {
-      options, name, handleChange, conversionType,
+      options, name, conversionType, dropdownValue,
     } = this.props;
-    const filteredOptions = options.filter(option => (
-      option.displayName.toLowerCase().indexOf(this.state.filter.toLowerCase()) !== -1
-    ));
-    const arrowIcon = this.state.dropdownOpen === false ? 'ˇ' : 'ˆ';
+    const { filter, dropdownOpen } = this.state;
+    const arrowIcon = dropdownOpen === false ? 'ˇ' : 'ˆ';
     return (
       <div>
-        <input name="filter" type="text" value={this.state.filter} onChange={this.updateFilter} />
-        <button name="arrow" onClick={this.handleOpenDropdownClick}>{arrowIcon}</button>
-        {this.state.dropdownOpen && (
-          <div>
-            {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }) => (
-              <button name={`${name}Unit`} key={`${name}-${mathName}`} value={mathName} onClick={e => handleChange(conversionType, e)}>
-                {displayName}
-              </button>))) : <p>No units found.</p>}
-          </div>)}
+        {dropdownOpen ?
+          <input placeholder="Search units..." name="filter" type="text" value={filter} onChange={this.updateFilter} /> :
+          <div name="header" onClick={this.handleDropdownClick}>{dropdownValue}</div>}
+        <button name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
+        {dropdownOpen &&
+          <FilterOptions
+            options={options}
+            name={name}
+            conversionType={conversionType}
+            filter={filter}
+            handleDropdownItemClick={this.handleDropdownItemClick}
+          />}
       </div>
     );
   }
