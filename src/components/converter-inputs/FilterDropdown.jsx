@@ -12,9 +12,17 @@ class FilterDropdown extends Component {
       dropdownOpen: false,
     };
 
+    this.unitInput = React.createRef();
     this.handleDropdownClick = this.handleDropdownClick.bind(this);
     this.updateFilter = this.updateFilter.bind(this);
     this.handleDropdownItemClick = this.handleDropdownItemClick.bind(this);
+    this.handleHeaderFocus = this.handleHeaderFocus.bind(this);
+  }
+
+  componentDidUpdate() {
+    if (this.unitInput.current) {
+      this.unitInput.current.focus();
+    }
   }
 
   handleDropdownClick(e) {
@@ -39,6 +47,12 @@ class FilterDropdown extends Component {
     });
   }
 
+  handleHeaderFocus() {
+    this.setState({
+      dropdownOpen: true,
+    });
+  }
+
   updateFilter({ target }) {
     const { value } = target;
     this.setState({
@@ -55,9 +69,9 @@ class FilterDropdown extends Component {
     return (
       <div>
         {dropdownOpen ?
-          <input placeholder="Search units..." name="filter" type="text" value={filter} onChange={this.updateFilter} /> :
-          <div name="header" onClick={this.handleDropdownClick}>{dropdownValue}</div>}
-        <button name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
+          <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onChange={this.updateFilter} /> :
+          <div name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{dropdownValue}</div>}
+        <button tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
         {dropdownOpen &&
           <FilterOptions
             options={options}

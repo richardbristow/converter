@@ -8,9 +8,10 @@ const FilterOptions = ({
   ));
   return (
     <div>
-      {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }) => (
+      {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }, index) => (
         <button
           name={`${name}Unit`}
+          tabIndex={index === 0 ? '0' : '-1'}
           key={`${name}-${mathName}`}
           value={mathName}
           onClick={e => handleDropdownItemClick(conversionType, e)}
