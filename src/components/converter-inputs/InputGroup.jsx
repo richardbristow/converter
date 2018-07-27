@@ -8,7 +8,7 @@ const StyledInputGroup = styled.div`
   grid-area: ${props => props.name};
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 50px;
+  grid-template-rows: 50px auto;
 `;
 
 const InputGroup = ({
@@ -16,10 +16,6 @@ const InputGroup = ({
 }) => (
   <StyledInputGroup name={name}>
     <input name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
-    <select name={`${name}Unit`} value={dropdownValue} onChange={e => handleChange(conversionType, e)}>
-      {options.map(({ mathName, displayName }) =>
-        <option key={`${name}-${mathName}`} value={mathName}>{displayName}</option>)}
-    </select>
     <FilterDropdown
       options={options}
       name={name}
