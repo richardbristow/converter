@@ -167,6 +167,26 @@ exports[`index matches the snapshot 1`] = `
             Thousandth of an inch
           </option>
         </select>
+        <div
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <div
+            name="header"
+            onClick={[Function]}
+            onFocus={[Function]}
+            tabIndex="0"
+          >
+            Meter
+          </div>
+          <button
+            name="arrow"
+            onClick={[Function]}
+            tabIndex="-1"
+          >
+            ˇ
+          </button>
+        </div>
       </div>
       <div
         className="sc-bZQynM dOSoJQ"
@@ -234,6 +254,26 @@ exports[`index matches the snapshot 1`] = `
             Thousandth of an inch
           </option>
         </select>
+        <div
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <div
+            name="header"
+            onClick={[Function]}
+            onFocus={[Function]}
+            tabIndex="0"
+          >
+            Inch
+          </div>
+          <button
+            name="arrow"
+            onClick={[Function]}
+            tabIndex="-1"
+          >
+            ˇ
+          </button>
+        </div>
       </div>
     </div>
   </div>

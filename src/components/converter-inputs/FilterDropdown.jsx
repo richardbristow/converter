@@ -81,11 +81,12 @@ class FilterDropdown extends Component {
     } = this.props;
     const { filter, dropdownOpen } = this.state;
     const arrowIcon = dropdownOpen === false ? 'ˇ' : 'ˆ';
+    const { displayName } = options.find(option => option.mathName === dropdownValue && option);
     return (
       <div onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
         {dropdownOpen ?
           <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onChange={this.updateFilter} /> :
-          <div name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{dropdownValue}</div>}
+          <div name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</div>}
         <button tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
         {dropdownOpen &&
           <FilterOptions

@@ -67,6 +67,28 @@ ShallowWrapper {
                     display3
           </option>
 </select>,
+        <FilterDropdown
+          conversionType="type1"
+          dropdownValue="mathName2"
+          handleChange={[Function]}
+          name="name"
+          options={
+                    Array [
+                              Object {
+                                "displayName": "display1",
+                                "mathName": "mathName1",
+                              },
+                              Object {
+                                "displayName": "display2",
+                                "mathName": "mathName2",
+                              },
+                              Object {
+                                "displayName": "display3",
+                                "mathName": "mathName3",
+                              },
+                            ]
+          }
+/>,
       ],
       "name": "name",
     },
@@ -153,6 +175,34 @@ ShallowWrapper {
         ],
         "type": "select",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "conversionType": "type1",
+          "dropdownValue": "mathName2",
+          "handleChange": [Function],
+          "name": "name",
+          "options": Array [
+            Object {
+              "displayName": "display1",
+              "mathName": "mathName1",
+            },
+            Object {
+              "displayName": "display2",
+              "mathName": "mathName2",
+            },
+            Object {
+              "displayName": "display3",
+              "mathName": "mathName3",
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -190,6 +240,28 @@ ShallowWrapper {
                         display3
             </option>
 </select>,
+          <FilterDropdown
+            conversionType="type1"
+            dropdownValue="mathName2"
+            handleChange={[Function]}
+            name="name"
+            options={
+                        Array [
+                                    Object {
+                                      "displayName": "display1",
+                                      "mathName": "mathName1",
+                                    },
+                                    Object {
+                                      "displayName": "display2",
+                                      "mathName": "mathName2",
+                                    },
+                                    Object {
+                                      "displayName": "display3",
+                                      "mathName": "mathName3",
+                                    },
+                                  ]
+            }
+/>,
         ],
         "name": "name",
       },
@@ -275,6 +347,34 @@ ShallowWrapper {
             },
           ],
           "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "conversionType": "type1",
+            "dropdownValue": "mathName2",
+            "handleChange": [Function],
+            "name": "name",
+            "options": Array [
+              Object {
+                "displayName": "display1",
+                "mathName": "mathName1",
+              },
+              Object {
+                "displayName": "display2",
+                "mathName": "mathName2",
+              },
+              Object {
+                "displayName": "display3",
+                "mathName": "mathName3",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": [Function],
