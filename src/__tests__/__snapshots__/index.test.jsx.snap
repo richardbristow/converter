@@ -175,6 +175,7 @@ exports[`index matches the snapshot 1`] = `
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
+            role="button"
             tabIndex="0"
           >
             Meter
@@ -262,6 +263,7 @@ exports[`index matches the snapshot 1`] = `
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
+            role="button"
             tabIndex="0"
           >
             Inch

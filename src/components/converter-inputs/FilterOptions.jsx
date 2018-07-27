@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const focusNextOption = (name, value, nextOption, refs) => {
   if (refs[nextOption]) {
@@ -42,6 +43,17 @@ const FilterOptions = ({
         </button>))) : <p>No units found.</p>}
     </div>
   );
+};
+
+FilterOptions.propTypes = {
+  name: PropTypes.string.isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    displayName: PropTypes.string.isRequired,
+    mathName: PropTypes.string.isRequired,
+  })).isRequired,
+  conversionType: PropTypes.string.isRequired,
+  filter: PropTypes.string.isRequired,
+  handleDropdownItemClick: PropTypes.func.isRequired,
 };
 
 export default FilterOptions;

@@ -120,6 +120,7 @@ FilterDropdown.propTypes = {
   })).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,
+  dropdownValue: PropTypes.string.isRequired,
 };
 
 export default FilterDropdown;
