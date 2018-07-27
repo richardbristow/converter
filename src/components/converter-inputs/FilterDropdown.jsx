@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -20,6 +22,7 @@ class FilterDropdown extends Component {
     this.handleHeaderFocus = this.handleHeaderFocus.bind(this);
     this.onFocusHandler = this.onFocusHandler.bind(this);
     this.onBlurHandler = this.onBlurHandler.bind(this);
+    this.handleEscKey = this.handleEscKey.bind(this);
   }
 
   componentDidUpdate() {
@@ -75,6 +78,14 @@ class FilterDropdown extends Component {
     });
   }
 
+  handleEscKey({ key }) {
+    if (key === 'Escape') {
+      this.setState({
+        dropdownOpen: false,
+      });
+    }
+  }
+
   render() {
     const {
       options, name, conversionType, dropdownValue,
@@ -85,8 +96,8 @@ class FilterDropdown extends Component {
     return (
       <div onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
         {dropdownOpen ?
-          <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onChange={this.updateFilter} /> :
-          <div name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</div>}
+          <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onKeyDown={this.handleEscKey} onChange={this.updateFilter} /> :
+          <div role="button" name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</div>}
         <button tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
         {dropdownOpen &&
           <FilterOptions
