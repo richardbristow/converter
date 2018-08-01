@@ -19,9 +19,7 @@ const Main = ({ baseUnits }) => (
       <Route
         exact
         path="/"
-        render={() => (
-          <InputPanel baseUnits={baseUnits} />
-        )}
+        render={() => <InputPanel baseUnits={baseUnits} />}
       />
       <Route path="/help" component={Help} />
       <Route path="/about" component={About} />

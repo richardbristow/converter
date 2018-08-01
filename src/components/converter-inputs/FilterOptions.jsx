@@ -1,5 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const StyledFilterOptions = styled.div`
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 25px;
+  max-height: 300px;
+  overflow: auto;
+`;
 
 const focusNextOption = (name, value, nextOption, refs) => {
   if (refs[nextOption]) {
@@ -28,7 +38,7 @@ const FilterOptions = ({
   ));
   const dropdownOptionRefs = filteredOptions.map(() => React.createRef());
   return (
-    <div>
+    <StyledFilterOptions>
       {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }, index) => (
         <button
           name={`${name}Unit`}
@@ -41,7 +51,7 @@ const FilterOptions = ({
         >
           {displayName}
         </button>))) : <p>No units found.</p>}
-    </div>
+    </StyledFilterOptions>
   );
 };
 

@@ -2,8 +2,15 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import FilterOptions from './FilterOptions';
+
+const StyledFilterDropdown = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 50px;
+`;
 
 class FilterDropdown extends Component {
   constructor(props) {
@@ -94,7 +101,7 @@ class FilterDropdown extends Component {
     const arrowIcon = dropdownOpen === false ? 'ˇ' : 'ˆ';
     const { displayName } = options.find(option => option.mathName === dropdownValue && option);
     return (
-      <div onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
+      <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
         {dropdownOpen ?
           <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onKeyDown={this.handleEscKey} onChange={this.updateFilter} /> :
           <div role="button" name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</div>}
@@ -107,7 +114,7 @@ class FilterDropdown extends Component {
             filter={filter}
             handleDropdownItemClick={this.handleDropdownItemClick}
           />}
-      </div>
+      </StyledFilterDropdown>
     );
   }
 }

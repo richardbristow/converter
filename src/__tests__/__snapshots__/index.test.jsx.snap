@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-dnqmqq etcSFV"
+  className="sc-gZMcBi bLVCIh"
 >
   <div
     className="sc-bdVaJa hwHxJX"
@@ -96,13 +96,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-htoDjs iumQdy"
+    className="sc-iwsKbI cJuESD"
   >
     <div
-      className="sc-gzVnrw gdVuxe"
+      className="sc-dnqmqq iUAEEb"
     >
       <div
-        className="sc-bZQynM bcaWbA"
+        className="sc-htoDjs jwtJnE"
         name="left"
       >
         <input
@@ -111,63 +111,8 @@ exports[`index matches the snapshot 1`] = `
           type="text"
           value=""
         />
-        <select
-          name="leftUnit"
-          onChange={[Function]}
-          value="meter"
-        >
-          <option
-            value="meter"
-          >
-            Meter
-          </option>
-          <option
-            value="inch"
-          >
-            Inch
-          </option>
-          <option
-            value="foot"
-          >
-            Foot
-          </option>
-          <option
-            value="yard"
-          >
-            Yard
-          </option>
-          <option
-            value="mile"
-          >
-            Mile
-          </option>
-          <option
-            value="link"
-          >
-            Link
-          </option>
-          <option
-            value="rod"
-          >
-            Rod
-          </option>
-          <option
-            value="chain"
-          >
-            Chain
-          </option>
-          <option
-            value="angstrom"
-          >
-            Angstrom
-          </option>
-          <option
-            value="mil"
-          >
-            Thousandth of an inch
-          </option>
-        </select>
         <div
+          className="sc-gzVnrw dBLEPe"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -190,7 +135,7 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-bZQynM dOSoJQ"
+        className="sc-htoDjs gkyORg"
         name="right"
       >
         <input
@@ -199,63 +144,8 @@ exports[`index matches the snapshot 1`] = `
           type="text"
           value=""
         />
-        <select
-          name="rightUnit"
-          onChange={[Function]}
-          value="inch"
-        >
-          <option
-            value="meter"
-          >
-            Meter
-          </option>
-          <option
-            value="inch"
-          >
-            Inch
-          </option>
-          <option
-            value="foot"
-          >
-            Foot
-          </option>
-          <option
-            value="yard"
-          >
-            Yard
-          </option>
-          <option
-            value="mile"
-          >
-            Mile
-          </option>
-          <option
-            value="link"
-          >
-            Link
-          </option>
-          <option
-            value="rod"
-          >
-            Rod
-          </option>
-          <option
-            value="chain"
-          >
-            Chain
-          </option>
-          <option
-            value="angstrom"
-          >
-            Angstrom
-          </option>
-          <option
-            value="mil"
-          >
-            Thousandth of an inch
-          </option>
-        </select>
         <div
+          className="sc-gzVnrw dBLEPe"
           onBlur={[Function]}
           onFocus={[Function]}
         >
