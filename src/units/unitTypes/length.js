@@ -1,40 +1,41 @@
 const length = {
   displayName: 'Length',
   mathName: 'length',
-  initialUnitLeft: 'meter',
-  initialUnitRight: 'inch',
+  initialUnitLeft: 'm',
+  initialUnitRight: 'in',
   units: [
     {
       displayName: 'Meter',
-      mathName: 'meter',
+      mathName: 'm',
+      allowPrefixes: true,
     },
     {
       displayName: 'Inch',
-      mathName: 'inch',
+      mathName: 'in',
     },
     {
       displayName: 'Foot',
-      mathName: 'foot',
+      mathName: 'ft',
     },
     {
       displayName: 'Yard',
-      mathName: 'yard',
+      mathName: 'yd',
     },
     {
       displayName: 'Mile',
-      mathName: 'mile',
+      mathName: 'mi',
     },
     {
       displayName: 'Link',
-      mathName: 'link',
+      mathName: 'li',
     },
     {
       displayName: 'Rod',
-      mathName: 'rod',
+      mathName: 'rd',
     },
     {
       displayName: 'Chain',
-      mathName: 'chain',
+      mathName: 'ch',
     },
     {
       displayName: 'Angstrom',
