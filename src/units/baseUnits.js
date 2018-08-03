@@ -4,6 +4,7 @@ import length from './unitTypes/length';
 import surfaceArea from './unitTypes/surfaceArea';
 import angles from './unitTypes/angles';
 import time from './unitTypes/time';
+import frequency from './unitTypes/frequency';
 import mass from './unitTypes/mass';
 import temperature from './unitTypes/temperature';
 import force from './unitTypes/force';
@@ -22,7 +23,7 @@ const baseUnits = {
   // liquidVolume,
   angles,
   time: addPrefixes(metricPrefixes, time),
-  // frequency,
+  frequency: addPrefixes(metricPrefixes, frequency),
   mass,
   // electricCurrent,
   temperature,
