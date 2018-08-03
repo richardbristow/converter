@@ -6,6 +6,7 @@ import angles from './unitTypes/angles';
 import time from './unitTypes/time';
 import frequency from './unitTypes/frequency';
 import mass from './unitTypes/mass';
+import electricCurrent from './unitTypes/electricCurrent';
 import temperature from './unitTypes/temperature';
 import force from './unitTypes/force';
 import energy from './unitTypes/energy';
@@ -25,7 +26,7 @@ const baseUnits = {
   time: addPrefixes(metricPrefixes, time),
   frequency: addPrefixes(metricPrefixes, frequency),
   mass,
-  // electricCurrent,
+  electricCurrent: addPrefixes(metricPrefixes, electricCurrent),
   temperature,
   // amountOfSubstance,
   // luminousIntensity,
