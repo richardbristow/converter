@@ -10,6 +10,8 @@ import force from './unitTypes/force';
 import energy from './unitTypes/energy';
 import datastorage from './unitTypes/dataStorage';
 
+// import smallPrefixes from './prefixes/smallPrefixes';
+// import largePrefixes from './prefixes/largePrefixes';
 import metricPrefixes from './prefixes/metricPrefixes';
 import datastoragePrefixes from './prefixes/dataStoragePrefixes';
 
@@ -19,7 +21,7 @@ const baseUnits = {
   // volume,
   // liquidVolume,
   angles,
-  time,
+  time: addPrefixes(metricPrefixes, time),
   // frequency,
   mass,
   // electricCurrent,

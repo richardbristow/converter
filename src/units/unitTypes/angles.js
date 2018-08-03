@@ -26,7 +26,7 @@ const angles = {
     },
     {
       displayName: 'Minute of arc',
-      mathName: 'arcmin',
+      mathName: 'arcminute',
     }],
 };
 

@@ -50,7 +50,7 @@ ShallowWrapper {
                                     },
                                     Object {
                                       "displayName": "Minute of arc",
-                                      "mathName": "arcmin",
+                                      "mathName": "arcminute",
                                     },
                                   ],
                                 },
@@ -252,41 +252,121 @@ ShallowWrapper {
                                 },
                                 "length": Object {
                                   "displayName": "Length",
-                                  "initialUnitLeft": "meter",
-                                  "initialUnitRight": "inch",
+                                  "initialUnitLeft": "m",
+                                  "initialUnitRight": "in",
                                   "mathName": "length",
                                   "units": Array [
                                     Object {
                                       "displayName": "Meter",
-                                      "mathName": "meter",
+                                      "mathName": "m",
+                                    },
+                                    Object {
+                                      "displayName": "Decimeter",
+                                      "mathName": "dm",
+                                    },
+                                    Object {
+                                      "displayName": "Centimeter",
+                                      "mathName": "cm",
+                                    },
+                                    Object {
+                                      "displayName": "Millimeter",
+                                      "mathName": "mm",
+                                    },
+                                    Object {
+                                      "displayName": "Micrometer",
+                                      "mathName": "um",
+                                    },
+                                    Object {
+                                      "displayName": "Nanometer",
+                                      "mathName": "nm",
+                                    },
+                                    Object {
+                                      "displayName": "Picometer",
+                                      "mathName": "pm",
+                                    },
+                                    Object {
+                                      "displayName": "Femtometer",
+                                      "mathName": "fm",
+                                    },
+                                    Object {
+                                      "displayName": "Attometer",
+                                      "mathName": "am",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptometer",
+                                      "mathName": "zm",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctometer",
+                                      "mathName": "ym",
+                                    },
+                                    Object {
+                                      "displayName": "Decameter",
+                                      "mathName": "dam",
+                                    },
+                                    Object {
+                                      "displayName": "Hectometer",
+                                      "mathName": "hm",
+                                    },
+                                    Object {
+                                      "displayName": "Kilometer",
+                                      "mathName": "km",
+                                    },
+                                    Object {
+                                      "displayName": "Megameter",
+                                      "mathName": "Mm",
+                                    },
+                                    Object {
+                                      "displayName": "Gigameter",
+                                      "mathName": "Gm",
+                                    },
+                                    Object {
+                                      "displayName": "Terameter",
+                                      "mathName": "Tm",
+                                    },
+                                    Object {
+                                      "displayName": "Petameter",
+                                      "mathName": "Pm",
+                                    },
+                                    Object {
+                                      "displayName": "Exameter",
+                                      "mathName": "Em",
+                                    },
+                                    Object {
+                                      "displayName": "Zettameter",
+                                      "mathName": "Zm",
+                                    },
+                                    Object {
+                                      "displayName": "Yottameter",
+                                      "mathName": "Ym",
                                     },
                                     Object {
                                       "displayName": "Inch",
-                                      "mathName": "inch",
+                                      "mathName": "in",
                                     },
                                     Object {
                                       "displayName": "Foot",
-                                      "mathName": "foot",
+                                      "mathName": "ft",
                                     },
                                     Object {
                                       "displayName": "Yard",
-                                      "mathName": "yard",
+                                      "mathName": "yd",
                                     },
                                     Object {
                                       "displayName": "Mile",
-                                      "mathName": "mile",
+                                      "mathName": "mi",
                                     },
                                     Object {
                                       "displayName": "Link",
-                                      "mathName": "link",
+                                      "mathName": "li",
                                     },
                                     Object {
                                       "displayName": "Rod",
-                                      "mathName": "rod",
+                                      "mathName": "rd",
                                     },
                                     Object {
                                       "displayName": "Chain",
-                                      "mathName": "chain",
+                                      "mathName": "ch",
                                     },
                                     Object {
                                       "displayName": "Angstrom",
@@ -420,13 +500,93 @@ ShallowWrapper {
                                 },
                                 "time": Object {
                                   "displayName": "Time",
-                                  "initialUnitLeft": "secs",
+                                  "initialUnitLeft": "s",
                                   "initialUnitRight": "mins",
                                   "mathName": "time",
                                   "units": Array [
                                     Object {
                                       "displayName": "Second",
-                                      "mathName": "secs",
+                                      "mathName": "s",
+                                    },
+                                    Object {
+                                      "displayName": "Decisecond",
+                                      "mathName": "ds",
+                                    },
+                                    Object {
+                                      "displayName": "Centisecond",
+                                      "mathName": "cs",
+                                    },
+                                    Object {
+                                      "displayName": "Millisecond",
+                                      "mathName": "ms",
+                                    },
+                                    Object {
+                                      "displayName": "Microsecond",
+                                      "mathName": "us",
+                                    },
+                                    Object {
+                                      "displayName": "Nanosecond",
+                                      "mathName": "ns",
+                                    },
+                                    Object {
+                                      "displayName": "Picosecond",
+                                      "mathName": "ps",
+                                    },
+                                    Object {
+                                      "displayName": "Femtosecond",
+                                      "mathName": "fs",
+                                    },
+                                    Object {
+                                      "displayName": "Attosecond",
+                                      "mathName": "as",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptosecond",
+                                      "mathName": "zs",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctosecond",
+                                      "mathName": "ys",
+                                    },
+                                    Object {
+                                      "displayName": "Decasecond",
+                                      "mathName": "das",
+                                    },
+                                    Object {
+                                      "displayName": "Hectosecond",
+                                      "mathName": "hs",
+                                    },
+                                    Object {
+                                      "displayName": "Kilosecond",
+                                      "mathName": "ks",
+                                    },
+                                    Object {
+                                      "displayName": "Megasecond",
+                                      "mathName": "Ms",
+                                    },
+                                    Object {
+                                      "displayName": "Gigasecond",
+                                      "mathName": "Gs",
+                                    },
+                                    Object {
+                                      "displayName": "Terasecond",
+                                      "mathName": "Ts",
+                                    },
+                                    Object {
+                                      "displayName": "Petasecond",
+                                      "mathName": "Ps",
+                                    },
+                                    Object {
+                                      "displayName": "Exasecond",
+                                      "mathName": "Es",
+                                    },
+                                    Object {
+                                      "displayName": "Zettasecond",
+                                      "mathName": "Zs",
+                                    },
+                                    Object {
+                                      "displayName": "Yottasecond",
+                                      "mathName": "Ys",
                                     },
                                     Object {
                                       "displayName": "Minute",
@@ -434,7 +594,7 @@ ShallowWrapper {
                                     },
                                     Object {
                                       "displayName": "Hour",
-                                      "mathName": "hrs",
+                                      "mathName": "h",
                                     },
                                     Object {
                                       "displayName": "Day",
@@ -500,7 +660,7 @@ ShallowWrapper {
                                     },
                                     Object {
                                       "displayName": "Minute of arc",
-                                      "mathName": "arcmin",
+                                      "mathName": "arcminute",
                                     },
                                   ],
                                 },
@@ -702,41 +862,121 @@ ShallowWrapper {
                                 },
                                 "length": Object {
                                   "displayName": "Length",
-                                  "initialUnitLeft": "meter",
-                                  "initialUnitRight": "inch",
+                                  "initialUnitLeft": "m",
+                                  "initialUnitRight": "in",
                                   "mathName": "length",
                                   "units": Array [
                                     Object {
                                       "displayName": "Meter",
-                                      "mathName": "meter",
+                                      "mathName": "m",
+                                    },
+                                    Object {
+                                      "displayName": "Decimeter",
+                                      "mathName": "dm",
+                                    },
+                                    Object {
+                                      "displayName": "Centimeter",
+                                      "mathName": "cm",
+                                    },
+                                    Object {
+                                      "displayName": "Millimeter",
+                                      "mathName": "mm",
+                                    },
+                                    Object {
+                                      "displayName": "Micrometer",
+                                      "mathName": "um",
+                                    },
+                                    Object {
+                                      "displayName": "Nanometer",
+                                      "mathName": "nm",
+                                    },
+                                    Object {
+                                      "displayName": "Picometer",
+                                      "mathName": "pm",
+                                    },
+                                    Object {
+                                      "displayName": "Femtometer",
+                                      "mathName": "fm",
+                                    },
+                                    Object {
+                                      "displayName": "Attometer",
+                                      "mathName": "am",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptometer",
+                                      "mathName": "zm",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctometer",
+                                      "mathName": "ym",
+                                    },
+                                    Object {
+                                      "displayName": "Decameter",
+                                      "mathName": "dam",
+                                    },
+                                    Object {
+                                      "displayName": "Hectometer",
+                                      "mathName": "hm",
+                                    },
+                                    Object {
+                                      "displayName": "Kilometer",
+                                      "mathName": "km",
+                                    },
+                                    Object {
+                                      "displayName": "Megameter",
+                                      "mathName": "Mm",
+                                    },
+                                    Object {
+                                      "displayName": "Gigameter",
+                                      "mathName": "Gm",
+                                    },
+                                    Object {
+                                      "displayName": "Terameter",
+                                      "mathName": "Tm",
+                                    },
+                                    Object {
+                                      "displayName": "Petameter",
+                                      "mathName": "Pm",
+                                    },
+                                    Object {
+                                      "displayName": "Exameter",
+                                      "mathName": "Em",
+                                    },
+                                    Object {
+                                      "displayName": "Zettameter",
+                                      "mathName": "Zm",
+                                    },
+                                    Object {
+                                      "displayName": "Yottameter",
+                                      "mathName": "Ym",
                                     },
                                     Object {
                                       "displayName": "Inch",
-                                      "mathName": "inch",
+                                      "mathName": "in",
                                     },
                                     Object {
                                       "displayName": "Foot",
-                                      "mathName": "foot",
+                                      "mathName": "ft",
                                     },
                                     Object {
                                       "displayName": "Yard",
-                                      "mathName": "yard",
+                                      "mathName": "yd",
                                     },
                                     Object {
                                       "displayName": "Mile",
-                                      "mathName": "mile",
+                                      "mathName": "mi",
                                     },
                                     Object {
                                       "displayName": "Link",
-                                      "mathName": "link",
+                                      "mathName": "li",
                                     },
                                     Object {
                                       "displayName": "Rod",
-                                      "mathName": "rod",
+                                      "mathName": "rd",
                                     },
                                     Object {
                                       "displayName": "Chain",
-                                      "mathName": "chain",
+                                      "mathName": "ch",
                                     },
                                     Object {
                                       "displayName": "Angstrom",
@@ -870,13 +1110,93 @@ ShallowWrapper {
                                 },
                                 "time": Object {
                                   "displayName": "Time",
-                                  "initialUnitLeft": "secs",
+                                  "initialUnitLeft": "s",
                                   "initialUnitRight": "mins",
                                   "mathName": "time",
                                   "units": Array [
                                     Object {
                                       "displayName": "Second",
-                                      "mathName": "secs",
+                                      "mathName": "s",
+                                    },
+                                    Object {
+                                      "displayName": "Decisecond",
+                                      "mathName": "ds",
+                                    },
+                                    Object {
+                                      "displayName": "Centisecond",
+                                      "mathName": "cs",
+                                    },
+                                    Object {
+                                      "displayName": "Millisecond",
+                                      "mathName": "ms",
+                                    },
+                                    Object {
+                                      "displayName": "Microsecond",
+                                      "mathName": "us",
+                                    },
+                                    Object {
+                                      "displayName": "Nanosecond",
+                                      "mathName": "ns",
+                                    },
+                                    Object {
+                                      "displayName": "Picosecond",
+                                      "mathName": "ps",
+                                    },
+                                    Object {
+                                      "displayName": "Femtosecond",
+                                      "mathName": "fs",
+                                    },
+                                    Object {
+                                      "displayName": "Attosecond",
+                                      "mathName": "as",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptosecond",
+                                      "mathName": "zs",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctosecond",
+                                      "mathName": "ys",
+                                    },
+                                    Object {
+                                      "displayName": "Decasecond",
+                                      "mathName": "das",
+                                    },
+                                    Object {
+                                      "displayName": "Hectosecond",
+                                      "mathName": "hs",
+                                    },
+                                    Object {
+                                      "displayName": "Kilosecond",
+                                      "mathName": "ks",
+                                    },
+                                    Object {
+                                      "displayName": "Megasecond",
+                                      "mathName": "Ms",
+                                    },
+                                    Object {
+                                      "displayName": "Gigasecond",
+                                      "mathName": "Gs",
+                                    },
+                                    Object {
+                                      "displayName": "Terasecond",
+                                      "mathName": "Ts",
+                                    },
+                                    Object {
+                                      "displayName": "Petasecond",
+                                      "mathName": "Ps",
+                                    },
+                                    Object {
+                                      "displayName": "Exasecond",
+                                      "mathName": "Es",
+                                    },
+                                    Object {
+                                      "displayName": "Zettasecond",
+                                      "mathName": "Zs",
+                                    },
+                                    Object {
+                                      "displayName": "Yottasecond",
+                                      "mathName": "Ys",
                                     },
                                     Object {
                                       "displayName": "Minute",
@@ -884,7 +1204,7 @@ ShallowWrapper {
                                     },
                                     Object {
                                       "displayName": "Hour",
-                                      "mathName": "hrs",
+                                      "mathName": "h",
                                     },
                                     Object {
                                       "displayName": "Day",
@@ -960,7 +1280,7 @@ ShallowWrapper {
                                         },
                                         Object {
                                           "displayName": "Minute of arc",
-                                          "mathName": "arcmin",
+                                          "mathName": "arcminute",
                                         },
                                       ],
                                     },
@@ -1162,41 +1482,121 @@ ShallowWrapper {
                                     },
                                     "length": Object {
                                       "displayName": "Length",
-                                      "initialUnitLeft": "meter",
-                                      "initialUnitRight": "inch",
+                                      "initialUnitLeft": "m",
+                                      "initialUnitRight": "in",
                                       "mathName": "length",
                                       "units": Array [
                                         Object {
                                           "displayName": "Meter",
-                                          "mathName": "meter",
+                                          "mathName": "m",
+                                        },
+                                        Object {
+                                          "displayName": "Decimeter",
+                                          "mathName": "dm",
+                                        },
+                                        Object {
+                                          "displayName": "Centimeter",
+                                          "mathName": "cm",
+                                        },
+                                        Object {
+                                          "displayName": "Millimeter",
+                                          "mathName": "mm",
+                                        },
+                                        Object {
+                                          "displayName": "Micrometer",
+                                          "mathName": "um",
+                                        },
+                                        Object {
+                                          "displayName": "Nanometer",
+                                          "mathName": "nm",
+                                        },
+                                        Object {
+                                          "displayName": "Picometer",
+                                          "mathName": "pm",
+                                        },
+                                        Object {
+                                          "displayName": "Femtometer",
+                                          "mathName": "fm",
+                                        },
+                                        Object {
+                                          "displayName": "Attometer",
+                                          "mathName": "am",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptometer",
+                                          "mathName": "zm",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctometer",
+                                          "mathName": "ym",
+                                        },
+                                        Object {
+                                          "displayName": "Decameter",
+                                          "mathName": "dam",
+                                        },
+                                        Object {
+                                          "displayName": "Hectometer",
+                                          "mathName": "hm",
+                                        },
+                                        Object {
+                                          "displayName": "Kilometer",
+                                          "mathName": "km",
+                                        },
+                                        Object {
+                                          "displayName": "Megameter",
+                                          "mathName": "Mm",
+                                        },
+                                        Object {
+                                          "displayName": "Gigameter",
+                                          "mathName": "Gm",
+                                        },
+                                        Object {
+                                          "displayName": "Terameter",
+                                          "mathName": "Tm",
+                                        },
+                                        Object {
+                                          "displayName": "Petameter",
+                                          "mathName": "Pm",
+                                        },
+                                        Object {
+                                          "displayName": "Exameter",
+                                          "mathName": "Em",
+                                        },
+                                        Object {
+                                          "displayName": "Zettameter",
+                                          "mathName": "Zm",
+                                        },
+                                        Object {
+                                          "displayName": "Yottameter",
+                                          "mathName": "Ym",
                                         },
                                         Object {
                                           "displayName": "Inch",
-                                          "mathName": "inch",
+                                          "mathName": "in",
                                         },
                                         Object {
                                           "displayName": "Foot",
-                                          "mathName": "foot",
+                                          "mathName": "ft",
                                         },
                                         Object {
                                           "displayName": "Yard",
-                                          "mathName": "yard",
+                                          "mathName": "yd",
                                         },
                                         Object {
                                           "displayName": "Mile",
-                                          "mathName": "mile",
+                                          "mathName": "mi",
                                         },
                                         Object {
                                           "displayName": "Link",
-                                          "mathName": "link",
+                                          "mathName": "li",
                                         },
                                         Object {
                                           "displayName": "Rod",
-                                          "mathName": "rod",
+                                          "mathName": "rd",
                                         },
                                         Object {
                                           "displayName": "Chain",
-                                          "mathName": "chain",
+                                          "mathName": "ch",
                                         },
                                         Object {
                                           "displayName": "Angstrom",
@@ -1330,13 +1730,93 @@ ShallowWrapper {
                                     },
                                     "time": Object {
                                       "displayName": "Time",
-                                      "initialUnitLeft": "secs",
+                                      "initialUnitLeft": "s",
                                       "initialUnitRight": "mins",
                                       "mathName": "time",
                                       "units": Array [
                                         Object {
                                           "displayName": "Second",
-                                          "mathName": "secs",
+                                          "mathName": "s",
+                                        },
+                                        Object {
+                                          "displayName": "Decisecond",
+                                          "mathName": "ds",
+                                        },
+                                        Object {
+                                          "displayName": "Centisecond",
+                                          "mathName": "cs",
+                                        },
+                                        Object {
+                                          "displayName": "Millisecond",
+                                          "mathName": "ms",
+                                        },
+                                        Object {
+                                          "displayName": "Microsecond",
+                                          "mathName": "us",
+                                        },
+                                        Object {
+                                          "displayName": "Nanosecond",
+                                          "mathName": "ns",
+                                        },
+                                        Object {
+                                          "displayName": "Picosecond",
+                                          "mathName": "ps",
+                                        },
+                                        Object {
+                                          "displayName": "Femtosecond",
+                                          "mathName": "fs",
+                                        },
+                                        Object {
+                                          "displayName": "Attosecond",
+                                          "mathName": "as",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptosecond",
+                                          "mathName": "zs",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctosecond",
+                                          "mathName": "ys",
+                                        },
+                                        Object {
+                                          "displayName": "Decasecond",
+                                          "mathName": "das",
+                                        },
+                                        Object {
+                                          "displayName": "Hectosecond",
+                                          "mathName": "hs",
+                                        },
+                                        Object {
+                                          "displayName": "Kilosecond",
+                                          "mathName": "ks",
+                                        },
+                                        Object {
+                                          "displayName": "Megasecond",
+                                          "mathName": "Ms",
+                                        },
+                                        Object {
+                                          "displayName": "Gigasecond",
+                                          "mathName": "Gs",
+                                        },
+                                        Object {
+                                          "displayName": "Terasecond",
+                                          "mathName": "Ts",
+                                        },
+                                        Object {
+                                          "displayName": "Petasecond",
+                                          "mathName": "Ps",
+                                        },
+                                        Object {
+                                          "displayName": "Exasecond",
+                                          "mathName": "Es",
+                                        },
+                                        Object {
+                                          "displayName": "Zettasecond",
+                                          "mathName": "Zs",
+                                        },
+                                        Object {
+                                          "displayName": "Yottasecond",
+                                          "mathName": "Ys",
                                         },
                                         Object {
                                           "displayName": "Minute",
@@ -1344,7 +1824,7 @@ ShallowWrapper {
                                         },
                                         Object {
                                           "displayName": "Hour",
-                                          "mathName": "hrs",
+                                          "mathName": "h",
                                         },
                                         Object {
                                           "displayName": "Day",
@@ -1410,7 +1890,7 @@ ShallowWrapper {
                                         },
                                         Object {
                                           "displayName": "Minute of arc",
-                                          "mathName": "arcmin",
+                                          "mathName": "arcminute",
                                         },
                                       ],
                                     },
@@ -1612,41 +2092,121 @@ ShallowWrapper {
                                     },
                                     "length": Object {
                                       "displayName": "Length",
-                                      "initialUnitLeft": "meter",
-                                      "initialUnitRight": "inch",
+                                      "initialUnitLeft": "m",
+                                      "initialUnitRight": "in",
                                       "mathName": "length",
                                       "units": Array [
                                         Object {
                                           "displayName": "Meter",
-                                          "mathName": "meter",
+                                          "mathName": "m",
+                                        },
+                                        Object {
+                                          "displayName": "Decimeter",
+                                          "mathName": "dm",
+                                        },
+                                        Object {
+                                          "displayName": "Centimeter",
+                                          "mathName": "cm",
+                                        },
+                                        Object {
+                                          "displayName": "Millimeter",
+                                          "mathName": "mm",
+                                        },
+                                        Object {
+                                          "displayName": "Micrometer",
+                                          "mathName": "um",
+                                        },
+                                        Object {
+                                          "displayName": "Nanometer",
+                                          "mathName": "nm",
+                                        },
+                                        Object {
+                                          "displayName": "Picometer",
+                                          "mathName": "pm",
+                                        },
+                                        Object {
+                                          "displayName": "Femtometer",
+                                          "mathName": "fm",
+                                        },
+                                        Object {
+                                          "displayName": "Attometer",
+                                          "mathName": "am",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptometer",
+                                          "mathName": "zm",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctometer",
+                                          "mathName": "ym",
+                                        },
+                                        Object {
+                                          "displayName": "Decameter",
+                                          "mathName": "dam",
+                                        },
+                                        Object {
+                                          "displayName": "Hectometer",
+                                          "mathName": "hm",
+                                        },
+                                        Object {
+                                          "displayName": "Kilometer",
+                                          "mathName": "km",
+                                        },
+                                        Object {
+                                          "displayName": "Megameter",
+                                          "mathName": "Mm",
+                                        },
+                                        Object {
+                                          "displayName": "Gigameter",
+                                          "mathName": "Gm",
+                                        },
+                                        Object {
+                                          "displayName": "Terameter",
+                                          "mathName": "Tm",
+                                        },
+                                        Object {
+                                          "displayName": "Petameter",
+                                          "mathName": "Pm",
+                                        },
+                                        Object {
+                                          "displayName": "Exameter",
+                                          "mathName": "Em",
+                                        },
+                                        Object {
+                                          "displayName": "Zettameter",
+                                          "mathName": "Zm",
+                                        },
+                                        Object {
+                                          "displayName": "Yottameter",
+                                          "mathName": "Ym",
                                         },
                                         Object {
                                           "displayName": "Inch",
-                                          "mathName": "inch",
+                                          "mathName": "in",
                                         },
                                         Object {
                                           "displayName": "Foot",
-                                          "mathName": "foot",
+                                          "mathName": "ft",
                                         },
                                         Object {
                                           "displayName": "Yard",
-                                          "mathName": "yard",
+                                          "mathName": "yd",
                                         },
                                         Object {
                                           "displayName": "Mile",
-                                          "mathName": "mile",
+                                          "mathName": "mi",
                                         },
                                         Object {
                                           "displayName": "Link",
-                                          "mathName": "link",
+                                          "mathName": "li",
                                         },
                                         Object {
                                           "displayName": "Rod",
-                                          "mathName": "rod",
+                                          "mathName": "rd",
                                         },
                                         Object {
                                           "displayName": "Chain",
-                                          "mathName": "chain",
+                                          "mathName": "ch",
                                         },
                                         Object {
                                           "displayName": "Angstrom",
@@ -1780,13 +2340,93 @@ ShallowWrapper {
                                     },
                                     "time": Object {
                                       "displayName": "Time",
-                                      "initialUnitLeft": "secs",
+                                      "initialUnitLeft": "s",
                                       "initialUnitRight": "mins",
                                       "mathName": "time",
                                       "units": Array [
                                         Object {
                                           "displayName": "Second",
-                                          "mathName": "secs",
+                                          "mathName": "s",
+                                        },
+                                        Object {
+                                          "displayName": "Decisecond",
+                                          "mathName": "ds",
+                                        },
+                                        Object {
+                                          "displayName": "Centisecond",
+                                          "mathName": "cs",
+                                        },
+                                        Object {
+                                          "displayName": "Millisecond",
+                                          "mathName": "ms",
+                                        },
+                                        Object {
+                                          "displayName": "Microsecond",
+                                          "mathName": "us",
+                                        },
+                                        Object {
+                                          "displayName": "Nanosecond",
+                                          "mathName": "ns",
+                                        },
+                                        Object {
+                                          "displayName": "Picosecond",
+                                          "mathName": "ps",
+                                        },
+                                        Object {
+                                          "displayName": "Femtosecond",
+                                          "mathName": "fs",
+                                        },
+                                        Object {
+                                          "displayName": "Attosecond",
+                                          "mathName": "as",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptosecond",
+                                          "mathName": "zs",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctosecond",
+                                          "mathName": "ys",
+                                        },
+                                        Object {
+                                          "displayName": "Decasecond",
+                                          "mathName": "das",
+                                        },
+                                        Object {
+                                          "displayName": "Hectosecond",
+                                          "mathName": "hs",
+                                        },
+                                        Object {
+                                          "displayName": "Kilosecond",
+                                          "mathName": "ks",
+                                        },
+                                        Object {
+                                          "displayName": "Megasecond",
+                                          "mathName": "Ms",
+                                        },
+                                        Object {
+                                          "displayName": "Gigasecond",
+                                          "mathName": "Gs",
+                                        },
+                                        Object {
+                                          "displayName": "Terasecond",
+                                          "mathName": "Ts",
+                                        },
+                                        Object {
+                                          "displayName": "Petasecond",
+                                          "mathName": "Ps",
+                                        },
+                                        Object {
+                                          "displayName": "Exasecond",
+                                          "mathName": "Es",
+                                        },
+                                        Object {
+                                          "displayName": "Zettasecond",
+                                          "mathName": "Zs",
+                                        },
+                                        Object {
+                                          "displayName": "Yottasecond",
+                                          "mathName": "Ys",
                                         },
                                         Object {
                                           "displayName": "Minute",
@@ -1794,7 +2434,7 @@ ShallowWrapper {
                                         },
                                         Object {
                                           "displayName": "Hour",
-                                          "mathName": "hrs",
+                                          "mathName": "h",
                                         },
                                         Object {
                                           "displayName": "Day",
@@ -1876,7 +2516,7 @@ ShallowWrapper {
                   },
                   Object {
                     "displayName": "Minute of arc",
-                    "mathName": "arcmin",
+                    "mathName": "arcminute",
                   },
                 ],
               },
@@ -2078,41 +2718,121 @@ ShallowWrapper {
               },
               "length": Object {
                 "displayName": "Length",
-                "initialUnitLeft": "meter",
-                "initialUnitRight": "inch",
+                "initialUnitLeft": "m",
+                "initialUnitRight": "in",
                 "mathName": "length",
                 "units": Array [
                   Object {
                     "displayName": "Meter",
-                    "mathName": "meter",
+                    "mathName": "m",
+                  },
+                  Object {
+                    "displayName": "Decimeter",
+                    "mathName": "dm",
+                  },
+                  Object {
+                    "displayName": "Centimeter",
+                    "mathName": "cm",
+                  },
+                  Object {
+                    "displayName": "Millimeter",
+                    "mathName": "mm",
+                  },
+                  Object {
+                    "displayName": "Micrometer",
+                    "mathName": "um",
+                  },
+                  Object {
+                    "displayName": "Nanometer",
+                    "mathName": "nm",
+                  },
+                  Object {
+                    "displayName": "Picometer",
+                    "mathName": "pm",
+                  },
+                  Object {
+                    "displayName": "Femtometer",
+                    "mathName": "fm",
+                  },
+                  Object {
+                    "displayName": "Attometer",
+                    "mathName": "am",
+                  },
+                  Object {
+                    "displayName": "Zeptometer",
+                    "mathName": "zm",
+                  },
+                  Object {
+                    "displayName": "Yoctometer",
+                    "mathName": "ym",
+                  },
+                  Object {
+                    "displayName": "Decameter",
+                    "mathName": "dam",
+                  },
+                  Object {
+                    "displayName": "Hectometer",
+                    "mathName": "hm",
+                  },
+                  Object {
+                    "displayName": "Kilometer",
+                    "mathName": "km",
+                  },
+                  Object {
+                    "displayName": "Megameter",
+                    "mathName": "Mm",
+                  },
+                  Object {
+                    "displayName": "Gigameter",
+                    "mathName": "Gm",
+                  },
+                  Object {
+                    "displayName": "Terameter",
+                    "mathName": "Tm",
+                  },
+                  Object {
+                    "displayName": "Petameter",
+                    "mathName": "Pm",
+                  },
+                  Object {
+                    "displayName": "Exameter",
+                    "mathName": "Em",
+                  },
+                  Object {
+                    "displayName": "Zettameter",
+                    "mathName": "Zm",
+                  },
+                  Object {
+                    "displayName": "Yottameter",
+                    "mathName": "Ym",
                   },
                   Object {
                     "displayName": "Inch",
-                    "mathName": "inch",
+                    "mathName": "in",
                   },
                   Object {
                     "displayName": "Foot",
-                    "mathName": "foot",
+                    "mathName": "ft",
                   },
                   Object {
                     "displayName": "Yard",
-                    "mathName": "yard",
+                    "mathName": "yd",
                   },
                   Object {
                     "displayName": "Mile",
-                    "mathName": "mile",
+                    "mathName": "mi",
                   },
                   Object {
                     "displayName": "Link",
-                    "mathName": "link",
+                    "mathName": "li",
                   },
                   Object {
                     "displayName": "Rod",
-                    "mathName": "rod",
+                    "mathName": "rd",
                   },
                   Object {
                     "displayName": "Chain",
-                    "mathName": "chain",
+                    "mathName": "ch",
                   },
                   Object {
                     "displayName": "Angstrom",
@@ -2246,13 +2966,93 @@ ShallowWrapper {
               },
               "time": Object {
                 "displayName": "Time",
-                "initialUnitLeft": "secs",
+                "initialUnitLeft": "s",
                 "initialUnitRight": "mins",
                 "mathName": "time",
                 "units": Array [
                   Object {
                     "displayName": "Second",
-                    "mathName": "secs",
+                    "mathName": "s",
+                  },
+                  Object {
+                    "displayName": "Decisecond",
+                    "mathName": "ds",
+                  },
+                  Object {
+                    "displayName": "Centisecond",
+                    "mathName": "cs",
+                  },
+                  Object {
+                    "displayName": "Millisecond",
+                    "mathName": "ms",
+                  },
+                  Object {
+                    "displayName": "Microsecond",
+                    "mathName": "us",
+                  },
+                  Object {
+                    "displayName": "Nanosecond",
+                    "mathName": "ns",
+                  },
+                  Object {
+                    "displayName": "Picosecond",
+                    "mathName": "ps",
+                  },
+                  Object {
+                    "displayName": "Femtosecond",
+                    "mathName": "fs",
+                  },
+                  Object {
+                    "displayName": "Attosecond",
+                    "mathName": "as",
+                  },
+                  Object {
+                    "displayName": "Zeptosecond",
+                    "mathName": "zs",
+                  },
+                  Object {
+                    "displayName": "Yoctosecond",
+                    "mathName": "ys",
+                  },
+                  Object {
+                    "displayName": "Decasecond",
+                    "mathName": "das",
+                  },
+                  Object {
+                    "displayName": "Hectosecond",
+                    "mathName": "hs",
+                  },
+                  Object {
+                    "displayName": "Kilosecond",
+                    "mathName": "ks",
+                  },
+                  Object {
+                    "displayName": "Megasecond",
+                    "mathName": "Ms",
+                  },
+                  Object {
+                    "displayName": "Gigasecond",
+                    "mathName": "Gs",
+                  },
+                  Object {
+                    "displayName": "Terasecond",
+                    "mathName": "Ts",
+                  },
+                  Object {
+                    "displayName": "Petasecond",
+                    "mathName": "Ps",
+                  },
+                  Object {
+                    "displayName": "Exasecond",
+                    "mathName": "Es",
+                  },
+                  Object {
+                    "displayName": "Zettasecond",
+                    "mathName": "Zs",
+                  },
+                  Object {
+                    "displayName": "Yottasecond",
+                    "mathName": "Ys",
                   },
                   Object {
                     "displayName": "Minute",
@@ -2260,7 +3060,7 @@ ShallowWrapper {
                   },
                   Object {
                     "displayName": "Hour",
-                    "mathName": "hrs",
+                    "mathName": "h",
                   },
                   Object {
                     "displayName": "Day",
@@ -2332,7 +3132,7 @@ ShallowWrapper {
                   },
                   Object {
                     "displayName": "Minute of arc",
-                    "mathName": "arcmin",
+                    "mathName": "arcminute",
                   },
                 ],
               },
@@ -2534,41 +3334,121 @@ ShallowWrapper {
               },
               "length": Object {
                 "displayName": "Length",
-                "initialUnitLeft": "meter",
-                "initialUnitRight": "inch",
+                "initialUnitLeft": "m",
+                "initialUnitRight": "in",
                 "mathName": "length",
                 "units": Array [
                   Object {
                     "displayName": "Meter",
-                    "mathName": "meter",
+                    "mathName": "m",
+                  },
+                  Object {
+                    "displayName": "Decimeter",
+                    "mathName": "dm",
+                  },
+                  Object {
+                    "displayName": "Centimeter",
+                    "mathName": "cm",
+                  },
+                  Object {
+                    "displayName": "Millimeter",
+                    "mathName": "mm",
+                  },
+                  Object {
+                    "displayName": "Micrometer",
+                    "mathName": "um",
+                  },
+                  Object {
+                    "displayName": "Nanometer",
+                    "mathName": "nm",
+                  },
+                  Object {
+                    "displayName": "Picometer",
+                    "mathName": "pm",
+                  },
+                  Object {
+                    "displayName": "Femtometer",
+                    "mathName": "fm",
+                  },
+                  Object {
+                    "displayName": "Attometer",
+                    "mathName": "am",
+                  },
+                  Object {
+                    "displayName": "Zeptometer",
+                    "mathName": "zm",
+                  },
+                  Object {
+                    "displayName": "Yoctometer",
+                    "mathName": "ym",
+                  },
+                  Object {
+                    "displayName": "Decameter",
+                    "mathName": "dam",
+                  },
+                  Object {
+                    "displayName": "Hectometer",
+                    "mathName": "hm",
+                  },
+                  Object {
+                    "displayName": "Kilometer",
+                    "mathName": "km",
+                  },
+                  Object {
+                    "displayName": "Megameter",
+                    "mathName": "Mm",
+                  },
+                  Object {
+                    "displayName": "Gigameter",
+                    "mathName": "Gm",
+                  },
+                  Object {
+                    "displayName": "Terameter",
+                    "mathName": "Tm",
+                  },
+                  Object {
+                    "displayName": "Petameter",
+                    "mathName": "Pm",
+                  },
+                  Object {
+                    "displayName": "Exameter",
+                    "mathName": "Em",
+                  },
+                  Object {
+                    "displayName": "Zettameter",
+                    "mathName": "Zm",
+                  },
+                  Object {
+                    "displayName": "Yottameter",
+                    "mathName": "Ym",
                   },
                   Object {
                     "displayName": "Inch",
-                    "mathName": "inch",
+                    "mathName": "in",
                   },
                   Object {
                     "displayName": "Foot",
-                    "mathName": "foot",
+                    "mathName": "ft",
                   },
                   Object {
                     "displayName": "Yard",
-                    "mathName": "yard",
+                    "mathName": "yd",
                   },
                   Object {
                     "displayName": "Mile",
-                    "mathName": "mile",
+                    "mathName": "mi",
                   },
                   Object {
                     "displayName": "Link",
-                    "mathName": "link",
+                    "mathName": "li",
                   },
                   Object {
                     "displayName": "Rod",
-                    "mathName": "rod",
+                    "mathName": "rd",
                   },
                   Object {
                     "displayName": "Chain",
-                    "mathName": "chain",
+                    "mathName": "ch",
                   },
                   Object {
                     "displayName": "Angstrom",
@@ -2702,13 +3582,93 @@ ShallowWrapper {
               },
               "time": Object {
                 "displayName": "Time",
-                "initialUnitLeft": "secs",
+                "initialUnitLeft": "s",
                 "initialUnitRight": "mins",
                 "mathName": "time",
                 "units": Array [
                   Object {
                     "displayName": "Second",
-                    "mathName": "secs",
+                    "mathName": "s",
+                  },
+                  Object {
+                    "displayName": "Decisecond",
+                    "mathName": "ds",
+                  },
+                  Object {
+                    "displayName": "Centisecond",
+                    "mathName": "cs",
+                  },
+                  Object {
+                    "displayName": "Millisecond",
+                    "mathName": "ms",
+                  },
+                  Object {
+                    "displayName": "Microsecond",
+                    "mathName": "us",
+                  },
+                  Object {
+                    "displayName": "Nanosecond",
+                    "mathName": "ns",
+                  },
+                  Object {
+                    "displayName": "Picosecond",
+                    "mathName": "ps",
+                  },
+                  Object {
+                    "displayName": "Femtosecond",
+                    "mathName": "fs",
+                  },
+                  Object {
+                    "displayName": "Attosecond",
+                    "mathName": "as",
+                  },
+                  Object {
+                    "displayName": "Zeptosecond",
+                    "mathName": "zs",
+                  },
+                  Object {
+                    "displayName": "Yoctosecond",
+                    "mathName": "ys",
+                  },
+                  Object {
+                    "displayName": "Decasecond",
+                    "mathName": "das",
+                  },
+                  Object {
+                    "displayName": "Hectosecond",
+                    "mathName": "hs",
+                  },
+                  Object {
+                    "displayName": "Kilosecond",
+                    "mathName": "ks",
+                  },
+                  Object {
+                    "displayName": "Megasecond",
+                    "mathName": "Ms",
+                  },
+                  Object {
+                    "displayName": "Gigasecond",
+                    "mathName": "Gs",
+                  },
+                  Object {
+                    "displayName": "Terasecond",
+                    "mathName": "Ts",
+                  },
+                  Object {
+                    "displayName": "Petasecond",
+                    "mathName": "Ps",
+                  },
+                  Object {
+                    "displayName": "Exasecond",
+                    "mathName": "Es",
+                  },
+                  Object {
+                    "displayName": "Zettasecond",
+                    "mathName": "Zs",
+                  },
+                  Object {
+                    "displayName": "Yottasecond",
+                    "mathName": "Ys",
                   },
                   Object {
                     "displayName": "Minute",
@@ -2716,7 +3676,7 @@ ShallowWrapper {
                   },
                   Object {
                     "displayName": "Hour",
-                    "mathName": "hrs",
+                    "mathName": "h",
                   },
                   Object {
                     "displayName": "Day",
@@ -2798,7 +3758,7 @@ ShallowWrapper {
                                             },
                                             Object {
                                               "displayName": "Minute of arc",
-                                              "mathName": "arcmin",
+                                              "mathName": "arcminute",
                                             },
                                           ],
                                         },
@@ -3000,41 +3960,121 @@ ShallowWrapper {
                                         },
                                         "length": Object {
                                           "displayName": "Length",
-                                          "initialUnitLeft": "meter",
-                                          "initialUnitRight": "inch",
+                                          "initialUnitLeft": "m",
+                                          "initialUnitRight": "in",
                                           "mathName": "length",
                                           "units": Array [
                                             Object {
                                               "displayName": "Meter",
-                                              "mathName": "meter",
+                                              "mathName": "m",
+                                            },
+                                            Object {
+                                              "displayName": "Decimeter",
+                                              "mathName": "dm",
+                                            },
+                                            Object {
+                                              "displayName": "Centimeter",
+                                              "mathName": "cm",
+                                            },
+                                            Object {
+                                              "displayName": "Millimeter",
+                                              "mathName": "mm",
+                                            },
+                                            Object {
+                                              "displayName": "Micrometer",
+                                              "mathName": "um",
+                                            },
+                                            Object {
+                                              "displayName": "Nanometer",
+                                              "mathName": "nm",
+                                            },
+                                            Object {
+                                              "displayName": "Picometer",
+                                              "mathName": "pm",
+                                            },
+                                            Object {
+                                              "displayName": "Femtometer",
+                                              "mathName": "fm",
+                                            },
+                                            Object {
+                                              "displayName": "Attometer",
+                                              "mathName": "am",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptometer",
+                                              "mathName": "zm",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctometer",
+                                              "mathName": "ym",
+                                            },
+                                            Object {
+                                              "displayName": "Decameter",
+                                              "mathName": "dam",
+                                            },
+                                            Object {
+                                              "displayName": "Hectometer",
+                                              "mathName": "hm",
+                                            },
+                                            Object {
+                                              "displayName": "Kilometer",
+                                              "mathName": "km",
+                                            },
+                                            Object {
+                                              "displayName": "Megameter",
+                                              "mathName": "Mm",
+                                            },
+                                            Object {
+                                              "displayName": "Gigameter",
+                                              "mathName": "Gm",
+                                            },
+                                            Object {
+                                              "displayName": "Terameter",
+                                              "mathName": "Tm",
+                                            },
+                                            Object {
+                                              "displayName": "Petameter",
+                                              "mathName": "Pm",
+                                            },
+                                            Object {
+                                              "displayName": "Exameter",
+                                              "mathName": "Em",
+                                            },
+                                            Object {
+                                              "displayName": "Zettameter",
+                                              "mathName": "Zm",
+                                            },
+                                            Object {
+                                              "displayName": "Yottameter",
+                                              "mathName": "Ym",
                                             },
                                             Object {
                                               "displayName": "Inch",
-                                              "mathName": "inch",
+                                              "mathName": "in",
                                             },
                                             Object {
                                               "displayName": "Foot",
-                                              "mathName": "foot",
+                                              "mathName": "ft",
                                             },
                                             Object {
                                               "displayName": "Yard",
-                                              "mathName": "yard",
+                                              "mathName": "yd",
                                             },
                                             Object {
                                               "displayName": "Mile",
-                                              "mathName": "mile",
+                                              "mathName": "mi",
                                             },
                                             Object {
                                               "displayName": "Link",
-                                              "mathName": "link",
+                                              "mathName": "li",
                                             },
                                             Object {
                                               "displayName": "Rod",
-                                              "mathName": "rod",
+                                              "mathName": "rd",
                                             },
                                             Object {
                                               "displayName": "Chain",
-                                              "mathName": "chain",
+                                              "mathName": "ch",
                                             },
                                             Object {
                                               "displayName": "Angstrom",
@@ -3168,13 +4208,93 @@ ShallowWrapper {
                                         },
                                         "time": Object {
                                           "displayName": "Time",
-                                          "initialUnitLeft": "secs",
+                                          "initialUnitLeft": "s",
                                           "initialUnitRight": "mins",
                                           "mathName": "time",
                                           "units": Array [
                                             Object {
                                               "displayName": "Second",
-                                              "mathName": "secs",
+                                              "mathName": "s",
+                                            },
+                                            Object {
+                                              "displayName": "Decisecond",
+                                              "mathName": "ds",
+                                            },
+                                            Object {
+                                              "displayName": "Centisecond",
+                                              "mathName": "cs",
+                                            },
+                                            Object {
+                                              "displayName": "Millisecond",
+                                              "mathName": "ms",
+                                            },
+                                            Object {
+                                              "displayName": "Microsecond",
+                                              "mathName": "us",
+                                            },
+                                            Object {
+                                              "displayName": "Nanosecond",
+                                              "mathName": "ns",
+                                            },
+                                            Object {
+                                              "displayName": "Picosecond",
+                                              "mathName": "ps",
+                                            },
+                                            Object {
+                                              "displayName": "Femtosecond",
+                                              "mathName": "fs",
+                                            },
+                                            Object {
+                                              "displayName": "Attosecond",
+                                              "mathName": "as",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptosecond",
+                                              "mathName": "zs",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctosecond",
+                                              "mathName": "ys",
+                                            },
+                                            Object {
+                                              "displayName": "Decasecond",
+                                              "mathName": "das",
+                                            },
+                                            Object {
+                                              "displayName": "Hectosecond",
+                                              "mathName": "hs",
+                                            },
+                                            Object {
+                                              "displayName": "Kilosecond",
+                                              "mathName": "ks",
+                                            },
+                                            Object {
+                                              "displayName": "Megasecond",
+                                              "mathName": "Ms",
+                                            },
+                                            Object {
+                                              "displayName": "Gigasecond",
+                                              "mathName": "Gs",
+                                            },
+                                            Object {
+                                              "displayName": "Terasecond",
+                                              "mathName": "Ts",
+                                            },
+                                            Object {
+                                              "displayName": "Petasecond",
+                                              "mathName": "Ps",
+                                            },
+                                            Object {
+                                              "displayName": "Exasecond",
+                                              "mathName": "Es",
+                                            },
+                                            Object {
+                                              "displayName": "Zettasecond",
+                                              "mathName": "Zs",
+                                            },
+                                            Object {
+                                              "displayName": "Yottasecond",
+                                              "mathName": "Ys",
                                             },
                                             Object {
                                               "displayName": "Minute",
@@ -3182,7 +4302,7 @@ ShallowWrapper {
                                             },
                                             Object {
                                               "displayName": "Hour",
-                                              "mathName": "hrs",
+                                              "mathName": "h",
                                             },
                                             Object {
                                               "displayName": "Day",
@@ -3248,7 +4368,7 @@ ShallowWrapper {
                                             },
                                             Object {
                                               "displayName": "Minute of arc",
-                                              "mathName": "arcmin",
+                                              "mathName": "arcminute",
                                             },
                                           ],
                                         },
@@ -3450,41 +4570,121 @@ ShallowWrapper {
                                         },
                                         "length": Object {
                                           "displayName": "Length",
-                                          "initialUnitLeft": "meter",
-                                          "initialUnitRight": "inch",
+                                          "initialUnitLeft": "m",
+                                          "initialUnitRight": "in",
                                           "mathName": "length",
                                           "units": Array [
                                             Object {
                                               "displayName": "Meter",
-                                              "mathName": "meter",
+                                              "mathName": "m",
+                                            },
+                                            Object {
+                                              "displayName": "Decimeter",
+                                              "mathName": "dm",
+                                            },
+                                            Object {
+                                              "displayName": "Centimeter",
+                                              "mathName": "cm",
+                                            },
+                                            Object {
+                                              "displayName": "Millimeter",
+                                              "mathName": "mm",
+                                            },
+                                            Object {
+                                              "displayName": "Micrometer",
+                                              "mathName": "um",
+                                            },
+                                            Object {
+                                              "displayName": "Nanometer",
+                                              "mathName": "nm",
+                                            },
+                                            Object {
+                                              "displayName": "Picometer",
+                                              "mathName": "pm",
+                                            },
+                                            Object {
+                                              "displayName": "Femtometer",
+                                              "mathName": "fm",
+                                            },
+                                            Object {
+                                              "displayName": "Attometer",
+                                              "mathName": "am",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptometer",
+                                              "mathName": "zm",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctometer",
+                                              "mathName": "ym",
+                                            },
+                                            Object {
+                                              "displayName": "Decameter",
+                                              "mathName": "dam",
+                                            },
+                                            Object {
+                                              "displayName": "Hectometer",
+                                              "mathName": "hm",
+                                            },
+                                            Object {
+                                              "displayName": "Kilometer",
+                                              "mathName": "km",
+                                            },
+                                            Object {
+                                              "displayName": "Megameter",
+                                              "mathName": "Mm",
+                                            },
+                                            Object {
+                                              "displayName": "Gigameter",
+                                              "mathName": "Gm",
+                                            },
+                                            Object {
+                                              "displayName": "Terameter",
+                                              "mathName": "Tm",
+                                            },
+                                            Object {
+                                              "displayName": "Petameter",
+                                              "mathName": "Pm",
+                                            },
+                                            Object {
+                                              "displayName": "Exameter",
+                                              "mathName": "Em",
+                                            },
+                                            Object {
+                                              "displayName": "Zettameter",
+                                              "mathName": "Zm",
+                                            },
+                                            Object {
+                                              "displayName": "Yottameter",
+                                              "mathName": "Ym",
                                             },
                                             Object {
                                               "displayName": "Inch",
-                                              "mathName": "inch",
+                                              "mathName": "in",
                                             },
                                             Object {
                                               "displayName": "Foot",
-                                              "mathName": "foot",
+                                              "mathName": "ft",
                                             },
                                             Object {
                                               "displayName": "Yard",
-                                              "mathName": "yard",
+                                              "mathName": "yd",
                                             },
                                             Object {
                                               "displayName": "Mile",
-                                              "mathName": "mile",
+                                              "mathName": "mi",
                                             },
                                             Object {
                                               "displayName": "Link",
-                                              "mathName": "link",
+                                              "mathName": "li",
                                             },
                                             Object {
                                               "displayName": "Rod",
-                                              "mathName": "rod",
+                                              "mathName": "rd",
                                             },
                                             Object {
                                               "displayName": "Chain",
-                                              "mathName": "chain",
+                                              "mathName": "ch",
                                             },
                                             Object {
                                               "displayName": "Angstrom",
@@ -3618,13 +4818,93 @@ ShallowWrapper {
                                         },
                                         "time": Object {
                                           "displayName": "Time",
-                                          "initialUnitLeft": "secs",
+                                          "initialUnitLeft": "s",
                                           "initialUnitRight": "mins",
                                           "mathName": "time",
                                           "units": Array [
                                             Object {
                                               "displayName": "Second",
-                                              "mathName": "secs",
+                                              "mathName": "s",
+                                            },
+                                            Object {
+                                              "displayName": "Decisecond",
+                                              "mathName": "ds",
+                                            },
+                                            Object {
+                                              "displayName": "Centisecond",
+                                              "mathName": "cs",
+                                            },
+                                            Object {
+                                              "displayName": "Millisecond",
+                                              "mathName": "ms",
+                                            },
+                                            Object {
+                                              "displayName": "Microsecond",
+                                              "mathName": "us",
+                                            },
+                                            Object {
+                                              "displayName": "Nanosecond",
+                                              "mathName": "ns",
+                                            },
+                                            Object {
+                                              "displayName": "Picosecond",
+                                              "mathName": "ps",
+                                            },
+                                            Object {
+                                              "displayName": "Femtosecond",
+                                              "mathName": "fs",
+                                            },
+                                            Object {
+                                              "displayName": "Attosecond",
+                                              "mathName": "as",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptosecond",
+                                              "mathName": "zs",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctosecond",
+                                              "mathName": "ys",
+                                            },
+                                            Object {
+                                              "displayName": "Decasecond",
+                                              "mathName": "das",
+                                            },
+                                            Object {
+                                              "displayName": "Hectosecond",
+                                              "mathName": "hs",
+                                            },
+                                            Object {
+                                              "displayName": "Kilosecond",
+                                              "mathName": "ks",
+                                            },
+                                            Object {
+                                              "displayName": "Megasecond",
+                                              "mathName": "Ms",
+                                            },
+                                            Object {
+                                              "displayName": "Gigasecond",
+                                              "mathName": "Gs",
+                                            },
+                                            Object {
+                                              "displayName": "Terasecond",
+                                              "mathName": "Ts",
+                                            },
+                                            Object {
+                                              "displayName": "Petasecond",
+                                              "mathName": "Ps",
+                                            },
+                                            Object {
+                                              "displayName": "Exasecond",
+                                              "mathName": "Es",
+                                            },
+                                            Object {
+                                              "displayName": "Zettasecond",
+                                              "mathName": "Zs",
+                                            },
+                                            Object {
+                                              "displayName": "Yottasecond",
+                                              "mathName": "Ys",
                                             },
                                             Object {
                                               "displayName": "Minute",
@@ -3632,7 +4912,7 @@ ShallowWrapper {
                                             },
                                             Object {
                                               "displayName": "Hour",
-                                              "mathName": "hrs",
+                                              "mathName": "h",
                                             },
                                             Object {
                                               "displayName": "Day",
@@ -3708,7 +4988,7 @@ ShallowWrapper {
                                               },
                                               Object {
                                                 "displayName": "Minute of arc",
-                                                "mathName": "arcmin",
+                                                "mathName": "arcminute",
                                               },
                                             ],
                                           },
@@ -3910,41 +5190,121 @@ ShallowWrapper {
                                           },
                                           "length": Object {
                                             "displayName": "Length",
-                                            "initialUnitLeft": "meter",
-                                            "initialUnitRight": "inch",
+                                            "initialUnitLeft": "m",
+                                            "initialUnitRight": "in",
                                             "mathName": "length",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Meter",
-                                                "mathName": "meter",
+                                                "mathName": "m",
+                                              },
+                                              Object {
+                                                "displayName": "Decimeter",
+                                                "mathName": "dm",
+                                              },
+                                              Object {
+                                                "displayName": "Centimeter",
+                                                "mathName": "cm",
+                                              },
+                                              Object {
+                                                "displayName": "Millimeter",
+                                                "mathName": "mm",
+                                              },
+                                              Object {
+                                                "displayName": "Micrometer",
+                                                "mathName": "um",
+                                              },
+                                              Object {
+                                                "displayName": "Nanometer",
+                                                "mathName": "nm",
+                                              },
+                                              Object {
+                                                "displayName": "Picometer",
+                                                "mathName": "pm",
+                                              },
+                                              Object {
+                                                "displayName": "Femtometer",
+                                                "mathName": "fm",
+                                              },
+                                              Object {
+                                                "displayName": "Attometer",
+                                                "mathName": "am",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptometer",
+                                                "mathName": "zm",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctometer",
+                                                "mathName": "ym",
+                                              },
+                                              Object {
+                                                "displayName": "Decameter",
+                                                "mathName": "dam",
+                                              },
+                                              Object {
+                                                "displayName": "Hectometer",
+                                                "mathName": "hm",
+                                              },
+                                              Object {
+                                                "displayName": "Kilometer",
+                                                "mathName": "km",
+                                              },
+                                              Object {
+                                                "displayName": "Megameter",
+                                                "mathName": "Mm",
+                                              },
+                                              Object {
+                                                "displayName": "Gigameter",
+                                                "mathName": "Gm",
+                                              },
+                                              Object {
+                                                "displayName": "Terameter",
+                                                "mathName": "Tm",
+                                              },
+                                              Object {
+                                                "displayName": "Petameter",
+                                                "mathName": "Pm",
+                                              },
+                                              Object {
+                                                "displayName": "Exameter",
+                                                "mathName": "Em",
+                                              },
+                                              Object {
+                                                "displayName": "Zettameter",
+                                                "mathName": "Zm",
+                                              },
+                                              Object {
+                                                "displayName": "Yottameter",
+                                                "mathName": "Ym",
                                               },
                                               Object {
                                                 "displayName": "Inch",
-                                                "mathName": "inch",
+                                                "mathName": "in",
                                               },
                                               Object {
                                                 "displayName": "Foot",
-                                                "mathName": "foot",
+                                                "mathName": "ft",
                                               },
                                               Object {
                                                 "displayName": "Yard",
-                                                "mathName": "yard",
+                                                "mathName": "yd",
                                               },
                                               Object {
                                                 "displayName": "Mile",
-                                                "mathName": "mile",
+                                                "mathName": "mi",
                                               },
                                               Object {
                                                 "displayName": "Link",
-                                                "mathName": "link",
+                                                "mathName": "li",
                                               },
                                               Object {
                                                 "displayName": "Rod",
-                                                "mathName": "rod",
+                                                "mathName": "rd",
                                               },
                                               Object {
                                                 "displayName": "Chain",
-                                                "mathName": "chain",
+                                                "mathName": "ch",
                                               },
                                               Object {
                                                 "displayName": "Angstrom",
@@ -4078,13 +5438,93 @@ ShallowWrapper {
                                           },
                                           "time": Object {
                                             "displayName": "Time",
-                                            "initialUnitLeft": "secs",
+                                            "initialUnitLeft": "s",
                                             "initialUnitRight": "mins",
                                             "mathName": "time",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Second",
-                                                "mathName": "secs",
+                                                "mathName": "s",
+                                              },
+                                              Object {
+                                                "displayName": "Decisecond",
+                                                "mathName": "ds",
+                                              },
+                                              Object {
+                                                "displayName": "Centisecond",
+                                                "mathName": "cs",
+                                              },
+                                              Object {
+                                                "displayName": "Millisecond",
+                                                "mathName": "ms",
+                                              },
+                                              Object {
+                                                "displayName": "Microsecond",
+                                                "mathName": "us",
+                                              },
+                                              Object {
+                                                "displayName": "Nanosecond",
+                                                "mathName": "ns",
+                                              },
+                                              Object {
+                                                "displayName": "Picosecond",
+                                                "mathName": "ps",
+                                              },
+                                              Object {
+                                                "displayName": "Femtosecond",
+                                                "mathName": "fs",
+                                              },
+                                              Object {
+                                                "displayName": "Attosecond",
+                                                "mathName": "as",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptosecond",
+                                                "mathName": "zs",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctosecond",
+                                                "mathName": "ys",
+                                              },
+                                              Object {
+                                                "displayName": "Decasecond",
+                                                "mathName": "das",
+                                              },
+                                              Object {
+                                                "displayName": "Hectosecond",
+                                                "mathName": "hs",
+                                              },
+                                              Object {
+                                                "displayName": "Kilosecond",
+                                                "mathName": "ks",
+                                              },
+                                              Object {
+                                                "displayName": "Megasecond",
+                                                "mathName": "Ms",
+                                              },
+                                              Object {
+                                                "displayName": "Gigasecond",
+                                                "mathName": "Gs",
+                                              },
+                                              Object {
+                                                "displayName": "Terasecond",
+                                                "mathName": "Ts",
+                                              },
+                                              Object {
+                                                "displayName": "Petasecond",
+                                                "mathName": "Ps",
+                                              },
+                                              Object {
+                                                "displayName": "Exasecond",
+                                                "mathName": "Es",
+                                              },
+                                              Object {
+                                                "displayName": "Zettasecond",
+                                                "mathName": "Zs",
+                                              },
+                                              Object {
+                                                "displayName": "Yottasecond",
+                                                "mathName": "Ys",
                                               },
                                               Object {
                                                 "displayName": "Minute",
@@ -4092,7 +5532,7 @@ ShallowWrapper {
                                               },
                                               Object {
                                                 "displayName": "Hour",
-                                                "mathName": "hrs",
+                                                "mathName": "h",
                                               },
                                               Object {
                                                 "displayName": "Day",
@@ -4158,7 +5598,7 @@ ShallowWrapper {
                                               },
                                               Object {
                                                 "displayName": "Minute of arc",
-                                                "mathName": "arcmin",
+                                                "mathName": "arcminute",
                                               },
                                             ],
                                           },
@@ -4360,41 +5800,121 @@ ShallowWrapper {
                                           },
                                           "length": Object {
                                             "displayName": "Length",
-                                            "initialUnitLeft": "meter",
-                                            "initialUnitRight": "inch",
+                                            "initialUnitLeft": "m",
+                                            "initialUnitRight": "in",
                                             "mathName": "length",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Meter",
-                                                "mathName": "meter",
+                                                "mathName": "m",
+                                              },
+                                              Object {
+                                                "displayName": "Decimeter",
+                                                "mathName": "dm",
+                                              },
+                                              Object {
+                                                "displayName": "Centimeter",
+                                                "mathName": "cm",
+                                              },
+                                              Object {
+                                                "displayName": "Millimeter",
+                                                "mathName": "mm",
+                                              },
+                                              Object {
+                                                "displayName": "Micrometer",
+                                                "mathName": "um",
+                                              },
+                                              Object {
+                                                "displayName": "Nanometer",
+                                                "mathName": "nm",
+                                              },
+                                              Object {
+                                                "displayName": "Picometer",
+                                                "mathName": "pm",
+                                              },
+                                              Object {
+                                                "displayName": "Femtometer",
+                                                "mathName": "fm",
+                                              },
+                                              Object {
+                                                "displayName": "Attometer",
+                                                "mathName": "am",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptometer",
+                                                "mathName": "zm",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctometer",
+                                                "mathName": "ym",
+                                              },
+                                              Object {
+                                                "displayName": "Decameter",
+                                                "mathName": "dam",
+                                              },
+                                              Object {
+                                                "displayName": "Hectometer",
+                                                "mathName": "hm",
+                                              },
+                                              Object {
+                                                "displayName": "Kilometer",
+                                                "mathName": "km",
+                                              },
+                                              Object {
+                                                "displayName": "Megameter",
+                                                "mathName": "Mm",
+                                              },
+                                              Object {
+                                                "displayName": "Gigameter",
+                                                "mathName": "Gm",
+                                              },
+                                              Object {
+                                                "displayName": "Terameter",
+                                                "mathName": "Tm",
+                                              },
+                                              Object {
+                                                "displayName": "Petameter",
+                                                "mathName": "Pm",
+                                              },
+                                              Object {
+                                                "displayName": "Exameter",
+                                                "mathName": "Em",
+                                              },
+                                              Object {
+                                                "displayName": "Zettameter",
+                                                "mathName": "Zm",
+                                              },
+                                              Object {
+                                                "displayName": "Yottameter",
+                                                "mathName": "Ym",
                                               },
                                               Object {
                                                 "displayName": "Inch",
-                                                "mathName": "inch",
+                                                "mathName": "in",
                                               },
                                               Object {
                                                 "displayName": "Foot",
-                                                "mathName": "foot",
+                                                "mathName": "ft",
                                               },
                                               Object {
                                                 "displayName": "Yard",
-                                                "mathName": "yard",
+                                                "mathName": "yd",
                                               },
                                               Object {
                                                 "displayName": "Mile",
-                                                "mathName": "mile",
+                                                "mathName": "mi",
                                               },
                                               Object {
                                                 "displayName": "Link",
-                                                "mathName": "link",
+                                                "mathName": "li",
                                               },
                                               Object {
                                                 "displayName": "Rod",
-                                                "mathName": "rod",
+                                                "mathName": "rd",
                                               },
                                               Object {
                                                 "displayName": "Chain",
-                                                "mathName": "chain",
+                                                "mathName": "ch",
                                               },
                                               Object {
                                                 "displayName": "Angstrom",
@@ -4528,13 +6048,93 @@ ShallowWrapper {
                                           },
                                           "time": Object {
                                             "displayName": "Time",
-                                            "initialUnitLeft": "secs",
+                                            "initialUnitLeft": "s",
                                             "initialUnitRight": "mins",
                                             "mathName": "time",
                                             "units": Array [
                                               Object {
                                                 "displayName": "Second",
-                                                "mathName": "secs",
+                                                "mathName": "s",
+                                              },
+                                              Object {
+                                                "displayName": "Decisecond",
+                                                "mathName": "ds",
+                                              },
+                                              Object {
+                                                "displayName": "Centisecond",
+                                                "mathName": "cs",
+                                              },
+                                              Object {
+                                                "displayName": "Millisecond",
+                                                "mathName": "ms",
+                                              },
+                                              Object {
+                                                "displayName": "Microsecond",
+                                                "mathName": "us",
+                                              },
+                                              Object {
+                                                "displayName": "Nanosecond",
+                                                "mathName": "ns",
+                                              },
+                                              Object {
+                                                "displayName": "Picosecond",
+                                                "mathName": "ps",
+                                              },
+                                              Object {
+                                                "displayName": "Femtosecond",
+                                                "mathName": "fs",
+                                              },
+                                              Object {
+                                                "displayName": "Attosecond",
+                                                "mathName": "as",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptosecond",
+                                                "mathName": "zs",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctosecond",
+                                                "mathName": "ys",
+                                              },
+                                              Object {
+                                                "displayName": "Decasecond",
+                                                "mathName": "das",
+                                              },
+                                              Object {
+                                                "displayName": "Hectosecond",
+                                                "mathName": "hs",
+                                              },
+                                              Object {
+                                                "displayName": "Kilosecond",
+                                                "mathName": "ks",
+                                              },
+                                              Object {
+                                                "displayName": "Megasecond",
+                                                "mathName": "Ms",
+                                              },
+                                              Object {
+                                                "displayName": "Gigasecond",
+                                                "mathName": "Gs",
+                                              },
+                                              Object {
+                                                "displayName": "Terasecond",
+                                                "mathName": "Ts",
+                                              },
+                                              Object {
+                                                "displayName": "Petasecond",
+                                                "mathName": "Ps",
+                                              },
+                                              Object {
+                                                "displayName": "Exasecond",
+                                                "mathName": "Es",
+                                              },
+                                              Object {
+                                                "displayName": "Zettasecond",
+                                                "mathName": "Zs",
+                                              },
+                                              Object {
+                                                "displayName": "Yottasecond",
+                                                "mathName": "Ys",
                                               },
                                               Object {
                                                 "displayName": "Minute",
@@ -4542,7 +6142,7 @@ ShallowWrapper {
                                               },
                                               Object {
                                                 "displayName": "Hour",
-                                                "mathName": "hrs",
+                                                "mathName": "h",
                                               },
                                               Object {
                                                 "displayName": "Day",
@@ -4624,7 +6224,7 @@ ShallowWrapper {
                     },
                     Object {
                       "displayName": "Minute of arc",
-                      "mathName": "arcmin",
+                      "mathName": "arcminute",
                     },
                   ],
                 },
@@ -4826,41 +6426,121 @@ ShallowWrapper {
                 },
                 "length": Object {
                   "displayName": "Length",
-                  "initialUnitLeft": "meter",
-                  "initialUnitRight": "inch",
+                  "initialUnitLeft": "m",
+                  "initialUnitRight": "in",
                   "mathName": "length",
                   "units": Array [
                     Object {
                       "displayName": "Meter",
-                      "mathName": "meter",
+                      "mathName": "m",
+                    },
+                    Object {
+                      "displayName": "Decimeter",
+                      "mathName": "dm",
+                    },
+                    Object {
+                      "displayName": "Centimeter",
+                      "mathName": "cm",
+                    },
+                    Object {
+                      "displayName": "Millimeter",
+                      "mathName": "mm",
+                    },
+                    Object {
+                      "displayName": "Micrometer",
+                      "mathName": "um",
+                    },
+                    Object {
+                      "displayName": "Nanometer",
+                      "mathName": "nm",
+                    },
+                    Object {
+                      "displayName": "Picometer",
+                      "mathName": "pm",
+                    },
+                    Object {
+                      "displayName": "Femtometer",
+                      "mathName": "fm",
+                    },
+                    Object {
+                      "displayName": "Attometer",
+                      "mathName": "am",
+                    },
+                    Object {
+                      "displayName": "Zeptometer",
+                      "mathName": "zm",
+                    },
+                    Object {
+                      "displayName": "Yoctometer",
+                      "mathName": "ym",
+                    },
+                    Object {
+                      "displayName": "Decameter",
+                      "mathName": "dam",
+                    },
+                    Object {
+                      "displayName": "Hectometer",
+                      "mathName": "hm",
+                    },
+                    Object {
+                      "displayName": "Kilometer",
+                      "mathName": "km",
+                    },
+                    Object {
+                      "displayName": "Megameter",
+                      "mathName": "Mm",
+                    },
+                    Object {
+                      "displayName": "Gigameter",
+                      "mathName": "Gm",
+                    },
+                    Object {
+                      "displayName": "Terameter",
+                      "mathName": "Tm",
+                    },
+                    Object {
+                      "displayName": "Petameter",
+                      "mathName": "Pm",
+                    },
+                    Object {
+                      "displayName": "Exameter",
+                      "mathName": "Em",
+                    },
+                    Object {
+                      "displayName": "Zettameter",
+                      "mathName": "Zm",
+                    },
+                    Object {
+                      "displayName": "Yottameter",
+                      "mathName": "Ym",
                     },
                     Object {
                       "displayName": "Inch",
-                      "mathName": "inch",
+                      "mathName": "in",
                     },
                     Object {
                       "displayName": "Foot",
-                      "mathName": "foot",
+                      "mathName": "ft",
                     },
                     Object {
                       "displayName": "Yard",
-                      "mathName": "yard",
+                      "mathName": "yd",
                     },
                     Object {
                       "displayName": "Mile",
-                      "mathName": "mile",
+                      "mathName": "mi",
                     },
                     Object {
                       "displayName": "Link",
-                      "mathName": "link",
+                      "mathName": "li",
                     },
                     Object {
                       "displayName": "Rod",
-                      "mathName": "rod",
+                      "mathName": "rd",
                     },
                     Object {
                       "displayName": "Chain",
-                      "mathName": "chain",
+                      "mathName": "ch",
                     },
                     Object {
                       "displayName": "Angstrom",
@@ -4994,13 +6674,93 @@ ShallowWrapper {
                 },
                 "time": Object {
                   "displayName": "Time",
-                  "initialUnitLeft": "secs",
+                  "initialUnitLeft": "s",
                   "initialUnitRight": "mins",
                   "mathName": "time",
                   "units": Array [
                     Object {
                       "displayName": "Second",
-                      "mathName": "secs",
+                      "mathName": "s",
+                    },
+                    Object {
+                      "displayName": "Decisecond",
+                      "mathName": "ds",
+                    },
+                    Object {
+                      "displayName": "Centisecond",
+                      "mathName": "cs",
+                    },
+                    Object {
+                      "displayName": "Millisecond",
+                      "mathName": "ms",
+                    },
+                    Object {
+                      "displayName": "Microsecond",
+                      "mathName": "us",
+                    },
+                    Object {
+                      "displayName": "Nanosecond",
+                      "mathName": "ns",
+                    },
+                    Object {
+                      "displayName": "Picosecond",
+                      "mathName": "ps",
+                    },
+                    Object {
+                      "displayName": "Femtosecond",
+                      "mathName": "fs",
+                    },
+                    Object {
+                      "displayName": "Attosecond",
+                      "mathName": "as",
+                    },
+                    Object {
+                      "displayName": "Zeptosecond",
+                      "mathName": "zs",
+                    },
+                    Object {
+                      "displayName": "Yoctosecond",
+                      "mathName": "ys",
+                    },
+                    Object {
+                      "displayName": "Decasecond",
+                      "mathName": "das",
+                    },
+                    Object {
+                      "displayName": "Hectosecond",
+                      "mathName": "hs",
+                    },
+                    Object {
+                      "displayName": "Kilosecond",
+                      "mathName": "ks",
+                    },
+                    Object {
+                      "displayName": "Megasecond",
+                      "mathName": "Ms",
+                    },
+                    Object {
+                      "displayName": "Gigasecond",
+                      "mathName": "Gs",
+                    },
+                    Object {
+                      "displayName": "Terasecond",
+                      "mathName": "Ts",
+                    },
+                    Object {
+                      "displayName": "Petasecond",
+                      "mathName": "Ps",
+                    },
+                    Object {
+                      "displayName": "Exasecond",
+                      "mathName": "Es",
+                    },
+                    Object {
+                      "displayName": "Zettasecond",
+                      "mathName": "Zs",
+                    },
+                    Object {
+                      "displayName": "Yottasecond",
+                      "mathName": "Ys",
                     },
                     Object {
                       "displayName": "Minute",
@@ -5008,7 +6768,7 @@ ShallowWrapper {
                     },
                     Object {
                       "displayName": "Hour",
-                      "mathName": "hrs",
+                      "mathName": "h",
                     },
                     Object {
                       "displayName": "Day",
@@ -5080,7 +6840,7 @@ ShallowWrapper {
                     },
                     Object {
                       "displayName": "Minute of arc",
-                      "mathName": "arcmin",
+                      "mathName": "arcminute",
                     },
                   ],
                 },
@@ -5282,41 +7042,121 @@ ShallowWrapper {
                 },
                 "length": Object {
                   "displayName": "Length",
-                  "initialUnitLeft": "meter",
-                  "initialUnitRight": "inch",
+                  "initialUnitLeft": "m",
+                  "initialUnitRight": "in",
                   "mathName": "length",
                   "units": Array [
                     Object {
                       "displayName": "Meter",
-                      "mathName": "meter",
+                      "mathName": "m",
+                    },
+                    Object {
+                      "displayName": "Decimeter",
+                      "mathName": "dm",
+                    },
+                    Object {
+                      "displayName": "Centimeter",
+                      "mathName": "cm",
+                    },
+                    Object {
+                      "displayName": "Millimeter",
+                      "mathName": "mm",
+                    },
+                    Object {
+                      "displayName": "Micrometer",
+                      "mathName": "um",
+                    },
+                    Object {
+                      "displayName": "Nanometer",
+                      "mathName": "nm",
+                    },
+                    Object {
+                      "displayName": "Picometer",
+                      "mathName": "pm",
+                    },
+                    Object {
+                      "displayName": "Femtometer",
+                      "mathName": "fm",
+                    },
+                    Object {
+                      "displayName": "Attometer",
+                      "mathName": "am",
+                    },
+                    Object {
+                      "displayName": "Zeptometer",
+                      "mathName": "zm",
+                    },
+                    Object {
+                      "displayName": "Yoctometer",
+                      "mathName": "ym",
+                    },
+                    Object {
+                      "displayName": "Decameter",
+                      "mathName": "dam",
+                    },
+                    Object {
+                      "displayName": "Hectometer",
+                      "mathName": "hm",
+                    },
+                    Object {
+                      "displayName": "Kilometer",
+                      "mathName": "km",
+                    },
+                    Object {
+                      "displayName": "Megameter",
+                      "mathName": "Mm",
+                    },
+                    Object {
+                      "displayName": "Gigameter",
+                      "mathName": "Gm",
+                    },
+                    Object {
+                      "displayName": "Terameter",
+                      "mathName": "Tm",
+                    },
+                    Object {
+                      "displayName": "Petameter",
+                      "mathName": "Pm",
+                    },
+                    Object {
+                      "displayName": "Exameter",
+                      "mathName": "Em",
+                    },
+                    Object {
+                      "displayName": "Zettameter",
+                      "mathName": "Zm",
+                    },
+                    Object {
+                      "displayName": "Yottameter",
+                      "mathName": "Ym",
                     },
                     Object {
                       "displayName": "Inch",
-                      "mathName": "inch",
+                      "mathName": "in",
                     },
                     Object {
                       "displayName": "Foot",
-                      "mathName": "foot",
+                      "mathName": "ft",
                     },
                     Object {
                       "displayName": "Yard",
-                      "mathName": "yard",
+                      "mathName": "yd",
                     },
                     Object {
                       "displayName": "Mile",
-                      "mathName": "mile",
+                      "mathName": "mi",
                     },
                     Object {
                       "displayName": "Link",
-                      "mathName": "link",
+                      "mathName": "li",
                     },
                     Object {
                       "displayName": "Rod",
-                      "mathName": "rod",
+                      "mathName": "rd",
                     },
                     Object {
                       "displayName": "Chain",
-                      "mathName": "chain",
+                      "mathName": "ch",
                     },
                     Object {
                       "displayName": "Angstrom",
@@ -5450,13 +7290,93 @@ ShallowWrapper {
                 },
                 "time": Object {
                   "displayName": "Time",
-                  "initialUnitLeft": "secs",
+                  "initialUnitLeft": "s",
                   "initialUnitRight": "mins",
                   "mathName": "time",
                   "units": Array [
                     Object {
                       "displayName": "Second",
-                      "mathName": "secs",
+                      "mathName": "s",
+                    },
+                    Object {
+                      "displayName": "Decisecond",
+                      "mathName": "ds",
+                    },
+                    Object {
+                      "displayName": "Centisecond",
+                      "mathName": "cs",
+                    },
+                    Object {
+                      "displayName": "Millisecond",
+                      "mathName": "ms",
+                    },
+                    Object {
+                      "displayName": "Microsecond",
+                      "mathName": "us",
+                    },
+                    Object {
+                      "displayName": "Nanosecond",
+                      "mathName": "ns",
+                    },
+                    Object {
+                      "displayName": "Picosecond",
+                      "mathName": "ps",
+                    },
+                    Object {
+                      "displayName": "Femtosecond",
+                      "mathName": "fs",
+                    },
+                    Object {
+                      "displayName": "Attosecond",
+                      "mathName": "as",
+                    },
+                    Object {
+                      "displayName": "Zeptosecond",
+                      "mathName": "zs",
+                    },
+                    Object {
+                      "displayName": "Yoctosecond",
+                      "mathName": "ys",
+                    },
+                    Object {
+                      "displayName": "Decasecond",
+                      "mathName": "das",
+                    },
+                    Object {
+                      "displayName": "Hectosecond",
+                      "mathName": "hs",
+                    },
+                    Object {
+                      "displayName": "Kilosecond",
+                      "mathName": "ks",
+                    },
+                    Object {
+                      "displayName": "Megasecond",
+                      "mathName": "Ms",
+                    },
+                    Object {
+                      "displayName": "Gigasecond",
+                      "mathName": "Gs",
+                    },
+                    Object {
+                      "displayName": "Terasecond",
+                      "mathName": "Ts",
+                    },
+                    Object {
+                      "displayName": "Petasecond",
+                      "mathName": "Ps",
+                    },
+                    Object {
+                      "displayName": "Exasecond",
+                      "mathName": "Es",
+                    },
+                    Object {
+                      "displayName": "Zettasecond",
+                      "mathName": "Zs",
+                    },
+                    Object {
+                      "displayName": "Yottasecond",
+                      "mathName": "Ys",
                     },
                     Object {
                       "displayName": "Minute",
@@ -5464,7 +7384,7 @@ ShallowWrapper {
                     },
                     Object {
                       "displayName": "Hour",
-                      "mathName": "hrs",
+                      "mathName": "h",
                     },
                     Object {
                       "displayName": "Day",

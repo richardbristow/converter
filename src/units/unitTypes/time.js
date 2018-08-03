@@ -1,12 +1,13 @@
 const time = {
   displayName: 'Time',
   mathName: 'time',
-  initialUnitLeft: 'secs',
+  initialUnitLeft: 's',
   initialUnitRight: 'mins',
   units: [
     {
       displayName: 'Second',
-      mathName: 'secs',
+      mathName: 's',
+      allowPrefixes: true,
     },
     {
       displayName: 'Minute',
@@ -14,7 +15,7 @@ const time = {
     },
     {
       displayName: 'Hour',
-      mathName: 'hrs',
+      mathName: 'h',
     },
     {
       displayName: 'Day',
