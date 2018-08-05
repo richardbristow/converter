@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-fjdhpX elRmiX"
+  className="sc-jzJRlG cEApiD"
 >
   <div
     className="sc-bwzfXH hoEbNg"
@@ -112,24 +112,24 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-jTzLTM hjsVOn"
+    className="sc-fjdhpX dMSIba"
   >
     <div
-      className="sc-VigVT hOUFCr"
+      className="sc-jTzLTM juikVe"
     >
       <div
-        className="sc-iwsKbI jWuAMf"
+        className="sc-gZMcBi csOeYv"
         name="left"
       >
         <input
-          className="sc-gZMcBi eUnVMf"
+          className="sc-gqjmRU cmnkjW"
           name="leftInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-gzVnrw dBLEPe"
+          className="sc-htoDjs jXZFDC"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -143,7 +143,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-htoDjs gvYphc"
+            className="sc-dnqmqq hiopyH"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -153,7 +153,7 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-gqjmRU cXtxNi"
+        className="sc-VigVT ecmxtM"
       >
         <div>
           ⇀
@@ -163,18 +163,18 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-iwsKbI jKbNrH"
+        className="sc-gZMcBi evGDlj"
         name="right"
       >
         <input
-          className="sc-gZMcBi eUnVMf"
+          className="sc-gqjmRU cmnkjW"
           name="rightInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-gzVnrw dBLEPe"
+          className="sc-htoDjs jXZFDC"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -188,7 +188,7 @@ exports[`index matches the snapshot 1`] = `
             Inch
           </button>
           <button
-            className="sc-htoDjs gvYphc"
+            className="sc-dnqmqq hiopyH"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"

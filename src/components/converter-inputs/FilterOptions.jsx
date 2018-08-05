@@ -17,6 +17,10 @@ const StyledFilterOptions = styled.div`
   border-top: 0px solid transparent;
 `;
 
+const StyledFilterError = StyledConvertButton.extend`
+  cursor: not-allowed;
+`;
+
 const focusNextOption = (name, value, nextOption, refs) => {
   if (refs[nextOption]) {
     refs[nextOption].current.focus();
@@ -56,7 +60,7 @@ const FilterOptions = ({
           innerRef={dropdownOptionRefs[index]}
         >
           {displayName}
-        </StyledConvertButton>))) : <p>No units found.</p>}
+        </StyledConvertButton>))) : <StyledFilterError tabIndex="-1">No units found.</StyledFilterError>}
     </StyledFilterOptions>
   );
 };
