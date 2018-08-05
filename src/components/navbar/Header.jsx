@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import StyledLink from '../shared/StyledLink';
 
@@ -12,14 +13,23 @@ const StyledHeader = styled.div`
   align-items: center;
 `;
 
-const StyledLogo = styled.h1`
-  margin: 0;
-  padding-left: 40px;
+const StyledLogoLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  &:visited {
+    color: black;
+  };
+  h1 {
+    margin: 0;
+    padding-left: 40px;
+  }
 `;
 
 const Header = () => (
   <StyledHeader>
-    <StyledLogo>Converter</StyledLogo>
+    <StyledLogoLink to="/">
+      <h1>Converter</h1>
+    </StyledLogoLink>
     <div />
     <StyledLink header to="/help">Help</StyledLink>
     <StyledLink header to="/about">About</StyledLink>

@@ -10,6 +10,6 @@ describe('Header', () => {
 
   it('should show two links', () => {
     const wrapper = shallow(<Header />);
-    expect(wrapper.find('Styled(Link)')).toHaveLength(2);
+    expect(wrapper.find('Styled(Link)')).toHaveLength(3);
   });
 });

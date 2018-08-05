@@ -7,11 +7,15 @@ exports[`index matches the snapshot 1`] = `
   <div
     className="sc-bwzfXH hoEbNg"
   >
-    <h1
-      className="sc-htpNat XOOOI"
+    <a
+      className="sc-htpNat dCVoSI"
+      href="/"
+      onClick={[Function]}
     >
-      Converter
-    </h1>
+      <h1>
+        Converter
+      </h1>
+    </a>
     <div />
     <a
       className="sc-bdVaJa ewDqkD"
