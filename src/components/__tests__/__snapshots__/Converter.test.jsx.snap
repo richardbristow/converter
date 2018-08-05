@@ -198,6 +198,98 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
+                                "electricCurrent": Object {
+                                  "displayName": "Electric Current",
+                                  "initialUnitLeft": "mA",
+                                  "initialUnitRight": "A",
+                                  "mathName": "electricCurrent",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Ampere",
+                                      "mathName": "A",
+                                    },
+                                    Object {
+                                      "displayName": "Deciampere",
+                                      "mathName": "dA",
+                                    },
+                                    Object {
+                                      "displayName": "Centiampere",
+                                      "mathName": "cA",
+                                    },
+                                    Object {
+                                      "displayName": "Milliampere",
+                                      "mathName": "mA",
+                                    },
+                                    Object {
+                                      "displayName": "Microampere",
+                                      "mathName": "uA",
+                                    },
+                                    Object {
+                                      "displayName": "Nanoampere",
+                                      "mathName": "nA",
+                                    },
+                                    Object {
+                                      "displayName": "Picoampere",
+                                      "mathName": "pA",
+                                    },
+                                    Object {
+                                      "displayName": "Femtoampere",
+                                      "mathName": "fA",
+                                    },
+                                    Object {
+                                      "displayName": "Attoampere",
+                                      "mathName": "aA",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptoampere",
+                                      "mathName": "zA",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctoampere",
+                                      "mathName": "yA",
+                                    },
+                                    Object {
+                                      "displayName": "Decaampere",
+                                      "mathName": "daA",
+                                    },
+                                    Object {
+                                      "displayName": "Hectoampere",
+                                      "mathName": "hA",
+                                    },
+                                    Object {
+                                      "displayName": "Kiloampere",
+                                      "mathName": "kA",
+                                    },
+                                    Object {
+                                      "displayName": "Megaampere",
+                                      "mathName": "MA",
+                                    },
+                                    Object {
+                                      "displayName": "Gigaampere",
+                                      "mathName": "GA",
+                                    },
+                                    Object {
+                                      "displayName": "Teraampere",
+                                      "mathName": "TA",
+                                    },
+                                    Object {
+                                      "displayName": "Petaampere",
+                                      "mathName": "PA",
+                                    },
+                                    Object {
+                                      "displayName": "Exaampere",
+                                      "mathName": "EA",
+                                    },
+                                    Object {
+                                      "displayName": "Zettaampere",
+                                      "mathName": "ZA",
+                                    },
+                                    Object {
+                                      "displayName": "Yottaampere",
+                                      "mathName": "YA",
+                                    },
+                                  ],
+                                },
                                 "energy": Object {
                                   "displayName": "Energy",
                                   "initialUnitLeft": "J",
@@ -247,6 +339,98 @@ ShallowWrapper {
                                     Object {
                                       "displayName": "Kip",
                                       "mathName": "kip",
+                                    },
+                                  ],
+                                },
+                                "frequency": Object {
+                                  "displayName": "Frequency",
+                                  "initialUnitLeft": "Hz",
+                                  "initialUnitRight": "MHz",
+                                  "mathName": "frequency",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Hertz",
+                                      "mathName": "Hz",
+                                    },
+                                    Object {
+                                      "displayName": "Decihertz",
+                                      "mathName": "dHz",
+                                    },
+                                    Object {
+                                      "displayName": "Centihertz",
+                                      "mathName": "cHz",
+                                    },
+                                    Object {
+                                      "displayName": "Millihertz",
+                                      "mathName": "mHz",
+                                    },
+                                    Object {
+                                      "displayName": "Microhertz",
+                                      "mathName": "uHz",
+                                    },
+                                    Object {
+                                      "displayName": "Nanohertz",
+                                      "mathName": "nHz",
+                                    },
+                                    Object {
+                                      "displayName": "Picohertz",
+                                      "mathName": "pHz",
+                                    },
+                                    Object {
+                                      "displayName": "Femtohertz",
+                                      "mathName": "fHz",
+                                    },
+                                    Object {
+                                      "displayName": "Attohertz",
+                                      "mathName": "aHz",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptohertz",
+                                      "mathName": "zHz",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctohertz",
+                                      "mathName": "yHz",
+                                    },
+                                    Object {
+                                      "displayName": "Decahertz",
+                                      "mathName": "daHz",
+                                    },
+                                    Object {
+                                      "displayName": "Hectohertz",
+                                      "mathName": "hHz",
+                                    },
+                                    Object {
+                                      "displayName": "Kilohertz",
+                                      "mathName": "kHz",
+                                    },
+                                    Object {
+                                      "displayName": "Megahertz",
+                                      "mathName": "MHz",
+                                    },
+                                    Object {
+                                      "displayName": "Gigahertz",
+                                      "mathName": "GHz",
+                                    },
+                                    Object {
+                                      "displayName": "Terahertz",
+                                      "mathName": "THz",
+                                    },
+                                    Object {
+                                      "displayName": "Petahertz",
+                                      "mathName": "PHz",
+                                    },
+                                    Object {
+                                      "displayName": "Exahertz",
+                                      "mathName": "EHz",
+                                    },
+                                    Object {
+                                      "displayName": "Zettahertz",
+                                      "mathName": "ZHz",
+                                    },
+                                    Object {
+                                      "displayName": "Yottahertz",
+                                      "mathName": "YHz",
                                     },
                                   ],
                                 },
@@ -808,6 +992,98 @@ ShallowWrapper {
                                     },
                                   ],
                                 },
+                                "electricCurrent": Object {
+                                  "displayName": "Electric Current",
+                                  "initialUnitLeft": "mA",
+                                  "initialUnitRight": "A",
+                                  "mathName": "electricCurrent",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Ampere",
+                                      "mathName": "A",
+                                    },
+                                    Object {
+                                      "displayName": "Deciampere",
+                                      "mathName": "dA",
+                                    },
+                                    Object {
+                                      "displayName": "Centiampere",
+                                      "mathName": "cA",
+                                    },
+                                    Object {
+                                      "displayName": "Milliampere",
+                                      "mathName": "mA",
+                                    },
+                                    Object {
+                                      "displayName": "Microampere",
+                                      "mathName": "uA",
+                                    },
+                                    Object {
+                                      "displayName": "Nanoampere",
+                                      "mathName": "nA",
+                                    },
+                                    Object {
+                                      "displayName": "Picoampere",
+                                      "mathName": "pA",
+                                    },
+                                    Object {
+                                      "displayName": "Femtoampere",
+                                      "mathName": "fA",
+                                    },
+                                    Object {
+                                      "displayName": "Attoampere",
+                                      "mathName": "aA",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptoampere",
+                                      "mathName": "zA",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctoampere",
+                                      "mathName": "yA",
+                                    },
+                                    Object {
+                                      "displayName": "Decaampere",
+                                      "mathName": "daA",
+                                    },
+                                    Object {
+                                      "displayName": "Hectoampere",
+                                      "mathName": "hA",
+                                    },
+                                    Object {
+                                      "displayName": "Kiloampere",
+                                      "mathName": "kA",
+                                    },
+                                    Object {
+                                      "displayName": "Megaampere",
+                                      "mathName": "MA",
+                                    },
+                                    Object {
+                                      "displayName": "Gigaampere",
+                                      "mathName": "GA",
+                                    },
+                                    Object {
+                                      "displayName": "Teraampere",
+                                      "mathName": "TA",
+                                    },
+                                    Object {
+                                      "displayName": "Petaampere",
+                                      "mathName": "PA",
+                                    },
+                                    Object {
+                                      "displayName": "Exaampere",
+                                      "mathName": "EA",
+                                    },
+                                    Object {
+                                      "displayName": "Zettaampere",
+                                      "mathName": "ZA",
+                                    },
+                                    Object {
+                                      "displayName": "Yottaampere",
+                                      "mathName": "YA",
+                                    },
+                                  ],
+                                },
                                 "energy": Object {
                                   "displayName": "Energy",
                                   "initialUnitLeft": "J",
@@ -857,6 +1133,98 @@ ShallowWrapper {
                                     Object {
                                       "displayName": "Kip",
                                       "mathName": "kip",
+                                    },
+                                  ],
+                                },
+                                "frequency": Object {
+                                  "displayName": "Frequency",
+                                  "initialUnitLeft": "Hz",
+                                  "initialUnitRight": "MHz",
+                                  "mathName": "frequency",
+                                  "units": Array [
+                                    Object {
+                                      "displayName": "Hertz",
+                                      "mathName": "Hz",
+                                    },
+                                    Object {
+                                      "displayName": "Decihertz",
+                                      "mathName": "dHz",
+                                    },
+                                    Object {
+                                      "displayName": "Centihertz",
+                                      "mathName": "cHz",
+                                    },
+                                    Object {
+                                      "displayName": "Millihertz",
+                                      "mathName": "mHz",
+                                    },
+                                    Object {
+                                      "displayName": "Microhertz",
+                                      "mathName": "uHz",
+                                    },
+                                    Object {
+                                      "displayName": "Nanohertz",
+                                      "mathName": "nHz",
+                                    },
+                                    Object {
+                                      "displayName": "Picohertz",
+                                      "mathName": "pHz",
+                                    },
+                                    Object {
+                                      "displayName": "Femtohertz",
+                                      "mathName": "fHz",
+                                    },
+                                    Object {
+                                      "displayName": "Attohertz",
+                                      "mathName": "aHz",
+                                    },
+                                    Object {
+                                      "displayName": "Zeptohertz",
+                                      "mathName": "zHz",
+                                    },
+                                    Object {
+                                      "displayName": "Yoctohertz",
+                                      "mathName": "yHz",
+                                    },
+                                    Object {
+                                      "displayName": "Decahertz",
+                                      "mathName": "daHz",
+                                    },
+                                    Object {
+                                      "displayName": "Hectohertz",
+                                      "mathName": "hHz",
+                                    },
+                                    Object {
+                                      "displayName": "Kilohertz",
+                                      "mathName": "kHz",
+                                    },
+                                    Object {
+                                      "displayName": "Megahertz",
+                                      "mathName": "MHz",
+                                    },
+                                    Object {
+                                      "displayName": "Gigahertz",
+                                      "mathName": "GHz",
+                                    },
+                                    Object {
+                                      "displayName": "Terahertz",
+                                      "mathName": "THz",
+                                    },
+                                    Object {
+                                      "displayName": "Petahertz",
+                                      "mathName": "PHz",
+                                    },
+                                    Object {
+                                      "displayName": "Exahertz",
+                                      "mathName": "EHz",
+                                    },
+                                    Object {
+                                      "displayName": "Zettahertz",
+                                      "mathName": "ZHz",
+                                    },
+                                    Object {
+                                      "displayName": "Yottahertz",
+                                      "mathName": "YHz",
                                     },
                                   ],
                                 },
@@ -1428,6 +1796,98 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
+                                    "electricCurrent": Object {
+                                      "displayName": "Electric Current",
+                                      "initialUnitLeft": "mA",
+                                      "initialUnitRight": "A",
+                                      "mathName": "electricCurrent",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Ampere",
+                                          "mathName": "A",
+                                        },
+                                        Object {
+                                          "displayName": "Deciampere",
+                                          "mathName": "dA",
+                                        },
+                                        Object {
+                                          "displayName": "Centiampere",
+                                          "mathName": "cA",
+                                        },
+                                        Object {
+                                          "displayName": "Milliampere",
+                                          "mathName": "mA",
+                                        },
+                                        Object {
+                                          "displayName": "Microampere",
+                                          "mathName": "uA",
+                                        },
+                                        Object {
+                                          "displayName": "Nanoampere",
+                                          "mathName": "nA",
+                                        },
+                                        Object {
+                                          "displayName": "Picoampere",
+                                          "mathName": "pA",
+                                        },
+                                        Object {
+                                          "displayName": "Femtoampere",
+                                          "mathName": "fA",
+                                        },
+                                        Object {
+                                          "displayName": "Attoampere",
+                                          "mathName": "aA",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptoampere",
+                                          "mathName": "zA",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctoampere",
+                                          "mathName": "yA",
+                                        },
+                                        Object {
+                                          "displayName": "Decaampere",
+                                          "mathName": "daA",
+                                        },
+                                        Object {
+                                          "displayName": "Hectoampere",
+                                          "mathName": "hA",
+                                        },
+                                        Object {
+                                          "displayName": "Kiloampere",
+                                          "mathName": "kA",
+                                        },
+                                        Object {
+                                          "displayName": "Megaampere",
+                                          "mathName": "MA",
+                                        },
+                                        Object {
+                                          "displayName": "Gigaampere",
+                                          "mathName": "GA",
+                                        },
+                                        Object {
+                                          "displayName": "Teraampere",
+                                          "mathName": "TA",
+                                        },
+                                        Object {
+                                          "displayName": "Petaampere",
+                                          "mathName": "PA",
+                                        },
+                                        Object {
+                                          "displayName": "Exaampere",
+                                          "mathName": "EA",
+                                        },
+                                        Object {
+                                          "displayName": "Zettaampere",
+                                          "mathName": "ZA",
+                                        },
+                                        Object {
+                                          "displayName": "Yottaampere",
+                                          "mathName": "YA",
+                                        },
+                                      ],
+                                    },
                                     "energy": Object {
                                       "displayName": "Energy",
                                       "initialUnitLeft": "J",
@@ -1477,6 +1937,98 @@ ShallowWrapper {
                                         Object {
                                           "displayName": "Kip",
                                           "mathName": "kip",
+                                        },
+                                      ],
+                                    },
+                                    "frequency": Object {
+                                      "displayName": "Frequency",
+                                      "initialUnitLeft": "Hz",
+                                      "initialUnitRight": "MHz",
+                                      "mathName": "frequency",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Hertz",
+                                          "mathName": "Hz",
+                                        },
+                                        Object {
+                                          "displayName": "Decihertz",
+                                          "mathName": "dHz",
+                                        },
+                                        Object {
+                                          "displayName": "Centihertz",
+                                          "mathName": "cHz",
+                                        },
+                                        Object {
+                                          "displayName": "Millihertz",
+                                          "mathName": "mHz",
+                                        },
+                                        Object {
+                                          "displayName": "Microhertz",
+                                          "mathName": "uHz",
+                                        },
+                                        Object {
+                                          "displayName": "Nanohertz",
+                                          "mathName": "nHz",
+                                        },
+                                        Object {
+                                          "displayName": "Picohertz",
+                                          "mathName": "pHz",
+                                        },
+                                        Object {
+                                          "displayName": "Femtohertz",
+                                          "mathName": "fHz",
+                                        },
+                                        Object {
+                                          "displayName": "Attohertz",
+                                          "mathName": "aHz",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptohertz",
+                                          "mathName": "zHz",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctohertz",
+                                          "mathName": "yHz",
+                                        },
+                                        Object {
+                                          "displayName": "Decahertz",
+                                          "mathName": "daHz",
+                                        },
+                                        Object {
+                                          "displayName": "Hectohertz",
+                                          "mathName": "hHz",
+                                        },
+                                        Object {
+                                          "displayName": "Kilohertz",
+                                          "mathName": "kHz",
+                                        },
+                                        Object {
+                                          "displayName": "Megahertz",
+                                          "mathName": "MHz",
+                                        },
+                                        Object {
+                                          "displayName": "Gigahertz",
+                                          "mathName": "GHz",
+                                        },
+                                        Object {
+                                          "displayName": "Terahertz",
+                                          "mathName": "THz",
+                                        },
+                                        Object {
+                                          "displayName": "Petahertz",
+                                          "mathName": "PHz",
+                                        },
+                                        Object {
+                                          "displayName": "Exahertz",
+                                          "mathName": "EHz",
+                                        },
+                                        Object {
+                                          "displayName": "Zettahertz",
+                                          "mathName": "ZHz",
+                                        },
+                                        Object {
+                                          "displayName": "Yottahertz",
+                                          "mathName": "YHz",
                                         },
                                       ],
                                     },
@@ -2038,6 +2590,98 @@ ShallowWrapper {
                                         },
                                       ],
                                     },
+                                    "electricCurrent": Object {
+                                      "displayName": "Electric Current",
+                                      "initialUnitLeft": "mA",
+                                      "initialUnitRight": "A",
+                                      "mathName": "electricCurrent",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Ampere",
+                                          "mathName": "A",
+                                        },
+                                        Object {
+                                          "displayName": "Deciampere",
+                                          "mathName": "dA",
+                                        },
+                                        Object {
+                                          "displayName": "Centiampere",
+                                          "mathName": "cA",
+                                        },
+                                        Object {
+                                          "displayName": "Milliampere",
+                                          "mathName": "mA",
+                                        },
+                                        Object {
+                                          "displayName": "Microampere",
+                                          "mathName": "uA",
+                                        },
+                                        Object {
+                                          "displayName": "Nanoampere",
+                                          "mathName": "nA",
+                                        },
+                                        Object {
+                                          "displayName": "Picoampere",
+                                          "mathName": "pA",
+                                        },
+                                        Object {
+                                          "displayName": "Femtoampere",
+                                          "mathName": "fA",
+                                        },
+                                        Object {
+                                          "displayName": "Attoampere",
+                                          "mathName": "aA",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptoampere",
+                                          "mathName": "zA",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctoampere",
+                                          "mathName": "yA",
+                                        },
+                                        Object {
+                                          "displayName": "Decaampere",
+                                          "mathName": "daA",
+                                        },
+                                        Object {
+                                          "displayName": "Hectoampere",
+                                          "mathName": "hA",
+                                        },
+                                        Object {
+                                          "displayName": "Kiloampere",
+                                          "mathName": "kA",
+                                        },
+                                        Object {
+                                          "displayName": "Megaampere",
+                                          "mathName": "MA",
+                                        },
+                                        Object {
+                                          "displayName": "Gigaampere",
+                                          "mathName": "GA",
+                                        },
+                                        Object {
+                                          "displayName": "Teraampere",
+                                          "mathName": "TA",
+                                        },
+                                        Object {
+                                          "displayName": "Petaampere",
+                                          "mathName": "PA",
+                                        },
+                                        Object {
+                                          "displayName": "Exaampere",
+                                          "mathName": "EA",
+                                        },
+                                        Object {
+                                          "displayName": "Zettaampere",
+                                          "mathName": "ZA",
+                                        },
+                                        Object {
+                                          "displayName": "Yottaampere",
+                                          "mathName": "YA",
+                                        },
+                                      ],
+                                    },
                                     "energy": Object {
                                       "displayName": "Energy",
                                       "initialUnitLeft": "J",
@@ -2087,6 +2731,98 @@ ShallowWrapper {
                                         Object {
                                           "displayName": "Kip",
                                           "mathName": "kip",
+                                        },
+                                      ],
+                                    },
+                                    "frequency": Object {
+                                      "displayName": "Frequency",
+                                      "initialUnitLeft": "Hz",
+                                      "initialUnitRight": "MHz",
+                                      "mathName": "frequency",
+                                      "units": Array [
+                                        Object {
+                                          "displayName": "Hertz",
+                                          "mathName": "Hz",
+                                        },
+                                        Object {
+                                          "displayName": "Decihertz",
+                                          "mathName": "dHz",
+                                        },
+                                        Object {
+                                          "displayName": "Centihertz",
+                                          "mathName": "cHz",
+                                        },
+                                        Object {
+                                          "displayName": "Millihertz",
+                                          "mathName": "mHz",
+                                        },
+                                        Object {
+                                          "displayName": "Microhertz",
+                                          "mathName": "uHz",
+                                        },
+                                        Object {
+                                          "displayName": "Nanohertz",
+                                          "mathName": "nHz",
+                                        },
+                                        Object {
+                                          "displayName": "Picohertz",
+                                          "mathName": "pHz",
+                                        },
+                                        Object {
+                                          "displayName": "Femtohertz",
+                                          "mathName": "fHz",
+                                        },
+                                        Object {
+                                          "displayName": "Attohertz",
+                                          "mathName": "aHz",
+                                        },
+                                        Object {
+                                          "displayName": "Zeptohertz",
+                                          "mathName": "zHz",
+                                        },
+                                        Object {
+                                          "displayName": "Yoctohertz",
+                                          "mathName": "yHz",
+                                        },
+                                        Object {
+                                          "displayName": "Decahertz",
+                                          "mathName": "daHz",
+                                        },
+                                        Object {
+                                          "displayName": "Hectohertz",
+                                          "mathName": "hHz",
+                                        },
+                                        Object {
+                                          "displayName": "Kilohertz",
+                                          "mathName": "kHz",
+                                        },
+                                        Object {
+                                          "displayName": "Megahertz",
+                                          "mathName": "MHz",
+                                        },
+                                        Object {
+                                          "displayName": "Gigahertz",
+                                          "mathName": "GHz",
+                                        },
+                                        Object {
+                                          "displayName": "Terahertz",
+                                          "mathName": "THz",
+                                        },
+                                        Object {
+                                          "displayName": "Petahertz",
+                                          "mathName": "PHz",
+                                        },
+                                        Object {
+                                          "displayName": "Exahertz",
+                                          "mathName": "EHz",
+                                        },
+                                        Object {
+                                          "displayName": "Zettahertz",
+                                          "mathName": "ZHz",
+                                        },
+                                        Object {
+                                          "displayName": "Yottahertz",
+                                          "mathName": "YHz",
                                         },
                                       ],
                                     },
@@ -2664,6 +3400,98 @@ ShallowWrapper {
                   },
                 ],
               },
+              "electricCurrent": Object {
+                "displayName": "Electric Current",
+                "initialUnitLeft": "mA",
+                "initialUnitRight": "A",
+                "mathName": "electricCurrent",
+                "units": Array [
+                  Object {
+                    "displayName": "Ampere",
+                    "mathName": "A",
+                  },
+                  Object {
+                    "displayName": "Deciampere",
+                    "mathName": "dA",
+                  },
+                  Object {
+                    "displayName": "Centiampere",
+                    "mathName": "cA",
+                  },
+                  Object {
+                    "displayName": "Milliampere",
+                    "mathName": "mA",
+                  },
+                  Object {
+                    "displayName": "Microampere",
+                    "mathName": "uA",
+                  },
+                  Object {
+                    "displayName": "Nanoampere",
+                    "mathName": "nA",
+                  },
+                  Object {
+                    "displayName": "Picoampere",
+                    "mathName": "pA",
+                  },
+                  Object {
+                    "displayName": "Femtoampere",
+                    "mathName": "fA",
+                  },
+                  Object {
+                    "displayName": "Attoampere",
+                    "mathName": "aA",
+                  },
+                  Object {
+                    "displayName": "Zeptoampere",
+                    "mathName": "zA",
+                  },
+                  Object {
+                    "displayName": "Yoctoampere",
+                    "mathName": "yA",
+                  },
+                  Object {
+                    "displayName": "Decaampere",
+                    "mathName": "daA",
+                  },
+                  Object {
+                    "displayName": "Hectoampere",
+                    "mathName": "hA",
+                  },
+                  Object {
+                    "displayName": "Kiloampere",
+                    "mathName": "kA",
+                  },
+                  Object {
+                    "displayName": "Megaampere",
+                    "mathName": "MA",
+                  },
+                  Object {
+                    "displayName": "Gigaampere",
+                    "mathName": "GA",
+                  },
+                  Object {
+                    "displayName": "Teraampere",
+                    "mathName": "TA",
+                  },
+                  Object {
+                    "displayName": "Petaampere",
+                    "mathName": "PA",
+                  },
+                  Object {
+                    "displayName": "Exaampere",
+                    "mathName": "EA",
+                  },
+                  Object {
+                    "displayName": "Zettaampere",
+                    "mathName": "ZA",
+                  },
+                  Object {
+                    "displayName": "Yottaampere",
+                    "mathName": "YA",
+                  },
+                ],
+              },
               "energy": Object {
                 "displayName": "Energy",
                 "initialUnitLeft": "J",
@@ -2713,6 +3541,98 @@ ShallowWrapper {
                   Object {
                     "displayName": "Kip",
                     "mathName": "kip",
+                  },
+                ],
+              },
+              "frequency": Object {
+                "displayName": "Frequency",
+                "initialUnitLeft": "Hz",
+                "initialUnitRight": "MHz",
+                "mathName": "frequency",
+                "units": Array [
+                  Object {
+                    "displayName": "Hertz",
+                    "mathName": "Hz",
+                  },
+                  Object {
+                    "displayName": "Decihertz",
+                    "mathName": "dHz",
+                  },
+                  Object {
+                    "displayName": "Centihertz",
+                    "mathName": "cHz",
+                  },
+                  Object {
+                    "displayName": "Millihertz",
+                    "mathName": "mHz",
+                  },
+                  Object {
+                    "displayName": "Microhertz",
+                    "mathName": "uHz",
+                  },
+                  Object {
+                    "displayName": "Nanohertz",
+                    "mathName": "nHz",
+                  },
+                  Object {
+                    "displayName": "Picohertz",
+                    "mathName": "pHz",
+                  },
+                  Object {
+                    "displayName": "Femtohertz",
+                    "mathName": "fHz",
+                  },
+                  Object {
+                    "displayName": "Attohertz",
+                    "mathName": "aHz",
+                  },
+                  Object {
+                    "displayName": "Zeptohertz",
+                    "mathName": "zHz",
+                  },
+                  Object {
+                    "displayName": "Yoctohertz",
+                    "mathName": "yHz",
+                  },
+                  Object {
+                    "displayName": "Decahertz",
+                    "mathName": "daHz",
+                  },
+                  Object {
+                    "displayName": "Hectohertz",
+                    "mathName": "hHz",
+                  },
+                  Object {
+                    "displayName": "Kilohertz",
+                    "mathName": "kHz",
+                  },
+                  Object {
+                    "displayName": "Megahertz",
+                    "mathName": "MHz",
+                  },
+                  Object {
+                    "displayName": "Gigahertz",
+                    "mathName": "GHz",
+                  },
+                  Object {
+                    "displayName": "Terahertz",
+                    "mathName": "THz",
+                  },
+                  Object {
+                    "displayName": "Petahertz",
+                    "mathName": "PHz",
+                  },
+                  Object {
+                    "displayName": "Exahertz",
+                    "mathName": "EHz",
+                  },
+                  Object {
+                    "displayName": "Zettahertz",
+                    "mathName": "ZHz",
+                  },
+                  Object {
+                    "displayName": "Yottahertz",
+                    "mathName": "YHz",
                   },
                 ],
               },
@@ -3280,6 +4200,98 @@ ShallowWrapper {
                   },
                 ],
               },
+              "electricCurrent": Object {
+                "displayName": "Electric Current",
+                "initialUnitLeft": "mA",
+                "initialUnitRight": "A",
+                "mathName": "electricCurrent",
+                "units": Array [
+                  Object {
+                    "displayName": "Ampere",
+                    "mathName": "A",
+                  },
+                  Object {
+                    "displayName": "Deciampere",
+                    "mathName": "dA",
+                  },
+                  Object {
+                    "displayName": "Centiampere",
+                    "mathName": "cA",
+                  },
+                  Object {
+                    "displayName": "Milliampere",
+                    "mathName": "mA",
+                  },
+                  Object {
+                    "displayName": "Microampere",
+                    "mathName": "uA",
+                  },
+                  Object {
+                    "displayName": "Nanoampere",
+                    "mathName": "nA",
+                  },
+                  Object {
+                    "displayName": "Picoampere",
+                    "mathName": "pA",
+                  },
+                  Object {
+                    "displayName": "Femtoampere",
+                    "mathName": "fA",
+                  },
+                  Object {
+                    "displayName": "Attoampere",
+                    "mathName": "aA",
+                  },
+                  Object {
+                    "displayName": "Zeptoampere",
+                    "mathName": "zA",
+                  },
+                  Object {
+                    "displayName": "Yoctoampere",
+                    "mathName": "yA",
+                  },
+                  Object {
+                    "displayName": "Decaampere",
+                    "mathName": "daA",
+                  },
+                  Object {
+                    "displayName": "Hectoampere",
+                    "mathName": "hA",
+                  },
+                  Object {
+                    "displayName": "Kiloampere",
+                    "mathName": "kA",
+                  },
+                  Object {
+                    "displayName": "Megaampere",
+                    "mathName": "MA",
+                  },
+                  Object {
+                    "displayName": "Gigaampere",
+                    "mathName": "GA",
+                  },
+                  Object {
+                    "displayName": "Teraampere",
+                    "mathName": "TA",
+                  },
+                  Object {
+                    "displayName": "Petaampere",
+                    "mathName": "PA",
+                  },
+                  Object {
+                    "displayName": "Exaampere",
+                    "mathName": "EA",
+                  },
+                  Object {
+                    "displayName": "Zettaampere",
+                    "mathName": "ZA",
+                  },
+                  Object {
+                    "displayName": "Yottaampere",
+                    "mathName": "YA",
+                  },
+                ],
+              },
               "energy": Object {
                 "displayName": "Energy",
                 "initialUnitLeft": "J",
@@ -3329,6 +4341,98 @@ ShallowWrapper {
                   Object {
                     "displayName": "Kip",
                     "mathName": "kip",
+                  },
+                ],
+              },
+              "frequency": Object {
+                "displayName": "Frequency",
+                "initialUnitLeft": "Hz",
+                "initialUnitRight": "MHz",
+                "mathName": "frequency",
+                "units": Array [
+                  Object {
+                    "displayName": "Hertz",
+                    "mathName": "Hz",
+                  },
+                  Object {
+                    "displayName": "Decihertz",
+                    "mathName": "dHz",
+                  },
+                  Object {
+                    "displayName": "Centihertz",
+                    "mathName": "cHz",
+                  },
+                  Object {
+                    "displayName": "Millihertz",
+                    "mathName": "mHz",
+                  },
+                  Object {
+                    "displayName": "Microhertz",
+                    "mathName": "uHz",
+                  },
+                  Object {
+                    "displayName": "Nanohertz",
+                    "mathName": "nHz",
+                  },
+                  Object {
+                    "displayName": "Picohertz",
+                    "mathName": "pHz",
+                  },
+                  Object {
+                    "displayName": "Femtohertz",
+                    "mathName": "fHz",
+                  },
+                  Object {
+                    "displayName": "Attohertz",
+                    "mathName": "aHz",
+                  },
+                  Object {
+                    "displayName": "Zeptohertz",
+                    "mathName": "zHz",
+                  },
+                  Object {
+                    "displayName": "Yoctohertz",
+                    "mathName": "yHz",
+                  },
+                  Object {
+                    "displayName": "Decahertz",
+                    "mathName": "daHz",
+                  },
+                  Object {
+                    "displayName": "Hectohertz",
+                    "mathName": "hHz",
+                  },
+                  Object {
+                    "displayName": "Kilohertz",
+                    "mathName": "kHz",
+                  },
+                  Object {
+                    "displayName": "Megahertz",
+                    "mathName": "MHz",
+                  },
+                  Object {
+                    "displayName": "Gigahertz",
+                    "mathName": "GHz",
+                  },
+                  Object {
+                    "displayName": "Terahertz",
+                    "mathName": "THz",
+                  },
+                  Object {
+                    "displayName": "Petahertz",
+                    "mathName": "PHz",
+                  },
+                  Object {
+                    "displayName": "Exahertz",
+                    "mathName": "EHz",
+                  },
+                  Object {
+                    "displayName": "Zettahertz",
+                    "mathName": "ZHz",
+                  },
+                  Object {
+                    "displayName": "Yottahertz",
+                    "mathName": "YHz",
                   },
                 ],
               },
@@ -3906,6 +5010,98 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "electricCurrent": Object {
+                                          "displayName": "Electric Current",
+                                          "initialUnitLeft": "mA",
+                                          "initialUnitRight": "A",
+                                          "mathName": "electricCurrent",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Ampere",
+                                              "mathName": "A",
+                                            },
+                                            Object {
+                                              "displayName": "Deciampere",
+                                              "mathName": "dA",
+                                            },
+                                            Object {
+                                              "displayName": "Centiampere",
+                                              "mathName": "cA",
+                                            },
+                                            Object {
+                                              "displayName": "Milliampere",
+                                              "mathName": "mA",
+                                            },
+                                            Object {
+                                              "displayName": "Microampere",
+                                              "mathName": "uA",
+                                            },
+                                            Object {
+                                              "displayName": "Nanoampere",
+                                              "mathName": "nA",
+                                            },
+                                            Object {
+                                              "displayName": "Picoampere",
+                                              "mathName": "pA",
+                                            },
+                                            Object {
+                                              "displayName": "Femtoampere",
+                                              "mathName": "fA",
+                                            },
+                                            Object {
+                                              "displayName": "Attoampere",
+                                              "mathName": "aA",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptoampere",
+                                              "mathName": "zA",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctoampere",
+                                              "mathName": "yA",
+                                            },
+                                            Object {
+                                              "displayName": "Decaampere",
+                                              "mathName": "daA",
+                                            },
+                                            Object {
+                                              "displayName": "Hectoampere",
+                                              "mathName": "hA",
+                                            },
+                                            Object {
+                                              "displayName": "Kiloampere",
+                                              "mathName": "kA",
+                                            },
+                                            Object {
+                                              "displayName": "Megaampere",
+                                              "mathName": "MA",
+                                            },
+                                            Object {
+                                              "displayName": "Gigaampere",
+                                              "mathName": "GA",
+                                            },
+                                            Object {
+                                              "displayName": "Teraampere",
+                                              "mathName": "TA",
+                                            },
+                                            Object {
+                                              "displayName": "Petaampere",
+                                              "mathName": "PA",
+                                            },
+                                            Object {
+                                              "displayName": "Exaampere",
+                                              "mathName": "EA",
+                                            },
+                                            Object {
+                                              "displayName": "Zettaampere",
+                                              "mathName": "ZA",
+                                            },
+                                            Object {
+                                              "displayName": "Yottaampere",
+                                              "mathName": "YA",
+                                            },
+                                          ],
+                                        },
                                         "energy": Object {
                                           "displayName": "Energy",
                                           "initialUnitLeft": "J",
@@ -3955,6 +5151,98 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Kip",
                                               "mathName": "kip",
+                                            },
+                                          ],
+                                        },
+                                        "frequency": Object {
+                                          "displayName": "Frequency",
+                                          "initialUnitLeft": "Hz",
+                                          "initialUnitRight": "MHz",
+                                          "mathName": "frequency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Hertz",
+                                              "mathName": "Hz",
+                                            },
+                                            Object {
+                                              "displayName": "Decihertz",
+                                              "mathName": "dHz",
+                                            },
+                                            Object {
+                                              "displayName": "Centihertz",
+                                              "mathName": "cHz",
+                                            },
+                                            Object {
+                                              "displayName": "Millihertz",
+                                              "mathName": "mHz",
+                                            },
+                                            Object {
+                                              "displayName": "Microhertz",
+                                              "mathName": "uHz",
+                                            },
+                                            Object {
+                                              "displayName": "Nanohertz",
+                                              "mathName": "nHz",
+                                            },
+                                            Object {
+                                              "displayName": "Picohertz",
+                                              "mathName": "pHz",
+                                            },
+                                            Object {
+                                              "displayName": "Femtohertz",
+                                              "mathName": "fHz",
+                                            },
+                                            Object {
+                                              "displayName": "Attohertz",
+                                              "mathName": "aHz",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptohertz",
+                                              "mathName": "zHz",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctohertz",
+                                              "mathName": "yHz",
+                                            },
+                                            Object {
+                                              "displayName": "Decahertz",
+                                              "mathName": "daHz",
+                                            },
+                                            Object {
+                                              "displayName": "Hectohertz",
+                                              "mathName": "hHz",
+                                            },
+                                            Object {
+                                              "displayName": "Kilohertz",
+                                              "mathName": "kHz",
+                                            },
+                                            Object {
+                                              "displayName": "Megahertz",
+                                              "mathName": "MHz",
+                                            },
+                                            Object {
+                                              "displayName": "Gigahertz",
+                                              "mathName": "GHz",
+                                            },
+                                            Object {
+                                              "displayName": "Terahertz",
+                                              "mathName": "THz",
+                                            },
+                                            Object {
+                                              "displayName": "Petahertz",
+                                              "mathName": "PHz",
+                                            },
+                                            Object {
+                                              "displayName": "Exahertz",
+                                              "mathName": "EHz",
+                                            },
+                                            Object {
+                                              "displayName": "Zettahertz",
+                                              "mathName": "ZHz",
+                                            },
+                                            Object {
+                                              "displayName": "Yottahertz",
+                                              "mathName": "YHz",
                                             },
                                           ],
                                         },
@@ -4516,6 +5804,98 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "electricCurrent": Object {
+                                          "displayName": "Electric Current",
+                                          "initialUnitLeft": "mA",
+                                          "initialUnitRight": "A",
+                                          "mathName": "electricCurrent",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Ampere",
+                                              "mathName": "A",
+                                            },
+                                            Object {
+                                              "displayName": "Deciampere",
+                                              "mathName": "dA",
+                                            },
+                                            Object {
+                                              "displayName": "Centiampere",
+                                              "mathName": "cA",
+                                            },
+                                            Object {
+                                              "displayName": "Milliampere",
+                                              "mathName": "mA",
+                                            },
+                                            Object {
+                                              "displayName": "Microampere",
+                                              "mathName": "uA",
+                                            },
+                                            Object {
+                                              "displayName": "Nanoampere",
+                                              "mathName": "nA",
+                                            },
+                                            Object {
+                                              "displayName": "Picoampere",
+                                              "mathName": "pA",
+                                            },
+                                            Object {
+                                              "displayName": "Femtoampere",
+                                              "mathName": "fA",
+                                            },
+                                            Object {
+                                              "displayName": "Attoampere",
+                                              "mathName": "aA",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptoampere",
+                                              "mathName": "zA",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctoampere",
+                                              "mathName": "yA",
+                                            },
+                                            Object {
+                                              "displayName": "Decaampere",
+                                              "mathName": "daA",
+                                            },
+                                            Object {
+                                              "displayName": "Hectoampere",
+                                              "mathName": "hA",
+                                            },
+                                            Object {
+                                              "displayName": "Kiloampere",
+                                              "mathName": "kA",
+                                            },
+                                            Object {
+                                              "displayName": "Megaampere",
+                                              "mathName": "MA",
+                                            },
+                                            Object {
+                                              "displayName": "Gigaampere",
+                                              "mathName": "GA",
+                                            },
+                                            Object {
+                                              "displayName": "Teraampere",
+                                              "mathName": "TA",
+                                            },
+                                            Object {
+                                              "displayName": "Petaampere",
+                                              "mathName": "PA",
+                                            },
+                                            Object {
+                                              "displayName": "Exaampere",
+                                              "mathName": "EA",
+                                            },
+                                            Object {
+                                              "displayName": "Zettaampere",
+                                              "mathName": "ZA",
+                                            },
+                                            Object {
+                                              "displayName": "Yottaampere",
+                                              "mathName": "YA",
+                                            },
+                                          ],
+                                        },
                                         "energy": Object {
                                           "displayName": "Energy",
                                           "initialUnitLeft": "J",
@@ -4565,6 +5945,98 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Kip",
                                               "mathName": "kip",
+                                            },
+                                          ],
+                                        },
+                                        "frequency": Object {
+                                          "displayName": "Frequency",
+                                          "initialUnitLeft": "Hz",
+                                          "initialUnitRight": "MHz",
+                                          "mathName": "frequency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "Hertz",
+                                              "mathName": "Hz",
+                                            },
+                                            Object {
+                                              "displayName": "Decihertz",
+                                              "mathName": "dHz",
+                                            },
+                                            Object {
+                                              "displayName": "Centihertz",
+                                              "mathName": "cHz",
+                                            },
+                                            Object {
+                                              "displayName": "Millihertz",
+                                              "mathName": "mHz",
+                                            },
+                                            Object {
+                                              "displayName": "Microhertz",
+                                              "mathName": "uHz",
+                                            },
+                                            Object {
+                                              "displayName": "Nanohertz",
+                                              "mathName": "nHz",
+                                            },
+                                            Object {
+                                              "displayName": "Picohertz",
+                                              "mathName": "pHz",
+                                            },
+                                            Object {
+                                              "displayName": "Femtohertz",
+                                              "mathName": "fHz",
+                                            },
+                                            Object {
+                                              "displayName": "Attohertz",
+                                              "mathName": "aHz",
+                                            },
+                                            Object {
+                                              "displayName": "Zeptohertz",
+                                              "mathName": "zHz",
+                                            },
+                                            Object {
+                                              "displayName": "Yoctohertz",
+                                              "mathName": "yHz",
+                                            },
+                                            Object {
+                                              "displayName": "Decahertz",
+                                              "mathName": "daHz",
+                                            },
+                                            Object {
+                                              "displayName": "Hectohertz",
+                                              "mathName": "hHz",
+                                            },
+                                            Object {
+                                              "displayName": "Kilohertz",
+                                              "mathName": "kHz",
+                                            },
+                                            Object {
+                                              "displayName": "Megahertz",
+                                              "mathName": "MHz",
+                                            },
+                                            Object {
+                                              "displayName": "Gigahertz",
+                                              "mathName": "GHz",
+                                            },
+                                            Object {
+                                              "displayName": "Terahertz",
+                                              "mathName": "THz",
+                                            },
+                                            Object {
+                                              "displayName": "Petahertz",
+                                              "mathName": "PHz",
+                                            },
+                                            Object {
+                                              "displayName": "Exahertz",
+                                              "mathName": "EHz",
+                                            },
+                                            Object {
+                                              "displayName": "Zettahertz",
+                                              "mathName": "ZHz",
+                                            },
+                                            Object {
+                                              "displayName": "Yottahertz",
+                                              "mathName": "YHz",
                                             },
                                           ],
                                         },
@@ -5136,6 +6608,98 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "electricCurrent": Object {
+                                            "displayName": "Electric Current",
+                                            "initialUnitLeft": "mA",
+                                            "initialUnitRight": "A",
+                                            "mathName": "electricCurrent",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Ampere",
+                                                "mathName": "A",
+                                              },
+                                              Object {
+                                                "displayName": "Deciampere",
+                                                "mathName": "dA",
+                                              },
+                                              Object {
+                                                "displayName": "Centiampere",
+                                                "mathName": "cA",
+                                              },
+                                              Object {
+                                                "displayName": "Milliampere",
+                                                "mathName": "mA",
+                                              },
+                                              Object {
+                                                "displayName": "Microampere",
+                                                "mathName": "uA",
+                                              },
+                                              Object {
+                                                "displayName": "Nanoampere",
+                                                "mathName": "nA",
+                                              },
+                                              Object {
+                                                "displayName": "Picoampere",
+                                                "mathName": "pA",
+                                              },
+                                              Object {
+                                                "displayName": "Femtoampere",
+                                                "mathName": "fA",
+                                              },
+                                              Object {
+                                                "displayName": "Attoampere",
+                                                "mathName": "aA",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptoampere",
+                                                "mathName": "zA",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctoampere",
+                                                "mathName": "yA",
+                                              },
+                                              Object {
+                                                "displayName": "Decaampere",
+                                                "mathName": "daA",
+                                              },
+                                              Object {
+                                                "displayName": "Hectoampere",
+                                                "mathName": "hA",
+                                              },
+                                              Object {
+                                                "displayName": "Kiloampere",
+                                                "mathName": "kA",
+                                              },
+                                              Object {
+                                                "displayName": "Megaampere",
+                                                "mathName": "MA",
+                                              },
+                                              Object {
+                                                "displayName": "Gigaampere",
+                                                "mathName": "GA",
+                                              },
+                                              Object {
+                                                "displayName": "Teraampere",
+                                                "mathName": "TA",
+                                              },
+                                              Object {
+                                                "displayName": "Petaampere",
+                                                "mathName": "PA",
+                                              },
+                                              Object {
+                                                "displayName": "Exaampere",
+                                                "mathName": "EA",
+                                              },
+                                              Object {
+                                                "displayName": "Zettaampere",
+                                                "mathName": "ZA",
+                                              },
+                                              Object {
+                                                "displayName": "Yottaampere",
+                                                "mathName": "YA",
+                                              },
+                                            ],
+                                          },
                                           "energy": Object {
                                             "displayName": "Energy",
                                             "initialUnitLeft": "J",
@@ -5185,6 +6749,98 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Kip",
                                                 "mathName": "kip",
+                                              },
+                                            ],
+                                          },
+                                          "frequency": Object {
+                                            "displayName": "Frequency",
+                                            "initialUnitLeft": "Hz",
+                                            "initialUnitRight": "MHz",
+                                            "mathName": "frequency",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Hertz",
+                                                "mathName": "Hz",
+                                              },
+                                              Object {
+                                                "displayName": "Decihertz",
+                                                "mathName": "dHz",
+                                              },
+                                              Object {
+                                                "displayName": "Centihertz",
+                                                "mathName": "cHz",
+                                              },
+                                              Object {
+                                                "displayName": "Millihertz",
+                                                "mathName": "mHz",
+                                              },
+                                              Object {
+                                                "displayName": "Microhertz",
+                                                "mathName": "uHz",
+                                              },
+                                              Object {
+                                                "displayName": "Nanohertz",
+                                                "mathName": "nHz",
+                                              },
+                                              Object {
+                                                "displayName": "Picohertz",
+                                                "mathName": "pHz",
+                                              },
+                                              Object {
+                                                "displayName": "Femtohertz",
+                                                "mathName": "fHz",
+                                              },
+                                              Object {
+                                                "displayName": "Attohertz",
+                                                "mathName": "aHz",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptohertz",
+                                                "mathName": "zHz",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctohertz",
+                                                "mathName": "yHz",
+                                              },
+                                              Object {
+                                                "displayName": "Decahertz",
+                                                "mathName": "daHz",
+                                              },
+                                              Object {
+                                                "displayName": "Hectohertz",
+                                                "mathName": "hHz",
+                                              },
+                                              Object {
+                                                "displayName": "Kilohertz",
+                                                "mathName": "kHz",
+                                              },
+                                              Object {
+                                                "displayName": "Megahertz",
+                                                "mathName": "MHz",
+                                              },
+                                              Object {
+                                                "displayName": "Gigahertz",
+                                                "mathName": "GHz",
+                                              },
+                                              Object {
+                                                "displayName": "Terahertz",
+                                                "mathName": "THz",
+                                              },
+                                              Object {
+                                                "displayName": "Petahertz",
+                                                "mathName": "PHz",
+                                              },
+                                              Object {
+                                                "displayName": "Exahertz",
+                                                "mathName": "EHz",
+                                              },
+                                              Object {
+                                                "displayName": "Zettahertz",
+                                                "mathName": "ZHz",
+                                              },
+                                              Object {
+                                                "displayName": "Yottahertz",
+                                                "mathName": "YHz",
                                               },
                                             ],
                                           },
@@ -5746,6 +7402,98 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "electricCurrent": Object {
+                                            "displayName": "Electric Current",
+                                            "initialUnitLeft": "mA",
+                                            "initialUnitRight": "A",
+                                            "mathName": "electricCurrent",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Ampere",
+                                                "mathName": "A",
+                                              },
+                                              Object {
+                                                "displayName": "Deciampere",
+                                                "mathName": "dA",
+                                              },
+                                              Object {
+                                                "displayName": "Centiampere",
+                                                "mathName": "cA",
+                                              },
+                                              Object {
+                                                "displayName": "Milliampere",
+                                                "mathName": "mA",
+                                              },
+                                              Object {
+                                                "displayName": "Microampere",
+                                                "mathName": "uA",
+                                              },
+                                              Object {
+                                                "displayName": "Nanoampere",
+                                                "mathName": "nA",
+                                              },
+                                              Object {
+                                                "displayName": "Picoampere",
+                                                "mathName": "pA",
+                                              },
+                                              Object {
+                                                "displayName": "Femtoampere",
+                                                "mathName": "fA",
+                                              },
+                                              Object {
+                                                "displayName": "Attoampere",
+                                                "mathName": "aA",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptoampere",
+                                                "mathName": "zA",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctoampere",
+                                                "mathName": "yA",
+                                              },
+                                              Object {
+                                                "displayName": "Decaampere",
+                                                "mathName": "daA",
+                                              },
+                                              Object {
+                                                "displayName": "Hectoampere",
+                                                "mathName": "hA",
+                                              },
+                                              Object {
+                                                "displayName": "Kiloampere",
+                                                "mathName": "kA",
+                                              },
+                                              Object {
+                                                "displayName": "Megaampere",
+                                                "mathName": "MA",
+                                              },
+                                              Object {
+                                                "displayName": "Gigaampere",
+                                                "mathName": "GA",
+                                              },
+                                              Object {
+                                                "displayName": "Teraampere",
+                                                "mathName": "TA",
+                                              },
+                                              Object {
+                                                "displayName": "Petaampere",
+                                                "mathName": "PA",
+                                              },
+                                              Object {
+                                                "displayName": "Exaampere",
+                                                "mathName": "EA",
+                                              },
+                                              Object {
+                                                "displayName": "Zettaampere",
+                                                "mathName": "ZA",
+                                              },
+                                              Object {
+                                                "displayName": "Yottaampere",
+                                                "mathName": "YA",
+                                              },
+                                            ],
+                                          },
                                           "energy": Object {
                                             "displayName": "Energy",
                                             "initialUnitLeft": "J",
@@ -5795,6 +7543,98 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Kip",
                                                 "mathName": "kip",
+                                              },
+                                            ],
+                                          },
+                                          "frequency": Object {
+                                            "displayName": "Frequency",
+                                            "initialUnitLeft": "Hz",
+                                            "initialUnitRight": "MHz",
+                                            "mathName": "frequency",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "Hertz",
+                                                "mathName": "Hz",
+                                              },
+                                              Object {
+                                                "displayName": "Decihertz",
+                                                "mathName": "dHz",
+                                              },
+                                              Object {
+                                                "displayName": "Centihertz",
+                                                "mathName": "cHz",
+                                              },
+                                              Object {
+                                                "displayName": "Millihertz",
+                                                "mathName": "mHz",
+                                              },
+                                              Object {
+                                                "displayName": "Microhertz",
+                                                "mathName": "uHz",
+                                              },
+                                              Object {
+                                                "displayName": "Nanohertz",
+                                                "mathName": "nHz",
+                                              },
+                                              Object {
+                                                "displayName": "Picohertz",
+                                                "mathName": "pHz",
+                                              },
+                                              Object {
+                                                "displayName": "Femtohertz",
+                                                "mathName": "fHz",
+                                              },
+                                              Object {
+                                                "displayName": "Attohertz",
+                                                "mathName": "aHz",
+                                              },
+                                              Object {
+                                                "displayName": "Zeptohertz",
+                                                "mathName": "zHz",
+                                              },
+                                              Object {
+                                                "displayName": "Yoctohertz",
+                                                "mathName": "yHz",
+                                              },
+                                              Object {
+                                                "displayName": "Decahertz",
+                                                "mathName": "daHz",
+                                              },
+                                              Object {
+                                                "displayName": "Hectohertz",
+                                                "mathName": "hHz",
+                                              },
+                                              Object {
+                                                "displayName": "Kilohertz",
+                                                "mathName": "kHz",
+                                              },
+                                              Object {
+                                                "displayName": "Megahertz",
+                                                "mathName": "MHz",
+                                              },
+                                              Object {
+                                                "displayName": "Gigahertz",
+                                                "mathName": "GHz",
+                                              },
+                                              Object {
+                                                "displayName": "Terahertz",
+                                                "mathName": "THz",
+                                              },
+                                              Object {
+                                                "displayName": "Petahertz",
+                                                "mathName": "PHz",
+                                              },
+                                              Object {
+                                                "displayName": "Exahertz",
+                                                "mathName": "EHz",
+                                              },
+                                              Object {
+                                                "displayName": "Zettahertz",
+                                                "mathName": "ZHz",
+                                              },
+                                              Object {
+                                                "displayName": "Yottahertz",
+                                                "mathName": "YHz",
                                               },
                                             ],
                                           },
@@ -6372,6 +8212,98 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "electricCurrent": Object {
+                  "displayName": "Electric Current",
+                  "initialUnitLeft": "mA",
+                  "initialUnitRight": "A",
+                  "mathName": "electricCurrent",
+                  "units": Array [
+                    Object {
+                      "displayName": "Ampere",
+                      "mathName": "A",
+                    },
+                    Object {
+                      "displayName": "Deciampere",
+                      "mathName": "dA",
+                    },
+                    Object {
+                      "displayName": "Centiampere",
+                      "mathName": "cA",
+                    },
+                    Object {
+                      "displayName": "Milliampere",
+                      "mathName": "mA",
+                    },
+                    Object {
+                      "displayName": "Microampere",
+                      "mathName": "uA",
+                    },
+                    Object {
+                      "displayName": "Nanoampere",
+                      "mathName": "nA",
+                    },
+                    Object {
+                      "displayName": "Picoampere",
+                      "mathName": "pA",
+                    },
+                    Object {
+                      "displayName": "Femtoampere",
+                      "mathName": "fA",
+                    },
+                    Object {
+                      "displayName": "Attoampere",
+                      "mathName": "aA",
+                    },
+                    Object {
+                      "displayName": "Zeptoampere",
+                      "mathName": "zA",
+                    },
+                    Object {
+                      "displayName": "Yoctoampere",
+                      "mathName": "yA",
+                    },
+                    Object {
+                      "displayName": "Decaampere",
+                      "mathName": "daA",
+                    },
+                    Object {
+                      "displayName": "Hectoampere",
+                      "mathName": "hA",
+                    },
+                    Object {
+                      "displayName": "Kiloampere",
+                      "mathName": "kA",
+                    },
+                    Object {
+                      "displayName": "Megaampere",
+                      "mathName": "MA",
+                    },
+                    Object {
+                      "displayName": "Gigaampere",
+                      "mathName": "GA",
+                    },
+                    Object {
+                      "displayName": "Teraampere",
+                      "mathName": "TA",
+                    },
+                    Object {
+                      "displayName": "Petaampere",
+                      "mathName": "PA",
+                    },
+                    Object {
+                      "displayName": "Exaampere",
+                      "mathName": "EA",
+                    },
+                    Object {
+                      "displayName": "Zettaampere",
+                      "mathName": "ZA",
+                    },
+                    Object {
+                      "displayName": "Yottaampere",
+                      "mathName": "YA",
+                    },
+                  ],
+                },
                 "energy": Object {
                   "displayName": "Energy",
                   "initialUnitLeft": "J",
@@ -6421,6 +8353,98 @@ ShallowWrapper {
                     Object {
                       "displayName": "Kip",
                       "mathName": "kip",
+                    },
+                  ],
+                },
+                "frequency": Object {
+                  "displayName": "Frequency",
+                  "initialUnitLeft": "Hz",
+                  "initialUnitRight": "MHz",
+                  "mathName": "frequency",
+                  "units": Array [
+                    Object {
+                      "displayName": "Hertz",
+                      "mathName": "Hz",
+                    },
+                    Object {
+                      "displayName": "Decihertz",
+                      "mathName": "dHz",
+                    },
+                    Object {
+                      "displayName": "Centihertz",
+                      "mathName": "cHz",
+                    },
+                    Object {
+                      "displayName": "Millihertz",
+                      "mathName": "mHz",
+                    },
+                    Object {
+                      "displayName": "Microhertz",
+                      "mathName": "uHz",
+                    },
+                    Object {
+                      "displayName": "Nanohertz",
+                      "mathName": "nHz",
+                    },
+                    Object {
+                      "displayName": "Picohertz",
+                      "mathName": "pHz",
+                    },
+                    Object {
+                      "displayName": "Femtohertz",
+                      "mathName": "fHz",
+                    },
+                    Object {
+                      "displayName": "Attohertz",
+                      "mathName": "aHz",
+                    },
+                    Object {
+                      "displayName": "Zeptohertz",
+                      "mathName": "zHz",
+                    },
+                    Object {
+                      "displayName": "Yoctohertz",
+                      "mathName": "yHz",
+                    },
+                    Object {
+                      "displayName": "Decahertz",
+                      "mathName": "daHz",
+                    },
+                    Object {
+                      "displayName": "Hectohertz",
+                      "mathName": "hHz",
+                    },
+                    Object {
+                      "displayName": "Kilohertz",
+                      "mathName": "kHz",
+                    },
+                    Object {
+                      "displayName": "Megahertz",
+                      "mathName": "MHz",
+                    },
+                    Object {
+                      "displayName": "Gigahertz",
+                      "mathName": "GHz",
+                    },
+                    Object {
+                      "displayName": "Terahertz",
+                      "mathName": "THz",
+                    },
+                    Object {
+                      "displayName": "Petahertz",
+                      "mathName": "PHz",
+                    },
+                    Object {
+                      "displayName": "Exahertz",
+                      "mathName": "EHz",
+                    },
+                    Object {
+                      "displayName": "Zettahertz",
+                      "mathName": "ZHz",
+                    },
+                    Object {
+                      "displayName": "Yottahertz",
+                      "mathName": "YHz",
                     },
                   ],
                 },
@@ -6988,6 +9012,98 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "electricCurrent": Object {
+                  "displayName": "Electric Current",
+                  "initialUnitLeft": "mA",
+                  "initialUnitRight": "A",
+                  "mathName": "electricCurrent",
+                  "units": Array [
+                    Object {
+                      "displayName": "Ampere",
+                      "mathName": "A",
+                    },
+                    Object {
+                      "displayName": "Deciampere",
+                      "mathName": "dA",
+                    },
+                    Object {
+                      "displayName": "Centiampere",
+                      "mathName": "cA",
+                    },
+                    Object {
+                      "displayName": "Milliampere",
+                      "mathName": "mA",
+                    },
+                    Object {
+                      "displayName": "Microampere",
+                      "mathName": "uA",
+                    },
+                    Object {
+                      "displayName": "Nanoampere",
+                      "mathName": "nA",
+                    },
+                    Object {
+                      "displayName": "Picoampere",
+                      "mathName": "pA",
+                    },
+                    Object {
+                      "displayName": "Femtoampere",
+                      "mathName": "fA",
+                    },
+                    Object {
+                      "displayName": "Attoampere",
+                      "mathName": "aA",
+                    },
+                    Object {
+                      "displayName": "Zeptoampere",
+                      "mathName": "zA",
+                    },
+                    Object {
+                      "displayName": "Yoctoampere",
+                      "mathName": "yA",
+                    },
+                    Object {
+                      "displayName": "Decaampere",
+                      "mathName": "daA",
+                    },
+                    Object {
+                      "displayName": "Hectoampere",
+                      "mathName": "hA",
+                    },
+                    Object {
+                      "displayName": "Kiloampere",
+                      "mathName": "kA",
+                    },
+                    Object {
+                      "displayName": "Megaampere",
+                      "mathName": "MA",
+                    },
+                    Object {
+                      "displayName": "Gigaampere",
+                      "mathName": "GA",
+                    },
+                    Object {
+                      "displayName": "Teraampere",
+                      "mathName": "TA",
+                    },
+                    Object {
+                      "displayName": "Petaampere",
+                      "mathName": "PA",
+                    },
+                    Object {
+                      "displayName": "Exaampere",
+                      "mathName": "EA",
+                    },
+                    Object {
+                      "displayName": "Zettaampere",
+                      "mathName": "ZA",
+                    },
+                    Object {
+                      "displayName": "Yottaampere",
+                      "mathName": "YA",
+                    },
+                  ],
+                },
                 "energy": Object {
                   "displayName": "Energy",
                   "initialUnitLeft": "J",
@@ -7037,6 +9153,98 @@ ShallowWrapper {
                     Object {
                       "displayName": "Kip",
                       "mathName": "kip",
+                    },
+                  ],
+                },
+                "frequency": Object {
+                  "displayName": "Frequency",
+                  "initialUnitLeft": "Hz",
+                  "initialUnitRight": "MHz",
+                  "mathName": "frequency",
+                  "units": Array [
+                    Object {
+                      "displayName": "Hertz",
+                      "mathName": "Hz",
+                    },
+                    Object {
+                      "displayName": "Decihertz",
+                      "mathName": "dHz",
+                    },
+                    Object {
+                      "displayName": "Centihertz",
+                      "mathName": "cHz",
+                    },
+                    Object {
+                      "displayName": "Millihertz",
+                      "mathName": "mHz",
+                    },
+                    Object {
+                      "displayName": "Microhertz",
+                      "mathName": "uHz",
+                    },
+                    Object {
+                      "displayName": "Nanohertz",
+                      "mathName": "nHz",
+                    },
+                    Object {
+                      "displayName": "Picohertz",
+                      "mathName": "pHz",
+                    },
+                    Object {
+                      "displayName": "Femtohertz",
+                      "mathName": "fHz",
+                    },
+                    Object {
+                      "displayName": "Attohertz",
+                      "mathName": "aHz",
+                    },
+                    Object {
+                      "displayName": "Zeptohertz",
+                      "mathName": "zHz",
+                    },
+                    Object {
+                      "displayName": "Yoctohertz",
+                      "mathName": "yHz",
+                    },
+                    Object {
+                      "displayName": "Decahertz",
+                      "mathName": "daHz",
+                    },
+                    Object {
+                      "displayName": "Hectohertz",
+                      "mathName": "hHz",
+                    },
+                    Object {
+                      "displayName": "Kilohertz",
+                      "mathName": "kHz",
+                    },
+                    Object {
+                      "displayName": "Megahertz",
+                      "mathName": "MHz",
+                    },
+                    Object {
+                      "displayName": "Gigahertz",
+                      "mathName": "GHz",
+                    },
+                    Object {
+                      "displayName": "Terahertz",
+                      "mathName": "THz",
+                    },
+                    Object {
+                      "displayName": "Petahertz",
+                      "mathName": "PHz",
+                    },
+                    Object {
+                      "displayName": "Exahertz",
+                      "mathName": "EHz",
+                    },
+                    Object {
+                      "displayName": "Zettahertz",
+                      "mathName": "ZHz",
+                    },
+                    Object {
+                      "displayName": "Yottahertz",
+                      "mathName": "YHz",
                     },
                   ],
                 },

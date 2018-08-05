@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+
+import StyledLink from './shared/StyledLink';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
@@ -9,21 +10,6 @@ const StyledSidebar = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 50px;
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  padding-left: 40px;
-  align-items: center;
-  display: flex;
-  color: black;
-  &:hover {
-    text-decoration: none;
-    background-color: lightgrey;
-  };
-  &:visited {
-    color: black;
-  };
 `;
 
 const Sidebar = ({ items }) => (

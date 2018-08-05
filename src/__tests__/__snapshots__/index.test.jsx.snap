@@ -2,26 +2,28 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-gZMcBi bLVCIh"
+  className="sc-iwsKbI eRGfpv"
 >
   <div
-    className="sc-bdVaJa hwHxJX"
+    className="sc-bwzfXH jYIpUF"
   >
     <h1
-      className="sc-bwzfXH jhjshD"
+      className="sc-htpNat XOOOI"
     >
       Converter
     </h1>
     <div />
     <a
-      className="sc-htpNat cmyCEp"
+      className="sc-bdVaJa ifzXdK"
+      header={true}
       href="/help"
       onClick={[Function]}
     >
       Help
     </a>
     <a
-      className="sc-htpNat cmyCEp"
+      className="sc-bdVaJa ifzXdK"
+      header={true}
       href="/about"
       onClick={[Function]}
     >
@@ -32,63 +34,77 @@ exports[`index matches the snapshot 1`] = `
     className="sc-bxivhb jZlZmq"
   >
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/length"
       onClick={[Function]}
     >
       Length
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/surfacearea"
       onClick={[Function]}
     >
       Surface Area
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/angles"
       onClick={[Function]}
     >
       Angles
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/time"
       onClick={[Function]}
     >
       Time
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
+      href="/frequency"
+      onClick={[Function]}
+    >
+      Frequency
+    </a>
+    <a
+      className="sc-bdVaJa gPzyGA"
       href="/mass"
       onClick={[Function]}
     >
       Mass
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
+      href="/electriccurrent"
+      onClick={[Function]}
+    >
+      Electric Current
+    </a>
+    <a
+      className="sc-bdVaJa gPzyGA"
       href="/temperature"
       onClick={[Function]}
     >
       Temperature
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/force"
       onClick={[Function]}
     >
       Force
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/energy"
       onClick={[Function]}
     >
       Energy
     </a>
     <a
-      className="sc-ifAKCX ecOCuU"
+      className="sc-bdVaJa gPzyGA"
       href="/datastorage"
       onClick={[Function]}
     >
@@ -96,13 +112,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-iwsKbI cJuESD"
+    className="sc-dnqmqq jvinMA"
   >
     <div
-      className="sc-dnqmqq iUAEEb"
+      className="sc-htoDjs jaPfQf"
     >
       <div
-        className="sc-htoDjs jwtJnE"
+        className="sc-gzVnrw csJSzn"
         name="left"
       >
         <input
@@ -112,7 +128,7 @@ exports[`index matches the snapshot 1`] = `
           value=""
         />
         <div
-          className="sc-gzVnrw dBLEPe"
+          className="sc-bZQynM kcGEWj"
           onBlur={[Function]}
           onFocus={[Function]}
         >
@@ -135,7 +151,7 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-htoDjs gkyORg"
+        className="sc-gzVnrw ktnDuX"
         name="right"
       >
         <input
@@ -145,7 +161,7 @@ exports[`index matches the snapshot 1`] = `
           value=""
         />
         <div
-          className="sc-gzVnrw dBLEPe"
+          className="sc-bZQynM kcGEWj"
           onBlur={[Function]}
           onFocus={[Function]}
         >
