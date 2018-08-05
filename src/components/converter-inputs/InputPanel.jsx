@@ -3,14 +3,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import InputGroup from './InputGroup';
+import ConvertArrows from './ConvertArrows';
 import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
 import getUnits from '../../utils/getUnits';
 
 const StyeldInputPanel = styled.div`
   display: grid;
   grid-template-areas:
-    'left right';
-  grid-template-columns: 1fr 1fr;
+    'left arrows right';
+  grid-template-columns: 1fr auto 1fr;
 `;
 
 class InputPanel extends Component {
@@ -62,6 +63,7 @@ class InputPanel extends Component {
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
+        <ConvertArrows />
         <InputGroup
           name="right"
           textValue={rightInput}

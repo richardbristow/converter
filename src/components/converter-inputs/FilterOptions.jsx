@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import StyledConvertButton from '../shared/StyledConvertButton';
+
 const StyledFilterOptions = styled.div`
   grid-column: span 2;
   display: grid;
@@ -9,6 +11,10 @@ const StyledFilterOptions = styled.div`
   grid-auto-rows: 25px;
   max-height: 300px;
   overflow: auto;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 0px solid transparent;
 `;
 
 const focusNextOption = (name, value, nextOption, refs) => {
@@ -40,17 +46,17 @@ const FilterOptions = ({
   return (
     <StyledFilterOptions>
       {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }, index) => (
-        <button
+        <StyledConvertButton
           name={`${name}Unit`}
           tabIndex={index === 0 ? '0' : '-1'}
           key={`${name}-${mathName}`}
           value={mathName}
           onClick={e => handleDropdownItemClick(conversionType, e)}
           onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
-          ref={dropdownOptionRefs[index]}
+          innerRef={dropdownOptionRefs[index]}
         >
           {displayName}
-        </button>))) : <p>No units found.</p>}
+        </StyledConvertButton>))) : <p>No units found.</p>}
     </StyledFilterOptions>
   );
 };

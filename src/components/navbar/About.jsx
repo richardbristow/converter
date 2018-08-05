@@ -1,14 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledAbout = styled.div`
-  h2 {
-    margin-top: 0;
-  }
-`;
+import StyledNavPage from '../shared/StyledNavPage';
 
 const About = () => (
-  <StyledAbout>
+  <StyledNavPage>
     <h2>About</h2>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -22,7 +16,7 @@ const About = () => (
       <li>math.js</li>
       <li>fixe</li>
     </ul>
-  </StyledAbout>
+  </StyledNavPage>
 );
 
 

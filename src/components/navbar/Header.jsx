@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import StyledLink from '../shared/StyledLink';
 
 const StyledHeader = styled.div`
+  background-color: tomato;
   grid-area: 'header';
   grid-column: 1 / -1;
   display: grid;

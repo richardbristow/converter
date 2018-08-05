@@ -14,6 +14,9 @@ const StyledLink = styled(Link)`
   &:visited {
     color: black;
   };
+  &:focus {
+    background-color: lightgrey;
+  };
   height: 100%;
 `;
 

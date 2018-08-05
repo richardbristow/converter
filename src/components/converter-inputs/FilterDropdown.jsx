@@ -3,11 +3,23 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import FilterOptions from './FilterOptions';
+import StyledConvertButton from '../shared/StyledConvertButton';
 
 const StyledFilterDropdown = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 50px;
+`;
+
+const StyledArrowButton = StyledConvertButton.extend`
+  padding: 0px 5px;
+  text-align: center;
+`;
+
+const StyledFilterInput = styled.input`
+  outline: none;
+  text-align: left;
+  padding-left: 15px;
 `;
 
 class FilterDropdown extends Component {
@@ -101,9 +113,9 @@ class FilterDropdown extends Component {
     return (
       <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
         {dropdownOpen ?
-          <input ref={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onKeyDown={this.handleEscKey} onChange={this.updateFilter} /> :
-          <button name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</button>}
-        <button tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</button>
+          <StyledFilterInput innerRef={this.unitInput} placeholder="Search units..." name="filter" type="text" value={filter} onKeyDown={this.handleEscKey} onChange={this.updateFilter} /> :
+          <StyledConvertButton name="header" tabIndex="0" onFocus={this.handleHeaderFocus} onClick={this.handleDropdownClick}>{displayName}</StyledConvertButton>}
+        <StyledArrowButton tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
         {dropdownOpen &&
           <FilterOptions
             options={options}

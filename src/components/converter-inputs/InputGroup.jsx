@@ -11,11 +11,19 @@ const StyledInputGroup = styled.div`
   grid-template-rows: 50px auto;
 `;
 
+const StyledNumberInput = styled.input`
+  padding: 0px 15px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 0px solid transparent;
+`;
+
 const InputGroup = ({
   name, textValue, dropdownValue, options, handleChange, conversionType,
 }) => (
   <StyledInputGroup name={name}>
-    <input name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
+    <StyledNumberInput name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
     <FilterDropdown
       options={options}
       name={name}

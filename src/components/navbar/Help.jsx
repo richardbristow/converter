@@ -1,10 +1,12 @@
 import React from 'react';
+import StyledNavPage from '../shared/StyledNavPage';
+
 
 const Help = () => (
-  <div>
+  <StyledNavPage>
     <h2>Help</h2>
     This is the help page.
-  </div>
+  </StyledNavPage>
 );
 
 export default Help;

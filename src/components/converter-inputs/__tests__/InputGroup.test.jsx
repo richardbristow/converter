@@ -19,14 +19,14 @@ describe('InputGroup', () => {
 
   it('should render an input element, with the correct props', () => {
     const wrapper = shallow(<InputGroup {...props} />);
-    expect(wrapper.find('input')).toHaveLength(1);
+    expect(wrapper.find({ name: 'nameInput' })).toHaveLength(1);
     expect(wrapper).toMatchSnapshot();
   });
 
   it('should call onChange when textInput value is changed', () => {
     const wrapper = shallow(<InputGroup {...props} />);
-    expect(wrapper.find('input').props().value).toBe('InputValue');
-    wrapper.find('input').simulate('change', { target: { value: 'NewValue' } });
+    expect(wrapper.find({ name: 'nameInput' }).props().value).toBe('InputValue');
+    wrapper.find({ name: 'nameInput' }).simulate('change', { target: { value: 'NewValue' } });
     expect(handleChange).toHaveBeenCalledTimes(1);
   });
 

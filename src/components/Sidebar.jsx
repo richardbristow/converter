@@ -6,10 +6,13 @@ import StyledLink from './shared/StyledLink';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
+  font-size: 18px;
+  padding-top: 25px;
   grid-area: 'sidebar';
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 50px;
+  background-color: violet;
 `;
 
 const Sidebar = ({ items }) => (
