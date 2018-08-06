@@ -3,13 +3,18 @@ import { Link } from 'react-router-dom';
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  padding: ${props => (props.header ? '0px 20px 0px 0px' : '0px 0px 0px 40px')};
+  padding: ${props => (props.header ? '0px 10px 0px 10px' : '0px 0px 0px 40px')};
   align-items: center;
   display: flex;
   color: black;
   &:hover {
     text-decoration: none;
-    background-color: lightgrey;
+    background-color: ${props => (!props.header && 'lightgrey')};
+    span {
+      display: block;
+      padding-right: 10px;
+      padding-left: 5px;
+    }
   };
   &:visited {
     color: black;
@@ -17,7 +22,9 @@ const StyledLink = styled(Link)`
   /* &:focus {
     background-color: lightgrey;
   }; */
-  height: 100%;
+  span {
+    display: none;
+  }
 `;
 
 export default StyledLink;

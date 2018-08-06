@@ -10,7 +10,7 @@ const StyledConvertButton = styled.button`
     background-color: paleturquoise;
   }; */
   &:hover {
-    background-color: paleturquoise;
+    background-color: ${props => (!props.header && 'paleturquoise')};
   }
 `;
 
