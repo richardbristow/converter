@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -16,14 +16,35 @@ const StyledConverter = styled.div`
   grid-template-rows: 50px 1fr;
 `;
 
-const Converter = () => (
-  <Router>
-    <StyledConverter>
-      <Header />
-      <Sidebar items={baseUnits} />
-      <Main baseUnits={baseUnits} />
-    </StyledConverter>
-  </Router>
-);
+class Converter extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showFullSidebar: true,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      showFullSidebar: !prevState.showFullSidebar,
+    }));
+  }
+
+  render() {
+    const { showFullSidebar } = this.state;
+    return (
+      <Router>
+        <StyledConverter>
+          <Header handleClick={this.handleClick} />
+          {showFullSidebar && <Sidebar items={baseUnits} />}
+          <Main baseUnits={baseUnits} />
+        </StyledConverter>
+      </Router>
+    );
+  }
+}
 
 export default Converter;

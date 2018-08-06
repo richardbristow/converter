@@ -2,13 +2,16 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-cSHVUG gsnTSm"
+  className="sc-kAzzGY hLwQaz"
 >
   <div
-    className="sc-bwzfXH dzBBkY"
+    className="sc-bwzfXH koJenr"
   >
+    <i
+      className="fa"
+    />
     <a
-      className="sc-htpNat dCVoSI"
+      className="sc-bxivhb faxjju"
       href="/"
       onClick={[Function]}
     >
@@ -49,7 +52,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-ifAKCX kxaDXm"
+    className="sc-EHOje bWOsPG"
   >
     <a
       aria-current={null}
@@ -152,29 +155,29 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-jzJRlG ioWoBL"
+    className="sc-cSHVUG kXmYXv"
   >
     <div
-      className="sc-fjdhpX ckFDSC"
+      className="sc-jzJRlG iYPckT"
     >
       <div
-        className="sc-gqjmRU eccpfW"
+        className="sc-VigVT fwerlz"
         name="left"
       >
         <input
-          className="sc-VigVT GFAAo"
+          className="sc-jTzLTM lkeXRE"
           name="leftInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-dnqmqq hsPQjy"
+          className="sc-iwsKbI dRjwIk"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-bZQynM fnOGlM"
+            className="sc-gzVnrw cwbdKk"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -183,7 +186,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-iwsKbI ibANEt"
+            className="sc-gZMcBi eHnWOn"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -195,7 +198,7 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-jTzLTM xpTBC"
+        className="sc-fjdhpX hkVZZI"
       >
         <div>
           ⇀
@@ -205,23 +208,23 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-gqjmRU fYujy"
+        className="sc-VigVT dWDrHe"
         name="right"
       >
         <input
-          className="sc-VigVT GFAAo"
+          className="sc-jTzLTM lkeXRE"
           name="rightInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-dnqmqq hsPQjy"
+          className="sc-iwsKbI dRjwIk"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-bZQynM fnOGlM"
+            className="sc-gzVnrw cwbdKk"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -230,7 +233,7 @@ exports[`index matches the snapshot 1`] = `
             Inch
           </button>
           <button
-            className="sc-iwsKbI ibANEt"
+            className="sc-gZMcBi eHnWOn"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"

@@ -4,7 +4,9 @@ exports[`Header should render the header 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__unrendered__): <Header
+    handleClick={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,6 +20,10 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        <Styled(FontAwesomeIcon)
+          icon="bars"
+          onClick={[Function]}
+/>,
         <Styled(Link)
           to="/"
 >
@@ -52,6 +58,18 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "icon": "bars",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -181,6 +199,10 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          <Styled(FontAwesomeIcon)
+            icon="bars"
+            onClick={[Function]}
+/>,
           <Styled(Link)
             to="/"
 >
@@ -215,6 +237,18 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "icon": "bars",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

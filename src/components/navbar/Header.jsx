@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 
 import StyledLink from '../shared/StyledLink';
 
@@ -10,9 +11,14 @@ const StyledHeader = styled.div`
   grid-area: 'header';
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 300px 1fr auto auto;
+  grid-template-columns: auto auto 1fr auto auto;
   align-items: center;
   padding-right: 10px;
+`;
+
+const StyledHamburger = styled(FontAwesomeIcon)`
+  padding-left: 25px;
+  font-size: 1.4em;
 `;
 
 const StyledLogoLink = styled(Link)`
@@ -23,7 +29,7 @@ const StyledLogoLink = styled(Link)`
   };
   h1 {
     margin: 0;
-    padding-left: 40px;
+    padding-left: 25px;
   }
 `;
 
@@ -34,8 +40,9 @@ const StyledHeaderIcon = styled(FontAwesomeIcon)`
   };
 `;
 
-const Header = () => (
+const Header = ({ handleClick }) => (
   <StyledHeader>
+    <StyledHamburger icon="bars" onClick={handleClick} />
     <StyledLogoLink to="/">
       <h1>Converter</h1>
     </StyledLogoLink>
@@ -50,5 +57,9 @@ const Header = () => (
     </StyledLink>
   </StyledHeader>
 );
+
+Header.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default Header;
