@@ -26,7 +26,7 @@ ShallowWrapper {
           </h1>
 </Styled(Link)>,
         <div />,
-        <Styled(Link)
+        <Styled(NavLink)
           header={true}
           to="/help"
 >
@@ -36,8 +36,8 @@ ShallowWrapper {
           <Styled(FontAwesomeIcon)
                     icon="question-circle"
           />
-</Styled(Link)>,
-        <Styled(Link)
+</Styled(NavLink)>,
+        <Styled(NavLink)
           header={true}
           to="/about"
 >
@@ -47,7 +47,7 @@ ShallowWrapper {
           <Styled(FontAwesomeIcon)
                     icon="info-circle"
           />
-</Styled(Link)>,
+</Styled(NavLink)>,
       ],
     },
     "ref": null,
@@ -189,7 +189,7 @@ ShallowWrapper {
             </h1>
 </Styled(Link)>,
           <div />,
-          <Styled(Link)
+          <Styled(NavLink)
             header={true}
             to="/help"
 >
@@ -199,8 +199,8 @@ ShallowWrapper {
             <Styled(FontAwesomeIcon)
                         icon="question-circle"
             />
-</Styled(Link)>,
-          <Styled(Link)
+</Styled(NavLink)>,
+          <Styled(NavLink)
             header={true}
             to="/about"
 >
@@ -210,7 +210,7 @@ ShallowWrapper {
             <Styled(FontAwesomeIcon)
                         icon="info-circle"
             />
-</Styled(Link)>,
+</Styled(NavLink)>,
         ],
       },
       "ref": null,

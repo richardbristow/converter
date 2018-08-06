@@ -8,8 +8,9 @@ describe('Header', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should show two links', () => {
+  it('should find 3 links (1 for the Logo, and 2 page links)', () => {
     const wrapper = shallow(<Header />);
-    expect(wrapper.find('Styled(Link)')).toHaveLength(3);
+    expect(wrapper.find('Styled(NavLink)')).toHaveLength(2);
+    expect(wrapper.find('Styled(Link)')).toHaveLength(1);
   });
 });
