@@ -14,6 +14,7 @@ const StyledConverter = styled.div`
     'sidebar main';
   grid-template-columns: 300px 1fr;
   grid-template-rows: 50px 1fr;
+  height: 100vh;
 `;
 
 class Converter extends Component {
