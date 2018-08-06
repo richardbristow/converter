@@ -19,7 +19,7 @@ const Sidebar = ({ items }) => (
   <StyledSidebar>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-      return <StyledLink key={mathName} to={mathName.toLowerCase()}>{displayName}</StyledLink>;
+      return <StyledLink key={mathName} to={`/${mathName.toLowerCase()}`}>{displayName}</StyledLink>;
     })}
   </StyledSidebar>
 );
