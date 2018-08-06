@@ -18,97 +18,101 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <div />
     <a
-      className="sc-bdVaJa ewDqkD"
+      className="sc-bdVaJa hZEIeH"
       header={true}
       href="/help"
       onClick={[Function]}
     >
-      Help
+      <i
+        className="fa"
+      />
     </a>
     <a
-      className="sc-bdVaJa ewDqkD"
+      className="sc-bdVaJa hZEIeH"
       header={true}
       href="/about"
       onClick={[Function]}
     >
-      About
+      <i
+        className="fa"
+      />
     </a>
   </div>
   <div
     className="sc-bxivhb feJZaj"
   >
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/length"
       onClick={[Function]}
     >
       Length
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/surfacearea"
       onClick={[Function]}
     >
       Surface Area
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/angles"
       onClick={[Function]}
     >
       Angles
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/time"
       onClick={[Function]}
     >
       Time
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/frequency"
       onClick={[Function]}
     >
       Frequency
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/mass"
       onClick={[Function]}
     >
       Mass
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/electriccurrent"
       onClick={[Function]}
     >
       Electric Current
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/temperature"
       onClick={[Function]}
     >
       Temperature
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/force"
       onClick={[Function]}
     >
       Force
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/energy"
       onClick={[Function]}
     >
       Energy
     </a>
     <a
-      className="sc-bdVaJa kQzoGv"
+      className="sc-bdVaJa dbfokX"
       href="/datastorage"
       onClick={[Function]}
     >
@@ -138,7 +142,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-EHOje eDHSYa"
+            className="sc-EHOje crfmkI"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -147,12 +151,14 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-dnqmqq hiopyH"
+            className="sc-dnqmqq cppLsW"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
           >
-            ˇ
+            <i
+              className="fa"
+            />
           </button>
         </div>
       </div>
@@ -183,7 +189,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-EHOje eDHSYa"
+            className="sc-EHOje crfmkI"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -192,12 +198,14 @@ exports[`index matches the snapshot 1`] = `
             Inch
           </button>
           <button
-            className="sc-dnqmqq hiopyH"
+            className="sc-dnqmqq cppLsW"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
           >
-            ˇ
+            <i
+              className="fa"
+            />
           </button>
         </div>
       </div>

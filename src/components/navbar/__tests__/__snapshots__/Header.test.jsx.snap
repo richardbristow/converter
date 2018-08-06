@@ -30,13 +30,17 @@ ShallowWrapper {
           header={true}
           to="/help"
 >
-          Help
+          <FontAwesomeIcon
+                    icon="question-circle"
+          />
 </Styled(Link)>,
         <Styled(Link)
           header={true}
           to="/about"
 >
-          About
+          <FontAwesomeIcon
+                    icon="info-circle"
+          />
 </Styled(Link)>,
       ],
     },
@@ -80,12 +84,24 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Help",
+          "children": <FontAwesomeIcon
+            icon="question-circle"
+/>,
           "header": true,
           "to": "/help",
         },
         "ref": null,
-        "rendered": "Help",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "icon": "question-circle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -93,12 +109,24 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "About",
+          "children": <FontAwesomeIcon
+            icon="info-circle"
+/>,
           "header": true,
           "to": "/about",
         },
         "ref": null,
-        "rendered": "About",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "icon": "info-circle",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
     ],
@@ -123,13 +151,17 @@ ShallowWrapper {
             header={true}
             to="/help"
 >
-            Help
+            <FontAwesomeIcon
+                        icon="question-circle"
+            />
 </Styled(Link)>,
           <Styled(Link)
             header={true}
             to="/about"
 >
-            About
+            <FontAwesomeIcon
+                        icon="info-circle"
+            />
 </Styled(Link)>,
         ],
       },
@@ -173,12 +205,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Help",
+            "children": <FontAwesomeIcon
+              icon="question-circle"
+/>,
             "header": true,
             "to": "/help",
           },
           "ref": null,
-          "rendered": "Help",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "icon": "question-circle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -186,12 +230,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "About",
+            "children": <FontAwesomeIcon
+              icon="info-circle"
+/>,
             "header": true,
             "to": "/about",
           },
           "ref": null,
-          "rendered": "About",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "icon": "info-circle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],

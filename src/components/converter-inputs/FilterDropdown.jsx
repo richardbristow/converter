@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import FilterOptions from './FilterOptions';
 import StyledConvertButton from '../shared/StyledConvertButton';
@@ -108,7 +109,7 @@ class FilterDropdown extends Component {
       options, name, conversionType, dropdownValue,
     } = this.props;
     const { filter, dropdownOpen } = this.state;
-    const arrowIcon = dropdownOpen === false ? 'ˇ' : 'ˆ';
+    const arrowIcon = dropdownOpen === false ? <FontAwesomeIcon icon="chevron-down" /> : <FontAwesomeIcon icon="chevron-up" />;
     const { displayName } = options.find(option => option.mathName === dropdownValue && option);
     return (
       <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
@@ -141,4 +142,3 @@ FilterDropdown.propTypes = {
 };
 
 export default FilterDropdown;
-

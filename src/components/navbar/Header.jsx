@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StyledLink from '../shared/StyledLink';
 
@@ -31,8 +32,8 @@ const Header = () => (
       <h1>Converter</h1>
     </StyledLogoLink>
     <div />
-    <StyledLink header to="/help">Help</StyledLink>
-    <StyledLink header to="/about">About</StyledLink>
+    <StyledLink header to="/help"><FontAwesomeIcon icon="question-circle" /></StyledLink>
+    <StyledLink header to="/about"><FontAwesomeIcon icon="info-circle" /></StyledLink>
   </StyledHeader>
 );
 

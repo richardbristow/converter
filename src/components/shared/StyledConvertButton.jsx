@@ -6,9 +6,9 @@ const StyledConvertButton = styled.button`
   background-color: whitesmoke;
   border: 0;
   outline: none;
-  &:focus {
+  /* &:focus {
     background-color: paleturquoise;
-  };
+  }; */
   &:hover {
     background-color: paleturquoise;
   }
