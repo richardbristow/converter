@@ -17,7 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <styled.div>
+      "children": <styled.div
+        showFullSidebar={true}
+>
         <Header
                 handleClick={[Function]}
         />
@@ -814,6 +816,7 @@ ShallowWrapper {
                                 },
                               }
                 }
+                showFullSidebar={true}
         />
         <Main
                 baseUnits={
@@ -2414,6 +2417,7 @@ ShallowWrapper {
                                     },
                                   }
             }
+            showFullSidebar={true}
 />,
           <Main
             baseUnits={
@@ -3210,6 +3214,7 @@ ShallowWrapper {
             }
 />,
         ],
+        "showFullSidebar": true,
       },
       "ref": null,
       "rendered": Array [
@@ -4019,6 +4024,7 @@ ShallowWrapper {
                 ],
               },
             },
+            "showFullSidebar": true,
           },
           "ref": null,
           "rendered": null,
@@ -4835,7 +4841,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <styled.div>
+        "children": <styled.div
+          showFullSidebar={true}
+>
           <Header
                     handleClick={[Function]}
           />
@@ -5632,6 +5640,7 @@ ShallowWrapper {
                                         },
                                       }
                     }
+                    showFullSidebar={true}
           />
           <Main
                     baseUnits={
@@ -7232,6 +7241,7 @@ ShallowWrapper {
                                           },
                                         }
               }
+              showFullSidebar={true}
 />,
             <Main
               baseUnits={
@@ -8028,6 +8038,7 @@ ShallowWrapper {
               }
 />,
           ],
+          "showFullSidebar": true,
         },
         "ref": null,
         "rendered": Array [
@@ -8837,6 +8848,7 @@ ShallowWrapper {
                   ],
                 },
               },
+              "showFullSidebar": true,
             },
             "ref": null,
             "rendered": null,

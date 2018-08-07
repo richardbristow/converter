@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import baseUnits from '../units/baseUnits';
 import Header from './navbar/Header';
-import Sidebar from './Sidebar';
+import Sidebar from './sidebar/Sidebar';
 import Main from './Main';
 
 const StyledConverter = styled.div`
@@ -12,7 +12,7 @@ const StyledConverter = styled.div`
   grid-template-areas:
     'header header'
     'sidebar main';
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: ${props => (props.showFullSidebar ? '300px 1fr' : '75px 1fr')};
   grid-template-rows: 50px 1fr;
   height: 100vh;
 `;
@@ -38,9 +38,9 @@ class Converter extends Component {
     const { showFullSidebar } = this.state;
     return (
       <Router>
-        <StyledConverter>
+        <StyledConverter showFullSidebar={showFullSidebar}>
           <Header handleClick={this.handleClick} />
-          {showFullSidebar && <Sidebar items={baseUnits} />}
+          <Sidebar showFullSidebar={showFullSidebar} items={baseUnits} />
           <Main baseUnits={baseUnits} />
         </StyledConverter>
       </Router>

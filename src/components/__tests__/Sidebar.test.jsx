@@ -1,12 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Sidebar from '../Sidebar';
+import Sidebar from '../sidebar/Sidebar';
 import baseUnits from '../../units/baseUnits';
+
+const props = {
+  items: baseUnits,
+  showFullSidebar: true,
+};
 
 describe('Sidebar', () => {
   it('should have the same number of links as there are unit types in baseUnits.js', () => {
-    const wrapper = shallow(<Sidebar items={baseUnits} />);
-    expect(wrapper.find('Styled(NavLink)')).toHaveLength(Object.keys(baseUnits).length);
+    const wrapper = shallow(<Sidebar {...props} />);
+    expect(wrapper.find('SidebarOption')).toHaveLength(Object.keys(baseUnits).length);
   });
 });

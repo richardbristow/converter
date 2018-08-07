@@ -11,13 +11,14 @@ const StyledHeader = styled.div`
   grid-area: 'header';
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: auto auto 1fr auto auto;
+  grid-template-columns: 75px auto 1fr auto auto;
   align-items: center;
   padding-right: 10px;
 `;
 
 const StyledHamburger = styled(FontAwesomeIcon)`
-  padding-left: 25px;
+  padding: 8px;
+  margin: 0 auto;
   font-size: 1.4em;
 `;
 
@@ -28,8 +29,8 @@ const StyledLogoLink = styled(Link)`
     color: black;
   };
   h1 {
-    margin: 0;
-    padding-left: 25px;
+    margin: 0 0 0 20px;
+    user-select: none;
   }
 `;
 

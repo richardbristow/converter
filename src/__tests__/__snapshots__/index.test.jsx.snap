@@ -5,13 +5,13 @@ exports[`index matches the snapshot 1`] = `
   className="sc-kAzzGY hmCqX"
 >
   <div
-    className="sc-bwzfXH koJenr"
+    className="sc-bwzfXH hujElm"
   >
     <i
       className="fa"
     />
     <a
-      className="sc-bxivhb faxjju"
+      className="sc-bxivhb heFXHW"
       href="/"
       onClick={[Function]}
     >
@@ -22,7 +22,7 @@ exports[`index matches the snapshot 1`] = `
     <div />
     <a
       aria-current={null}
-      className="sc-bdVaJa fzTKjw"
+      className="sc-bdVaJa ciNLCF"
       header={true}
       href="/help"
       onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa fzTKjw"
+      className="sc-bdVaJa ciNLCF"
       header={true}
       href="/about"
       onClick={[Function]}
@@ -56,102 +56,157 @@ exports[`index matches the snapshot 1`] = `
   >
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/length"
       onClick={[Function]}
       style={undefined}
     >
-      Length
+      <div>
+        *
+      </div>
+      <div>
+        Length
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/surfacearea"
       onClick={[Function]}
       style={undefined}
     >
-      Surface Area
+      <div>
+        *
+      </div>
+      <div>
+        Surface Area
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/angles"
       onClick={[Function]}
       style={undefined}
     >
-      Angles
+      <div>
+        *
+      </div>
+      <div>
+        Angles
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/time"
       onClick={[Function]}
       style={undefined}
     >
-      Time
+      <div>
+        *
+      </div>
+      <div>
+        Time
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/frequency"
       onClick={[Function]}
       style={undefined}
     >
-      Frequency
+      <div>
+        *
+      </div>
+      <div>
+        Frequency
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/mass"
       onClick={[Function]}
       style={undefined}
     >
-      Mass
+      <div>
+        *
+      </div>
+      <div>
+        Mass
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/electriccurrent"
       onClick={[Function]}
       style={undefined}
     >
-      Electric Current
+      <div>
+        *
+      </div>
+      <div>
+        Electric Current
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/temperature"
       onClick={[Function]}
       style={undefined}
     >
-      Temperature
+      <div>
+        *
+      </div>
+      <div>
+        Temperature
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/force"
       onClick={[Function]}
       style={undefined}
     >
-      Force
+      <div>
+        *
+      </div>
+      <div>
+        Force
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/energy"
       onClick={[Function]}
       style={undefined}
     >
-      Energy
+      <div>
+        *
+      </div>
+      <div>
+        Energy
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa jWeazP"
+      className="sc-bdVaJa djTCTA"
       href="/datastorage"
       onClick={[Function]}
       style={undefined}
     >
-      Data Storage
+      <div>
+        *
+      </div>
+      <div>
+        Data Storage
+      </div>
     </a>
   </div>
   <div

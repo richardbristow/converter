@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import StyledLink from './shared/StyledLink';
+import SidebarOption from './SidebarOption';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
@@ -15,11 +15,11 @@ const StyledSidebar = styled.div`
   background-color: violet;
 `;
 
-const Sidebar = ({ items }) => (
+const Sidebar = ({ showFullSidebar, items }) => (
   <StyledSidebar>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-      return <StyledLink key={mathName} to={`/${mathName.toLowerCase()}`}>{displayName}</StyledLink>;
+      return <SidebarOption key={`sidebar-option-${mathName}`} showFullSidebar={showFullSidebar} displayName={displayName} mathName={mathName} />;
     })}
   </StyledSidebar>
 );
@@ -30,6 +30,7 @@ const typeProps = {
 };
 
 Sidebar.propTypes = {
+  showFullSidebar: PropTypes.bool.isRequired,
   items: PropTypes.shape({
     length: PropTypes.shape({ ...typeProps }),
   }, {
