@@ -32,9 +32,11 @@ const onArrowKeyDown = (options, refs, e) => {
   const { name, value } = target;
   const optionsMathNames = options.map(option => option.mathName);
   if (key === 'ArrowDown') {
+    e.preventDefault();
     const nextOption = optionsMathNames.indexOf(value) + 1;
     focusNextOption(name, value, nextOption, refs);
   } else if (key === 'ArrowUp') {
+    e.preventDefault();
     const nextOption = optionsMathNames.indexOf(value) - 1;
     focusNextOption(name, value, nextOption, refs);
   }
