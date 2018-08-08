@@ -135,6 +135,7 @@ class FilterDropdown extends Component {
         <StyledArrowButton tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
         {dropdownOpen &&
           <FilterOptions
+            currentDisplayName={displayName}
             options={options}
             name={name}
             conversionType={conversionType}

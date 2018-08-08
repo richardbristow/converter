@@ -41,7 +41,7 @@ const onArrowKeyDown = (options, refs, e) => {
 };
 
 const FilterOptions = ({
-  options, name, conversionType, filter, handleDropdownItemClick,
+  options, name, conversionType, filter, handleDropdownItemClick, currentDisplayName,
 }) => {
   const filteredOptions = options.filter(option => (
     option.displayName.toLowerCase().indexOf(filter.toLowerCase()) !== -1
@@ -58,6 +58,7 @@ const FilterOptions = ({
           onClick={e => handleDropdownItemClick(conversionType, e)}
           onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
           innerRef={dropdownOptionRefs[index]}
+          selected={currentDisplayName === displayName}
         >
           {displayName}
         </StyledConvertButton>))) : <StyledFilterError tabIndex="-1">No units found.</StyledFilterError>}
@@ -74,6 +75,7 @@ FilterOptions.propTypes = {
   conversionType: PropTypes.string.isRequired,
   filter: PropTypes.string.isRequired,
   handleDropdownItemClick: PropTypes.func.isRequired,
+  currentDisplayName: PropTypes.string.isRequired,
 };
 
 export default FilterOptions;
