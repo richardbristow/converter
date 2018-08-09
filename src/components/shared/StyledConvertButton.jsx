@@ -6,12 +6,12 @@ const StyledConvertButton = styled.button`
   background-color: ${props => (props.selected ? 'palegreen' : 'whitesmoke')};;
   border: 0;
   outline: none;
-  /* &:focus {
+  &:focus {
     background-color: paleturquoise;
-  }; */
-  &:hover {
-    background-color: ${props => (!props.header && 'paleturquoise')};
   };
+  /* &:hover {
+    background-color: ${props => (!props.header && 'paleturquoise')};
+  }; */
 `;
 
 export default StyledConvertButton;

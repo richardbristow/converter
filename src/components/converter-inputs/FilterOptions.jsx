@@ -42,6 +42,13 @@ const onArrowKeyDown = (options, refs, e) => {
   }
 };
 
+const handleMouseOver = (options, refs, { target }) => {
+  const { value } = target;
+  const optionsMathNames = options.map(option => option.mathName);
+  const current = optionsMathNames.indexOf(value);
+  refs[current].current.focus();
+};
+
 const FilterOptions = ({
   options, name, conversionType, filter, handleDropdownItemClick, currentDisplayName,
 }) => {
@@ -61,6 +68,7 @@ const FilterOptions = ({
           onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
           innerRef={dropdownOptionRefs[index]}
           selected={currentDisplayName === displayName}
+          onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
         >
           {displayName}
         </StyledConvertButton>))) : <StyledFilterError tabIndex="-1">No units found.</StyledFilterError>}

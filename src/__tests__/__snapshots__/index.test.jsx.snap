@@ -232,7 +232,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-gzVnrw kddsJE"
+            className="sc-gzVnrw hogteJ"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -241,7 +241,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-gZMcBi eSaVjA"
+            className="sc-gZMcBi hmuwzp"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -279,7 +279,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-gzVnrw kddsJE"
+            className="sc-gzVnrw hogteJ"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -288,7 +288,7 @@ exports[`index matches the snapshot 1`] = `
             Inch
           </button>
           <button
-            className="sc-gZMcBi eSaVjA"
+            className="sc-gZMcBi hmuwzp"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
