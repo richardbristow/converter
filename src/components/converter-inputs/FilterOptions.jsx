@@ -8,13 +8,12 @@ const StyledFilterOptions = styled.div`
   grid-column: span 2;
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 25px;
+  grid-auto-rows: 50px;
   max-height: 300px;
   overflow: auto;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-top: 0px solid transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 10px;
 `;
 
 const StyledFilterError = StyledConvertButton.extend`
@@ -71,7 +70,7 @@ const FilterOptions = ({
           onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
         >
           {displayName}
-        </StyledConvertButton>))) : <StyledFilterError tabIndex="-1">No units found.</StyledFilterError>}
+        </StyledConvertButton>))) : <StyledFilterError disabled tabIndex="-1">No units found.</StyledFilterError>}
     </StyledFilterOptions>
   );
 };

@@ -1,8 +1,8 @@
 const length = {
   displayName: 'Length',
   mathName: 'length',
-  initialUnitLeft: 'm',
-  initialUnitRight: 'in',
+  initialUnitLeft: 'cm',
+  initialUnitRight: 'm',
   units: [
     {
       displayName: 'Meter',

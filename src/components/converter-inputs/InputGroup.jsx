@@ -8,7 +8,7 @@ const StyledInputGroup = styled.div`
   grid-area: ${props => props.name};
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px auto;
+  grid-template-rows: 70px auto;
 `;
 
 const StyledNumberInput = styled.input`
@@ -16,7 +16,9 @@ const StyledNumberInput = styled.input`
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  border-bottom: 0px solid transparent;
+  border-bottom: 0px;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 2em;
 `;
 
 const InputGroup = ({

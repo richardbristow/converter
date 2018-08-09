@@ -22,8 +22,8 @@ describe('InputPanel', () => {
     //   initialUnitRight: defaultUnitRight,
     // } = baseUnits.surfaceArea;
     const wrapper = shallow(<InputPanel {...props} />);
-    expect(wrapper.find('InputGroup[name="left"]').props().dropdownValue).toBe('m');
-    expect(wrapper.find('InputGroup[name="right"]').props().dropdownValue).toBe('in');
+    expect(wrapper.find('InputGroup[name="left"]').props().dropdownValue).toBe('cm');
+    expect(wrapper.find('InputGroup[name="right"]').props().dropdownValue).toBe('m');
   });
 
   // it('should mount dropdowns with default values when the conversion type changes', () => {

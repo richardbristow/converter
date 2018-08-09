@@ -13,15 +13,22 @@ const StyledFilterDropdown = styled.div`
 `;
 
 const StyledArrowButton = StyledConvertButton.extend`
-  padding: 0px 10px;
+  padding: 0px 15px;
   text-align: center;
+  border-left: 0px;
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 4px 0px;
+  color: ${props => props.dropdownOpen && 'red'};
 `;
 
 const StyledFilterInput = styled.input`
   outline: none;
   text-align: left;
   padding-left: 15px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0px 0px 0px 4px;
 `;
 
 class FilterDropdown extends Component {
@@ -132,7 +139,7 @@ class FilterDropdown extends Component {
             onClick={this.handleDropdownClick}
           >{displayName}
           </StyledConvertButton>}
-        <StyledArrowButton tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
+        <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
         {dropdownOpen &&
           <FilterOptions
             currentDisplayName={displayName}
