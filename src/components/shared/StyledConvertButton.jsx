@@ -10,6 +10,8 @@ const StyledConvertButton = styled.button`
   border-right: 0px;
   border-radius: ${props => (props.header && '0px 0px 0px 4px')};
   outline: none;
+  min-width: 0;
+  overflow: hidden;
   &:focus {
     background-color: ${props => (!props.arrow && !props.selected && 'paleturquoise')};
   };

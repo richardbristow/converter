@@ -515,7 +515,7 @@ exports[`index matches the snapshot 1`] = `
         name="left"
       >
         <input
-          className="sc-fjdhpX ceTPwo"
+          className="sc-fjdhpX ksJjPA"
           name="leftInput"
           onChange={[Function]}
           type="text"
@@ -527,7 +527,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-htoDjs iglzDS"
+            className="sc-htoDjs isYdgO"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -536,7 +536,7 @@ exports[`index matches the snapshot 1`] = `
             Centimeter
           </button>
           <button
-            className="sc-gqjmRU eCdTWm"
+            className="sc-gqjmRU dedboY"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -579,7 +579,7 @@ exports[`index matches the snapshot 1`] = `
         name="right"
       >
         <input
-          className="sc-fjdhpX ceTPwo"
+          className="sc-fjdhpX ksJjPA"
           name="rightInput"
           onChange={[Function]}
           type="text"
@@ -591,7 +591,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-htoDjs iglzDS"
+            className="sc-htoDjs isYdgO"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -600,7 +600,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-gqjmRU eCdTWm"
+            className="sc-gqjmRU dedboY"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"

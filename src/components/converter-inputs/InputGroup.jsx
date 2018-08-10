@@ -19,6 +19,7 @@ const StyledNumberInput = styled.input`
   border-bottom: 0px;
   border-radius: 4px 4px 0px 0px;
   font-size: 2em;
+  min-width: 0;
 `;
 
 const InputGroup = ({
