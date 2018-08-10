@@ -11,6 +11,7 @@ const StyledConvertArrows = styled.div`
   grid-template-columns: 1fr;
   align-items: center;
   padding: 0px 15px;
+  max-height: 120px;
 `;
 
 const StyledArrow = styled.div`
