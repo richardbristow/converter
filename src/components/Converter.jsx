@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled from 'styled-components';
 
-import baseUnits from '../units/baseUnits';
+import baseUnits from '../constants/units/baseUnits';
 import Header from './navbar/Header';
 import Sidebar from './sidebar/Sidebar';
 import Main from './Main';

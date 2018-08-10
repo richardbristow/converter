@@ -1,4 +1,4 @@
-import baseUnits from '../units/baseUnits';
+import baseUnits from '../constants/units/baseUnits';
 
 const getUnits = (inputUnits, conversionType) => {
   const units = {};

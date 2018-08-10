@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import icons from '../../icons/icons';
+import icons from '../../constants/icons/icons';
 
 import Icon from '../shared/Icon';
 import FilterOptions from './FilterOptions';

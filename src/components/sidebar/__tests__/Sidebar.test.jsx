@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Sidebar from '../sidebar/Sidebar';
-import baseUnits from '../../units/baseUnits';
+import Sidebar from '../Sidebar';
+import baseUnits from '../../../constants/units/baseUnits';
 
 const props = {
   items: baseUnits,
