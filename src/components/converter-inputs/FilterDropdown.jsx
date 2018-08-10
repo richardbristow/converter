@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import icons from '../../icons/icons';
+
+import Icon from '../shared/Icon';
 import FilterOptions from './FilterOptions';
 import StyledConvertButton from '../shared/StyledConvertButton';
 
@@ -14,7 +16,6 @@ const StyledFilterDropdown = styled.div`
 
 const StyledArrowButton = StyledConvertButton.extend`
   padding: 0px 15px;
-  text-align: center;
   border-left: 0px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -117,7 +118,7 @@ class FilterDropdown extends Component {
       options, name, conversionType, dropdownValue,
     } = this.props;
     const { filter, dropdownOpen } = this.state;
-    const arrowIcon = dropdownOpen === false ? <FontAwesomeIcon icon="chevron-down" /> : <FontAwesomeIcon icon="chevron-up" />;
+    const arrowIcon = dropdownOpen === false ? <Icon size="0.9em" icon={icons.chevronDown} /> : <Icon size="0.9em" icon={icons.chevronUp} />;
     const { displayName } = options.find(option => option.mathName === dropdownValue && option);
     return (
       <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>

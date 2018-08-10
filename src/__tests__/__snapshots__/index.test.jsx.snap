@@ -2,14 +2,36 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-kAzzGY hmCqX"
+  className="sc-chPdSV daAjRq"
 >
   <div
     className="sc-bwzfXH hujElm"
   >
-    <i
-      className="fa"
-    />
+    <div
+      className="sc-htpNat fNVRbr"
+      onClick={[Function]}
+    >
+      <svg
+        height="22"
+        style={
+          Object {
+            "display": "inline-block",
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 24 24"
+        width="22"
+      >
+        <path
+          d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+          style={
+            Object {
+              "fill": "currentcolor",
+            }
+          }
+        />
+      </svg>
+    </div>
     <a
       className="sc-bxivhb heFXHW"
       href="/"
@@ -22,7 +44,7 @@ exports[`index matches the snapshot 1`] = `
     <div />
     <a
       aria-current={null}
-      className="sc-bdVaJa ciNLCF"
+      className="sc-bdVaJa fooaOh"
       header={true}
       href="/help"
       onClick={[Function]}
@@ -31,13 +53,34 @@ exports[`index matches the snapshot 1`] = `
       <span>
         Help
       </span>
-      <i
-        className="fa"
-      />
+      <div
+        className="sc-ifAKCX bzvTBk"
+      >
+        <svg
+          height="20"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="20"
+        >
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
+      </div>
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa ciNLCF"
+      className="sc-bdVaJa fooaOh"
       header={true}
       href="/about"
       onClick={[Function]}
@@ -46,23 +89,65 @@ exports[`index matches the snapshot 1`] = `
       <span>
         About
       </span>
-      <i
-        className="fa"
-      />
+      <div
+        className="sc-ifAKCX bzvTBk"
+      >
+        <svg
+          height="20"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="20"
+        >
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.001 5.75c.69 0 1.251.56 1.251 1.25s-.561 1.25-1.251 1.25-1.249-.56-1.249-1.25.559-1.25 1.249-1.25zm2.001 12.25h-4v-1c.484-.179 1-.201 1-.735v-4.467c0-.534-.516-.618-1-.797v-1h3v6.265c0 .535.517.558 1 .735v.999z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
+      </div>
     </a>
   </div>
   <div
-    className="sc-EHOje bWOsPG"
+    className="sc-bZQynM bdvZYB"
   >
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/length"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M24 16v-8h-24v8h24zm-22-6h2v2h1v-2h2v3h1v-3h2v2h1v-2h2v2h1v-2h2v3h1v-3h2v2h1v-2h2v4h-20v-4z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Length
@@ -70,13 +155,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/surfacearea"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M8 16v-16h-8v24h24v-8h-16zm-6-14h4v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-2v1h2v2h-4v-14zm0 20v-4h4v4h-4zm20 0h-14v-4h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v2h1v-2h2v4z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Surface Area
@@ -84,13 +190,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/angles"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M12 4c-6.627 0-12 5.373-12 12v4h24v-4c0-6.627-5.373-12-12-12zm10 14h-2v-2h-1v2h-2v-3h-1v3h-2v-2h-1v2h-2v-2h-1v2h-2v-3h-1v3h-2v-2h-1v2h-2v-2c0-5.514 4.486-10 10-10s10 4.486 10 10v2zm-10-9c-3.17 0-5.845 2.109-6.706 5h13.412c-.861-2.891-3.536-5-6.706-5zm-2.986 3c.845-.632 1.888-1 2.986-1s2.141.368 2.986 1h-5.972z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Angles
@@ -98,13 +225,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/time"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Time
@@ -112,13 +260,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/frequency"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M19.803 13.207l-.829 1.093-1.554-3.826c-.077-.189-.244-.306-.437-.306-.157 0-.356.084-.444.321l-1.356 3.664-1.872-8.759c-.062-.291-.288-.394-.462-.394-.203 0-.428.131-.473.424l-1.629 10.581-1.658-6.968c-.067-.282-.291-.382-.463-.382-.167 0-.374.092-.453.349l-1.453 4.753-1.07-2.53c-.078-.185-.245-.299-.436-.299-.154 0-.294.076-.385.209l-1.257 1.805-.087.058h-2.985c-.276 0-.5.224-.5.5s.224.5.5.5h3.284c.152 0 .296-.074.386-.206l.948-1.353 1.24 2.929c.079.187.241.299.433.299.211 0 .39-.138.455-.35l1.324-4.332 1.814 7.629c.068.283.282.384.46.384.203 0 .428-.131.473-.425l1.605-10.425 1.673 7.83c.058.272.277.395.467.395.202 0 .366-.12.441-.321l1.5-4.049 1.426 3.51c.077.189.245.306.438.306.152 0 .292-.075.382-.206l1.146-1.583.087-.046h3.026c.272 0 .492-.22.492-.492s-.22-.494-.492-.494h-3.322c-.151 0-.294.077-.383.207z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Frequency
@@ -126,13 +295,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/mass"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d=""
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Mass
@@ -140,13 +330,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/electriccurrent"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M8 24l2.674-9h-9.674l16-15-2.674 9h8.674l-15 15zm-1.586-11h6.912l-1.326 4 5.739-6h-6.065l1.304-4-6.564 6z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Electric Current
@@ -154,13 +365,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/temperature"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M8.5 2c.827 0 1.5.673 1.5 1.5v7.525c0 1.569.514 2.287 1.411 3.05 1.01.858 1.589 2.106 1.589 3.425 0 2.481-2.019 4.5-4.5 4.5s-4.5-2.019-4.5-4.5c0-1.319.579-2.567 1.59-3.425.896-.761 1.41-1.48 1.41-3.05v-7.525c0-.827.673-1.5 1.5-1.5zm0-2c-1.933 0-3.5 1.567-3.5 3.5v7.525c0 .587-.258 1.145-.705 1.525-1.403 1.192-2.295 2.965-2.295 4.95 0 3.59 2.909 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-1.985-.892-3.758-2.295-4.95-.447-.38-.705-.938-.705-1.525v-7.525c0-1.933-1.567-3.5-3.5-3.5zm2.107 14.718c-1.012-.89-1.607-1.734-1.607-3.22v-6.498h-1v6.498c0 1.484-.597 2.332-1.607 3.22-.794.698-1.393 1.642-1.393 2.782 0 1.933 1.567 3.5 3.5 3.5s3.5-1.567 3.5-3.5c0-1.14-.599-2.083-1.393-2.782zm11.393-8.718h-3v-3h-2v3h-3v2h3v3h2v-3h3v-2z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Temperature
@@ -168,13 +400,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/force"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d=""
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Force
@@ -182,13 +435,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/energy"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M8.625 0c.61 7.189-5.625 9.664-5.625 15.996 0 4.301 3.069 7.972 9 8.004 5.931.032 9-4.414 9-8.956 0-4.141-2.062-8.046-5.952-10.474.924 2.607-.306 4.988-1.501 5.808.07-3.337-1.125-8.289-4.922-10.378zm4.711 13c3.755 3.989 1.449 9-1.567 9-1.835 0-2.779-1.265-2.769-2.577.019-2.433 2.737-2.435 4.336-6.423z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Energy
@@ -196,13 +470,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa djTCTA"
+      className="sc-bdVaJa dMfNoT"
       href="/datastorage"
       onClick={[Function]}
       style={undefined}
     >
-      <div>
-        *
+      <div
+        className="sc-EHOje lmBOPM"
+      >
+        <svg
+          height="22"
+          style={
+            Object {
+              "display": "inline-block",
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="22"
+        >
+          <path
+            d="M14 3h2.997v5h-2.997v-5zm9 1v20h-22v-24h17.997l4.003 4zm-17 5h12v-7h-12v7zm14 4h-16v9h16v-9z"
+            style={
+              Object {
+                "fill": "currentcolor",
+              }
+            }
+          />
+        </svg>
       </div>
       <div>
         Data Storage
@@ -210,29 +505,29 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-cSHVUG kXmYXv"
+    className="sc-kAzzGY etLDGE"
   >
     <div
-      className="sc-jzJRlG iYPckT"
+      className="sc-cSHVUG gxvGkv"
     >
       <div
-        className="sc-VigVT eRBaRh"
+        className="sc-jTzLTM iJrmBt"
         name="left"
       >
         <input
-          className="sc-jTzLTM gERAaZ"
+          className="sc-fjdhpX ceTPwo"
           name="leftInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-iwsKbI dRjwIk"
+          className="sc-gZMcBi jfIgvd"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-gzVnrw ljGOFo"
+            className="sc-htoDjs iglzDS"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -241,19 +536,36 @@ exports[`index matches the snapshot 1`] = `
             Centimeter
           </button>
           <button
-            className="sc-gZMcBi dUAPyh"
+            className="sc-gqjmRU eCdTWm"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
           >
-            <i
-              className="fa"
-            />
+            <svg
+              height="0.9em"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "verticalAlign": "middle",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="0.9em"
+            >
+              <path
+                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                style={
+                  Object {
+                    "fill": "currentcolor",
+                  }
+                }
+              />
+            </svg>
           </button>
         </div>
       </div>
       <div
-        className="sc-fjdhpX hkVZZI"
+        className="sc-jzJRlG bGgLCn"
       >
         <div>
           ⇀
@@ -263,23 +575,23 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-VigVT cPzyGk"
+        className="sc-jTzLTM jhGiVe"
         name="right"
       >
         <input
-          className="sc-jTzLTM gERAaZ"
+          className="sc-fjdhpX ceTPwo"
           name="rightInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-iwsKbI dRjwIk"
+          className="sc-gZMcBi jfIgvd"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-gzVnrw ljGOFo"
+            className="sc-htoDjs iglzDS"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -288,14 +600,31 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-gZMcBi dUAPyh"
+            className="sc-gqjmRU eCdTWm"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
           >
-            <i
-              className="fa"
-            />
+            <svg
+              height="0.9em"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "verticalAlign": "middle",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="0.9em"
+            >
+              <path
+                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+                style={
+                  Object {
+                    "fill": "currentcolor",
+                  }
+                }
+              />
+            </svg>
           </button>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 
+import icons from '../../icons/icons';
+
 import StyledLink from '../shared/StyledLink';
+import Icon from '../shared/Icon';
 
 const StyledHeader = styled.div`
   background-color: tomato;
@@ -16,10 +18,9 @@ const StyledHeader = styled.div`
   padding-right: 10px;
 `;
 
-const StyledHamburger = styled(FontAwesomeIcon)`
+const StyledHamburger = styled.div`
   padding: 8px;
   margin: 0 auto;
-  font-size: 1.4em;
 `;
 
 const StyledLogoLink = styled(Link)`
@@ -34,7 +35,7 @@ const StyledLogoLink = styled(Link)`
   }
 `;
 
-const StyledHeaderIcon = styled(FontAwesomeIcon)`
+const StyledHeaderIcon = styled.div`
   color: yellow;
   &:hover {
     color: purple;
@@ -43,18 +44,24 @@ const StyledHeaderIcon = styled(FontAwesomeIcon)`
 
 const Header = ({ handleClick }) => (
   <StyledHeader>
-    <StyledHamburger icon="bars" onClick={handleClick} />
+    <StyledHamburger onClick={handleClick}>
+      <Icon icon={icons.hamburger} />
+    </StyledHamburger>
     <StyledLogoLink to="/">
       <h1>Converter</h1>
     </StyledLogoLink>
     <div />
     <StyledLink header to="/help">
       <span>Help</span>
-      <StyledHeaderIcon icon="question-circle" />
+      <StyledHeaderIcon>
+        <Icon size="20" icon={icons.help} />
+      </StyledHeaderIcon>
     </StyledLink>
     <StyledLink header to="/about">
       <span>About</span>
-      <StyledHeaderIcon icon="info-circle" />
+      <StyledHeaderIcon>
+        <Icon size="20" icon={icons.about} />
+      </StyledHeaderIcon>
     </StyledLink>
   </StyledHeader>
 );

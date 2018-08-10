@@ -12,15 +12,15 @@ const StyledLink = styled(NavLink)`
     padding-right: 10px;
     padding-left: 5px;
   }
+  &:visited {
+    color: black;
+  };
   &:hover {
     text-decoration: none;
     background-color: ${props => (!props.header && 'lightgrey')};
     span {
       display: block;
     }
-  };
-  &:visited {
-    color: black;
   };
   &.active {
     font-weight: bold;
