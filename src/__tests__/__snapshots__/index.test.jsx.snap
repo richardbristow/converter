@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-chPdSV daAjRq"
+  className="sc-kgoBCf fzaUzB"
 >
   <div
     className="sc-bwzfXH hujElm"
@@ -505,10 +505,10 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-kAzzGY etLDGE"
+    className="sc-chPdSV eUzVPA"
   >
     <div
-      className="sc-cSHVUG gxvGkv"
+      className="sc-kAzzGY ePadkC"
     >
       <div
         className="sc-jTzLTM iJrmBt"
@@ -565,13 +565,55 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-jzJRlG bGgLCn"
+        className="sc-jzJRlG fIYNEu"
       >
-        <div>
-          ⇀
+        <div
+          className="sc-cSHVUG isCEZI"
+        >
+          <svg
+            height="60"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="60"
+          >
+            <path
+              d="M24 11.871l-5-4.871v3h-19v4h19v3z"
+              style={
+                Object {
+                  "fill": "currentcolor",
+                }
+              }
+            />
+          </svg>
         </div>
-        <div>
-          ↽
+        <div
+          className="sc-cSHVUG doxGcc"
+        >
+          <svg
+            height="60"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="60"
+          >
+            <path
+              d="M24 11.871l-5-4.871v3h-19v4h19v3z"
+              style={
+                Object {
+                  "fill": "currentcolor",
+                }
+              }
+            />
+          </svg>
         </div>
       </div>
       <div
