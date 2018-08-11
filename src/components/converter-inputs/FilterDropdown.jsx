@@ -30,6 +30,7 @@ const StyledFilterInput = styled.input`
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0px 0px 0px 4px;
+  min-width: 0;
 `;
 
 class FilterDropdown extends Component {
