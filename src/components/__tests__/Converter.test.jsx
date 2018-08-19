@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import '../../__mocks__/matchMedia';
+
 import Converter from '../Converter';
 import '../../polyfills';
 

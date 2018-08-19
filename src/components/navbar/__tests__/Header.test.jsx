@@ -4,6 +4,7 @@ import Header from '../Header';
 
 const props = {
   handleClick: jest.fn(),
+  sidebarDocked: false,
 };
 
 describe('Header', () => {

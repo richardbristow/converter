@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-kgoBCf fzaUzB"
+  className="sc-kgoBCf jMIAhj"
 >
   <div
     className="sc-bwzfXH hujElm"
@@ -149,9 +149,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Length
-      </div>
     </a>
     <a
       aria-current={null}
@@ -183,9 +180,6 @@ exports[`index matches the snapshot 1`] = `
             }
           />
         </svg>
-      </div>
-      <div>
-        Surface Area
       </div>
     </a>
     <a
@@ -219,9 +213,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Angles
-      </div>
     </a>
     <a
       aria-current={null}
@@ -253,9 +244,6 @@ exports[`index matches the snapshot 1`] = `
             }
           />
         </svg>
-      </div>
-      <div>
-        Time
       </div>
     </a>
     <a
@@ -289,9 +277,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Frequency
-      </div>
     </a>
     <a
       aria-current={null}
@@ -323,9 +308,6 @@ exports[`index matches the snapshot 1`] = `
             }
           />
         </svg>
-      </div>
-      <div>
-        Mass
       </div>
     </a>
     <a
@@ -359,9 +341,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Electric Current
-      </div>
     </a>
     <a
       aria-current={null}
@@ -393,9 +372,6 @@ exports[`index matches the snapshot 1`] = `
             }
           />
         </svg>
-      </div>
-      <div>
-        Temperature
       </div>
     </a>
     <a
@@ -429,9 +405,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Force
-      </div>
     </a>
     <a
       aria-current={null}
@@ -464,9 +437,6 @@ exports[`index matches the snapshot 1`] = `
           />
         </svg>
       </div>
-      <div>
-        Energy
-      </div>
     </a>
     <a
       aria-current={null}
@@ -498,9 +468,6 @@ exports[`index matches the snapshot 1`] = `
             }
           />
         </svg>
-      </div>
-      <div>
-        Data Storage
       </div>
     </a>
   </div>

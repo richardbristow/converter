@@ -15,11 +15,11 @@ const StyledSidebar = styled.div`
   background-color: violet;
 `;
 
-const Sidebar = ({ showFullSidebar, items }) => (
+const Sidebar = ({ userShowSidebar, sidebarDocked, items }) => (
   <StyledSidebar>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-      return <SidebarOption key={`sidebar-option-${mathName}`} showFullSidebar={showFullSidebar} displayName={displayName} mathName={mathName} />;
+      return <SidebarOption key={`sidebar-option-${mathName}`} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar} displayName={displayName} mathName={mathName} />;
     })}
   </StyledSidebar>
 );
@@ -30,7 +30,8 @@ const typeProps = {
 };
 
 Sidebar.propTypes = {
-  showFullSidebar: PropTypes.bool.isRequired,
+  userShowSidebar: PropTypes.bool.isRequired,
+  sidebarDocked: PropTypes.bool.isRequired,
   items: PropTypes.shape({
     length: PropTypes.shape({ ...typeProps }),
   }, {

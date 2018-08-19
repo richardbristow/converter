@@ -13,7 +13,7 @@ const StyledHeader = styled.div`
   grid-area: 'header';
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 75px auto 1fr auto auto;
+  grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? 'auto 1fr auto auto' : '75px auto 1fr auto auto')};
   align-items: center;
   padding-right: 10px;
 `;
@@ -42,11 +42,13 @@ const StyledHeaderIcon = styled.div`
   };
 `;
 
-const Header = ({ handleClick }) => (
-  <StyledHeader>
-    <StyledHamburger onClick={handleClick}>
-      <Icon icon={icons.hamburger} />
-    </StyledHamburger>
+const Header = ({ handleClick, sidebarDocked }) => (
+  <StyledHeader sidebarDocked={sidebarDocked}>
+    {!sidebarDocked && (
+      <StyledHamburger onClick={handleClick}>
+        <Icon icon={icons.hamburger} />
+      </StyledHamburger>
+    )}
     <StyledLogoLink to="/">
       <h1>Converter</h1>
     </StyledLogoLink>
@@ -68,6 +70,7 @@ const Header = ({ handleClick }) => (
 
 Header.propTypes = {
   handleClick: PropTypes.func.isRequired,
+  sidebarDocked: PropTypes.bool.isRequired,
 };
 
 export default Header;

@@ -11,18 +11,21 @@ const StyledSidebarIcon = styled.div`
   padding-right: 15px;
 `;
 
-const SidebarOption = ({ showFullSidebar, displayName, mathName }) => (
+const SidebarOption = ({
+  userShowSidebar, sidebarDocked, displayName, mathName,
+}) => (
   <StyledLink key={mathName} to={`/${mathName.toLowerCase()}`}>
     <StyledSidebarIcon>
       <Icon icon={icons[mathName]} />
     </StyledSidebarIcon>
-    {showFullSidebar && <div>{displayName}</div>}
+    {(userShowSidebar || sidebarDocked) && <div>{displayName}</div>}
   </StyledLink>
 );
 
 
 SidebarOption.propTypes = {
-  showFullSidebar: PropTypes.bool.isRequired,
+  userShowSidebar: PropTypes.bool.isRequired,
+  sidebarDocked: PropTypes.bool.isRequired,
   displayName: PropTypes.string.isRequired,
   mathName: PropTypes.string.isRequired,
 };

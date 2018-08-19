@@ -6,7 +6,8 @@ import baseUnits from '../../../constants/units/baseUnits';
 
 const props = {
   items: baseUnits,
-  showFullSidebar: true,
+  userShowSidebar: true,
+  sidebarDocked: false,
 };
 
 describe('Sidebar', () => {

@@ -18,10 +18,13 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <styled.div
-        showFullSidebar={true}
+        sidebarDocked={false}
+        userShowSidebar={false}
 >
         <Header
                 handleClick={[Function]}
+                sidebarDocked={false}
+                userShowSidebar={false}
         />
         <Sidebar
                 items={
@@ -816,7 +819,8 @@ ShallowWrapper {
                                 },
                               }
                 }
-                showFullSidebar={true}
+                sidebarDocked={false}
+                userShowSidebar={false}
         />
         <Main
                 baseUnits={
@@ -1623,6 +1627,8 @@ ShallowWrapper {
         "children": Array [
           <Header
             handleClick={[Function]}
+            sidebarDocked={false}
+            userShowSidebar={false}
 />,
           <Sidebar
             items={
@@ -2417,7 +2423,8 @@ ShallowWrapper {
                                     },
                                   }
             }
-            showFullSidebar={true}
+            sidebarDocked={false}
+            userShowSidebar={false}
 />,
           <Main
             baseUnits={
@@ -3214,7 +3221,8 @@ ShallowWrapper {
             }
 />,
         ],
-        "showFullSidebar": true,
+        "sidebarDocked": false,
+        "userShowSidebar": false,
       },
       "ref": null,
       "rendered": Array [
@@ -3224,6 +3232,8 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleClick": [Function],
+            "sidebarDocked": false,
+            "userShowSidebar": false,
           },
           "ref": null,
           "rendered": null,
@@ -4024,7 +4034,8 @@ ShallowWrapper {
                 ],
               },
             },
-            "showFullSidebar": true,
+            "sidebarDocked": false,
+            "userShowSidebar": false,
           },
           "ref": null,
           "rendered": null,
@@ -4842,10 +4853,13 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <styled.div
-          showFullSidebar={true}
+          sidebarDocked={false}
+          userShowSidebar={false}
 >
           <Header
                     handleClick={[Function]}
+                    sidebarDocked={false}
+                    userShowSidebar={false}
           />
           <Sidebar
                     items={
@@ -5640,7 +5654,8 @@ ShallowWrapper {
                                         },
                                       }
                     }
-                    showFullSidebar={true}
+                    sidebarDocked={false}
+                    userShowSidebar={false}
           />
           <Main
                     baseUnits={
@@ -6447,6 +6462,8 @@ ShallowWrapper {
           "children": Array [
             <Header
               handleClick={[Function]}
+              sidebarDocked={false}
+              userShowSidebar={false}
 />,
             <Sidebar
               items={
@@ -7241,7 +7258,8 @@ ShallowWrapper {
                                           },
                                         }
               }
-              showFullSidebar={true}
+              sidebarDocked={false}
+              userShowSidebar={false}
 />,
             <Main
               baseUnits={
@@ -8038,7 +8056,8 @@ ShallowWrapper {
               }
 />,
           ],
-          "showFullSidebar": true,
+          "sidebarDocked": false,
+          "userShowSidebar": false,
         },
         "ref": null,
         "rendered": Array [
@@ -8048,6 +8067,8 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "handleClick": [Function],
+              "sidebarDocked": false,
+              "userShowSidebar": false,
             },
             "ref": null,
             "rendered": null,
@@ -8848,7 +8869,8 @@ ShallowWrapper {
                   ],
                 },
               },
-              "showFullSidebar": true,
+              "sidebarDocked": false,
+              "userShowSidebar": false,
             },
             "ref": null,
             "rendered": null,
