@@ -21,9 +21,15 @@ const StyledSidebarLink = styled(StyledLink)`
 `;
 
 const SidebarOption = ({
-  userShowSidebar, sidebarDocked, displayName, mathName,
+  userShowSidebar, sidebarDocked, displayName, mathName, handeSidebarLinkClick,
 }) => (
-  <StyledSidebarLink sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar} key={mathName} to={`/${mathName.toLowerCase()}`}>
+  <StyledSidebarLink
+    onClick={handeSidebarLinkClick}
+    sidebarDocked={sidebarDocked}
+    userShowSidebar={userShowSidebar}
+    key={mathName}
+    to={`/${mathName.toLowerCase()}`}
+  >
     <StyledSidebarIcon>
       <Icon icon={icons[mathName]} />
     </StyledSidebarIcon>
@@ -37,6 +43,7 @@ SidebarOption.propTypes = {
   sidebarDocked: PropTypes.bool.isRequired,
   displayName: PropTypes.string.isRequired,
   mathName: PropTypes.string.isRequired,
+  handeSidebarLinkClick: PropTypes.func.isRequired,
 };
 
 export default SidebarOption;

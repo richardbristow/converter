@@ -8,6 +8,7 @@ const props = {
   items: baseUnits,
   userShowSidebar: true,
   sidebarDocked: false,
+  handeSidebarLinkClick: jest.fn(),
 };
 
 describe('Sidebar', () => {

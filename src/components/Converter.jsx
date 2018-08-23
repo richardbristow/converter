@@ -27,6 +27,7 @@ class Converter extends Component {
 
     this.handleClick = this.handleClick.bind(this);
     this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
+    this.handeSidebarLinkClick = this.handeSidebarLinkClick.bind(this);
   }
 
   componentWillMount() {
@@ -41,6 +42,15 @@ class Converter extends Component {
     this.setState(prevState => ({
       userShowSidebar: !prevState.userShowSidebar,
     }));
+  }
+
+  handeSidebarLinkClick() {
+    const { userShowSidebar } = this.state;
+    if (userShowSidebar) {
+      this.setState({
+        userShowSidebar: false,
+      });
+    }
   }
 
   mediaQueryChanged() {
@@ -61,6 +71,7 @@ class Converter extends Component {
             sidebarDocked={sidebarDocked}
             userShowSidebar={userShowSidebar}
             items={baseUnits}
+            handeSidebarLinkClick={this.handeSidebarLinkClick}
           />
           <Main
             baseUnits={baseUnits}

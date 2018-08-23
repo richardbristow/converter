@@ -17,11 +17,22 @@ const StyledSidebar = styled.div`
   z-index: 1;
 `;
 
-const Sidebar = ({ userShowSidebar, sidebarDocked, items }) => (
+const Sidebar = ({
+  userShowSidebar, sidebarDocked, items, handeSidebarLinkClick,
+}) => (
   <StyledSidebar sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-      return <SidebarOption key={`sidebar-option-${mathName}`} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar} displayName={displayName} mathName={mathName} />;
+        return (
+          <SidebarOption
+            handeSidebarLinkClick={handeSidebarLinkClick}
+            key={`sidebar-option-${mathName}`}
+            sidebarDocked={sidebarDocked}
+            userShowSidebar={userShowSidebar}
+            displayName={displayName}
+            mathName={mathName}
+          />
+        );
     })}
   </StyledSidebar>
 );
@@ -34,6 +45,7 @@ const typeProps = {
 Sidebar.propTypes = {
   userShowSidebar: PropTypes.bool.isRequired,
   sidebarDocked: PropTypes.bool.isRequired,
+  handeSidebarLinkClick: PropTypes.func.isRequired,
   items: PropTypes.shape({
     length: PropTypes.shape({ ...typeProps }),
   }, {

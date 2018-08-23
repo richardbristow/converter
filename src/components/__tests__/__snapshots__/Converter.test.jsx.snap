@@ -27,6 +27,7 @@ ShallowWrapper {
                 userShowSidebar={false}
         />
         <Sidebar
+                handeSidebarLinkClick={[Function]}
                 items={
                         Object {
                                 "angles": Object {
@@ -1633,6 +1634,7 @@ ShallowWrapper {
             userShowSidebar={false}
 />,
           <Sidebar
+            handeSidebarLinkClick={[Function]}
             items={
                         Object {
                                     "angles": Object {
@@ -3248,6 +3250,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "handeSidebarLinkClick": [Function],
             "items": Object {
               "angles": Object {
                 "displayName": "Angles",
@@ -4868,6 +4871,7 @@ ShallowWrapper {
                     userShowSidebar={false}
           />
           <Sidebar
+                    handeSidebarLinkClick={[Function]}
                     items={
                               Object {
                                         "angles": Object {
@@ -6474,6 +6478,7 @@ ShallowWrapper {
               userShowSidebar={false}
 />,
             <Sidebar
+              handeSidebarLinkClick={[Function]}
               items={
                             Object {
                                           "angles": Object {
@@ -8089,6 +8094,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "handeSidebarLinkClick": [Function],
               "items": Object {
                 "angles": Object {
                   "displayName": "Angles",
