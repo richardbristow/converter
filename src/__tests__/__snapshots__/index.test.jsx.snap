@@ -2,10 +2,10 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-kGXeez letPjw"
+  className="sc-kpOJdX jgyocs"
 >
   <div
-    className="sc-bwzfXH gblUUf"
+    className="sc-bwzfXH Afswb"
   >
     <div
       className="sc-htpNat fNVRbr"
@@ -120,7 +120,7 @@ exports[`index matches the snapshot 1`] = `
   >
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/length"
       onClick={[Function]}
       sidebarDocked={false}
@@ -154,7 +154,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/surfacearea"
       onClick={[Function]}
       sidebarDocked={false}
@@ -188,7 +188,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/angles"
       onClick={[Function]}
       sidebarDocked={false}
@@ -222,7 +222,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/time"
       onClick={[Function]}
       sidebarDocked={false}
@@ -256,7 +256,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/frequency"
       onClick={[Function]}
       sidebarDocked={false}
@@ -290,7 +290,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/mass"
       onClick={[Function]}
       sidebarDocked={false}
@@ -324,7 +324,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/electriccurrent"
       onClick={[Function]}
       sidebarDocked={false}
@@ -358,7 +358,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/temperature"
       onClick={[Function]}
       sidebarDocked={false}
@@ -392,7 +392,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/force"
       onClick={[Function]}
       sidebarDocked={false}
@@ -426,7 +426,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/energy"
       onClick={[Function]}
       sidebarDocked={false}
@@ -460,7 +460,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bZQynM fkDzDx sc-bdVaJa jWFbHd"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
       href="/datastorage"
       onClick={[Function]}
       sidebarDocked={false}

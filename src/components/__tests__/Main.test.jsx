@@ -12,7 +12,8 @@ const props = {
     inputRight: '',
   },
   baseUnits,
-  sidebarDocked: false,
+  sidebarDocked: true,
+  userShowSidebar: false,
 };
 
 describe('Main', () => {

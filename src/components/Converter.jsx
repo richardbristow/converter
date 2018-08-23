@@ -62,7 +62,11 @@ class Converter extends Component {
             userShowSidebar={userShowSidebar}
             items={baseUnits}
           />
-          <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
+          <Main
+            baseUnits={baseUnits}
+            sidebarDocked={sidebarDocked}
+            userShowSidebar={userShowSidebar}
+          />
         </StyledConverter>
       </Router>
     );

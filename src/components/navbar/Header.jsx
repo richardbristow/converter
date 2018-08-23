@@ -15,6 +15,7 @@ const StyledHeader = styled.div`
   grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? 'auto 1fr auto auto' : '75px auto 1fr auto auto')};
   align-items: center;
   padding-right: 10px;
+  z-index: 1;
 `;
 
 const StyledHamburger = styled.div`

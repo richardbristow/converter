@@ -1616,6 +1616,7 @@ ShallowWrapper {
                               }
                 }
                 sidebarDocked={false}
+                userShowSidebar={false}
         />
 </styled.div>,
     },
@@ -3221,6 +3222,7 @@ ShallowWrapper {
                                   }
             }
             sidebarDocked={false}
+            userShowSidebar={false}
 />,
         ],
         "sidebarDocked": false,
@@ -4839,6 +4841,7 @@ ShallowWrapper {
               },
             },
             "sidebarDocked": false,
+            "userShowSidebar": false,
           },
           "ref": null,
           "rendered": null,
@@ -6454,6 +6457,7 @@ ShallowWrapper {
                                       }
                     }
                     sidebarDocked={false}
+                    userShowSidebar={false}
           />
 </styled.div>,
       },
@@ -8059,6 +8063,7 @@ ShallowWrapper {
                                         }
               }
               sidebarDocked={false}
+              userShowSidebar={false}
 />,
           ],
           "sidebarDocked": false,
@@ -9677,6 +9682,7 @@ ShallowWrapper {
                 },
               },
               "sidebarDocked": false,
+              "userShowSidebar": false,
             },
             "ref": null,
             "rendered": null,

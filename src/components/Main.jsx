@@ -14,8 +14,20 @@ const StyledMain = styled.div`
   padding: 90px 40px;
 `;
 
-const Main = ({ baseUnits, sidebarDocked }) => (
+const Overlay = styled.div`
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const Main = ({ baseUnits, sidebarDocked, userShowSidebar }) => (
   <StyledMain sidebarDocked={sidebarDocked}>
+    {userShowSidebar && <Overlay />}
     <Switch>
       <Route
         exact
@@ -43,6 +55,7 @@ const Main = ({ baseUnits, sidebarDocked }) => (
 Main.propTypes = {
   baseUnits: PropTypes.objectOf(PropTypes.object).isRequired,
   sidebarDocked: PropTypes.bool.isRequired,
+  userShowSidebar: PropTypes.bool.isRequired,
 };
 
 export default Main;

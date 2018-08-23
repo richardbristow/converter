@@ -15,6 +15,9 @@ const StyledSidebarLink = styled(StyledLink)`
   display: grid;
   grid-template-columns: ${props => ((props.sidebarDocked || props.userShowSidebar) ? '75px 225px' : '75px')};
   z-index: 1;
+  div {
+    user-select: none;
+  }
 `;
 
 const SidebarOption = ({
