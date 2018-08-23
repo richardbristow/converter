@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
-  padding: ${props => (props.header ? '0px 10px 0px 10px' : '0px 0px 0px 25px')};
+  ${props => props.header && 'padding: 0px 10px 0px 10px'}
   align-items: center;
   display: flex;
   color: black;
@@ -28,9 +28,6 @@ const StyledLink = styled(NavLink)`
       display: block;
     }
   }
-  /* &:focus {
-    background-color: lightgrey;
-  }; */
 `;
 
 export default StyledLink;

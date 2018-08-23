@@ -9,12 +9,13 @@ import InputPanel from './converter-inputs/InputPanel';
 import NoRoute from './NoRoute';
 
 const StyledMain = styled.div`
-  grid-area: 'main';
+  grid-column: ${props => (props.sidebarDocked ? '3 / -1' : '2 / -1')};
+  grid-row: 2 / -1;
   padding: 90px 40px;
 `;
 
-const Main = ({ baseUnits }) => (
-  <StyledMain>
+const Main = ({ baseUnits, sidebarDocked }) => (
+  <StyledMain sidebarDocked={sidebarDocked}>
     <Switch>
       <Route
         exact
@@ -41,6 +42,7 @@ const Main = ({ baseUnits }) => (
 
 Main.propTypes = {
   baseUnits: PropTypes.objectOf(PropTypes.object).isRequired,
+  sidebarDocked: PropTypes.bool.isRequired,
 };
 
 export default Main;

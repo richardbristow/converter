@@ -9,15 +9,12 @@ import Main from './Main';
 
 const StyledConverter = styled.div`
   display: grid;
-  grid-template-areas:
-    'header header'
-    'sidebar main';
-  grid-template-columns: ${props => (props.userShowSidebar || props.sidebarDocked ? '300px 1fr' : '75px 1fr')};
+  grid-template-columns: 75px 225px 1fr;
   grid-template-rows: 50px 1fr;
   height: 100vh;
 `;
 
-const mql = window.matchMedia('(min-width: 800px)');
+const mql = window.matchMedia('(min-width: 1024px)');
 
 class Converter extends Component {
   constructor(props) {
@@ -65,7 +62,7 @@ class Converter extends Component {
             userShowSidebar={userShowSidebar}
             items={baseUnits}
           />
-          <Main baseUnits={baseUnits} />
+          <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
         </StyledConverter>
       </Router>
     );

@@ -10,7 +10,6 @@ import Icon from '../shared/Icon';
 
 const StyledHeader = styled.div`
   background-color: tomato;
-  grid-area: 'header';
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? 'auto 1fr auto auto' : '75px auto 1fr auto auto')};
