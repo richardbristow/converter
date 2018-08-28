@@ -21,7 +21,12 @@ ShallowWrapper {
         <h2>
           Help
 </h2>,
-        "This is the help page.",
+        <p>
+          This is the help page.
+</p>,
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!
+</p>,
       ],
     },
     "ref": null,
@@ -37,7 +42,28 @@ ShallowWrapper {
         "rendered": "Help",
         "type": "h2",
       },
-      "This is the help page.",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "This is the help page.",
+        },
+        "ref": null,
+        "rendered": "This is the help page.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!",
+        },
+        "ref": null,
+        "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!",
+        "type": "p",
+      },
     ],
     "type": [Function],
   },
@@ -51,7 +77,12 @@ ShallowWrapper {
           <h2>
             Help
 </h2>,
-          "This is the help page.",
+          <p>
+            This is the help page.
+</p>,
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!
+</p>,
         ],
       },
       "ref": null,
@@ -67,7 +98,28 @@ ShallowWrapper {
           "rendered": "Help",
           "type": "h2",
         },
-        "This is the help page.",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "This is the help page.",
+          },
+          "ref": null,
+          "rendered": "This is the help page.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!",
+          },
+          "ref": null,
+          "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi autem quo voluptatum corrupti vitae, et blanditiis tempora inventore nostrum quam neque eum magnam velit pariatur voluptates architecto repellat saepe recusandae!",
+          "type": "p",
+        },
       ],
       "type": [Function],
     },

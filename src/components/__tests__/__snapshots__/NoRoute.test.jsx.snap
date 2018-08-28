@@ -17,10 +17,35 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Uh-oh! No page exists why dont you go back home.",
+      "children": Array [
+        "Uh-oh! No page exists why dont you go back ",
+        <Link
+          replace={false}
+          to="/length"
+>
+          home
+</Link>,
+        ".",
+      ],
     },
     "ref": null,
-    "rendered": "Uh-oh! No page exists why dont you go back home.",
+    "rendered": Array [
+      "Uh-oh! No page exists why dont you go back ",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "home",
+          "replace": false,
+          "to": "/length",
+        },
+        "ref": null,
+        "rendered": "home",
+        "type": [Function],
+      },
+      ".",
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +54,35 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Uh-oh! No page exists why dont you go back home.",
+        "children": Array [
+          "Uh-oh! No page exists why dont you go back ",
+          <Link
+            replace={false}
+            to="/length"
+>
+            home
+</Link>,
+          ".",
+        ],
       },
       "ref": null,
-      "rendered": "Uh-oh! No page exists why dont you go back home.",
+      "rendered": Array [
+        "Uh-oh! No page exists why dont you go back ",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "home",
+            "replace": false,
+            "to": "/length",
+          },
+          "ref": null,
+          "rendered": "home",
+          "type": [Function],
+        },
+        ".",
+      ],
       "type": "div",
     },
   ],
