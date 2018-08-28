@@ -15,7 +15,7 @@ describe('Header', () => {
 
   it('should find 3 links (1 for the Logo, and 2 page links)', () => {
     const wrapper = shallow(<Header {...props} />);
-    expect(wrapper.find('Styled(NavLink)')).toHaveLength(2);
+    expect(wrapper.find('HeaderIconLink')).toHaveLength(2);
     expect(wrapper.find('Styled(Link)')).toHaveLength(1);
   });
 });

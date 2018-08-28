@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 
 import icons from '../../constants/icons/icons';
 
-import StyledLink from '../shared/StyledLink';
 import Icon from '../shared/Icon';
+import HeaderIconLink from './HeaderIconLink';
 
 const StyledHeader = styled.div`
   background-color: tomato;
@@ -35,13 +35,6 @@ const StyledLogoLink = styled(Link)`
   }
 `;
 
-const StyledHeaderIcon = styled.div`
-  color: yellow;
-  &:hover {
-    color: purple;
-  };
-`;
-
 const Header = ({ handleClick, sidebarDocked }) => (
   <StyledHeader sidebarDocked={sidebarDocked}>
     {!sidebarDocked && (
@@ -53,18 +46,8 @@ const Header = ({ handleClick, sidebarDocked }) => (
       <h1>Converter</h1>
     </StyledLogoLink>
     <div />
-    <StyledLink header to="/help">
-      <span>Help</span>
-      <StyledHeaderIcon>
-        <Icon size="20" icon={icons.help} />
-      </StyledHeaderIcon>
-    </StyledLink>
-    <StyledLink header to="/about">
-      <span>About</span>
-      <StyledHeaderIcon>
-        <Icon size="20" icon={icons.about} />
-      </StyledHeaderIcon>
-    </StyledLink>
+    <HeaderIconLink type="Help" />
+    <HeaderIconLink type="About" />
   </StyledHeader>
 );
 

@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import styled from 'styled-components';
 
 import baseUnits from '../constants/units/baseUnits';
-import Header from './navbar/Header';
+import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
 import Main from './Main';
 

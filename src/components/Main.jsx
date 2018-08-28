@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Help from './navbar/Help';
-import About from './navbar/About';
+import Help from './pages/Help';
+import About from './pages/About';
 import InputPanel from './converter-inputs/InputPanel';
 import NoRoute from './NoRoute';
 
