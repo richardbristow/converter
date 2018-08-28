@@ -116,15 +116,15 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-gzVnrw eorcUU"
+    className="sc-gzVnrw hwcBqV"
   >
     <a
-      aria-current={null}
-      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd"
+      aria-current="page"
+      className="sc-bZQynM CLaiX sc-bdVaJa jWFbHd active"
       href="/length"
       onClick={[Function]}
       sidebarDocked={false}
-      style={undefined}
+      style={Object {}}
       userShowSidebar={false}
     >
       <div

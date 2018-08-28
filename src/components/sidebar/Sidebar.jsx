@@ -15,6 +15,7 @@ const StyledSidebar = styled.div`
   grid-auto-rows: 50px;
   background-color: violet;
   z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 const Sidebar = ({

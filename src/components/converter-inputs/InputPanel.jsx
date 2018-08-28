@@ -52,7 +52,6 @@ class InputPanel extends Component {
     const { conversionType, baseUnits } = this.props;
     const { leftInput, rightInput } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
-
     return (
       <StyeldInputPanel>
         <InputGroup

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Help from './navbar/Help';
@@ -32,7 +32,7 @@ const Main = ({ baseUnits, sidebarDocked, userShowSidebar }) => (
       <Route
         exact
         path="/"
-        render={() => <InputPanel baseUnits={baseUnits} />}
+        render={() => <Redirect to="/length" />}
       />
       <Route path="/help" component={Help} />
       <Route path="/about" component={About} />
