@@ -24,7 +24,7 @@ ShallowWrapper {
         userShowSidebar={false}
 >
         <Header
-                handleClick={[Function]}
+                handleHamburgerClick={[Function]}
                 sidebarDocked={false}
                 userShowSidebar={false}
         />
@@ -1631,7 +1631,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
-            handleClick={[Function]}
+            handleHamburgerClick={[Function]}
             sidebarDocked={false}
             userShowSidebar={false}
 />,
@@ -3241,7 +3241,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleClick": [Function],
+            "handleHamburgerClick": [Function],
             "sidebarDocked": false,
             "userShowSidebar": false,
           },
@@ -4883,7 +4883,7 @@ ShallowWrapper {
           userShowSidebar={false}
 >
           <Header
-                    handleClick={[Function]}
+                    handleHamburgerClick={[Function]}
                     sidebarDocked={false}
                     userShowSidebar={false}
           />
@@ -6490,7 +6490,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Header
-              handleClick={[Function]}
+              handleHamburgerClick={[Function]}
               sidebarDocked={false}
               userShowSidebar={false}
 />,
@@ -8100,7 +8100,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "handleClick": [Function],
+              "handleHamburgerClick": [Function],
               "sidebarDocked": false,
               "userShowSidebar": false,
             },

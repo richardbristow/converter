@@ -36,14 +36,14 @@ const StyledLogoLink = styled(Link)`
   }
 `;
 
-const Header = ({ handleClick, sidebarDocked }) => (
+const Header = ({ handleHamburgerClick, sidebarDocked }) => (
   <StyledHeader sidebarDocked={sidebarDocked}>
     {!sidebarDocked && (
-      <StyledHamburger tabIndex="0" onClick={handleClick}>
+      <StyledHamburger tabIndex="0" onClick={handleHamburgerClick}>
         <Icon icon={icons.hamburger} />
       </StyledHamburger>
     )}
-    <StyledLogoLink to="/">
+    <StyledLogoLink className="headerLink" to="/">
       <h1>Converter</h1>
     </StyledLogoLink>
     <div />
@@ -53,7 +53,7 @@ const Header = ({ handleClick, sidebarDocked }) => (
 );
 
 Header.propTypes = {
-  handleClick: PropTypes.func.isRequired,
+  handleHamburgerClick: PropTypes.func.isRequired,
   sidebarDocked: PropTypes.bool.isRequired,
 };
 

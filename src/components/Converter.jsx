@@ -27,7 +27,7 @@ class Converter extends Component {
 
     this.timeOutId = null;
     this.sidebar = React.createRef();
-    this.handleClick = this.handleClick.bind(this);
+    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
     this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
     this.handeSidebarLinkClick = this.handeSidebarLinkClick.bind(this);
     this.onBlurHandler = this.onBlurHandler.bind(this);
@@ -48,8 +48,13 @@ class Converter extends Component {
     mql.removeListener(this.mediaQueryChanged);
   }
 
-  onFocusHandler() {
+  onFocusHandler(e) {
     clearTimeout(this.timeOutId);
+    if (e.target.classList.contains('headerLink')) {
+      this.setState({
+        userShowSidebar: false,
+      });
+    }
   }
 
   onBlurHandler() {
@@ -60,7 +65,7 @@ class Converter extends Component {
     });
   }
 
-  handleClick() {
+  handleHamburgerClick() {
     this.setState(prevState => ({
       userShowSidebar: !prevState.userShowSidebar,
     }));
@@ -92,7 +97,7 @@ class Converter extends Component {
           <Header
             userShowSidebar={userShowSidebar}
             sidebarDocked={sidebarDocked}
-            handleClick={this.handleClick}
+            handleHamburgerClick={this.handleHamburgerClick}
           />
           <Sidebar
             ref={this.sidebar}

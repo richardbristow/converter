@@ -36,7 +36,7 @@ exports[`index matches the snapshot 1`] = `
       </svg>
     </div>
     <a
-      className="sc-ifAKCX eZnJLI"
+      className="headerLink sc-ifAKCX eZnJLI"
       href="/"
       onClick={[Function]}
     >
@@ -47,7 +47,7 @@ exports[`index matches the snapshot 1`] = `
     <div />
     <a
       aria-current={null}
-      className="sc-bdVaJa bmbsjS"
+      className="headerLink sc-bdVaJa bmbsjS"
       header={true}
       href="/help"
       onClick={[Function]}
@@ -83,7 +83,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-bdVaJa bmbsjS"
+      className="headerLink sc-bdVaJa bmbsjS"
       header={true}
       href="/about"
       onClick={[Function]}

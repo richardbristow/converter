@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Header from '../Header';
 
 const props = {
-  handleClick: jest.fn(),
+  handleHamburgerClick: jest.fn(),
   sidebarDocked: false,
 };
 

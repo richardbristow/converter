@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
-    handleClick={[Function]}
+    handleHamburgerClick={[Function]}
     sidebarDocked={false}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -31,6 +31,7 @@ ShallowWrapper {
           />
 </styled.div>,
         <Styled(Link)
+          className="headerLink"
           to="/"
 >
           <h1>
@@ -84,6 +85,7 @@ ShallowWrapper {
           "children": <h1>
             Converter
 </h1>,
+          "className": "headerLink",
           "to": "/",
         },
         "ref": null,
@@ -151,6 +153,7 @@ ShallowWrapper {
             />
 </styled.div>,
           <Styled(Link)
+            className="headerLink"
             to="/"
 >
             <h1>
@@ -204,6 +207,7 @@ ShallowWrapper {
             "children": <h1>
               Converter
 </h1>,
+            "className": "headerLink",
             "to": "/",
           },
           "ref": null,

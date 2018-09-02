@@ -15,7 +15,7 @@ const StyledHeaderIcon = styled.div`
 `;
 
 const HeaderIconLink = ({ type }) => (
-  <StyledLink header to={`/${type.toLowerCase()}`}>
+  <StyledLink className="headerLink" header to={`/${type.toLowerCase()}`}>
     <span>{type}</span>
     <StyledHeaderIcon>
       <Icon size="20" icon={icons[type.toLowerCase()]} />
