@@ -25,17 +25,39 @@ class Converter extends Component {
       sidebarDocked: mql.matches,
     };
 
+    this.timeOutId = null;
+    this.sidebar = React.createRef();
     this.handleClick = this.handleClick.bind(this);
     this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
     this.handeSidebarLinkClick = this.handeSidebarLinkClick.bind(this);
+    this.onBlurHandler = this.onBlurHandler.bind(this);
+    this.onFocusHandler = this.onFocusHandler.bind(this);
   }
 
   componentWillMount() {
     mql.addListener(this.mediaQueryChanged);
   }
 
+  // componentDidUpdate() {
+  //   if (this.state.userShowSidebar) {
+  //     this.sidebar.current.focus();
+  //   }
+  // }
+
   componentWillUnmount() {
     mql.removeListener(this.mediaQueryChanged);
+  }
+
+  onFocusHandler() {
+    clearTimeout(this.timeOutId);
+  }
+
+  onBlurHandler() {
+    this.timeOutId = setTimeout(() => {
+      this.setState({
+        userShowSidebar: false,
+      });
+    });
   }
 
   handleClick() {
@@ -61,13 +83,19 @@ class Converter extends Component {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
       <Router>
-        <StyledConverter sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
+        <StyledConverter
+          onBlur={this.onBlurHandler}
+          onFocus={this.onFocusHandler}
+          sidebarDocked={sidebarDocked}
+          userShowSidebar={userShowSidebar}
+        >
           <Header
             userShowSidebar={userShowSidebar}
             sidebarDocked={sidebarDocked}
             handleClick={this.handleClick}
           />
           <Sidebar
+            ref={this.sidebar}
             sidebarDocked={sidebarDocked}
             userShowSidebar={userShowSidebar}
             items={baseUnits}

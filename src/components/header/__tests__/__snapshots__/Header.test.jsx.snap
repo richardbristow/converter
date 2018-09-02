@@ -23,6 +23,7 @@ ShallowWrapper {
       "children": Array [
         <styled.div
           onClick={[Function]}
+          tabIndex="0"
 >
           <Icon
                     icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
@@ -58,6 +59,7 @@ ShallowWrapper {
             size="22"
 />,
           "onClick": [Function],
+          "tabIndex": "0",
         },
         "ref": null,
         "rendered": Object {
@@ -141,6 +143,7 @@ ShallowWrapper {
         "children": Array [
           <styled.div
             onClick={[Function]}
+            tabIndex="0"
 >
             <Icon
                         icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
@@ -176,6 +179,7 @@ ShallowWrapper {
               size="22"
 />,
             "onClick": [Function],
+            "tabIndex": "0",
           },
           "ref": null,
           "rendered": Object {

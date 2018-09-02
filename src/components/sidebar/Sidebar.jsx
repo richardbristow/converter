@@ -15,13 +15,14 @@ const StyledSidebar = styled.div`
   grid-auto-rows: 50px;
   background-color: violet;
   z-index: 1;
+  outline: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
-const Sidebar = ({
+const Sidebar = React.forwardRef(({
   userShowSidebar, sidebarDocked, items, handeSidebarLinkClick,
-}) => (
-  <StyledSidebar sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
+}, ref) => (
+  <StyledSidebar tabIndex="0" innerRef={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
         return (
@@ -36,7 +37,7 @@ const Sidebar = ({
         );
     })}
   </StyledSidebar>
-);
+));
 
 const typeProps = {
   displayName: PropTypes.string,

@@ -3,13 +3,16 @@
 exports[`index matches the snapshot 1`] = `
 <div
   className="sc-kpOJdX jgyocs"
+  onBlur={[Function]}
+  onFocus={[Function]}
 >
   <div
     className="sc-htpNat eWxXsw"
   >
     <div
-      className="sc-bxivhb fcfOUy"
+      className="sc-bxivhb icdyuC"
       onClick={[Function]}
+      tabIndex="0"
     >
       <svg
         height="22"
@@ -116,7 +119,8 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-gzVnrw hwcBqV"
+    className="sc-gzVnrw cMFLgi"
+    tabIndex="0"
   >
     <a
       aria-current="page"

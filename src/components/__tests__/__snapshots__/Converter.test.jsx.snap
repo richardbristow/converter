@@ -18,6 +18,8 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <styled.div
+        onBlur={[Function]}
+        onFocus={[Function]}
         sidebarDocked={false}
         userShowSidebar={false}
 >
@@ -26,7 +28,7 @@ ShallowWrapper {
                 sidebarDocked={false}
                 userShowSidebar={false}
         />
-        <Sidebar
+        <Unknown
                 handeSidebarLinkClick={[Function]}
                 items={
                         Object {
@@ -1633,7 +1635,7 @@ ShallowWrapper {
             sidebarDocked={false}
             userShowSidebar={false}
 />,
-          <Sidebar
+          <Unknown
             handeSidebarLinkClick={[Function]}
             items={
                         Object {
@@ -3227,6 +3229,8 @@ ShallowWrapper {
             userShowSidebar={false}
 />,
         ],
+        "onBlur": [Function],
+        "onFocus": [Function],
         "sidebarDocked": false,
         "userShowSidebar": false,
       },
@@ -4044,9 +4048,20 @@ ShallowWrapper {
             "sidebarDocked": false,
             "userShowSidebar": false,
           },
-          "ref": null,
+          "ref": Object {
+            "current": null,
+          },
           "rendered": null,
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "handeSidebarLinkClick": [Function],
+              "items": [Function],
+              "sidebarDocked": [Function],
+              "userShowSidebar": [Function],
+            },
+            "render": [Function],
+          },
         },
         Object {
           "instance": null,
@@ -4862,6 +4877,8 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <styled.div
+          onBlur={[Function]}
+          onFocus={[Function]}
           sidebarDocked={false}
           userShowSidebar={false}
 >
@@ -4870,7 +4887,7 @@ ShallowWrapper {
                     sidebarDocked={false}
                     userShowSidebar={false}
           />
-          <Sidebar
+          <Unknown
                     handeSidebarLinkClick={[Function]}
                     items={
                               Object {
@@ -6477,7 +6494,7 @@ ShallowWrapper {
               sidebarDocked={false}
               userShowSidebar={false}
 />,
-            <Sidebar
+            <Unknown
               handeSidebarLinkClick={[Function]}
               items={
                             Object {
@@ -8071,6 +8088,8 @@ ShallowWrapper {
               userShowSidebar={false}
 />,
           ],
+          "onBlur": [Function],
+          "onFocus": [Function],
           "sidebarDocked": false,
           "userShowSidebar": false,
         },
@@ -8888,9 +8907,20 @@ ShallowWrapper {
               "sidebarDocked": false,
               "userShowSidebar": false,
             },
-            "ref": null,
+            "ref": Object {
+              "current": null,
+            },
             "rendered": null,
-            "type": [Function],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "propTypes": Object {
+                "handeSidebarLinkClick": [Function],
+                "items": [Function],
+                "sidebarDocked": [Function],
+                "userShowSidebar": [Function],
+              },
+              "render": [Function],
+            },
           },
           Object {
             "instance": null,

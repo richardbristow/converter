@@ -21,6 +21,7 @@ const StyledHeader = styled.div`
 const StyledHamburger = styled.div`
   padding: 8px;
   margin: 0 auto;
+  outline: none;
 `;
 
 const StyledLogoLink = styled(Link)`
@@ -38,7 +39,7 @@ const StyledLogoLink = styled(Link)`
 const Header = ({ handleClick, sidebarDocked }) => (
   <StyledHeader sidebarDocked={sidebarDocked}>
     {!sidebarDocked && (
-      <StyledHamburger onClick={handleClick}>
+      <StyledHamburger tabIndex="0" onClick={handleClick}>
         <Icon icon={icons.hamburger} />
       </StyledHamburger>
     )}
