@@ -5,3 +5,4 @@
 
 import 'core-js/es7/object';
 import 'core-js/es6/number';
+import 'core-js/fn/array/find';
