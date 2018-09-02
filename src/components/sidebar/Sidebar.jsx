@@ -16,7 +16,11 @@ const StyledSidebar = styled.div`
   background-color: violet;
   z-index: 1;
   outline: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow-y: scroll;
+  -webkit-transform: translateZ(0px);
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-perspective: 1000;
+  ${props => props.userShowSidebar && 'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
 `;
 
 const Sidebar = React.forwardRef(({
