@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
+import theme from '../theme/globalStyle';
 import baseUnits from '../constants/units/baseUnits';
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
@@ -87,32 +88,34 @@ class Converter extends Component {
   render() {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
-      <Router>
-        <StyledConverter
-          onBlur={this.onBlurHandler}
-          onFocus={this.onFocusHandler}
-          sidebarDocked={sidebarDocked}
-          userShowSidebar={userShowSidebar}
-        >
-          <Header
-            userShowSidebar={userShowSidebar}
-            sidebarDocked={sidebarDocked}
-            handleHamburgerClick={this.handleHamburgerClick}
-          />
-          <Sidebar
-            ref={this.sidebar}
+      <ThemeProvider theme={theme}>
+        <Router>
+          <StyledConverter
+            onBlur={this.onBlurHandler}
+            onFocus={this.onFocusHandler}
             sidebarDocked={sidebarDocked}
             userShowSidebar={userShowSidebar}
-            items={baseUnits}
-            handeSidebarLinkClick={this.handeSidebarLinkClick}
-          />
-          <Main
-            baseUnits={baseUnits}
-            sidebarDocked={sidebarDocked}
-            userShowSidebar={userShowSidebar}
-          />
-        </StyledConverter>
-      </Router>
+          >
+            <Header
+              userShowSidebar={userShowSidebar}
+              sidebarDocked={sidebarDocked}
+              handleHamburgerClick={this.handleHamburgerClick}
+            />
+            <Sidebar
+              ref={this.sidebar}
+              sidebarDocked={sidebarDocked}
+              userShowSidebar={userShowSidebar}
+              items={baseUnits}
+              handeSidebarLinkClick={this.handeSidebarLinkClick}
+            />
+            <Main
+              baseUnits={baseUnits}
+              sidebarDocked={sidebarDocked}
+              userShowSidebar={userShowSidebar}
+            />
+          </StyledConverter>
+        </Router>
+      </ThemeProvider>
     );
   }
 }
