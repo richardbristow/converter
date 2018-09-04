@@ -2,21 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import SidebarHeader from './SidebarHeader';
 import SidebarOption from './SidebarOption';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
-  grid-row: 2 / -1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
   font-size: 18px;
-  padding-top: 25px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-column: ${props => (props.sidebarDocked || props.userShowSidebar ? '1 / 3' : '1 / 2')};
+  grid-template-columns: auto;
+  width: ${props => (props.sidebarDocked || props.userShowSidebar ? '300px' : '75px')};
   grid-auto-rows: 50px;
   background-color: violet;
   z-index: 1;
   outline: none;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   -webkit-transform: translateZ(0px);
   -webkit-transform: translate3d(0,0,0);
   -webkit-perspective: 1000;
@@ -24,17 +26,18 @@ const StyledSidebar = styled.div`
 `;
 
 const Sidebar = React.forwardRef(({
-  userShowSidebar, sidebarDocked, items, handeSidebarLinkClick,
+  userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
 }, ref) => (
   <StyledSidebar tabIndex="0" innerRef={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
+    {!sidebarDocked && (
+      <SidebarHeader handleHamburgerClick={handleHamburgerClick} />
+    )}
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
         return (
           <SidebarOption
             handeSidebarLinkClick={handeSidebarLinkClick}
             key={`sidebar-option-${mathName}`}
-            sidebarDocked={sidebarDocked}
-            userShowSidebar={userShowSidebar}
             displayName={displayName}
             mathName={mathName}
           />
@@ -57,6 +60,7 @@ Sidebar.propTypes = {
   }, {
     surfaceArea: PropTypes.shape({ ...typeProps }),
   }).isRequired,
+  handleHamburgerClick: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

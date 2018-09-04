@@ -21,16 +21,11 @@ ShallowWrapper {
         <styled.div
                 onBlur={[Function]}
                 onFocus={[Function]}
-                sidebarDocked={false}
-                userShowSidebar={false}
         >
-                <Header
-                        handleHamburgerClick={[Function]}
-                        sidebarDocked={false}
-                        userShowSidebar={false}
-                />
+                <Header />
                 <Unknown
                         handeSidebarLinkClick={[Function]}
+                        handleHamburgerClick={[Function]}
                         items={
                                 Object {
                                         "angles": Object {
@@ -1635,16 +1630,11 @@ ShallowWrapper {
         "children": <styled.div
           onBlur={[Function]}
           onFocus={[Function]}
-          sidebarDocked={false}
-          userShowSidebar={false}
 >
-          <Header
-                    handleHamburgerClick={[Function]}
-                    sidebarDocked={false}
-                    userShowSidebar={false}
-          />
+          <Header />
           <Unknown
                     handeSidebarLinkClick={[Function]}
+                    handleHamburgerClick={[Function]}
                     items={
                               Object {
                                         "angles": Object {
@@ -3245,13 +3235,10 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <Header
-              handleHamburgerClick={[Function]}
-              sidebarDocked={false}
-              userShowSidebar={false}
-/>,
+            <Header />,
             <Unknown
               handeSidebarLinkClick={[Function]}
+              handleHamburgerClick={[Function]}
               items={
                             Object {
                                           "angles": Object {
@@ -4846,8 +4833,6 @@ ShallowWrapper {
           ],
           "onBlur": [Function],
           "onFocus": [Function],
-          "sidebarDocked": false,
-          "userShowSidebar": false,
         },
         "ref": null,
         "rendered": Array [
@@ -4855,11 +4840,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {
-              "handleHamburgerClick": [Function],
-              "sidebarDocked": false,
-              "userShowSidebar": false,
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -4870,6 +4851,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "handeSidebarLinkClick": [Function],
+              "handleHamburgerClick": [Function],
               "items": Object {
                 "angles": Object {
                   "displayName": "Angles",
@@ -5671,6 +5653,7 @@ ShallowWrapper {
               "$$typeof": Symbol(react.forward_ref),
               "propTypes": Object {
                 "handeSidebarLinkClick": [Function],
+                "handleHamburgerClick": [Function],
                 "items": [Function],
                 "sidebarDocked": [Function],
                 "userShowSidebar": [Function],
@@ -6497,16 +6480,11 @@ ShallowWrapper {
           <styled.div
                     onBlur={[Function]}
                     onFocus={[Function]}
-                    sidebarDocked={false}
-                    userShowSidebar={false}
           >
-                    <Header
-                              handleHamburgerClick={[Function]}
-                              sidebarDocked={false}
-                              userShowSidebar={false}
-                    />
+                    <Header />
                     <Unknown
                               handeSidebarLinkClick={[Function]}
+                              handleHamburgerClick={[Function]}
                               items={
                                         Object {
                                                   "angles": Object {
@@ -8111,16 +8089,11 @@ ShallowWrapper {
           "children": <styled.div
             onBlur={[Function]}
             onFocus={[Function]}
-            sidebarDocked={false}
-            userShowSidebar={false}
 >
-            <Header
-                        handleHamburgerClick={[Function]}
-                        sidebarDocked={false}
-                        userShowSidebar={false}
-            />
+            <Header />
             <Unknown
                         handeSidebarLinkClick={[Function]}
+                        handleHamburgerClick={[Function]}
                         items={
                                     Object {
                                                 "angles": Object {
@@ -9721,13 +9694,10 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <Header
-                handleHamburgerClick={[Function]}
-                sidebarDocked={false}
-                userShowSidebar={false}
-/>,
+              <Header />,
               <Unknown
                 handeSidebarLinkClick={[Function]}
+                handleHamburgerClick={[Function]}
                 items={
                                 Object {
                                                 "angles": Object {
@@ -11322,8 +11292,6 @@ ShallowWrapper {
             ],
             "onBlur": [Function],
             "onFocus": [Function],
-            "sidebarDocked": false,
-            "userShowSidebar": false,
           },
           "ref": null,
           "rendered": Array [
@@ -11331,11 +11299,7 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "function",
-              "props": Object {
-                "handleHamburgerClick": [Function],
-                "sidebarDocked": false,
-                "userShowSidebar": false,
-              },
+              "props": Object {},
               "ref": null,
               "rendered": null,
               "type": [Function],
@@ -11346,6 +11310,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "handeSidebarLinkClick": [Function],
+                "handleHamburgerClick": [Function],
                 "items": Object {
                   "angles": Object {
                     "displayName": "Angles",
@@ -12147,6 +12112,7 @@ ShallowWrapper {
                 "$$typeof": Symbol(react.forward_ref),
                 "propTypes": Object {
                   "handeSidebarLinkClick": [Function],
+                  "handleHamburgerClick": [Function],
                   "items": [Function],
                   "sidebarDocked": [Function],
                   "userShowSidebar": [Function],

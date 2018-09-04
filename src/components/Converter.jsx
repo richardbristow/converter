@@ -10,7 +10,7 @@ import Main from './Main';
 
 const StyledConverter = styled.div`
   display: grid;
-  grid-template-columns: 75px 225px 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 50px 1fr;
   height: 100vh;
 `;
@@ -38,12 +38,6 @@ class Converter extends Component {
   componentWillMount() {
     mql.addListener(this.mediaQueryChanged);
   }
-
-  // componentDidUpdate() {
-  //   if (this.state.userShowSidebar) {
-  //     this.sidebar.current.focus();
-  //   }
-  // }
 
   componentWillUnmount() {
     mql.removeListener(this.mediaQueryChanged);
@@ -93,20 +87,15 @@ class Converter extends Component {
           <StyledConverter
             onBlur={this.onBlurHandler}
             onFocus={this.onFocusHandler}
-            sidebarDocked={sidebarDocked}
-            userShowSidebar={userShowSidebar}
           >
-            <Header
-              userShowSidebar={userShowSidebar}
-              sidebarDocked={sidebarDocked}
-              handleHamburgerClick={this.handleHamburgerClick}
-            />
+            <Header />
             <Sidebar
               ref={this.sidebar}
               sidebarDocked={sidebarDocked}
               userShowSidebar={userShowSidebar}
               items={baseUnits}
               handeSidebarLinkClick={this.handeSidebarLinkClick}
+              handleHamburgerClick={this.handleHamburgerClick}
             />
             <Main
               baseUnits={baseUnits}

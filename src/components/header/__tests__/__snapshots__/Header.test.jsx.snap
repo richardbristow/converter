@@ -21,15 +21,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <styled.div
-          onClick={[Function]}
-          tabIndex="0"
->
-          <Icon
-                    icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-                    size="22"
-          />
-</styled.div>,
+        <div />,
         <Styled(Link)
           className="headerLink"
           to="/"
@@ -46,36 +38,17 @@ ShallowWrapper {
           type="About"
 />,
       ],
-      "sidebarDocked": false,
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <Icon
-            icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-            size="22"
-/>,
-          "onClick": [Function],
-          "tabIndex": "0",
-        },
+        "nodeType": "host",
+        "props": Object {},
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "icon": "M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z",
-            "size": "22",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": [Function],
+        "rendered": null,
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -143,15 +116,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <styled.div
-            onClick={[Function]}
-            tabIndex="0"
->
-            <Icon
-                        icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-                        size="22"
-            />
-</styled.div>,
+          <div />,
           <Styled(Link)
             className="headerLink"
             to="/"
@@ -168,36 +133,17 @@ ShallowWrapper {
             type="About"
 />,
         ],
-        "sidebarDocked": false,
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <Icon
-              icon="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-              size="22"
-/>,
-            "onClick": [Function],
-            "tabIndex": "0",
-          },
+          "nodeType": "host",
+          "props": Object {},
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "icon": "M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z",
-              "size": "22",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": [Function],
+          "rendered": null,
+          "type": "div",
         },
         Object {
           "instance": null,

@@ -9,6 +9,7 @@ const props = {
   userShowSidebar: true,
   sidebarDocked: false,
   handeSidebarLinkClick: jest.fn(),
+  handleHamburgerClick: jest.fn(),
 };
 
 describe('Sidebar', () => {
