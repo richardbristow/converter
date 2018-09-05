@@ -8,7 +8,7 @@ import StyledLink from '../shared/StyledLink';
 import Icon from '../shared/Icon';
 
 const StyledHeaderIcon = styled.div`
-  color: yellow;
+  color: darkblue;
   &:hover {
     color: purple;
   };

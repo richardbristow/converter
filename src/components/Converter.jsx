@@ -95,7 +95,7 @@ class Converter extends Component {
             onFocus={this.onFocusHandler}
           >
             {userShowSidebar && <Overlay />}
-            <Header />
+            <Header sidebarDocked={sidebarDocked} />
             <Sidebar
               ref={this.sidebar}
               sidebarDocked={sidebarDocked}

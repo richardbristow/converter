@@ -22,7 +22,9 @@ ShallowWrapper {
                 onBlur={[Function]}
                 onFocus={[Function]}
         >
-                <Header />
+                <Header
+                        sidebarDocked={false}
+                />
                 <Unknown
                         handeSidebarLinkClick={[Function]}
                         handleHamburgerClick={[Function]}
@@ -1630,7 +1632,9 @@ ShallowWrapper {
           onBlur={[Function]}
           onFocus={[Function]}
 >
-          <Header />
+          <Header
+                    sidebarDocked={false}
+          />
           <Unknown
                     handeSidebarLinkClick={[Function]}
                     handleHamburgerClick={[Function]}
@@ -3234,7 +3238,9 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             false,
-            <Header />,
+            <Header
+              sidebarDocked={false}
+/>,
             <Unknown
               handeSidebarLinkClick={[Function]}
               handleHamburgerClick={[Function]}
@@ -4839,7 +4845,9 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "sidebarDocked": false,
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -6479,7 +6487,9 @@ ShallowWrapper {
                     onBlur={[Function]}
                     onFocus={[Function]}
           >
-                    <Header />
+                    <Header
+                              sidebarDocked={false}
+                    />
                     <Unknown
                               handeSidebarLinkClick={[Function]}
                               handleHamburgerClick={[Function]}
@@ -8087,7 +8097,9 @@ ShallowWrapper {
             onBlur={[Function]}
             onFocus={[Function]}
 >
-            <Header />
+            <Header
+                        sidebarDocked={false}
+            />
             <Unknown
                         handeSidebarLinkClick={[Function]}
                         handleHamburgerClick={[Function]}
@@ -9691,7 +9703,9 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
-              <Header />,
+              <Header
+                sidebarDocked={false}
+/>,
               <Unknown
                 handeSidebarLinkClick={[Function]}
                 handleHamburgerClick={[Function]}
@@ -11296,7 +11310,9 @@ ShallowWrapper {
               "instance": null,
               "key": undefined,
               "nodeType": "function",
-              "props": Object {},
+              "props": Object {
+                "sidebarDocked": false,
+              },
               "ref": null,
               "rendered": null,
               "type": [Function],

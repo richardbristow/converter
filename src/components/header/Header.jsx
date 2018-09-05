@@ -1,41 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import HeaderIconLink from './HeaderIconLink';
+import Logo from '../shared/Logo';
 
 const StyledHeader = styled.div`
-  background-color: tomato;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: 75px auto 1fr auto auto;
+  grid-template-columns: ${props => (props.sidebarDocked ? '75px 1fr auto auto' : '75px auto 1fr auto auto')};
   align-items: center;
   padding-right: 10px;
 `;
 
-const StyledLogoLink = styled(Link)`
-  text-decoration: none;
-  color: black;
-  &:visited {
-    color: black;
-  };
-  h1 {
-    margin: 0 0 0 20px;
-    user-select: none;
-  }
-`;
-
-const Header = () => (
-  <StyledHeader>
+const Header = ({ sidebarDocked }) => (
+  <StyledHeader sidebarDocked={sidebarDocked}>
     <div />
-    <StyledLogoLink to="/">
-      <h1>Converter</h1>
-    </StyledLogoLink>
+    {!sidebarDocked && <Logo />}
     <div />
     <HeaderIconLink type="Help" />
     <HeaderIconLink type="About" />
   </StyledHeader>
 );
+
+Header.propTypes = {
+  sidebarDocked: PropTypes.bool.isRequired,
+};
 
 export default Header;

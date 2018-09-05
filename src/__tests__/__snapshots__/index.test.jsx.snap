@@ -7,11 +7,11 @@ exports[`index matches the snapshot 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="sc-htpNat jaMmfx"
+    className="sc-bxivhb jsxIxl"
   >
     <div />
     <a
-      className="sc-bxivhb heFXHW"
+      className="sc-htpNat cUWyGn"
       href="/"
       onClick={[Function]}
     >
@@ -32,7 +32,7 @@ exports[`index matches the snapshot 1`] = `
         Help
       </span>
       <div
-        className="sc-bwzfXH byGSp"
+        className="sc-bwzfXH jEcYTv"
       >
         <svg
           height="20"
@@ -68,7 +68,7 @@ exports[`index matches the snapshot 1`] = `
         About
       </span>
       <div
-        className="sc-bwzfXH byGSp"
+        className="sc-bwzfXH jEcYTv"
       >
         <svg
           height="20"
