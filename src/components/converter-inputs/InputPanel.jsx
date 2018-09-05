@@ -52,13 +52,14 @@ class InputPanel extends Component {
     const { conversionType, baseUnits } = this.props;
     const { leftInput, rightInput } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
+    const options = baseUnits[conversionType].units;
     return (
       <StyeldInputPanel>
         <InputGroup
           name="left"
           textValue={leftInput}
           dropdownValue={leftUnit}
-          options={baseUnits[conversionType].units}
+          options={options}
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
@@ -67,7 +68,7 @@ class InputPanel extends Component {
           name="right"
           textValue={rightInput}
           dropdownValue={rightUnit}
-          options={baseUnits[conversionType].units}
+          options={options}
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
