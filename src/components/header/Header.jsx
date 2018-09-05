@@ -12,7 +12,6 @@ const StyledHeader = styled.div`
   grid-template-columns: 75px auto 1fr auto auto;
   align-items: center;
   padding-right: 10px;
-  z-index: 1;
 `;
 
 const StyledLogoLink = styled(Link)`
@@ -30,7 +29,7 @@ const StyledLogoLink = styled(Link)`
 const Header = () => (
   <StyledHeader>
     <div />
-    <StyledLogoLink className="headerLink" to="/">
+    <StyledLogoLink to="/">
       <h1>Converter</h1>
     </StyledLogoLink>
     <div />

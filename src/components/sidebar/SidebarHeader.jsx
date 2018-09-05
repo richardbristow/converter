@@ -20,7 +20,7 @@ const StyledHamburger = styled.div`
 
 const SidebarHeader = ({ handleHamburgerClick }) => (
   <StyledSidebarHeader>
-    <StyledHamburger tabIndex="0" onClick={handleHamburgerClick}>
+    <StyledHamburger onClick={handleHamburgerClick}>
       <Icon icon={icons.hamburger} />
     </StyledHamburger>
     <div>Converter</div>

@@ -1615,7 +1615,6 @@ ShallowWrapper {
                                       }
                         }
                         sidebarDocked={false}
-                        userShowSidebar={false}
                 />
         </styled.div>
 </BrowserRouter>,
@@ -3224,7 +3223,6 @@ ShallowWrapper {
                                       }
                     }
                     sidebarDocked={false}
-                    userShowSidebar={false}
           />
 </styled.div>,
       },
@@ -3235,6 +3233,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            false,
             <Header />,
             <Unknown
               handeSidebarLinkClick={[Function]}
@@ -4828,7 +4827,6 @@ ShallowWrapper {
                                         }
               }
               sidebarDocked={false}
-              userShowSidebar={false}
 />,
           ],
           "onBlur": [Function],
@@ -4836,6 +4834,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          false,
           Object {
             "instance": null,
             "key": undefined,
@@ -6457,7 +6456,6 @@ ShallowWrapper {
                 },
               },
               "sidebarDocked": false,
-              "userShowSidebar": false,
             },
             "ref": null,
             "rendered": null,
@@ -8074,7 +8072,6 @@ ShallowWrapper {
                                                 }
                               }
                               sidebarDocked={false}
-                              userShowSidebar={false}
                     />
           </styled.div>
 </BrowserRouter>,
@@ -9683,7 +9680,6 @@ ShallowWrapper {
                                               }
                         }
                         sidebarDocked={false}
-                        userShowSidebar={false}
             />
 </styled.div>,
         },
@@ -9694,6 +9690,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              false,
               <Header />,
               <Unknown
                 handeSidebarLinkClick={[Function]}
@@ -11287,7 +11284,6 @@ ShallowWrapper {
                                               }
                 }
                 sidebarDocked={false}
-                userShowSidebar={false}
 />,
             ],
             "onBlur": [Function],
@@ -11295,6 +11291,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             Object {
               "instance": null,
               "key": undefined,
@@ -12916,7 +12913,6 @@ ShallowWrapper {
                   },
                 },
                 "sidebarDocked": false,
-                "userShowSidebar": false,
               },
               "ref": null,
               "rendered": null,

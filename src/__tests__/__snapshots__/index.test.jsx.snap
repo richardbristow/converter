@@ -2,16 +2,16 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-dxgOiQ lkEtyf"
+  className="sc-kpOJdX fePczm"
   onBlur={[Function]}
   onFocus={[Function]}
 >
   <div
-    className="sc-htpNat cBlEmE"
+    className="sc-htpNat jaMmfx"
   >
     <div />
     <a
-      className="headerLink sc-bxivhb heFXHW"
+      className="sc-bxivhb heFXHW"
       href="/"
       onClick={[Function]}
     >
@@ -22,7 +22,7 @@ exports[`index matches the snapshot 1`] = `
     <div />
     <a
       aria-current={null}
-      className="headerLink sc-bdVaJa bmbsjS"
+      className="sc-bdVaJa bmbsjS"
       header={true}
       href="/help"
       onClick={[Function]}
@@ -58,7 +58,7 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="headerLink sc-bdVaJa bmbsjS"
+      className="sc-bdVaJa bmbsjS"
       header={true}
       href="/about"
       onClick={[Function]}
@@ -103,7 +103,6 @@ exports[`index matches the snapshot 1`] = `
       <div
         className="sc-EHOje hhuxdJ"
         onClick={[Function]}
-        tabIndex="0"
       >
         <svg
           height="22"

@@ -15,6 +15,17 @@ const StyledConverter = styled.div`
   height: 100vh;
 `;
 
+const Overlay = styled.div`
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+`;
+
 const mql = window.matchMedia('(min-width: 1024px)');
 
 class Converter extends Component {
@@ -43,13 +54,8 @@ class Converter extends Component {
     mql.removeListener(this.mediaQueryChanged);
   }
 
-  onFocusHandler(e) {
+  onFocusHandler() {
     clearTimeout(this.timeOutId);
-    if (e.target.classList.contains('headerLink')) {
-      this.setState({
-        userShowSidebar: false,
-      });
-    }
   }
 
   onBlurHandler() {
@@ -88,6 +94,7 @@ class Converter extends Component {
             onBlur={this.onBlurHandler}
             onFocus={this.onFocusHandler}
           >
+            {userShowSidebar && <Overlay />}
             <Header />
             <Sidebar
               ref={this.sidebar}
@@ -100,7 +107,6 @@ class Converter extends Component {
             <Main
               baseUnits={baseUnits}
               sidebarDocked={sidebarDocked}
-              userShowSidebar={userShowSidebar}
             />
           </StyledConverter>
         </Router>
