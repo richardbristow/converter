@@ -1620,7 +1620,10 @@ ShallowWrapper {
                 />
         </styled.div>
 </BrowserRouter>,
-      "theme": Object {},
+      "theme": Object {
+        "mainBackground": "white",
+        "sidebarBackground": "violet",
+      },
     },
     "ref": null,
     "rendered": Object {
@@ -8085,7 +8088,10 @@ ShallowWrapper {
                     />
           </styled.div>
 </BrowserRouter>,
-        "theme": Object {},
+        "theme": Object {
+          "mainBackground": "white",
+          "sidebarBackground": "violet",
+        },
       },
       "ref": null,
       "rendered": Object {

@@ -9,8 +9,9 @@ const StyledLogoLink = styled(Link)`
     color: black;
   };
   h1 {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
     user-select: none;
+    font-size: 2em;
   }
 `;
 

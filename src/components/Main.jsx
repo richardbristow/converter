@@ -11,7 +11,7 @@ import NoRoute from './NoRoute';
 const StyledMain = styled.div`
   grid-column: ${props => (props.sidebarDocked ? '2 / -1' : '1 / -1')};
   grid-row: 2 / -1;
-  padding: ${props => (props.sidebarDocked ? '90px 40px' : '90px 40px 90px 115px')};
+  padding: ${props => (props.sidebarDocked ? '120px 40px 0px 40px' : '120px 40px 0px 115px')};
 `;
 
 const Main = ({ baseUnits, sidebarDocked }) => (

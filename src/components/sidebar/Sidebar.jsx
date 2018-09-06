@@ -14,7 +14,7 @@ const StyledSidebar = styled.div`
   grid-template-columns: auto;
   width: ${props => (props.sidebarDocked || props.userShowSidebar ? '300px' : '75px')};
   grid-auto-rows: 50px;
-  background-color: violet;
+  background-color: ${props => props.theme.sidebarBackground};
   z-index: 1;
   outline: none;
   overflow-y: auto;
@@ -29,9 +29,7 @@ const Sidebar = React.forwardRef(({
   userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
 }, ref) => (
   <StyledSidebar tabIndex="0" innerRef={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
-    {!sidebarDocked && (
-      <SidebarHeader handleHamburgerClick={handleHamburgerClick} />
-    )}
+    <SidebarHeader sidebarDocked={sidebarDocked} handleHamburgerClick={handleHamburgerClick} />
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
         return (

@@ -8,7 +8,8 @@ import Icon from '../shared/Icon';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
-  grid-template-columns: 75px 225px;
+  grid-template-columns: ${props => (props.sidebarDocked ? '1fr' : '75px 225px')};
+  align-items: center;
 `;
 
 const StyledHamburger = styled.div`
@@ -18,17 +19,20 @@ const StyledHamburger = styled.div`
   align-self: center;
 `;
 
-const SidebarHeader = ({ handleHamburgerClick }) => (
-  <StyledSidebarHeader>
-    <StyledHamburger onClick={handleHamburgerClick}>
-      <Icon icon={icons.hamburger} />
-    </StyledHamburger>
+const SidebarHeader = ({ sidebarDocked, handleHamburgerClick }) => (
+  <StyledSidebarHeader sidebarDocked={sidebarDocked}>
+    {!sidebarDocked && (
+      <StyledHamburger onClick={handleHamburgerClick}>
+        <Icon icon={icons.hamburger} />
+      </StyledHamburger>
+    )}
     <div>Converter</div>
   </StyledSidebarHeader>
 );
 
 SidebarHeader.propTypes = {
   handleHamburgerClick: PropTypes.func.isRequired,
+  sidebarDocked: PropTypes.bool.isRequired,
 };
 
 export default SidebarHeader;

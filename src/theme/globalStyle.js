@@ -18,7 +18,8 @@ injectGlobal`
 `;
 
 const theme = {
-  // primary: '#6e27c5',
+  mainBackground: 'white',
+  sidebarBackground: 'violet',
 };
 
 export default theme;
