@@ -22,7 +22,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div />,
-        <Logo />,
+        <Logo
+          sidebarDocked={false}
+/>,
         <div />,
         <HeaderIconLink
           type="Help"
@@ -48,7 +50,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "sidebarDocked": false,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -95,7 +99,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div />,
-          <Logo />,
+          <Logo
+            sidebarDocked={false}
+/>,
           <div />,
           <HeaderIconLink
             type="Help"
@@ -121,7 +127,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "sidebarDocked": false,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

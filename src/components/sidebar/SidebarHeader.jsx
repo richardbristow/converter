@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import icons from '../../constants/icons/icons';
 
 import Icon from '../shared/Icon';
+import Logo from '../shared/Logo';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
@@ -21,12 +22,10 @@ const StyledHamburger = styled.div`
 
 const SidebarHeader = ({ sidebarDocked, handleHamburgerClick }) => (
   <StyledSidebarHeader sidebarDocked={sidebarDocked}>
-    {!sidebarDocked && (
+    {!sidebarDocked ? (
       <StyledHamburger onClick={handleHamburgerClick}>
         <Icon icon={icons.hamburger} />
-      </StyledHamburger>
-    )}
-    <div>Converter</div>
+      </StyledHamburger>) : (<Logo sidebarDocked={sidebarDocked} />)}
   </StyledSidebarHeader>
 );
 

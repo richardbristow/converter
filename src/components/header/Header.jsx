@@ -17,7 +17,7 @@ const StyledHeader = styled.div`
 const Header = ({ sidebarDocked }) => (
   <StyledHeader sidebarDocked={sidebarDocked}>
     <div />
-    {!sidebarDocked && <Logo />}
+    {!sidebarDocked && <Logo sidebarDocked={sidebarDocked} />}
     <div />
     <HeaderIconLink type="Help" />
     <HeaderIconLink type="About" />
