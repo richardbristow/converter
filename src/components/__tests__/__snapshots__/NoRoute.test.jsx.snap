@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        "Uh-oh! No page exists why dont you go back ",
+        "Uh-oh! No page exists why dont you go back ",
         <Link
           replace={false}
           to="/length"
@@ -30,7 +30,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      "Uh-oh! No page exists why dont you go back ",
+      "Uh-oh! No page exists why dont you go back ",
       Object {
         "instance": null,
         "key": undefined,
@@ -55,7 +55,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "Uh-oh! No page exists why dont you go back ",
+          "Uh-oh! No page exists why dont you go back ",
           <Link
             replace={false}
             to="/length"
@@ -67,7 +67,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        "Uh-oh! No page exists why dont you go back ",
+        "Uh-oh! No page exists why dont you go back ",
         Object {
           "instance": null,
           "key": undefined,

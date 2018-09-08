@@ -87,7 +87,8 @@ class FilterDropdown extends Component {
   }
 
   handleDropdownItemClick(conversionType, e) {
-    this.props.handleChange(conversionType, e);
+    const { handleChange } = this.props;
+    handleChange(conversionType, e);
     this.setState({
       dropdownOpen: false,
       filter: '',
@@ -124,26 +125,31 @@ class FilterDropdown extends Component {
     const { displayName } = options.find(option => option.mathName === dropdownValue && option);
     return (
       <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
-        {dropdownOpen ?
-          <StyledFilterInput
-            innerRef={this.unitInput}
-            placeholder="Search units..."
-            name="filter"
-            type="text"
-            value={filter}
-            onKeyDown={this.handleEscKey}
-            onChange={this.updateFilter}
-          /> :
-          <StyledConvertButton
-            header
-            name="header"
-            tabIndex="0"
-            onFocus={this.handleHeaderFocus}
-            onClick={this.handleDropdownClick}
-          >{displayName}
-          </StyledConvertButton>}
+        {dropdownOpen
+          ? (
+            <StyledFilterInput
+              innerRef={this.unitInput}
+              placeholder="Search units..."
+              name="filter"
+              type="text"
+              value={filter}
+              onKeyDown={this.handleEscKey}
+              onChange={this.updateFilter}
+            />
+          ) : (
+            <StyledConvertButton
+              header
+              name="header"
+              tabIndex="0"
+              onFocus={this.handleHeaderFocus}
+              onClick={this.handleDropdownClick}
+            >
+              {displayName}
+            </StyledConvertButton>
+          )}
         <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
-        {dropdownOpen &&
+        {dropdownOpen
+          && (
           <FilterOptions
             currentDisplayName={displayName}
             options={options}
@@ -151,7 +157,7 @@ class FilterDropdown extends Component {
             conversionType={conversionType}
             filter={filter}
             handleDropdownItemClick={this.handleDropdownItemClick}
-          />}
+          />)}
       </StyledFilterDropdown>
     );
   }

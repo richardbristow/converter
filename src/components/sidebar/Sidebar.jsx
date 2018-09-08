@@ -32,14 +32,14 @@ const Sidebar = React.forwardRef(({
     <SidebarHeader sidebarDocked={sidebarDocked} handleHamburgerClick={handleHamburgerClick} />
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
-        return (
-          <SidebarOption
-            handeSidebarLinkClick={handeSidebarLinkClick}
-            key={`sidebar-option-${mathName}`}
-            displayName={displayName}
-            mathName={mathName}
-          />
-        );
+      return (
+        <SidebarOption
+          handeSidebarLinkClick={handeSidebarLinkClick}
+          key={`sidebar-option-${mathName}`}
+          displayName={displayName}
+          mathName={mathName}
+        />
+      );
     })}
   </StyledSidebar>
 ));

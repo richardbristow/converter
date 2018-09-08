@@ -37,8 +37,8 @@ class InputPanel extends Component {
     }
 
     if (name === 'leftUnit' || name === 'rightUnit') {
-      leftInput = name === 'rightUnit' ? tryConvert(this.state.rightInput, leftUnit, value, rightToLeft) : this.state.leftInput;
-      rightInput = name === 'leftUnit' ? tryConvert(this.state.leftInput, value, rightUnit, leftToRight) : this.state.rightInput;
+      leftInput = name === 'rightUnit' ? tryConvert(rightInput, leftUnit, value, rightToLeft) : leftInput;
+      rightInput = name === 'leftUnit' ? tryConvert(leftInput, value, rightUnit, leftToRight) : rightInput;
     }
 
     this.setState({
