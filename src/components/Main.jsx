@@ -14,6 +14,20 @@ const StyledMain = styled.div`
   padding: ${props => (props.sidebarDocked ? '120px 40px 0px 40px' : '120px 40px 0px 115px')};
 `;
 
+const renderUnitRoutes = baseUnits => (
+  Object.keys(baseUnits).map((type) => {
+    const { mathName } = baseUnits[type];
+    return (
+      <Route
+        key={`route-${mathName}`}
+        path={`/${mathName}`}
+        render={() => (
+          <InputPanel conversionType={mathName} baseUnits={baseUnits} />
+        )}
+      />);
+  })
+);
+
 const Main = ({ baseUnits, sidebarDocked }) => (
   <StyledMain sidebarDocked={sidebarDocked}>
     <Switch>
@@ -24,17 +38,7 @@ const Main = ({ baseUnits, sidebarDocked }) => (
       />
       <Route path="/help" component={Help} />
       <Route path="/about" component={About} />
-      {Object.keys(baseUnits).map((type) => {
-        const { mathName } = baseUnits[type];
-        return (
-          <Route
-            key={`route-${mathName}`}
-            path={`/${mathName}`}
-            render={() => (
-              <InputPanel conversionType={mathName} baseUnits={baseUnits} />
-            )}
-          />);
-      })}
+      {renderUnitRoutes(baseUnits)}
       <Route component={NoRoute} />
     </Switch>
   </StyledMain>
