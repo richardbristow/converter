@@ -1631,7 +1631,7 @@ ShallowWrapper {
       "theme": Object {
         "background": "#FEFEFA",
         "red": "red",
-        "sidebarBackground": "violet",
+        "sidebarBackground": "tomato",
       },
     },
     "ref": null,
@@ -8145,7 +8145,7 @@ ShallowWrapper {
         "theme": Object {
           "background": "#FEFEFA",
           "red": "red",
-          "sidebarBackground": "violet",
+          "sidebarBackground": "tomato",
         },
       },
       "ref": null,

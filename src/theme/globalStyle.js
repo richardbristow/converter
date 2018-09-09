@@ -20,7 +20,7 @@ injectGlobal`
 
 const theme = {
   background: '#FEFEFA',
-  sidebarBackground: 'violet',
+  sidebarBackground: 'tomato',
   red: 'red',
 };
 

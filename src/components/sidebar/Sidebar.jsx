@@ -31,7 +31,11 @@ const Sidebar = React.forwardRef(({
   userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
 }, ref) => (
   <StyledSidebar tabIndex="0" innerRef={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
-    <SidebarHeader sidebarDocked={sidebarDocked} handleHamburgerClick={handleHamburgerClick} />
+    <SidebarHeader
+      userShowSidebar={userShowSidebar}
+      sidebarDocked={sidebarDocked}
+      handleHamburgerClick={handleHamburgerClick}
+    />
     {Object.keys(items).map((type) => {
       const { displayName, mathName } = items[type];
       return (

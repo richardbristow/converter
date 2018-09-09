@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-dxgOiQ clqNiS"
+  className="sc-kpOJdX kwsYFu"
   onBlur={[Function]}
   onFocus={[Function]}
 >
@@ -99,47 +99,34 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-dnqmqq haUsuI"
+    className="sc-htoDjs ijjMsH"
     tabIndex="0"
   >
     <div
       className="sc-EHOje keeonk"
     >
-      <div
-        className="sc-bZQynM jfeKyL"
+      <button
+        className="jsx-2834082898 Burger BurgerSlider"
         onClick={[Function]}
       >
-        <svg
-          height="22"
-          style={
-            Object {
-              "display": "inline-block",
-              "verticalAlign": "middle",
-            }
-          }
-          viewBox="0 0 24 24"
-          width="22"
+        <div
+          className="jsx-2834082898 BurgerBox"
         >
-          <path
-            d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-            style={
-              Object {
-                "fill": "currentcolor",
-              }
-            }
+          <div
+            className="jsx-2834082898 BurgerInner"
           />
-        </svg>
-      </div>
+        </div>
+      </button>
     </div>
     <a
       aria-current="page"
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo active"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo active"
       href="/length"
       onClick={[Function]}
       style={Object {}}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -168,13 +155,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/surfacearea"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -203,13 +190,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/angles"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -238,13 +225,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/time"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -273,13 +260,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/frequency"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -308,13 +295,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/mass"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -343,13 +330,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/electriccurrent"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -378,13 +365,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/temperature"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -413,13 +400,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/force"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -448,13 +435,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/energy"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -483,13 +470,13 @@ exports[`index matches the snapshot 1`] = `
     </a>
     <a
       aria-current={null}
-      className="sc-htoDjs bHsNdo sc-bdVaJa kdDfjo"
+      className="sc-gzVnrw fgbHMM sc-bdVaJa kdDfjo"
       href="/datastorage"
       onClick={[Function]}
       style={undefined}
     >
       <div
-        className="sc-gzVnrw bVDkdX"
+        className="sc-bZQynM dXgQaH"
       >
         <svg
           height="22"
@@ -518,29 +505,29 @@ exports[`index matches the snapshot 1`] = `
     </a>
   </div>
   <div
-    className="sc-kpOJdX gVXksZ"
+    className="sc-kGXeez lbjkZM"
   >
     <div
-      className="sc-kGXeez gAnAGT"
+      className="sc-kgoBCf ixGjKp"
     >
       <div
-        className="sc-cSHVUG kijOJR"
+        className="sc-jzJRlG jATyzh"
         name="left"
       >
         <input
-          className="sc-kAzzGY dVUkFU"
+          className="sc-cSHVUG iYCzAY"
           name="leftInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-jTzLTM iBkrgm"
+          className="sc-VigVT kKkrDL"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-gZMcBi dTDNlH"
+            className="sc-iwsKbI dibfci"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -549,7 +536,7 @@ exports[`index matches the snapshot 1`] = `
             Centimeter
           </button>
           <button
-            className="sc-fjdhpX fuaNhm"
+            className="sc-jTzLTM vNRgg"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -578,10 +565,10 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV ejVYZq"
+        className="sc-kAzzGY eaGXLG"
       >
         <div
-          className="sc-kgoBCf ewWveO"
+          className="sc-chPdSV bAtvxP"
         >
           <svg
             height="60"
@@ -605,7 +592,7 @@ exports[`index matches the snapshot 1`] = `
           </svg>
         </div>
         <div
-          className="sc-kgoBCf usmds"
+          className="sc-chPdSV ifgcAW"
         >
           <svg
             height="60"
@@ -630,23 +617,23 @@ exports[`index matches the snapshot 1`] = `
         </div>
       </div>
       <div
-        className="sc-cSHVUG zAFDU"
+        className="sc-jzJRlG igVhyi"
         name="right"
       >
         <input
-          className="sc-kAzzGY dVUkFU"
+          className="sc-cSHVUG iYCzAY"
           name="rightInput"
           onChange={[Function]}
           type="text"
           value=""
         />
         <div
-          className="sc-jTzLTM iBkrgm"
+          className="sc-VigVT kKkrDL"
           onBlur={[Function]}
           onFocus={[Function]}
         >
           <button
-            className="sc-gZMcBi dTDNlH"
+            className="sc-iwsKbI dibfci"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -655,7 +642,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-fjdhpX fuaNhm"
+            className="sc-jTzLTM vNRgg"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
