@@ -21,7 +21,6 @@ const StyledArrowButton = StyledConvertButton.extend`
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0px 0px 4px 0px;
-  color: ${props => props.dropdownOpen && 'red'};
 `;
 
 const StyledFilterInput = styled.input`

@@ -22,6 +22,7 @@ const theme = {
   background: '#FEFEFA',
   sidebarBackground: '#FC644E',
   sidebarHeaderBackground: '#ce503d',
+  selectedBackground: 'lightblue',
 };
 
 export default theme;

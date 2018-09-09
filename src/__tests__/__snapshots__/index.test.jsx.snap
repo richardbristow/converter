@@ -667,7 +667,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-iwsKbI dibfci"
+            className="sc-iwsKbI jScxXG"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -676,7 +676,7 @@ exports[`index matches the snapshot 1`] = `
             Centimeter
           </button>
           <button
-            className="sc-jTzLTM vNRgg"
+            className="sc-jTzLTM fnqcSu"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -773,7 +773,7 @@ exports[`index matches the snapshot 1`] = `
           onFocus={[Function]}
         >
           <button
-            className="sc-iwsKbI dibfci"
+            className="sc-iwsKbI jScxXG"
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -782,7 +782,7 @@ exports[`index matches the snapshot 1`] = `
             Meter
           </button>
           <button
-            className="sc-jTzLTM vNRgg"
+            className="sc-jTzLTM fnqcSu"
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"

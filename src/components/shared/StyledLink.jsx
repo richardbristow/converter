@@ -25,8 +25,7 @@ const StyledLink = styled(NavLink)`
     span {
       display: block;
     };
-    ${props => !props.header
-      && ('border-left: 5px solid darkblue; background-color: lightblue')};
+    ${props => !props.header && (`border-left: 5px solid darkblue; background-color: ${props.theme.selectedBackground}`)};
     div {
       padding-left: 20px;
     }
