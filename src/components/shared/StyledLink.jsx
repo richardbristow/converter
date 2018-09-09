@@ -17,17 +17,20 @@ const StyledLink = styled(NavLink)`
   };
   &:hover {
     text-decoration: none;
-    background-color: ${props => (!props.header && 'lightgrey')};
     span {
       display: block;
-    }
+    };
   };
   &.active {
-    font-weight: bold;
     span {
       display: block;
+    };
+    ${props => !props.header
+      && ('border-left: 5px solid darkblue; background-color: lightblue')};
+    div {
+      padding-left: 20px;
     }
-  }
+  };
 `;
 
 export default StyledLink;
