@@ -12,7 +12,7 @@ const StyledLogoLink = styled(Link)`
   h1 {
     margin: ${props => (props.sidebarDocked ? '0 0 20px 0' : '0 0 0 40px')};
     user-select: none;
-    font-size: ${props => (props.sidebarDocked ? '2.5em' : '2em')};
+    font-size: ${props => (props.sidebarDocked ? '2.4em' : '1.8em')};
   }
 `;
 
@@ -24,7 +24,7 @@ const StyledLogoBorder = styled.div`
 const Logo = ({ sidebarDocked }) => (
   <StyledLogoLink sidebarDocked={sidebarDocked} to="/">
     <StyledLogoBorder sidebarDocked={sidebarDocked}>
-      <h1>Converter</h1>
+      <h1>CONVERTER</h1>
     </StyledLogoBorder>
   </StyledLogoLink>
 );

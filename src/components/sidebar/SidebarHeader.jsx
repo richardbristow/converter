@@ -25,7 +25,7 @@ const SidebarHeader = ({ userShowSidebar, sidebarDocked, handleHamburgerClick })
         <Slider
           width={24}
           lineHeight={3}
-          lineSpacing={4}
+          lineSpacing={5}
           active={userShowSidebar}
           borderRadius={5}
           onClick={handleHamburgerClick}
