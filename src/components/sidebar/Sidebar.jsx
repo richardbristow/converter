@@ -24,6 +24,7 @@ const StyledSidebar = styled.div`
   -webkit-transform: translate3d(0,0,0);
   -webkit-perspective: 1000;
   ${props => props.userShowSidebar && 'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
+  transition: width 200ms ease-in-out, box-shadow 200ms ease-in-out;
 `;
 
 const Sidebar = React.forwardRef(({

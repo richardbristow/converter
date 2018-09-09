@@ -22,6 +22,14 @@ ShallowWrapper {
                 onBlur={[Function]}
                 onFocus={[Function]}
         >
+                <CSSTransition
+                        classNames="overlay"
+                        in={false}
+                        timeout={200}
+                        unmountOnExit={true}
+                >
+                        <styled.div />
+                </CSSTransition>
                 <Header
                         sidebarDocked={false}
                 />
@@ -1621,7 +1629,8 @@ ShallowWrapper {
         </styled.div>
 </BrowserRouter>,
       "theme": Object {
-        "mainBackground": "white",
+        "background": "#FEFEFA",
+        "red": "red",
         "sidebarBackground": "violet",
       },
     },
@@ -1635,6 +1644,14 @@ ShallowWrapper {
           onBlur={[Function]}
           onFocus={[Function]}
 >
+          <CSSTransition
+                    classNames="overlay"
+                    in={false}
+                    timeout={200}
+                    unmountOnExit={true}
+          >
+                    <styled.div />
+          </CSSTransition>
           <Header
                     sidebarDocked={false}
           />
@@ -3240,7 +3257,14 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            false,
+            <CSSTransition
+              classNames="overlay"
+              in={false}
+              timeout={200}
+              unmountOnExit={true}
+>
+              <styled.div />
+</CSSTransition>,
             <Header
               sidebarDocked={false}
 />,
@@ -4843,7 +4867,29 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          false,
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <styled.div />,
+              "classNames": "overlay",
+              "in": false,
+              "timeout": 200,
+              "unmountOnExit": true,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -6490,6 +6536,14 @@ ShallowWrapper {
                     onBlur={[Function]}
                     onFocus={[Function]}
           >
+                    <CSSTransition
+                              classNames="overlay"
+                              in={false}
+                              timeout={200}
+                              unmountOnExit={true}
+                    >
+                              <styled.div />
+                    </CSSTransition>
                     <Header
                               sidebarDocked={false}
                     />
@@ -8089,7 +8143,8 @@ ShallowWrapper {
           </styled.div>
 </BrowserRouter>,
         "theme": Object {
-          "mainBackground": "white",
+          "background": "#FEFEFA",
+          "red": "red",
           "sidebarBackground": "violet",
         },
       },
@@ -8103,6 +8158,14 @@ ShallowWrapper {
             onBlur={[Function]}
             onFocus={[Function]}
 >
+            <CSSTransition
+                        classNames="overlay"
+                        in={false}
+                        timeout={200}
+                        unmountOnExit={true}
+            >
+                        <styled.div />
+            </CSSTransition>
             <Header
                         sidebarDocked={false}
             />
@@ -9708,7 +9771,14 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              false,
+              <CSSTransition
+                classNames="overlay"
+                in={false}
+                timeout={200}
+                unmountOnExit={true}
+>
+                <styled.div />
+</CSSTransition>,
               <Header
                 sidebarDocked={false}
 />,
@@ -11311,7 +11381,29 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <styled.div />,
+                "classNames": "overlay",
+                "in": false,
+                "timeout": 200,
+                "unmountOnExit": true,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
             Object {
               "instance": null,
               "key": undefined,

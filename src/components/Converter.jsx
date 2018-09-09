@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
+import { CSSTransition } from 'react-transition-group';
 
 import theme from '../theme/globalStyle';
 import baseUnits from '../constants/units/baseUnits';
@@ -13,6 +14,7 @@ const StyledConverter = styled.div`
   grid-template-columns: auto 1fr;
   grid-template-rows: 50px 1fr;
   height: 100vh;
+  background-color: ${props => props.theme.background};
 `;
 
 const Overlay = styled.div`
@@ -24,6 +26,20 @@ const Overlay = styled.div`
   bottom: 0;
   width: 100vw;
   height: 100vh;
+  &.overlay-enter {
+    opacity: 0;
+  };
+  &.overlay-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+  &.overlay-exit {
+    opacity: 1;
+  }
+  &.overlay-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
 `;
 
 const mql = window.matchMedia('(min-width: 1024px)');
@@ -94,7 +110,14 @@ class Converter extends Component {
             onBlur={this.onBlurHandler}
             onFocus={this.onFocusHandler}
           >
-            {userShowSidebar && <Overlay />}
+            <CSSTransition
+              in={userShowSidebar}
+              classNames="overlay"
+              timeout={200}
+              unmountOnExit
+            >
+              <Overlay />
+            </CSSTransition>
             <Header sidebarDocked={sidebarDocked} />
             <Sidebar
               ref={this.sidebar}
