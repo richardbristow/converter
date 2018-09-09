@@ -1630,8 +1630,8 @@ ShallowWrapper {
 </BrowserRouter>,
       "theme": Object {
         "background": "#FEFEFA",
-        "red": "red",
-        "sidebarBackground": "tomato",
+        "sidebarBackground": "#FC644E",
+        "sidebarHeaderBackground": "#ce503d",
       },
     },
     "ref": null,
@@ -8144,8 +8144,8 @@ ShallowWrapper {
 </BrowserRouter>,
         "theme": Object {
           "background": "#FEFEFA",
-          "red": "red",
-          "sidebarBackground": "tomato",
+          "sidebarBackground": "#FC644E",
+          "sidebarHeaderBackground": "#ce503d",
         },
       },
       "ref": null,

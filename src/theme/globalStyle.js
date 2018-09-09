@@ -20,8 +20,8 @@ injectGlobal`
 
 const theme = {
   background: '#FEFEFA',
-  sidebarBackground: 'tomato',
-  red: 'red',
+  sidebarBackground: '#FC644E',
+  sidebarHeaderBackground: '#ce503d',
 };
 
 export default theme;
