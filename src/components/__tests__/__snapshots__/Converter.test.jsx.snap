@@ -1934,6 +1934,9 @@ ShallowWrapper {
 </BrowserRouter>,
       "theme": Object {
         "background": "#FEFEFA",
+        "scrollbarThumb": "#888",
+        "scrollbarThumbHover": "#555",
+        "scrollbarTrack": "#f1f1f1",
         "selectedBackground": "lightblue",
         "sidebarBackground": "#FC644E",
         "sidebarHeaderBackground": "#ce503d",
@@ -9665,6 +9668,9 @@ ShallowWrapper {
 </BrowserRouter>,
         "theme": Object {
           "background": "#FEFEFA",
+          "scrollbarThumb": "#888",
+          "scrollbarThumbHover": "#555",
+          "scrollbarTrack": "#f1f1f1",
           "selectedBackground": "lightblue",
           "sidebarBackground": "#FC644E",
           "sidebarHeaderBackground": "#ce503d",

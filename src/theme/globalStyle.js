@@ -23,6 +23,9 @@ const theme = {
   sidebarBackground: '#FC644E',
   sidebarHeaderBackground: '#ce503d',
   selectedBackground: 'lightblue',
+  scrollbarTrack: '#f1f1f1',
+  scrollbarThumb: '#888',
+  scrollbarThumbHover: '#555',
 };
 
 export default theme;

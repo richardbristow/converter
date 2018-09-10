@@ -14,6 +14,18 @@ const StyledFilterOptions = styled.div`
   border: 1px solid black;
   border-radius: 4px;
   margin-top: 10px;
+  ::-webkit-scrollbar {
+    width: 5px;
+  };
+  ::-webkit-scrollbar-track {
+    background: ${props => props.theme.scrollbarTrack}; 
+  };
+  ::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.scrollbarThumb}; 
+  };
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${props => props.theme.scrollbarThumbHover}; 
+  };
 `;
 
 const StyledFilterError = StyledConvertButton.extend`
