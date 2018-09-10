@@ -7,17 +7,10 @@ import Logo from '../shared/Logo';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
-  grid-template-columns: ${props => (props.sidebarDocked ? '1fr' : '75px 225px')};
+  grid-template-columns: ${props => (props.sidebarDocked ? '1fr' : '75px')};
   align-items: center;
   ${props => (!props.sidebarDocked && `background-color: ${props.theme.sidebarHeaderBackground}`)};
 `;
-
-// const StyledHamburger = styled.div`
-//   padding: 8px;
-//   margin: 0 auto;
-//   outline: none;
-//   align-self: center;
-// `;
 
 const SidebarHeader = ({ userShowSidebar, sidebarDocked, handleHamburgerClick }) => (
   <StyledSidebarHeader sidebarDocked={sidebarDocked}>
