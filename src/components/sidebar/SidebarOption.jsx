@@ -9,14 +9,25 @@ import styled from '../../../node_modules/styled-components';
 
 const StyledSidebarIcon = styled.div`
   padding-left: 25px;
+  height: 100%;
+  display: flex;
+  svg {
+    align-self: center;
+  }
 `;
 
 const StyledSidebarLink = styled(StyledLink)`
   display: grid;
   grid-template-columns: 75px 225px;
-  z-index: 1;
   div {
     user-select: none;
+  }
+  &.active {
+    div:first-child {
+      border-left: 5px solid darkblue;
+      padding-left: 20px;
+    }
+    background-color: ${props => props.theme.selectedBackground};
   }
 `;
 
