@@ -9,14 +9,13 @@ const StyledHeader = styled.div`
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   display: grid;
-  grid-template-columns: ${props => (props.sidebarDocked ? '75px 1fr auto auto' : '75px auto 1fr auto auto')};
+  grid-template-columns: auto 1fr repeat(2, auto);
   align-items: center;
   padding-right: 10px;
 `;
 
 const Header = ({ sidebarDocked }) => (
   <StyledHeader sidebarDocked={sidebarDocked}>
-    <div />
     {!sidebarDocked && <Logo sidebarDocked={sidebarDocked} />}
     <div />
     <HeaderIconLink type="Help" />

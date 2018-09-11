@@ -7,11 +7,10 @@ exports[`index matches the snapshot 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="sc-ifAKCX ieIOFQ"
+    className="sc-ifAKCX glPKgX"
   >
-    <div />
     <a
-      className="sc-htpNat irpShF"
+      className="sc-htpNat koDhxA"
       href="/"
       onClick={[Function]}
       sidebarDocked={false}

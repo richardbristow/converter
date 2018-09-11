@@ -10,7 +10,7 @@ const StyledLogoLink = styled(Link)`
     color: black;
   };
   h1 {
-    margin: ${props => (props.sidebarDocked ? '0 0 20px 0' : '0 0 0 40px')};
+    margin: ${props => (props.sidebarDocked ? '0 0 20px 0' : '0 0 0 115px')};
     user-select: none;
     font-size: ${props => (props.sidebarDocked ? '2.4em' : '1.8em')};
   }
