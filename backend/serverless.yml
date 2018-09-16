@@ -1,0 +1,58 @@
+service: converter-backend
+
+provider:
+  name: aws
+  stage: dev
+  runtime: nodejs8.10
+  profile: serverless-admin
+  versionFunctions: false
+  memorySize: 128
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action:
+        - dynamodb:Query # TAKE OF SOME OF THESE PERMISSIONS
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource:
+        Fn::GetAtt:
+          - ExchangeRatesTable
+          - Arn
+
+functions:
+  updateExchangeRates:
+    handler: handler.updateExchangeRates
+    name: ${self:provider.stage}-updateExchangeRates
+    description: 'Updates the latest exchange rates from fixer and stores them in ExchangeRatesTable, triggered hourly'
+    events:
+      - schedule:
+          name: updateExchangeRatesHourly
+          description: 'Triggers the updateExchangeRates function hourly, to update the exchange rates and cache them in exchangeRatesTable'
+          rate: rate(1 hour)
+  # getExchangeRates:
+  #   handler: handler.getExchangeRates
+  #   name: ${self:provider.stage}-getExchangeRates
+  #   description: 'Gets the exchange rates from ExchangeRatesTable'
+  #   events:
+  #     - http:
+  #         path: /exchangerates
+  #         method: get
+
+resources:
+  Resources:
+    ExchangeRatesTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ExchangeRatesTable
+        AttributeDefinitions:
+          - AttributeName: liveExchangeRates
+            AttributeType: S
+        KeySchema:
+          - AttributeName: liveExchangeRates
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1

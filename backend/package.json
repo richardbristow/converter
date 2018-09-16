@@ -1,0 +1,12 @@
+{
+  "name": "converter-backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.315.0",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.31.0"
+  }
+}
