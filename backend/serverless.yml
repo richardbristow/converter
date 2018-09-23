@@ -11,35 +11,46 @@ provider:
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
-        - dynamodb:Query # TAKE OF SOME OF THESE PERMISSIONS
         - dynamodb:Scan
-        - dynamodb:GetItem
         - dynamodb:PutItem
-        - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
       Resource:
         Fn::GetAtt:
           - ExchangeRatesTable
           - Arn
+custom:
+  environment: ${file(.env.yml):${self:provider.stage}, file(.env.yml):default}
 
 functions:
   updateExchangeRates:
-    handler: handler.updateExchangeRates
-    name: ${self:provider.stage}-updateExchangeRates
+    handler: lambda/updateExchangeRatesCache.updateExchangeRatesCache
+    environment:
+      FIXER_API_KEY: ${self:custom.environment.FIXER_API_KEY}
+    name: ${self:provider.stage}-updateExchangeRatesCache
     description: 'Updates the latest exchange rates from fixer and stores them in ExchangeRatesTable, triggered hourly'
     events:
       - schedule:
-          name: updateExchangeRatesHourly
-          description: 'Triggers the updateExchangeRates function hourly, to update the exchange rates and cache them in exchangeRatesTable'
+          name: updateExchangeRatesCacheHourly
+          description: 'Triggers the updateExchangeRatesCache function hourly, to update the exchange rates and cache them in ExchangeRatesTable'
           rate: rate(1 hour)
-  # getExchangeRates:
-  #   handler: handler.getExchangeRates
-  #   name: ${self:provider.stage}-getExchangeRates
-  #   description: 'Gets the exchange rates from ExchangeRatesTable'
-  #   events:
-  #     - http:
-  #         path: /exchangerates
-  #         method: get
+  updateCurrencySymbolsCache:
+    handler: lambda/updateCurrencySymbolsCache.updateCurrencySymbolsCache
+    environment:
+      FIXER_API_KEY: ${self:custom.environment.FIXER_API_KEY}
+    name: ${self:provider.stage}-updateCurrencySymbolsCache
+    description: 'Updates the currency symbols cache in ExchangeRatesTable'
+    events:
+      - schedule:
+          name: updateCurrencySymbolsCache
+          description: 'Triggers the updateCurrencySymbolsCache function every 6 hours.'
+          rate: rate(6 hours)
+  getCachedData:
+    handler: lambda/getCachedData.getCachedData
+    name: ${self:provider.stage}-getCachedData
+    description: 'Gets the exchange rates from ExchangeRatesTable'
+    events:
+      - http:
+          path: /exchangerates
+          method: get
 
 resources:
   Resources:
@@ -48,10 +59,10 @@ resources:
       Properties:
         TableName: ExchangeRatesTable
         AttributeDefinitions:
-          - AttributeName: liveExchangeRates
+          - AttributeName: id
             AttributeType: S
         KeySchema:
-          - AttributeName: liveExchangeRates
+          - AttributeName: id
             KeyType: HASH
         ProvisionedThroughput:
           ReadCapacityUnits: 1
