@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aws-sdk": "^2.315.0",
+    "aws-sdk": "^2.320.0",
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
-    "serverless": "^1.31.0"
+    "serverless": "^1.32.0"
   }
 }
