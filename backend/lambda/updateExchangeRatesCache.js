@@ -24,6 +24,7 @@ exports.updateExchangeRatesCache = async () => {
     const dynamoResponse = await exchangeRatesTablePut(params);
     console.log('replaced old item', dynamoResponse);
     console.log('put new item', params.Item);
+    console.log('run at', Date().toString());
     return params.Item;
   } catch (error) {
     throw new Error(error);
