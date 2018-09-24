@@ -4,7 +4,8 @@ const addPrefixes = (prefixes, baseUnit) => {
     units.push({ displayName: unit.displayName, mathName: unit.mathName });
     if (unit.allowPrefixes || baseUnit.mathName === 'datastorage') {
       const prefixUnits = prefixes.map(prefix => ({
-        displayName: `${prefix.name}${unit.displayName.toLowerCase()}`, mathName: `${prefix.abbreviation}${unit.mathName}`,
+        displayName: `${prefix.name}${unit.displayName.toLowerCase()}`,
+        mathName: `${prefix.abbreviation}${unit.mathName}`,
       }));
       units.push(...prefixUnits);
     }
