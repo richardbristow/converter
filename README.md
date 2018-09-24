@@ -17,6 +17,8 @@ It has serverless backend to support the currency conversion. This is used to ca
 To install and start the app:
 
 ```shell
+  git clone https://github.com/richardbristow/converter.git
+  cd converter
   yarn
   yarn start
 ```
@@ -42,8 +44,8 @@ Enter the api key into the .env.yml file in the following format:
 
 ```yaml
   dev:
-    fixerApi: 'YOUR_API_KEY' ## DOUBLE CHECK THESE COMMANDS 
-  
+    fixerApi: 'YOUR_API_KEY' ## DOUBLE CHECK THESE COMMANDS
+
   default:
     fixerApi: 'YOUR_API_KEY'
 ```
@@ -52,7 +54,7 @@ To deploy the backend to aws:
 
 ```shell
   # Deploy to development
-  serverless deploy -v ## DOUBLE CHECK THESE COMMANDS 
+  serverless deploy -v ## DOUBLE CHECK THESE COMMANDS
 
   # Deploy to production
   serverless deploy -v
