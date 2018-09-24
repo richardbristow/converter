@@ -8,7 +8,7 @@ This is a React webapp to convert between various units of measurement.
 
 It has serverless backend to support the currency conversion. This is used to cache the api responses from fixer.io to a dynamodb table, to remain within the api rate limits of the free fixer account.
 
-*Note: It was made to practice with various things, one of them being css-grid so it most likely will not render in IE correctly.*
+***Note**: It was made to practice with various things, one of them being css-grid so it most likely will not render in IE correctly.*
 
 ## Installation
 
