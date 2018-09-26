@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import InputUnitGroup from './InputUnitGroup';
+import Loading from '../shared/Loading';
+import ExchangeRates from '../shared/ExchangeRates';
 import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
 import getUnits from '../../utils/getUnits';
 import mergeRatesAndSymbols from '../../utils/mergeRatesAndSymbols';
@@ -90,7 +92,8 @@ class ConvertPanel extends Component {
             handleChange={this.handleChange}
             conversionType={conversionType}
           />)}
-        {isCurrency && (<div>{!exchangeRates ? 'Loading...' : `Last Updated: ${Date(exchangeRates.timestamp).toString()}`}</div>)}
+        {isCurrency && (
+          !exchangeRates ? <Loading /> : <ExchangeRates exchangeRates={exchangeRates} />)}
       </StyeldConvertPanel>
     );
   }
