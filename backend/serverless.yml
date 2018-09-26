@@ -51,6 +51,7 @@ functions:
       - http:
           path: /exchangerates
           method: get
+          cors: true
 
 resources:
   Resources:

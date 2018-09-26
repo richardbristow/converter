@@ -6,6 +6,11 @@ const params = {
   TableName: 'ExchangeRatesTable',
 };
 
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Credentials': true,
+};
+
 exports.getCachedData = async () => {
   try {
     const dynamoResponse = await exchangeRatesTableGet(params);
@@ -14,6 +19,7 @@ exports.getCachedData = async () => {
 
     const response = {
       statusCode: 200,
+      headers,
       body: JSON.stringify({ ...dynamoResponse.Items }),
     };
 
