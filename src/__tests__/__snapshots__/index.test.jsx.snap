@@ -683,8 +683,11 @@ exports[`index matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="sc-kpOJdX gVXksZ"
+    className="sc-kpOJdX cXkbKG"
   >
+    <h3>
+      Length
+    </h3>
     <div
       className="sc-kGXeez gAnAGT"
     >
@@ -694,6 +697,7 @@ exports[`index matches the snapshot 1`] = `
       >
         <input
           className="sc-kAzzGY dVUkFU"
+          disabled={false}
           name="leftInput"
           onChange={[Function]}
           type="text"
@@ -706,6 +710,7 @@ exports[`index matches the snapshot 1`] = `
         >
           <button
             className="sc-gZMcBi gXyhHF"
+            disabled={false}
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -715,6 +720,7 @@ exports[`index matches the snapshot 1`] = `
           </button>
           <button
             className="sc-fjdhpX llIDD"
+            disabled={false}
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"
@@ -800,6 +806,7 @@ exports[`index matches the snapshot 1`] = `
       >
         <input
           className="sc-kAzzGY dVUkFU"
+          disabled={false}
           name="rightInput"
           onChange={[Function]}
           type="text"
@@ -812,6 +819,7 @@ exports[`index matches the snapshot 1`] = `
         >
           <button
             className="sc-gZMcBi gXyhHF"
+            disabled={false}
             name="header"
             onClick={[Function]}
             onFocus={[Function]}
@@ -821,6 +829,7 @@ exports[`index matches the snapshot 1`] = `
           </button>
           <button
             className="sc-fjdhpX llIDD"
+            disabled={false}
             name="arrow"
             onClick={[Function]}
             tabIndex="-1"

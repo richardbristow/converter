@@ -5,6 +5,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <InputUnit
     conversionType="type1"
+    disableInputs={false}
     dropdownValue="mathName2"
     handleChange={[Function]}
     name="name"
@@ -41,6 +42,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <styled.input
+          disabled={false}
           name="nameInput"
           onChange={[Function]}
           type="text"
@@ -48,6 +50,7 @@ ShallowWrapper {
 />,
         <FilterDropdown
           conversionType="type1"
+          disableInputs={false}
           dropdownValue="mathName2"
           handleChange={[Function]}
           name="name"
@@ -78,6 +81,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "disabled": false,
           "name": "nameInput",
           "onChange": [Function],
           "type": "text",
@@ -93,6 +97,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "conversionType": "type1",
+          "disableInputs": false,
           "dropdownValue": "mathName2",
           "handleChange": [Function],
           "name": "name",
@@ -126,6 +131,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.input
+            disabled={false}
             name="nameInput"
             onChange={[Function]}
             type="text"
@@ -133,6 +139,7 @@ ShallowWrapper {
 />,
           <FilterDropdown
             conversionType="type1"
+            disableInputs={false}
             dropdownValue="mathName2"
             handleChange={[Function]}
             name="name"
@@ -163,6 +170,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "disabled": false,
             "name": "nameInput",
             "onChange": [Function],
             "type": "text",
@@ -178,6 +186,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "conversionType": "type1",
+            "disableInputs": false,
             "dropdownValue": "mathName2",
             "handleChange": [Function],
             "name": "name",

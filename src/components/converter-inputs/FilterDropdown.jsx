@@ -117,7 +117,7 @@ class FilterDropdown extends Component {
 
   render() {
     const {
-      options, name, conversionType, dropdownValue,
+      options, name, conversionType, dropdownValue, disableInputs,
     } = this.props;
     const { filter, dropdownOpen } = this.state;
     const arrowIcon = dropdownOpen === false ? <Icon size="0.9em" icon={icons.chevronDown} /> : <Icon size="0.9em" icon={icons.chevronUp} />;
@@ -142,11 +142,12 @@ class FilterDropdown extends Component {
               tabIndex="0"
               onFocus={this.handleHeaderFocus}
               onClick={this.handleDropdownClick}
+              disabled={disableInputs}
             >
               {displayName}
             </StyledConvertButton>
           )}
-        <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick}>{arrowIcon}</StyledArrowButton>
+        <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick} disabled={disableInputs}>{arrowIcon}</StyledArrowButton>
         {dropdownOpen
           && (
           <FilterOptions
@@ -162,6 +163,10 @@ class FilterDropdown extends Component {
   }
 }
 
+FilterDropdown.defaultProps = {
+  disableInputs: false,
+};
+
 FilterDropdown.propTypes = {
   name: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(PropTypes.shape({
@@ -171,6 +176,7 @@ FilterDropdown.propTypes = {
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,
   dropdownValue: PropTypes.string.isRequired,
+  disableInputs: PropTypes.bool,
 };
 
 export default FilterDropdown;

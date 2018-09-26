@@ -12,17 +12,24 @@ const StyledMain = styled.div`
   grid-column: ${props => (props.sidebarDocked ? '2 / -1' : '1 / -1')};
   grid-row: 2 / -1;
   padding: ${props => (props.sidebarDocked ? '120px 40px 0px 40px' : '120px 40px 0px 115px')};
+  h3 {
+    ${props => props.sidebarDocked && 'display: none'}
+    margin-bottom: 30px;
+  }
 `;
 
 const renderUnitRoutes = baseUnits => (
   Object.keys(baseUnits).map((type) => {
-    const { mathName } = baseUnits[type];
+    const { mathName, displayName } = baseUnits[type];
     return (
       <Route
         key={`route-${mathName}`}
         path={`/${mathName}`}
         render={() => (
-          <ConvertPanel conversionType={mathName} baseUnits={baseUnits} />
+          <React.Fragment>
+            <h3>{displayName}</h3>
+            <ConvertPanel conversionType={mathName} baseUnits={baseUnits} />
+          </React.Fragment>
         )}
       />);
   })

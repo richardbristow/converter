@@ -63,20 +63,34 @@ class ConvertPanel extends Component {
 
   render() {
     const { conversionType, baseUnits } = this.props;
-    const { leftInput, rightInput } = this.state;
+    const { leftInput, rightInput, exchangeRates } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
     const options = baseUnits[conversionType].units;
+    const isCurrency = conversionType === 'currency';
     return (
       <StyeldConvertPanel>
-        <InputUnitGroup
-          leftInput={leftInput}
-          rightInput={rightInput}
-          leftUnit={leftUnit}
-          rightUnit={rightUnit}
-          options={options}
-          handleChange={this.handleChange}
-          conversionType={conversionType}
-        />
+        {isCurrency ? (
+          <InputUnitGroup
+            leftInput={leftInput}
+            rightInput={rightInput}
+            leftUnit={leftUnit}
+            rightUnit={rightUnit}
+            options={options}
+            handleChange={this.handleChange}
+            conversionType={conversionType}
+            disableInputs={!exchangeRates}
+          />
+        ) : (
+          <InputUnitGroup
+            leftInput={leftInput}
+            rightInput={rightInput}
+            leftUnit={leftUnit}
+            rightUnit={rightUnit}
+            options={options}
+            handleChange={this.handleChange}
+            conversionType={conversionType}
+          />)}
+        {isCurrency && (<div>{!exchangeRates ? 'Loading...' : `Last Updated: ${Date(exchangeRates.timestamp).toString()}`}</div>)}
       </StyeldConvertPanel>
     );
   }

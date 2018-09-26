@@ -5,7 +5,7 @@ import InputUnit from './InputUnit';
 import ConvertArrows from './ConvertArrows';
 
 const InputUnitGroup = ({
-  leftInput, rightInput, leftUnit, rightUnit, options, handleChange, conversionType,
+  leftInput, rightInput, leftUnit, rightUnit, options, handleChange, conversionType, disableInputs,
 }) => (
   <React.Fragment>
     <InputUnit
@@ -15,6 +15,7 @@ const InputUnitGroup = ({
       options={options}
       handleChange={handleChange}
       conversionType={conversionType}
+      disableInputs={disableInputs}
     />
     <ConvertArrows />
     <InputUnit
@@ -24,9 +25,14 @@ const InputUnitGroup = ({
       options={options}
       handleChange={handleChange}
       conversionType={conversionType}
+      disableInputs={disableInputs}
     />
   </React.Fragment>
 );
+
+InputUnitGroup.defaultProps = {
+  disableInputs: false,
+};
 
 InputUnitGroup.propTypes = {
   leftInput: PropTypes.string.isRequired,
@@ -36,6 +42,7 @@ InputUnitGroup.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,
+  disableInputs: PropTypes.bool,
 };
 
 export default InputUnitGroup;

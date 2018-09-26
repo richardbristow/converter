@@ -23,19 +23,24 @@ const StyledNumberInput = styled.input`
 `;
 
 const InputUnit = ({
-  name, textValue, dropdownValue, options, handleChange, conversionType,
+  name, textValue, dropdownValue, options, handleChange, conversionType, disableInputs,
 }) => (
   <StyledInputUnit name={name}>
-    <StyledNumberInput name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
+    <StyledNumberInput name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} disabled={disableInputs} />
     <FilterDropdown
       options={options}
       name={name}
       handleChange={handleChange}
       conversionType={conversionType}
       dropdownValue={dropdownValue}
+      disableInputs={disableInputs}
     />
   </StyledInputUnit>
 );
+
+InputUnit.defaultProps = {
+  disableInputs: false,
+};
 
 InputUnit.propTypes = {
   name: PropTypes.string.isRequired,
@@ -47,6 +52,7 @@ InputUnit.propTypes = {
   })).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,
+  disableInputs: PropTypes.bool,
 };
 
 export default InputUnit;
