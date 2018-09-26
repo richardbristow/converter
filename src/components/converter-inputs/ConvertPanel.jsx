@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import InputGroup from './InputGroup';
-import ConvertArrows from './ConvertArrows';
+import InputUnitGroup from './InputUnitGroup';
 import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
 import getUnits from '../../utils/getUnits';
+import mergeRatesAndSymbols from '../../utils/mergeRatesAndSymbols';
 
-const StyeldInputPanel = styled.div`
+const StyeldConvertPanel = styled.div`
   display: grid;
   grid-template-areas:
     'left arrows right';
   grid-template-columns: 1fr auto 1fr;
 `;
 
-class InputPanel extends Component {
+class ConvertPanel extends Component {
   constructor(props) {
     super(props);
 
@@ -24,6 +24,19 @@ class InputPanel extends Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  async componentDidMount() {
+    const { conversionType } = this.props;
+    if (conversionType === 'currency') {
+      const url = 'https://0eq5aigvx1.execute-api.us-east-1.amazonaws.com/dev/exchangerates';
+      const response = await fetch(url);
+      const data = await response.json();
+      const exchangeRates = mergeRatesAndSymbols(data);
+      this.setState({
+        exchangeRates,
+      });
+    }
   }
 
   handleChange(conversionType, { target }) {
@@ -54,36 +67,28 @@ class InputPanel extends Component {
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
     const options = baseUnits[conversionType].units;
     return (
-      <StyeldInputPanel>
-        <InputGroup
-          name="left"
-          textValue={leftInput}
-          dropdownValue={leftUnit}
+      <StyeldConvertPanel>
+        <InputUnitGroup
+          leftInput={leftInput}
+          rightInput={rightInput}
+          leftUnit={leftUnit}
+          rightUnit={rightUnit}
           options={options}
           handleChange={this.handleChange}
           conversionType={conversionType}
         />
-        <ConvertArrows />
-        <InputGroup
-          name="right"
-          textValue={rightInput}
-          dropdownValue={rightUnit}
-          options={options}
-          handleChange={this.handleChange}
-          conversionType={conversionType}
-        />
-      </StyeldInputPanel>
+      </StyeldConvertPanel>
     );
   }
 }
 
-InputPanel.defaultProps = {
+ConvertPanel.defaultProps = {
   conversionType: 'length',
 };
 
-InputPanel.propTypes = {
+ConvertPanel.propTypes = {
   conversionType: PropTypes.string,
   baseUnits: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
-export default InputPanel;
+export default ConvertPanel;

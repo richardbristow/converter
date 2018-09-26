@@ -4,8 +4,8 @@ const mergeRatesAndSymbols = (response) => {
 
   const merged = Object.keys(exchangeRates.rates).map((rate) => {
     const rateAndSymbol = {
-      currencyCode: rate,
-      currencyFullName: currencySymbols.symbols[rate],
+      mathName: rate,
+      displayName: currencySymbols.symbols[rate],
       exchangeRate: exchangeRates.rates[rate],
     };
     return rateAndSymbol;

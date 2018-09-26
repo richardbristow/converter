@@ -70,6 +70,22 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "currency": Object {
+                                          "displayName": "Currency",
+                                          "initialUnitLeft": "USD",
+                                          "initialUnitRight": "GBP",
+                                          "mathName": "currency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "British Pound Sterling",
+                                              "mathName": "GBP",
+                                            },
+                                            Object {
+                                              "displayName": "United States Dollar",
+                                              "mathName": "USD",
+                                            },
+                                          ],
+                                        },
                                         "datastorage": Object {
                                           "displayName": "Data Storage",
                                           "initialUnitLeft": "B",
@@ -1015,6 +1031,22 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Minute of arc",
                                               "mathName": "arcminute",
+                                            },
+                                          ],
+                                        },
+                                        "currency": Object {
+                                          "displayName": "Currency",
+                                          "initialUnitLeft": "USD",
+                                          "initialUnitRight": "GBP",
+                                          "mathName": "currency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "British Pound Sterling",
+                                              "mathName": "GBP",
+                                            },
+                                            Object {
+                                              "displayName": "United States Dollar",
+                                              "mathName": "USD",
                                             },
                                           ],
                                         },
@@ -2000,6 +2032,22 @@ ShallowWrapper {
                                             },
                                           ],
                                         },
+                                        "currency": Object {
+                                          "displayName": "Currency",
+                                          "initialUnitLeft": "USD",
+                                          "initialUnitRight": "GBP",
+                                          "mathName": "currency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "British Pound Sterling",
+                                              "mathName": "GBP",
+                                            },
+                                            Object {
+                                              "displayName": "United States Dollar",
+                                              "mathName": "USD",
+                                            },
+                                          ],
+                                        },
                                         "datastorage": Object {
                                           "displayName": "Data Storage",
                                           "initialUnitLeft": "B",
@@ -2945,6 +2993,22 @@ ShallowWrapper {
                                             Object {
                                               "displayName": "Minute of arc",
                                               "mathName": "arcminute",
+                                            },
+                                          ],
+                                        },
+                                        "currency": Object {
+                                          "displayName": "Currency",
+                                          "initialUnitLeft": "USD",
+                                          "initialUnitRight": "GBP",
+                                          "mathName": "currency",
+                                          "units": Array [
+                                            Object {
+                                              "displayName": "British Pound Sterling",
+                                              "mathName": "GBP",
+                                            },
+                                            Object {
+                                              "displayName": "United States Dollar",
+                                              "mathName": "USD",
                                             },
                                           ],
                                         },
@@ -3917,6 +3981,22 @@ ShallowWrapper {
                                               },
                                             ],
                                           },
+                                          "currency": Object {
+                                            "displayName": "Currency",
+                                            "initialUnitLeft": "USD",
+                                            "initialUnitRight": "GBP",
+                                            "mathName": "currency",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "British Pound Sterling",
+                                                "mathName": "GBP",
+                                              },
+                                              Object {
+                                                "displayName": "United States Dollar",
+                                                "mathName": "USD",
+                                              },
+                                            ],
+                                          },
                                           "datastorage": Object {
                                             "displayName": "Data Storage",
                                             "initialUnitLeft": "B",
@@ -4862,6 +4942,22 @@ ShallowWrapper {
                                               Object {
                                                 "displayName": "Minute of arc",
                                                 "mathName": "arcminute",
+                                              },
+                                            ],
+                                          },
+                                          "currency": Object {
+                                            "displayName": "Currency",
+                                            "initialUnitLeft": "USD",
+                                            "initialUnitRight": "GBP",
+                                            "mathName": "currency",
+                                            "units": Array [
+                                              Object {
+                                                "displayName": "British Pound Sterling",
+                                                "mathName": "GBP",
+                                              },
+                                              Object {
+                                                "displayName": "United States Dollar",
+                                                "mathName": "USD",
                                               },
                                             ],
                                           },
@@ -5857,6 +5953,22 @@ ShallowWrapper {
                     },
                   ],
                 },
+                "currency": Object {
+                  "displayName": "Currency",
+                  "initialUnitLeft": "USD",
+                  "initialUnitRight": "GBP",
+                  "mathName": "currency",
+                  "units": Array [
+                    Object {
+                      "displayName": "British Pound Sterling",
+                      "mathName": "GBP",
+                    },
+                    Object {
+                      "displayName": "United States Dollar",
+                      "mathName": "USD",
+                    },
+                  ],
+                },
                 "datastorage": Object {
                   "displayName": "Data Storage",
                   "initialUnitLeft": "B",
@@ -6820,6 +6932,22 @@ ShallowWrapper {
                     Object {
                       "displayName": "Minute of arc",
                       "mathName": "arcminute",
+                    },
+                  ],
+                },
+                "currency": Object {
+                  "displayName": "Currency",
+                  "initialUnitLeft": "USD",
+                  "initialUnitRight": "GBP",
+                  "mathName": "currency",
+                  "units": Array [
+                    Object {
+                      "displayName": "British Pound Sterling",
+                      "mathName": "GBP",
+                    },
+                    Object {
+                      "displayName": "United States Dollar",
+                      "mathName": "USD",
                     },
                   ],
                 },
@@ -7804,6 +7932,22 @@ ShallowWrapper {
                                                       },
                                                     ],
                                                   },
+                                                  "currency": Object {
+                                                    "displayName": "Currency",
+                                                    "initialUnitLeft": "USD",
+                                                    "initialUnitRight": "GBP",
+                                                    "mathName": "currency",
+                                                    "units": Array [
+                                                      Object {
+                                                        "displayName": "British Pound Sterling",
+                                                        "mathName": "GBP",
+                                                      },
+                                                      Object {
+                                                        "displayName": "United States Dollar",
+                                                        "mathName": "USD",
+                                                      },
+                                                    ],
+                                                  },
                                                   "datastorage": Object {
                                                     "displayName": "Data Storage",
                                                     "initialUnitLeft": "B",
@@ -8749,6 +8893,22 @@ ShallowWrapper {
                                                       Object {
                                                         "displayName": "Minute of arc",
                                                         "mathName": "arcminute",
+                                                      },
+                                                    ],
+                                                  },
+                                                  "currency": Object {
+                                                    "displayName": "Currency",
+                                                    "initialUnitLeft": "USD",
+                                                    "initialUnitRight": "GBP",
+                                                    "mathName": "currency",
+                                                    "units": Array [
+                                                      Object {
+                                                        "displayName": "British Pound Sterling",
+                                                        "mathName": "GBP",
+                                                      },
+                                                      Object {
+                                                        "displayName": "United States Dollar",
+                                                        "mathName": "USD",
                                                       },
                                                     ],
                                                   },
@@ -9734,6 +9894,22 @@ ShallowWrapper {
                                                     },
                                                   ],
                                                 },
+                                                "currency": Object {
+                                                  "displayName": "Currency",
+                                                  "initialUnitLeft": "USD",
+                                                  "initialUnitRight": "GBP",
+                                                  "mathName": "currency",
+                                                  "units": Array [
+                                                    Object {
+                                                      "displayName": "British Pound Sterling",
+                                                      "mathName": "GBP",
+                                                    },
+                                                    Object {
+                                                      "displayName": "United States Dollar",
+                                                      "mathName": "USD",
+                                                    },
+                                                  ],
+                                                },
                                                 "datastorage": Object {
                                                   "displayName": "Data Storage",
                                                   "initialUnitLeft": "B",
@@ -10679,6 +10855,22 @@ ShallowWrapper {
                                                     Object {
                                                       "displayName": "Minute of arc",
                                                       "mathName": "arcminute",
+                                                    },
+                                                  ],
+                                                },
+                                                "currency": Object {
+                                                  "displayName": "Currency",
+                                                  "initialUnitLeft": "USD",
+                                                  "initialUnitRight": "GBP",
+                                                  "mathName": "currency",
+                                                  "units": Array [
+                                                    Object {
+                                                      "displayName": "British Pound Sterling",
+                                                      "mathName": "GBP",
+                                                    },
+                                                    Object {
+                                                      "displayName": "United States Dollar",
+                                                      "mathName": "USD",
                                                     },
                                                   ],
                                                 },
@@ -11651,6 +11843,22 @@ ShallowWrapper {
                                                     },
                                                   ],
                                                 },
+                                                "currency": Object {
+                                                  "displayName": "Currency",
+                                                  "initialUnitLeft": "USD",
+                                                  "initialUnitRight": "GBP",
+                                                  "mathName": "currency",
+                                                  "units": Array [
+                                                    Object {
+                                                      "displayName": "British Pound Sterling",
+                                                      "mathName": "GBP",
+                                                    },
+                                                    Object {
+                                                      "displayName": "United States Dollar",
+                                                      "mathName": "USD",
+                                                    },
+                                                  ],
+                                                },
                                                 "datastorage": Object {
                                                   "displayName": "Data Storage",
                                                   "initialUnitLeft": "B",
@@ -12596,6 +12804,22 @@ ShallowWrapper {
                                                     Object {
                                                       "displayName": "Minute of arc",
                                                       "mathName": "arcminute",
+                                                    },
+                                                  ],
+                                                },
+                                                "currency": Object {
+                                                  "displayName": "Currency",
+                                                  "initialUnitLeft": "USD",
+                                                  "initialUnitRight": "GBP",
+                                                  "mathName": "currency",
+                                                  "units": Array [
+                                                    Object {
+                                                      "displayName": "British Pound Sterling",
+                                                      "mathName": "GBP",
+                                                    },
+                                                    Object {
+                                                      "displayName": "United States Dollar",
+                                                      "mathName": "USD",
                                                     },
                                                   ],
                                                 },
@@ -13591,6 +13815,22 @@ ShallowWrapper {
                       },
                     ],
                   },
+                  "currency": Object {
+                    "displayName": "Currency",
+                    "initialUnitLeft": "USD",
+                    "initialUnitRight": "GBP",
+                    "mathName": "currency",
+                    "units": Array [
+                      Object {
+                        "displayName": "British Pound Sterling",
+                        "mathName": "GBP",
+                      },
+                      Object {
+                        "displayName": "United States Dollar",
+                        "mathName": "USD",
+                      },
+                    ],
+                  },
                   "datastorage": Object {
                     "displayName": "Data Storage",
                     "initialUnitLeft": "B",
@@ -14554,6 +14794,22 @@ ShallowWrapper {
                       Object {
                         "displayName": "Minute of arc",
                         "mathName": "arcminute",
+                      },
+                    ],
+                  },
+                  "currency": Object {
+                    "displayName": "Currency",
+                    "initialUnitLeft": "USD",
+                    "initialUnitRight": "GBP",
+                    "mathName": "currency",
+                    "units": Array [
+                      Object {
+                        "displayName": "British Pound Sterling",
+                        "mathName": "GBP",
+                      },
+                      Object {
+                        "displayName": "United States Dollar",
+                        "mathName": "USD",
                       },
                     ],
                   },

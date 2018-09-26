@@ -10,6 +10,7 @@ import frequency from './unitTypes/frequency';
 import mass from './unitTypes/mass';
 import electricCurrent from './unitTypes/electricCurrent';
 import temperature from './unitTypes/temperature';
+import currency from './unitTypes/currency';
 import force from './unitTypes/force';
 import energy from './unitTypes/energy';
 import power from './unitTypes/power';
@@ -35,7 +36,7 @@ const baseUnits = {
   temperature,
   // amountOfSubstance,
   // luminousIntensity,
-  // currency,
+  currency,
   force,
   energy,
   power,

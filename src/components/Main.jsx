@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import Help from './pages/Help';
 import About from './pages/About';
-import InputPanel from './converter-inputs/InputPanel';
+import ConvertPanel from './converter-inputs/ConvertPanel';
 import NoRoute from './NoRoute';
 
 const StyledMain = styled.div`
@@ -22,7 +22,7 @@ const renderUnitRoutes = baseUnits => (
         key={`route-${mathName}`}
         path={`/${mathName}`}
         render={() => (
-          <InputPanel conversionType={mathName} baseUnits={baseUnits} />
+          <ConvertPanel conversionType={mathName} baseUnits={baseUnits} />
         )}
       />);
   })

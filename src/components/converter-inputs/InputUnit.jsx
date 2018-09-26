@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import FilterDropdown from './FilterDropdown';
 
-const StyledInputGroup = styled.div`
+const StyledInputUnit = styled.div`
   grid-area: ${props => props.name};
   display: grid;
   grid-template-columns: 1fr;
@@ -22,10 +22,10 @@ const StyledNumberInput = styled.input`
   min-width: 0;
 `;
 
-const InputGroup = ({
+const InputUnit = ({
   name, textValue, dropdownValue, options, handleChange, conversionType,
 }) => (
-  <StyledInputGroup name={name}>
+  <StyledInputUnit name={name}>
     <StyledNumberInput name={`${name}Input`} value={textValue} type="text" onChange={e => handleChange(conversionType, e)} />
     <FilterDropdown
       options={options}
@@ -34,10 +34,10 @@ const InputGroup = ({
       conversionType={conversionType}
       dropdownValue={dropdownValue}
     />
-  </StyledInputGroup>
+  </StyledInputUnit>
 );
 
-InputGroup.propTypes = {
+InputUnit.propTypes = {
   name: PropTypes.string.isRequired,
   textValue: PropTypes.string.isRequired,
   dropdownValue: PropTypes.string.isRequired,
@@ -49,4 +49,4 @@ InputGroup.propTypes = {
   conversionType: PropTypes.string.isRequired,
 };
 
-export default InputGroup;
+export default InputUnit;

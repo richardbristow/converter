@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputGroup should render an input element, with the correct props 1`] = `
+exports[`InputUnit should render an input element, with the correct props 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <InputGroup
+  Symbol(enzyme.__unrendered__): <InputUnit
     conversionType="type1"
     dropdownValue="mathName2"
     handleChange={[Function]}
