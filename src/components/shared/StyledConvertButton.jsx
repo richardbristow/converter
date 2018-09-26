@@ -15,6 +15,9 @@ const StyledConvertButton = styled.button`
   &:focus {
     background-color: ${props => (!props.arrow && !props.selected && 'lightgrey')};
   };
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 export default StyledConvertButton;

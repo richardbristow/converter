@@ -20,6 +20,9 @@ const StyledNumberInput = styled.input`
   border-radius: 4px 4px 0px 0px;
   font-size: 2em;
   min-width: 0;
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 const InputUnit = ({
