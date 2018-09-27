@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const ExchangeRates = ({ exchangeRates }) => (
   <div>
-    <span>{`Last Updated: ${new Date(exchangeRates.timestamp).toString()}`}</span>
+    <span>{`Last Updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
     <br />
     {exchangeRates.rates.map(rate => (
       <React.Fragment key={rate.mathName}>
