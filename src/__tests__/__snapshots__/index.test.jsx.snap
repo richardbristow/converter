@@ -2,7 +2,7 @@
 
 exports[`index matches the snapshot 1`] = `
 <div
-  className="sc-jKJlTe gNjYam"
+  className="sc-eNQAEJ hVKZph"
   onBlur={[Function]}
   onFocus={[Function]}
 >
@@ -683,13 +683,13 @@ exports[`index matches the snapshot 1`] = `
     </div>
   </div>
   <div
-    className="sc-ckVGcZ duYqAe"
+    className="sc-jKJlTe kBKMlw"
   >
     <h3>
       Length
     </h3>
     <div
-      className="sc-dxgOiQ kwYAXk"
+      className="sc-ckVGcZ fUPdNC"
     >
       <div
         className="sc-cSHVUG kijOJR"

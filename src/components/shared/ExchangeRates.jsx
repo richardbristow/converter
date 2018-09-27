@@ -2,21 +2,37 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledExchangeRates = styled.div`
+const StyledExchangeWrapper = styled.div`
   grid-column: span 3;
+  margin-top: 30px;
+`;
+
+const StyledExchangeRates = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+  margin-top: 30px;
+  h4 {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
 `;
 
 const ExchangeRates = ({ exchangeRates }) => (
-  <StyledExchangeRates>
-    <span>{`Last Updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
+  <StyledExchangeWrapper>
+    <span>{`Exchange rates last updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
     <br />
-    {exchangeRates.rates.map(rate => (
-      <React.Fragment key={rate.mathName}>
-        <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
-        <br />
-      </React.Fragment>
-    ))}
-  </StyledExchangeRates>
+    <span>Please note all exchange rates are updated hourly.</span>
+    <br />
+    <StyledExchangeRates>
+      <h4>Exchange Rates</h4>
+      {exchangeRates.rates.map(rate => (
+        <div key={rate.mathName}>
+          <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
+        </div>
+      ))}
+    </StyledExchangeRates>
+  </StyledExchangeWrapper>
 );
 
 ExchangeRates.propTypes = {
