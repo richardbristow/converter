@@ -32,7 +32,7 @@ class ConvertPanel extends Component {
   async componentDidMount() {
     const { conversionType } = this.props;
     if (conversionType === 'currency') {
-      const url = 'https://0eq5aigvx1.execute-api.us-east-1.amazonaws.com/dev/exchangerates';
+      const url = process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL;
       const response = await fetch(url);
       const data = await response.json();
       const exchangeRates = mergeRatesAndSymbols(data);
