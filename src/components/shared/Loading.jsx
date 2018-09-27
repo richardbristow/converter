@@ -1,9 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledLoading = styled.div`
+  grid-column: span 3;
+`;
 
 const Loading = () => (
-  <div>
+  <StyledLoading>
     <span>Loading...</span>
-  </div>
+  </StyledLoading>
 );
 
 export default Loading;

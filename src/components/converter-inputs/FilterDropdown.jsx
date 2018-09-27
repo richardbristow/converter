@@ -13,6 +13,7 @@ const StyledFilterDropdown = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 50px;
+  z-index: 1;
 `;
 
 const StyledArrowButton = StyledConvertButton.extend`

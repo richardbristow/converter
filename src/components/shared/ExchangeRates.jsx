@@ -1,8 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+const StyledExchangeRates = styled.div`
+  grid-column: span 3;
+`;
+
 const ExchangeRates = ({ exchangeRates }) => (
-  <div>
+  <StyledExchangeRates>
     <span>{`Last Updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
     <br />
     {exchangeRates.rates.map(rate => (
@@ -11,7 +16,7 @@ const ExchangeRates = ({ exchangeRates }) => (
         <br />
       </React.Fragment>
     ))}
-  </div>
+  </StyledExchangeRates>
 );
 
 ExchangeRates.propTypes = {

@@ -14,6 +14,7 @@ const StyeldConvertPanel = styled.div`
   grid-template-areas:
     'left arrows right';
   grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 120px auto;
 `;
 
 class ConvertPanel extends Component {

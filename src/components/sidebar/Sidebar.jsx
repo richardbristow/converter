@@ -15,7 +15,7 @@ const StyledSidebar = styled.div`
   width: ${props => (props.sidebarDocked || props.userShowSidebar ? '300px' : '75px')};
   grid-template-rows: ${props => (props.sidebarDocked ? '100px 1fr' : '50px 1fr')};
   background-color: ${props => props.theme.sidebarBackground};
-  z-index: 1;
+  z-index: 3;
   outline: none;
   -webkit-transform: translateZ(0px);
   -webkit-transform: translate3d(0,0,0);
