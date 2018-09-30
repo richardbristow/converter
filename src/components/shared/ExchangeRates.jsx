@@ -22,10 +22,10 @@ const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
     <span>{`Exchange rates last updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
     <br />
-    <span>Please note all exchange rates are updated hourly.</span>
+    <span>All exchange rates updated hourly.</span>
     <br />
     <StyledExchangeRates>
-      <h4>Exchange Rates</h4>
+      <h4>Exchange Rates (Base currency: Euro)</h4>
       {exchangeRates.rates.map(rate => (
         <div key={rate.mathName}>
           <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>

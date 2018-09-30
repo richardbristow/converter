@@ -72,27 +72,16 @@ class ConvertPanel extends Component {
     const isCurrency = conversionType === 'currency';
     return (
       <StyeldConvertPanel>
-        {isCurrency ? (
-          <InputUnitGroup
-            leftInput={leftInput}
-            rightInput={rightInput}
-            leftUnit={leftUnit}
-            rightUnit={rightUnit}
-            options={options}
-            handleChange={this.handleChange}
-            conversionType={conversionType}
-            disableInputs={!exchangeRates}
-          />
-        ) : (
-          <InputUnitGroup
-            leftInput={leftInput}
-            rightInput={rightInput}
-            leftUnit={leftUnit}
-            rightUnit={rightUnit}
-            options={options}
-            handleChange={this.handleChange}
-            conversionType={conversionType}
-          />)}
+        <InputUnitGroup
+          leftInput={leftInput}
+          rightInput={rightInput}
+          leftUnit={leftUnit}
+          rightUnit={rightUnit}
+          options={exchangeRates ? exchangeRates.rates : options}
+          handleChange={this.handleChange}
+          conversionType={conversionType}
+          disableInputs={isCurrency && !exchangeRates}
+        />
         {isCurrency && (
           !exchangeRates ? <Loading /> : <ExchangeRates exchangeRates={exchangeRates} />)}
       </StyeldConvertPanel>
