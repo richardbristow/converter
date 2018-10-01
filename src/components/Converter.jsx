@@ -11,7 +11,7 @@ import Main from './Main';
 
 const StyledConverter = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 300px 1fr;
   grid-template-rows: 50px 1fr;
   height: 100vh;
   background-color: ${props => props.theme.background};

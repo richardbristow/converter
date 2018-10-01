@@ -7,6 +7,9 @@ import SidebarOption from './SidebarOption';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
+  position: fixed;
+  top: 0;
+  height: 100vh;
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   font-size: 18px;
