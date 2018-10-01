@@ -15,7 +15,7 @@ const StyledConvertArrows = styled.div`
 `;
 
 const StyledArrow = styled.div`
-  ${props => (props.flip && 'transform: rotate(180deg);')}
+  ${({ flip }) => flip && 'transform: rotate(180deg);'}
 `;
 
 const ConvertArrows = () => (

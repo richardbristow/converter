@@ -10,15 +10,15 @@ const StyledLogoLink = styled(Link)`
     color: black;
   };
   h1 {
-    margin: ${props => (props.sidebarDocked ? '0 0 20px 0' : '0 0 0 115px')};
+    margin: ${({ sidebarDocked }) => (sidebarDocked ? '0 0 20px 0' : '0 0 0 115px')};
     user-select: none;
-    font-size: ${props => (props.sidebarDocked ? '2.4em' : '1.8em')};
+    font-size: ${({ sidebarDocked }) => (sidebarDocked ? '2.4em' : '1.8em')};
   }
 `;
 
 const StyledLogoBorder = styled.div`
-  ${props => (props.sidebarDocked
-    && 'margin-left: 25px; margin-right: 25px; border-bottom: 2px solid black;')}
+  ${({ sidebarDocked }) => sidebarDocked
+    && 'margin-left: 25px; margin-right: 25px; border-bottom: 2px solid black;'}
 `;
 
 const Logo = ({ sidebarDocked }) => (

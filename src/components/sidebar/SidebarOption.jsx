@@ -27,7 +27,7 @@ const StyledSidebarLink = styled(StyledLink)`
       border-left: 5px solid darkblue;
       padding-left: 20px;
     }
-    background-color: ${props => props.theme.selectedBackground};
+    background-color: ${({ theme }) => theme.selectedBackground};
   }
 `;
 

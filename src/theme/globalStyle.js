@@ -17,7 +17,7 @@ injectGlobal`
   }
 `;
 
-const theme = {
+const globalTheme = {
   background: '#FEFEFA',
   sidebarBackground: '#FC644E',
   sidebarHeaderBackground: '#ce503d',
@@ -27,4 +27,4 @@ const theme = {
   scrollbarThumbHover: '#555',
 };
 
-export default theme;
+export default globalTheme;

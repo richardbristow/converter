@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
 
-import theme from '../theme/globalStyle';
+import globalTheme from '../theme/globalStyle';
 import baseUnits from '../constants/units/baseUnits';
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
@@ -14,7 +14,7 @@ const StyledConverter = styled.div`
   grid-template-columns: auto 300px 1fr;
   grid-template-rows: 50px 1fr;
   height: 100vh;
-  background-color: ${props => props.theme.background};
+  background-color: ${({ theme }) => theme.background};
 `;
 
 const Overlay = styled.div`
@@ -105,7 +105,7 @@ class Converter extends Component {
   render() {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={globalTheme}>
         <Router>
           <StyledConverter
             onBlur={this.onBlurHandler}

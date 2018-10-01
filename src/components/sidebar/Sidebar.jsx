@@ -15,16 +15,16 @@ const StyledSidebar = styled.div`
   font-size: 18px;
   display: grid;
   grid-template-columns: auto;
-  width: ${props => (props.sidebarDocked || props.userShowSidebar ? '300px' : '75px')};
-  grid-template-rows: ${props => (props.sidebarDocked ? '100px 1fr' : '50px 1fr')};
-  background-color: ${props => props.theme.sidebarBackground};
+  width: ${({ sidebarDocked, userShowSidebar }) => (sidebarDocked || userShowSidebar ? '300px' : '75px')};
+  grid-template-rows: ${({ sidebarDocked }) => (sidebarDocked ? '100px 1fr' : '50px 1fr')};
+  background-color: ${({ theme }) => theme.sidebarBackground};
   z-index: 3;
   outline: none;
   -webkit-transform: translateZ(0px);
   -webkit-transform: translate3d(0,0,0);
   -webkit-perspective: 1000;
-  ${props => props.userShowSidebar && 'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
-  ${({ sidebarDocked }) => (!sidebarDocked && 'transition: width 200ms ease-in-out, box-shadow 200ms ease-in-out')};
+  ${({ userShowSidebar }) => userShowSidebar && 'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
+  ${({ sidebarDocked }) => !sidebarDocked && 'transition: width 200ms ease-in-out, box-shadow 200ms ease-in-out'};
 `;
 
 const StyledSidebarOptions = styled.div`
@@ -37,13 +37,13 @@ const StyledSidebarOptions = styled.div`
     width: 5px;
   };
   ::-webkit-scrollbar-track {
-    background: ${props => props.theme.scrollbarTrack};
+    background: ${({ theme }) => theme.scrollbarTrack};
   };
   ::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.scrollbarThumb};
+    background: ${({ theme }) => theme.scrollbarThumb};
   };
   ::-webkit-scrollbar-thumb:hover {
-    background: ${props => props.theme.scrollbarThumbHover};
+    background: ${({ theme }) => theme.scrollbarThumbHover};
   };
 `;
 

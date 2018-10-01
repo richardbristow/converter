@@ -18,13 +18,13 @@ const StyledFilterOptions = styled.div`
     width: 5px;
   };
   ::-webkit-scrollbar-track {
-    background: ${props => props.theme.scrollbarTrack};
+    background: ${({ theme }) => theme.scrollbarTrack};
   };
   ::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.scrollbarThumb};
+    background: ${({ theme }) => theme.scrollbarThumb};
   };
   ::-webkit-scrollbar-thumb:hover {
-    background: ${props => props.theme.scrollbarThumbHover};
+    background: ${({ theme }) => theme.scrollbarThumbHover};
   };
 `;
 

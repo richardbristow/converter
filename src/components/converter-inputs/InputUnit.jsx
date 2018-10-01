@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import FilterDropdown from './FilterDropdown';
 
 const StyledInputUnit = styled.div`
-  grid-area: ${props => props.name};
+  grid-area: ${({ name }) => name};
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 70px auto;

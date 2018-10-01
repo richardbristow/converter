@@ -7,9 +7,9 @@ import Logo from '../shared/Logo';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
-  grid-template-columns: ${props => (props.sidebarDocked ? '1fr' : '75px')};
+  grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? '1fr' : '75px')};
   align-items: center;
-  ${props => (!props.sidebarDocked && `background-color: ${props.theme.sidebarHeaderBackground}`)};
+  ${({ sidebarDocked, theme }) => !sidebarDocked && `background-color: ${theme.sidebarHeaderBackground}`};
 `;
 
 const SidebarHeader = ({ userShowSidebar, sidebarDocked, handleHamburgerClick }) => (

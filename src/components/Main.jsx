@@ -9,11 +9,11 @@ import ConvertPanel from './converter-inputs/ConvertPanel';
 import NoRoute from './NoRoute';
 
 const StyledMain = styled.div`
-  grid-column: ${props => (props.sidebarDocked ? '3 / -1' : '1 / -1')};
+  grid-column: ${({ sidebarDocked }) => (sidebarDocked ? '3 / -1' : '1 / -1')};
   grid-row: 2 / -1;
-  padding: ${props => (props.sidebarDocked ? '120px 40px 0px 40px' : '120px 40px 0px 115px')};
+  padding: ${({ sidebarDocked }) => (sidebarDocked ? '120px 40px 0px 40px' : '120px 40px 0px 115px')};
   h3 {
-    ${props => props.sidebarDocked && 'display: none'}
+    ${({ sidebarDocked }) => sidebarDocked && 'display: none'}
     margin-bottom: 30px;
   }
 `;
