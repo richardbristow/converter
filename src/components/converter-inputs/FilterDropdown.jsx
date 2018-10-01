@@ -121,8 +121,13 @@ class FilterDropdown extends Component {
       options, name, conversionType, dropdownValue, disableInputs,
     } = this.props;
     const { filter, dropdownOpen } = this.state;
-    const arrowIcon = dropdownOpen === false ? <Icon size="0.9em" icon={icons.chevronDown} /> : <Icon size="0.9em" icon={icons.chevronUp} />;
-    const { displayName } = options.find(option => option.mathName === dropdownValue && option);
+    const arrowIcon = dropdownOpen === false
+      ? <Icon size="0.9em" icon={icons.chevronDown} />
+      : <Icon size="0.9em" icon={icons.chevronUp} />;
+    const { displayName, mathName } = options.find(option => (
+      option.mathName === dropdownValue && option
+    ));
+    const isCurrency = conversionType === 'currency';
     return (
       <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
         {dropdownOpen
@@ -145,7 +150,7 @@ class FilterDropdown extends Component {
               onClick={this.handleDropdownClick}
               disabled={disableInputs}
             >
-              {displayName}
+              {isCurrency ? `${displayName} (${mathName})` : displayName}
             </StyledConvertButton>
           )}
         <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick} disabled={disableInputs}>{arrowIcon}</StyledArrowButton>

@@ -18,13 +18,13 @@ const StyledFilterOptions = styled.div`
     width: 5px;
   };
   ::-webkit-scrollbar-track {
-    background: ${props => props.theme.scrollbarTrack}; 
+    background: ${props => props.theme.scrollbarTrack};
   };
   ::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.scrollbarThumb}; 
+    background: ${props => props.theme.scrollbarThumb};
   };
   ::-webkit-scrollbar-thumb:hover {
-    background: ${props => props.theme.scrollbarThumbHover}; 
+    background: ${props => props.theme.scrollbarThumbHover};
   };
 `;
 
@@ -63,9 +63,12 @@ const handleMouseOver = (options, refs, { target }) => {
 const FilterOptions = ({
   options, name, conversionType, filter, handleDropdownItemClick, currentDisplayName,
 }) => {
-  const filteredOptions = options.filter(option => (
-    option.displayName.toLowerCase().indexOf(filter.toLowerCase()) !== -1
-  ));
+  const isCurrency = conversionType === 'currency';
+  const filteredOptions = options.filter((option) => {
+    const { displayName, mathName } = option;
+    const filterText = isCurrency ? `${displayName} (${mathName})` : displayName;
+    return filterText.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
+  });
   const dropdownOptionRefs = filteredOptions.map(() => React.createRef());
   return (
     <StyledFilterOptions>
@@ -81,7 +84,7 @@ const FilterOptions = ({
           selected={currentDisplayName === displayName}
           onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
         >
-          {displayName}
+          {isCurrency ? `${displayName} (${mathName})` : displayName}
         </StyledConvertButton>))) : <StyledFilterError disabled tabIndex="-1">No units found.</StyledFilterError>}
     </StyledFilterOptions>
   );

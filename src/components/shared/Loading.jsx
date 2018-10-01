@@ -7,7 +7,7 @@ const StyledLoading = styled.div`
 
 const Loading = () => (
   <StyledLoading>
-    <span>Loading...</span>
+    <span>Loading exchange rates...</span>
   </StyledLoading>
 );
 

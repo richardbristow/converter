@@ -20,7 +20,7 @@ const StyledExchangeRates = styled.div`
 
 const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
-    <span>{`Exchange rates last updated: ${new Date(exchangeRates.timestamp * 1000).toString()}`}</span>
+    <span>{`Exchange rates last updated: ${new Date(exchangeRates.dynamoCreatedAt).toLocaleString()}`}</span>
     <br />
     <span>All exchange rates updated hourly.</span>
     <br />

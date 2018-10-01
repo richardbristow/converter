@@ -5,9 +5,10 @@ import styled from 'styled-components';
 import InputUnitGroup from './InputUnitGroup';
 import Loading from '../shared/Loading';
 import ExchangeRates from '../shared/ExchangeRates';
-import { leftToRight, rightToLeft, tryConvert } from '../../utils/calculator';
+import tryConvert from '../../utils/calculator';
 import getUnits from '../../utils/getUnits';
 import mergeRatesAndSymbols from '../../utils/mergeRatesAndSymbols';
+import convertCurrency from '../../utils/convertCurrency';
 
 const StyeldConvertPanel = styled.div`
   display: grid;
@@ -44,17 +45,30 @@ class ConvertPanel extends Component {
 
   handleChange(conversionType, { target }) {
     const { name, value } = target;
+    const { exchangeRates } = this.state;
     let { leftInput, rightInput } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
 
-    if (name === 'rightInput' || name === 'leftInput') {
-      leftInput = name === 'rightInput' ? tryConvert(value, leftUnit, rightUnit, rightToLeft) : value;
-      rightInput = name === 'leftInput' ? tryConvert(value, leftUnit, rightUnit, leftToRight) : value;
-    }
+    if (conversionType === 'currency') {
+      if (name === 'rightInput' || name === 'leftInput') {
+        leftInput = name === 'rightInput' ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, false) : value;
+        rightInput = name === 'leftInput' ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, true) : value;
+      }
 
-    if (name === 'leftUnit' || name === 'rightUnit') {
-      leftInput = name === 'rightUnit' ? tryConvert(rightInput, leftUnit, value, rightToLeft) : leftInput;
-      rightInput = name === 'leftUnit' ? tryConvert(leftInput, value, rightUnit, leftToRight) : rightInput;
+      if (name === 'leftUnit' || name === 'rightUnit') {
+        leftInput = name === 'rightUnit' ? convertCurrency(rightInput, leftUnit, value, exchangeRates, false) : leftInput;
+        rightInput = name === 'leftUnit' ? convertCurrency(leftInput, value, rightUnit, exchangeRates, true) : rightInput;
+      }
+    } else {
+      if (name === 'rightInput' || name === 'leftInput') {
+        leftInput = name === 'rightInput' ? tryConvert(value, leftUnit, rightUnit, false) : value;
+        rightInput = name === 'leftInput' ? tryConvert(value, leftUnit, rightUnit, true) : value;
+      }
+
+      if (name === 'leftUnit' || name === 'rightUnit') {
+        leftInput = name === 'rightUnit' ? tryConvert(rightInput, leftUnit, value, false) : leftInput;
+        rightInput = name === 'leftUnit' ? tryConvert(leftInput, value, rightUnit, true) : rightInput;
+      }
     }
 
     this.setState({

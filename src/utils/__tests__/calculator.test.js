@@ -1,4 +1,4 @@
-import { leftToRight, rightToLeft, tryConvert } from '../calculator';
+import tryConvert from '../calculator';
 
 describe('tryConvert', () => {
   it('should return an empty string if the input is NaN ', () => {
@@ -11,11 +11,11 @@ describe('tryConvert', () => {
 
   // TODO: add tests for each conversionType
   it('should convert the input arg from the leftUnit to the rightUnit', () => {
-    expect(tryConvert('2', 'meter', 'inch', leftToRight)).toBe('78.7402');
+    expect(tryConvert('2', 'meter', 'inch', true)).toBe('78.74015748031496');
   });
 
   it('should convert the input arg from the rightUnit to the leftUnit', () => {
-    expect(tryConvert('2', 'inch', 'meter', rightToLeft)).toBe('78.7402');
+    expect(tryConvert('2', 'inch', 'meter', false)).toBe('78.74015748031496');
   });
 
   // TODO: write tests for when the input is negative
