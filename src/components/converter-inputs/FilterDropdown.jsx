@@ -16,7 +16,7 @@ const StyledFilterDropdown = styled.div`
   z-index: 1;
 `;
 
-const StyledArrowButton = StyledConvertButton.extend`
+const StyledArrowButton = styled(StyledConvertButton)`
   padding: 0px 15px;
   border-left: 0px;
   border-right: 1px solid black;

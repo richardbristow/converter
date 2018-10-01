@@ -28,7 +28,7 @@ const StyledFilterOptions = styled.div`
   };
 `;
 
-const StyledFilterError = StyledConvertButton.extend`
+const StyledFilterError = styled(StyledConvertButton)`
   cursor: not-allowed;
 `;
 
