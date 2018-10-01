@@ -25,6 +25,7 @@ class ConvertPanel extends Component {
     this.state = {
       leftInput: '',
       rightInput: '',
+      errorFetchingRates: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -33,13 +34,20 @@ class ConvertPanel extends Component {
   async componentDidMount() {
     const { conversionType } = this.props;
     if (conversionType === 'currency') {
-      const url = process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL;
-      const response = await fetch(url);
-      const data = await response.json();
-      const exchangeRates = mergeRatesAndSymbols(data);
-      this.setState({
-        exchangeRates,
-      });
+      try {
+        const url = process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL;
+        const response = await fetch(url);
+        const data = await response.json();
+        const exchangeRates = mergeRatesAndSymbols(data);
+        this.setState({
+          exchangeRates,
+        });
+      } catch (error) {
+        console.error(error); // eslint-disable-line no-console
+        this.setState({
+          errorFetchingRates: true,
+        });
+      }
     }
   }
 
@@ -80,7 +88,9 @@ class ConvertPanel extends Component {
 
   render() {
     const { conversionType, baseUnits } = this.props;
-    const { leftInput, rightInput, exchangeRates } = this.state;
+    const {
+      leftInput, rightInput, exchangeRates, errorFetchingRates,
+    } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
     const options = baseUnits[conversionType].units;
     const isCurrency = conversionType === 'currency';
@@ -97,7 +107,10 @@ class ConvertPanel extends Component {
           disableInputs={isCurrency && !exchangeRates}
         />
         {isCurrency && (
-          !exchangeRates ? <Loading /> : <ExchangeRates exchangeRates={exchangeRates} />)}
+          !exchangeRates
+            ? <Loading error={errorFetchingRates} />
+            : <ExchangeRates exchangeRates={exchangeRates} />
+        )}
       </StyeldConvertPanel>
     );
   }
