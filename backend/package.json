@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aws-sdk": "^2.320.0",
+    "aws-sdk": "^2.326.0",
     "node-fetch": "^2.2.0"
   },
   "devDependencies": {
