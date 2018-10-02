@@ -20,24 +20,24 @@ ShallowWrapper {
       "children": Array [
         <h2>
           About
-</h2>,
+        </h2>,
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
-</p>,
+        </p>,
         <h3>
           Credits
-</h3>,
+        </h3>,
         <ul>
           <li>
-                    react
+            react
           </li>
           <li>
-                    math.js
+            math.js
           </li>
           <li>
-                    fixe
+            fixe
           </li>
-</ul>,
+        </ul>,
       ],
     },
     "ref": null,
@@ -83,13 +83,13 @@ ShallowWrapper {
           "children": Array [
             <li>
               react
-</li>,
+            </li>,
             <li>
               math.js
-</li>,
+            </li>,
             <li>
               fixe
-</li>,
+            </li>,
           ],
         },
         "ref": null,
@@ -142,24 +142,24 @@ ShallowWrapper {
         "children": Array [
           <h2>
             About
-</h2>,
+          </h2>,
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
-</p>,
+          </p>,
           <h3>
             Credits
-</h3>,
+          </h3>,
           <ul>
             <li>
-                        react
+              react
             </li>
             <li>
-                        math.js
+              math.js
             </li>
             <li>
-                        fixe
+              fixe
             </li>
-</ul>,
+          </ul>,
         ],
       },
       "ref": null,
@@ -205,13 +205,13 @@ ShallowWrapper {
             "children": Array [
               <li>
                 react
-</li>,
+              </li>,
               <li>
                 math.js
-</li>,
+              </li>,
               <li>
                 fixe
-</li>,
+              </li>,
             ],
           },
           "ref": null,

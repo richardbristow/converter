@@ -4,9 +4,9 @@ exports[`Header should render the header 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
-    handleHamburgerClick={[Function]}
+    handleHamburgerClick={[MockFunction]}
     sidebarDocked={false}
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,14 +23,14 @@ ShallowWrapper {
       "children": Array [
         <Logo
           sidebarDocked={false}
-/>,
+        />,
         <div />,
         <HeaderIconLink
           type="Help"
-/>,
+        />,
         <HeaderIconLink
           type="About"
-/>,
+        />,
       ],
       "sidebarDocked": false,
     },
@@ -90,14 +90,14 @@ ShallowWrapper {
         "children": Array [
           <Logo
             sidebarDocked={false}
-/>,
+          />,
           <div />,
           <HeaderIconLink
             type="Help"
-/>,
+          />,
           <HeaderIconLink
             type="About"
-/>,
+          />,
         ],
         "sidebarDocked": false,
       },

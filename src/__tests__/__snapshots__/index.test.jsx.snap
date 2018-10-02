@@ -30,7 +30,6 @@ exports[`index matches the snapshot 1`] = `
       header={true}
       href="/help"
       onClick={[Function]}
-      style={undefined}
     >
       <span>
         Help
@@ -66,7 +65,6 @@ exports[`index matches the snapshot 1`] = `
       header={true}
       href="/about"
       onClick={[Function]}
-      style={undefined}
     >
       <span>
         About
@@ -160,7 +158,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/surfacearea"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -195,7 +192,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/volume"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -230,7 +226,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/liquidvolume"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -265,7 +260,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/angles"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -300,7 +294,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/time"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -335,7 +328,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/frequency"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -370,7 +362,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/mass"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -405,7 +396,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/electriccurrent"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -440,7 +430,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/temperature"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -475,7 +464,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/currency"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -510,7 +498,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/force"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -545,7 +532,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/energy"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -580,7 +566,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/power"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -615,7 +600,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/pressure"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"
@@ -650,7 +634,6 @@ exports[`index matches the snapshot 1`] = `
         className="sc-gzVnrw evtdbV sc-bdVaJa edVddM"
         href="/datastorage"
         onClick={[Function]}
-        style={undefined}
       >
         <div
           className="sc-bZQynM cspsfW"

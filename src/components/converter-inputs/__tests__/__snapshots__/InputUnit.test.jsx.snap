@@ -7,26 +7,26 @@ ShallowWrapper {
     conversionType="type1"
     disableInputs={false}
     dropdownValue="mathName2"
-    handleChange={[Function]}
+    handleChange={[MockFunction]}
     name="name"
     options={
-        Array [
-            Object {
-              "displayName": "display1",
-              "mathName": "mathName1",
-            },
-            Object {
-              "displayName": "display2",
-              "mathName": "mathName2",
-            },
-            Object {
-              "displayName": "display3",
-              "mathName": "mathName3",
-            },
-          ]
+      Array [
+        Object {
+          "displayName": "display1",
+          "mathName": "mathName1",
+        },
+        Object {
+          "displayName": "display2",
+          "mathName": "mathName2",
+        },
+        Object {
+          "displayName": "display3",
+          "mathName": "mathName3",
+        },
+      ]
     }
     textValue="InputValue"
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -47,30 +47,30 @@ ShallowWrapper {
           onChange={[Function]}
           type="text"
           value="InputValue"
-/>,
+        />,
         <FilterDropdown
           conversionType="type1"
           disableInputs={false}
           dropdownValue="mathName2"
-          handleChange={[Function]}
+          handleChange={[MockFunction]}
           name="name"
           options={
-                    Array [
-                              Object {
-                                "displayName": "display1",
-                                "mathName": "mathName1",
-                              },
-                              Object {
-                                "displayName": "display2",
-                                "mathName": "mathName2",
-                              },
-                              Object {
-                                "displayName": "display3",
-                                "mathName": "mathName3",
-                              },
-                            ]
+            Array [
+              Object {
+                "displayName": "display1",
+                "mathName": "mathName1",
+              },
+              Object {
+                "displayName": "display2",
+                "mathName": "mathName2",
+              },
+              Object {
+                "displayName": "display3",
+                "mathName": "mathName3",
+              },
+            ]
           }
-/>,
+        />,
       ],
       "name": "name",
     },
@@ -99,7 +99,7 @@ ShallowWrapper {
           "conversionType": "type1",
           "disableInputs": false,
           "dropdownValue": "mathName2",
-          "handleChange": [Function],
+          "handleChange": [MockFunction],
           "name": "name",
           "options": Array [
             Object {
@@ -136,30 +136,30 @@ ShallowWrapper {
             onChange={[Function]}
             type="text"
             value="InputValue"
-/>,
+          />,
           <FilterDropdown
             conversionType="type1"
             disableInputs={false}
             dropdownValue="mathName2"
-            handleChange={[Function]}
+            handleChange={[MockFunction]}
             name="name"
             options={
-                        Array [
-                                    Object {
-                                      "displayName": "display1",
-                                      "mathName": "mathName1",
-                                    },
-                                    Object {
-                                      "displayName": "display2",
-                                      "mathName": "mathName2",
-                                    },
-                                    Object {
-                                      "displayName": "display3",
-                                      "mathName": "mathName3",
-                                    },
-                                  ]
+              Array [
+                Object {
+                  "displayName": "display1",
+                  "mathName": "mathName1",
+                },
+                Object {
+                  "displayName": "display2",
+                  "mathName": "mathName2",
+                },
+                Object {
+                  "displayName": "display3",
+                  "mathName": "mathName3",
+                },
+              ]
             }
-/>,
+          />,
         ],
         "name": "name",
       },
@@ -188,7 +188,7 @@ ShallowWrapper {
             "conversionType": "type1",
             "disableInputs": false,
             "dropdownValue": "mathName2",
-            "handleChange": [Function],
+            "handleChange": [MockFunction],
             "name": "name",
             "options": Array [
               Object {

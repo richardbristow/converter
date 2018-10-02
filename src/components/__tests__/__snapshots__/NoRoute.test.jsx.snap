@@ -22,9 +22,9 @@ ShallowWrapper {
         <Link
           replace={false}
           to="/length"
->
+        >
           home
-</Link>,
+        </Link>,
         ".",
       ],
     },
@@ -59,9 +59,9 @@ ShallowWrapper {
           <Link
             replace={false}
             to="/length"
->
+          >
             home
-</Link>,
+          </Link>,
           ".",
         ],
       },
