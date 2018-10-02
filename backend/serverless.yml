@@ -2,13 +2,14 @@ service: converter-backend
 
 provider:
   name: aws
-  stage: dev
+  stage: ${opt:stage, 'dev'}
   runtime: nodejs8.10
-  profile: serverless-admin
+  profile: ${file(.env.yml):AWSprofile}
   versionFunctions: false
   memorySize: 128
   region: us-east-1
   logRetentionInDays: 30
+  environment: ${file(.env.yml):${self:provider.stage}, file(.env.yml):default}
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
@@ -18,14 +19,10 @@ provider:
         Fn::GetAtt:
           - ExchangeRatesTable
           - Arn
-custom:
-  environment: ${file(.env.yml):${self:provider.stage}, file(.env.yml):default}
 
 functions:
   updateExchangeRates:
     handler: lambda/updateExchangeRatesCache.updateExchangeRatesCache
-    environment:
-      FIXER_API_KEY: ${self:custom.environment.FIXER_API_KEY}
     name: ${self:provider.stage}-updateExchangeRatesCache
     description: 'Updates the latest exchange rates from fixer and stores them in ExchangeRatesTable, triggered hourly'
     events:
@@ -35,8 +32,6 @@ functions:
           rate: rate(1 hour)
   updateCurrencySymbolsCache:
     handler: lambda/updateCurrencySymbolsCache.updateCurrencySymbolsCache
-    environment:
-      FIXER_API_KEY: ${self:custom.environment.FIXER_API_KEY}
     name: ${self:provider.stage}-updateCurrencySymbolsCache
     description: 'Updates the currency symbols cache in ExchangeRatesTable'
     events:
