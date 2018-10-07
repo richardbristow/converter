@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 const StyledLoading = styled.div`
   grid-column: span 3;
+  text-align: center;
+  margin-top: 30px;
 `;
 
 const Loading = ({ error }) => (

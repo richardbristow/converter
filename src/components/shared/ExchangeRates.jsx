@@ -7,23 +7,35 @@ const StyledExchangeWrapper = styled.div`
   margin-top: 30px;
 `;
 
+const StyledRatesInfo = styled.div`
+  text-align: center;
+`;
+
 const StyledExchangeRates = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 20px;
   margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
   h4 {
     grid-column: 1 / -1;
     text-align: center;
-  }
+    margin-top: 0;
+  };
+  padding: 40px;
+  background-color: #21252B;
+  color: lightgreen;
 `;
 
 const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
-    <span>{`Exchange rates last updated: ${new Date(exchangeRates.dynamoCreatedAt).toLocaleString()}`}</span>
-    <br />
-    <span>All exchange rates updated hourly.</span>
-    <br />
+    <StyledRatesInfo>
+      <span>{`Exchange rates last updated: ${new Date(exchangeRates.dynamoCreatedAt).toLocaleString()}`}</span>
+      <br />
+      <span>All exchange rates updated hourly.</span>
+    </StyledRatesInfo>
     <StyledExchangeRates>
       <h4>Exchange Rates (Base currency: Euro)</h4>
       {exchangeRates.rates.map(rate => (
