@@ -18,7 +18,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <Logo
@@ -79,13 +79,29 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "Header__StyledHeader-sc-1tp9j3k-0",
+        "isStatic": true,
+        "rules": Array [
+          "grid-column:1 / -1;grid-row:1 / 2;display:grid;grid-template-columns:auto 1fr repeat(2,auto);align-items:center;padding-right:10px;",
+        ],
+      },
+      "displayName": "Header__StyledHeader",
+      "render": [Function],
+      "styledComponentId": "Header__StyledHeader-sc-1tp9j3k-0",
+      "target": "div",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <Logo
@@ -146,7 +162,23 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "Header__StyledHeader-sc-1tp9j3k-0",
+          "isStatic": true,
+          "rules": Array [
+            "grid-column:1 / -1;grid-row:1 / 2;display:grid;grid-template-columns:auto 1fr repeat(2,auto);align-items:center;padding-right:10px;",
+          ],
+        },
+        "displayName": "Header__StyledHeader",
+        "render": [Function],
+        "styledComponentId": "Header__StyledHeader-sc-1tp9j3k-0",
+        "target": "div",
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -165,8 +197,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

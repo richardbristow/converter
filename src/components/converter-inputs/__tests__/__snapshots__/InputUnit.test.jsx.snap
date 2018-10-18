@@ -38,10 +38,10 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <styled.input
+        <ForwardRef
           disabled={false}
           name="nameInput"
           onChange={[Function]}
@@ -79,7 +79,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "disabled": false,
           "name": "nameInput",
@@ -89,7 +89,23 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": undefined,
+          "componentStyle": ComponentStyle {
+            "componentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
+            "isStatic": true,
+            "rules": Array [
+              "padding:0px 15px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:0px;border-radius:4px 4px 0px 0px;font-size:2em;min-width:0;&:disabled{cursor:not-allowed;}",
+            ],
+          },
+          "displayName": "InputUnit__StyledNumberInput",
+          "render": [Function],
+          "styledComponentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
+          "target": "input",
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
       },
       Object {
         "instance": null,
@@ -121,16 +137,34 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
+        "isStatic": false,
+        "rules": Array [
+          "grid-area:",
+          [Function],
+          ";display:grid;grid-template-columns:1fr;grid-template-rows:70px auto;",
+        ],
+      },
+      "displayName": "InputUnit__StyledInputUnit",
+      "render": [Function],
+      "styledComponentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
+      "target": "div",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <styled.input
+          <ForwardRef
             disabled={false}
             name="nameInput"
             onChange={[Function]}
@@ -168,7 +202,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "disabled": false,
             "name": "nameInput",
@@ -178,7 +212,23 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": undefined,
+            "componentStyle": ComponentStyle {
+              "componentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
+              "isStatic": true,
+              "rules": Array [
+                "padding:0px 15px;border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:0px;border-radius:4px 4px 0px 0px;font-size:2em;min-width:0;&:disabled{cursor:not-allowed;}",
+              ],
+            },
+            "displayName": "InputUnit__StyledNumberInput",
+            "render": [Function],
+            "styledComponentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
+            "target": "input",
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          },
         },
         Object {
           "instance": null,
@@ -210,7 +260,25 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
+          "isStatic": false,
+          "rules": Array [
+            "grid-area:",
+            [Function],
+            ";display:grid;grid-template-columns:1fr;grid-template-rows:70px auto;",
+          ],
+        },
+        "displayName": "InputUnit__StyledInputUnit",
+        "render": [Function],
+        "styledComponentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
+        "target": "div",
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -229,8 +297,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

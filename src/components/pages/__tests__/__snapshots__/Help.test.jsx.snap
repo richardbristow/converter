@@ -15,7 +15,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <h2>
@@ -65,13 +65,29 @@ ShallowWrapper {
         "type": "p",
       },
     ],
-    "type": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": undefined,
+      "componentStyle": ComponentStyle {
+        "componentId": "StyledNavPage-sc-1p2uwrr-0",
+        "isStatic": true,
+        "rules": Array [
+          "h2{margin-top:0;}",
+        ],
+      },
+      "displayName": "StyledNavPage",
+      "render": [Function],
+      "styledComponentId": "StyledNavPage-sc-1p2uwrr-0",
+      "target": "div",
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <h2>
@@ -121,7 +137,23 @@ ShallowWrapper {
           "type": "p",
         },
       ],
-      "type": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "StyledNavPage-sc-1p2uwrr-0",
+          "isStatic": true,
+          "rules": Array [
+            "h2{margin-top:0;}",
+          ],
+        },
+        "displayName": "StyledNavPage",
+        "render": [Function],
+        "styledComponentId": "StyledNavPage-sc-1p2uwrr-0",
+        "target": "div",
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -140,8 +172,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;
