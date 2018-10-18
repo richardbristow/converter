@@ -29,6 +29,12 @@ To run the tests:
   yarn test
 ```
 
+To lint the code:
+
+```shell
+  yarn lint
+```
+
 ### Backend
 
 The 'backend' folder in the root directory contains the lambda functions and serverless YAML file.\
