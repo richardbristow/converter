@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import styled, { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
 
 import { GlobalStyle, globalTheme } from '../theme/globalStyle';
