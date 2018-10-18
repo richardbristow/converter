@@ -133,7 +133,7 @@ class FilterDropdown extends Component {
         {dropdownOpen
           ? (
             <StyledFilterInput
-              innerRef={this.unitInput}
+              ref={this.unitInput}
               placeholder="Search units..."
               name="filter"
               type="text"

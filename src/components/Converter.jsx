@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import { CSSTransition } from 'react-transition-group';
 
-import globalTheme from '../theme/globalStyle';
+import { GlobalStyle, globalTheme } from '../theme/globalStyle';
 import baseUnits from '../constants/units/baseUnits';
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
@@ -106,34 +106,37 @@ class Converter extends Component {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
       <ThemeProvider theme={globalTheme}>
-        <Router>
-          <StyledConverter
-            onBlur={this.onBlurHandler}
-            onFocus={this.onFocusHandler}
-          >
-            <CSSTransition
-              in={userShowSidebar}
-              classNames="overlay"
-              timeout={200}
-              unmountOnExit
+        <React.Fragment>
+          <GlobalStyle />
+          <Router>
+            <StyledConverter
+              onBlur={this.onBlurHandler}
+              onFocus={this.onFocusHandler}
             >
-              <Overlay />
-            </CSSTransition>
-            <Header sidebarDocked={sidebarDocked} />
-            <Sidebar
-              ref={this.sidebar}
-              sidebarDocked={sidebarDocked}
-              userShowSidebar={userShowSidebar}
-              items={baseUnits}
-              handeSidebarLinkClick={this.handeSidebarLinkClick}
-              handleHamburgerClick={this.handleHamburgerClick}
-            />
-            <Main
-              baseUnits={baseUnits}
-              sidebarDocked={sidebarDocked}
-            />
-          </StyledConverter>
-        </Router>
+              <CSSTransition
+                in={userShowSidebar}
+                classNames="overlay"
+                timeout={200}
+                unmountOnExit
+              >
+                <Overlay />
+              </CSSTransition>
+              <Header sidebarDocked={sidebarDocked} />
+              <Sidebar
+                ref={this.sidebar}
+                sidebarDocked={sidebarDocked}
+                userShowSidebar={userShowSidebar}
+                items={baseUnits}
+                handeSidebarLinkClick={this.handeSidebarLinkClick}
+                handleHamburgerClick={this.handleHamburgerClick}
+              />
+              <Main
+                baseUnits={baseUnits}
+                sidebarDocked={sidebarDocked}
+              />
+            </StyledConverter>
+          </Router>
+        </React.Fragment>
       </ThemeProvider>
     );
   }

@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import styledNormalize from 'styled-normalize';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
   /* TODO: Remove all uneeded font weights after styling complete */
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
@@ -27,4 +27,4 @@ const globalTheme = {
   scrollbarThumbHover: '#555',
 };
 
-export default globalTheme;
+export { GlobalStyle, globalTheme };

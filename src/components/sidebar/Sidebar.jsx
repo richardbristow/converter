@@ -50,7 +50,7 @@ const StyledSidebarOptions = styled.div`
 const Sidebar = React.forwardRef(({
   userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
 }, ref) => (
-  <StyledSidebar tabIndex="0" innerRef={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
+  <StyledSidebar tabIndex="0" ref={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
     <SidebarHeader
       userShowSidebar={userShowSidebar}
       sidebarDocked={sidebarDocked}

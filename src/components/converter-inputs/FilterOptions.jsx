@@ -80,7 +80,7 @@ const FilterOptions = ({
           value={mathName}
           onClick={e => handleDropdownItemClick(conversionType, e)}
           onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
-          innerRef={dropdownOptionRefs[index]}
+          ref={dropdownOptionRefs[index]}
           selected={currentDisplayName === displayName}
           onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
         >
