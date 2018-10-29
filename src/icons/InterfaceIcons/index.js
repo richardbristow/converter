@@ -3,7 +3,7 @@ import toReactComponent from 'svgr.macro';
 export const {
   ChevronDown,
   ChevronUp,
-  ConverterArrow,
+  Arrow,
   Help,
   HelpFilled,
   Info,

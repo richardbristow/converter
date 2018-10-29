@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
+
 import * as Flags from '../../icons/Flags';
 
 const StyledExchangeWrapper = styled.div`

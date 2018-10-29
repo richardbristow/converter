@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import icons from '../../constants/icons/icons';
-
-import Icon from '../shared/Icon';
+import { Arrow } from '../../icons/InterfaceIcons';
 
 const StyledConvertArrows = styled.div`
   grid-area: arrows;
@@ -21,10 +19,10 @@ const StyledArrow = styled.div`
 const ConvertArrows = () => (
   <StyledConvertArrows>
     <StyledArrow>
-      <Icon size="60" icon={icons.arrow} />
+      <Arrow width="60" height="60" />
     </StyledArrow>
     <StyledArrow flip>
-      <Icon size="60" icon={icons.arrow} />
+      <Arrow width="60" height="60" />
     </StyledArrow>
   </StyledConvertArrows>
 );
