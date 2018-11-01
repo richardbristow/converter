@@ -1,4 +1,4 @@
-import addPrefixes from '../../utils/addPrefixes';
+import addPrefixes from '../utils/addPrefixes';
 
 import length from './unitTypes/length';
 import surfaceArea from './unitTypes/surfaceArea';

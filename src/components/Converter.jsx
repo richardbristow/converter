@@ -4,7 +4,8 @@ import styled, { ThemeProvider } from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
 
 import { GlobalStyle, globalTheme } from '../theme/globalStyle';
-import baseUnits from '../constants/units/baseUnits';
+import baseUnits from '../unitConstants/baseUnits';
+
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
 import Main from './Main';
