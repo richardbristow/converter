@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import icons from '../../constants/icons/icons';
+import * as SidebarIcons from '../../icons/SidebarIcons';
 
-import Icon from '../shared/Icon';
 import StyledLink from '../shared/StyledLink';
 import styled from '../../../node_modules/styled-components';
 
@@ -33,18 +32,22 @@ const StyledSidebarLink = styled(StyledLink)`
 
 const SidebarOption = ({
   displayName, mathName, handeSidebarLinkClick,
-}) => (
-  <StyledSidebarLink
-    onClick={handeSidebarLinkClick}
-    key={mathName}
-    to={`/${mathName.toLowerCase()}`}
-  >
-    <StyledSidebarIcon>
-      <Icon icon={icons[mathName]} />
-    </StyledSidebarIcon>
-    <div>{displayName}</div>
-  </StyledSidebarLink>
-);
+}) => {
+  const upperCaseMathName = mathName.charAt(0).toUpperCase() + mathName.slice(1);
+  const SideIcon = SidebarIcons[upperCaseMathName];
+  return (
+    <StyledSidebarLink
+      onClick={handeSidebarLinkClick}
+      key={mathName}
+      to={`/${mathName.toLowerCase()}`}
+    >
+      <StyledSidebarIcon>
+        <SideIcon width="1.3em" height="1.3em" />
+      </StyledSidebarIcon>
+      <div>{displayName}</div>
+    </StyledSidebarLink>
+  );
+};
 
 
 SidebarOption.propTypes = {

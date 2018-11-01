@@ -16,12 +16,12 @@ import energy from './unitTypes/energy';
 import power from './unitTypes/power';
 import pressure from './unitTypes/pressure';
 // import electricityAndMagnetism from './unitTypes/electricityAndMagnetism';
-import datastorage from './unitTypes/dataStorage';
+import dataStorage from './unitTypes/dataStorage';
 
 // import smallPrefixes from './prefixes/smallPrefixes';
 // import largePrefixes from './prefixes/largePrefixes';
 import metricPrefixes from './prefixes/metricPrefixes';
-import datastoragePrefixes from './prefixes/dataStoragePrefixes';
+import dataStoragePrefixes from './prefixes/dataStoragePrefixes';
 
 const baseUnits = {
   length: addPrefixes(metricPrefixes, length),
@@ -42,7 +42,7 @@ const baseUnits = {
   power,
   pressure,
   // electricityAndMagnetism,
-  datastorage: addPrefixes(datastoragePrefixes, datastorage),
+  dataStorage: addPrefixes(dataStoragePrefixes, dataStorage),
 };
 
 export default baseUnits;

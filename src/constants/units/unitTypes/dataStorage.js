@@ -1,6 +1,6 @@
 const dataStorage = {
   displayName: 'Data Storage',
-  mathName: 'datastorage',
+  mathName: 'dataStorage',
   initialUnitLeft: 'B',
   initialUnitRight: 'kB',
   units: [
