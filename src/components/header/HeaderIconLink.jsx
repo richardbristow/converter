@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
-import icons from '../../constants/icons/icons';
-
+import { Help, About } from '../../icons/InterfaceIcons';
 import StyledLink from '../shared/StyledLink';
-import Icon from '../shared/Icon';
 
 const StyledHeaderIcon = styled.div`
   color: darkblue;
@@ -18,7 +16,9 @@ const HeaderIconLink = ({ type }) => (
   <StyledLink header to={`/${type.toLowerCase()}`}>
     <span>{type}</span>
     <StyledHeaderIcon>
-      <Icon size="20" icon={icons[type.toLowerCase()]} />
+      {type === 'Help'
+        ? <Help width="1.2em" height="1.2em" />
+        : <About width="1.2em" height="1.2em" />}
     </StyledHeaderIcon>
   </StyledLink>
 );

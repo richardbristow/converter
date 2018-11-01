@@ -6,8 +6,8 @@ export const {
   Arrow,
   Help,
   HelpFilled,
-  Info,
-  InfoFilled,
+  About,
+  AboutFilled,
 } = toReactComponent(
   './svg/*.svg',
   { icon: true },
