@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
+import * as Flags from '../../icons/Flags';
+
 const StyledExchangeWrapper = styled.div`
   grid-column: span 3;
   margin-top: 30px;
@@ -38,12 +40,33 @@ const ExchangeRates = ({ exchangeRates }) => (
     </StyledRatesInfo>
     <StyledExchangeRates>
       <h4>Exchange Rates (Base currency: Euro)</h4>
-      {exchangeRates.rates.map(rate => (
-        <div key={rate.mathName}>
-          <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
-        </div>
-      ))}
+      {exchangeRates.rates.map((rate) => {
+        const lowerCaseCurrencyCode = rate.mathName.charAt(0)
+          + rate.mathName.slice(1).toLowerCase();
+        const CurrencyFlag = Flags[lowerCaseCurrencyCode];
+        return (
+          <div key={rate.mathName}>
+            <CurrencyFlag />
+            <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
+          </div>
+        );
+      })}
     </StyledExchangeRates>
+    <div>
+      <span>
+        Flag icons made by&nbsp;
+        <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a>
+        &nbsp;from&nbsp;
+        <a href="https://www.flaticon.com" title="Flaticon">Flaticon.com</a>
+      </span>
+      <br />
+      <span>
+        Bitcoin icon made by&nbsp;
+        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a>
+        &nbsp;from&nbsp;
+        <a href="https://www.flaticon.com/" title="Flaticon">Flaticon.com</a>
+      </span>
+    </div>
   </StyledExchangeWrapper>
 );
 

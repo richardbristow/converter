@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import ConvertPanel from '../ConvertPanel';
-import baseUnits from '../../../constants/units/baseUnits';
+import baseUnits from '../../../unitConstants/baseUnits';
 
 // const handleChange = jest.fn();
 

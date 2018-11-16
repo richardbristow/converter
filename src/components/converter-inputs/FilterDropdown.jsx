@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 
 import '../../polyfills';
-import icons from '../../constants/icons/icons';
+import { ChevronDown, ChevronUp } from '../../icons/InterfaceIcons';
 
-import Icon from '../shared/Icon';
 import FilterOptions from './FilterOptions';
 import StyledConvertButton from '../shared/StyledConvertButton';
 
@@ -122,8 +121,8 @@ class FilterDropdown extends Component {
     } = this.props;
     const { filter, dropdownOpen } = this.state;
     const arrowIcon = dropdownOpen === false
-      ? <Icon size="0.9em" icon={icons.chevronDown} />
-      : <Icon size="0.9em" icon={icons.chevronUp} />;
+      ? <ChevronDown />
+      : <ChevronUp />;
     const { displayName, mathName } = options.find(option => (
       option.mathName === dropdownValue && option
     ));
