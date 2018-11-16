@@ -7,7 +7,7 @@ import Logo from '../shared/Logo';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
-  grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? '1fr' : '75px')};
+  grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? '300px' : '75px')};
   align-items: center;
   ${({ sidebarDocked, theme }) => !sidebarDocked && `background-color: ${theme.sidebarHeaderBackground}`};
 `;
