@@ -78,7 +78,7 @@ const FilterOptions = ({
           tabIndex={index === 0 ? '0' : '-1'}
           key={`${name}-${mathName}`}
           value={mathName}
-          onClick={e => handleDropdownItemClick(conversionType, e)}
+          onMouseDown={e => handleDropdownItemClick(conversionType, e)}
           onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
           ref={dropdownOptionRefs[index]}
           selected={currentDisplayName === displayName}
