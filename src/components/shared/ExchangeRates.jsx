@@ -7,6 +7,7 @@ import * as Flags from '../../icons/Flags';
 const StyledExchangeWrapper = styled.div`
   grid-column: span 3;
   margin-top: 30px;
+  padding-bottom: 50px;
 `;
 
 const StyledRatesInfo = styled.div`
@@ -15,7 +16,9 @@ const StyledRatesInfo = styled.div`
 
 const StyledExchangeRates = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  height: 500px;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -29,6 +32,12 @@ const StyledExchangeRates = styled.div`
   padding: 40px;
   background-color: #21252B;
   color: lightgreen;
+`;
+
+const StyledRate = styled.div`
+  svg {
+    padding-right: 10px;
+  }
 `;
 
 const ExchangeRates = ({ exchangeRates }) => (
@@ -45,10 +54,10 @@ const ExchangeRates = ({ exchangeRates }) => (
           + rate.mathName.slice(1).toLowerCase();
         const CurrencyFlag = Flags[lowerCaseCurrencyCode];
         return (
-          <div key={rate.mathName}>
+          <StyledRate key={rate.mathName}>
             <CurrencyFlag />
             <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
-          </div>
+          </StyledRate>
         );
       })}
     </StyledExchangeRates>

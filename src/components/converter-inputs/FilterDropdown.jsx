@@ -152,7 +152,16 @@ class FilterDropdown extends Component {
               {isCurrency ? `${displayName} (${mathName})` : displayName}
             </StyledConvertButton>
           )}
-        <StyledArrowButton arrow dropdownOpen={dropdownOpen} tabIndex="-1" name="arrow" onClick={this.handleDropdownClick} disabled={disableInputs}>{arrowIcon}</StyledArrowButton>
+        <StyledArrowButton
+          arrow
+          dropdownOpen={dropdownOpen}
+          tabIndex="-1"
+          name="arrow"
+          onClick={this.handleDropdownClick}
+          disabled={disableInputs}
+        >
+          {arrowIcon}
+        </StyledArrowButton>
         {dropdownOpen
           && (
           <FilterOptions
