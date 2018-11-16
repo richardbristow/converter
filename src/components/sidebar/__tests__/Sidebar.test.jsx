@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Sidebar from '../Sidebar';
-import baseUnits from '../../../constants/units/baseUnits';
+import baseUnits from '../../../unitConstants/baseUnits';
 
 const props = {
   items: baseUnits,

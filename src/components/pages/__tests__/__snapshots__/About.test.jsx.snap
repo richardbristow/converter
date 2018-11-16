@@ -29,15 +29,100 @@ ShallowWrapper {
         </h3>,
         <ul>
           <li>
-            react
+            React
           </li>
           <li>
-            math.js
+            Math.js
           </li>
           <li>
-            fixe
+            Fixer.io
           </li>
         </ul>,
+        <h4>
+          Icons
+        </h4>,
+        <div>
+          <span>
+            Flag icons made by 
+            <a
+              href="https://www.flaticon.com/authors/twitter"
+              title="Twitter"
+            >
+              Twitter
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>
+        </div>,
+        <div>
+          <span>
+            Bitcoin icon made by 
+            <a
+              href="https://www.flaticon.com/authors/pixel-buddha"
+              title="Pixel Buddha"
+            >
+              Pixel Buddha
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>
+        </div>,
+        <div>
+          <span>
+            Mass icon made by 
+            <a
+              href="http://www.freepik.com"
+              title="Freepik"
+            >
+              Freepik
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>
+        </div>,
+        <div>
+          <span>
+            Temperature icon made by 
+            <a
+              href="https://www.flaticon.com/authors/hirschwolf"
+              title="hirschwolf"
+            >
+              hirschwolf
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>
+        </div>,
+        <div>
+          <span>
+            All other icons from 
+            <a
+              href="https://iconmonstr.com/about/#creator"
+            >
+              Iconmonstr
+            </a>
+          </span>
+        </div>,
       ],
     },
     "ref": null,
@@ -82,13 +167,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
-              react
+              React
             </li>,
             <li>
-              math.js
+              Math.js
             </li>,
             <li>
-              fixe
+              Fixer.io
             </li>,
           ],
         },
@@ -99,10 +184,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "react",
+              "children": "React",
             },
             "ref": null,
-            "rendered": "react",
+            "rendered": "React",
             "type": "li",
           },
           Object {
@@ -110,10 +195,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "math.js",
+              "children": "Math.js",
             },
             "ref": null,
-            "rendered": "math.js",
+            "rendered": "Math.js",
             "type": "li",
           },
           Object {
@@ -121,14 +206,394 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "fixe",
+              "children": "Fixer.io",
             },
             "ref": null,
-            "rendered": "fixe",
+            "rendered": "Fixer.io",
             "type": "li",
           },
         ],
         "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Icons",
+        },
+        "ref": null,
+        "rendered": "Icons",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            Flag icons made by 
+            <a
+              href="https://www.flaticon.com/authors/twitter"
+              title="Twitter"
+            >
+              Twitter
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Flag icons made by ",
+              <a
+                href="https://www.flaticon.com/authors/twitter"
+                title="Twitter"
+              >
+                Twitter
+              </a>,
+              " from ",
+              <a
+                href="https://www.flaticon.com"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Flag icons made by ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Twitter",
+                "href": "https://www.flaticon.com/authors/twitter",
+                "title": "Twitter",
+              },
+              "ref": null,
+              "rendered": "Twitter",
+              "type": "a",
+            },
+            " from ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Flaticon.com",
+                "href": "https://www.flaticon.com",
+                "title": "Flaticon",
+              },
+              "ref": null,
+              "rendered": "Flaticon.com",
+              "type": "a",
+            },
+          ],
+          "type": "span",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            Bitcoin icon made by 
+            <a
+              href="https://www.flaticon.com/authors/pixel-buddha"
+              title="Pixel Buddha"
+            >
+              Pixel Buddha
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Bitcoin icon made by ",
+              <a
+                href="https://www.flaticon.com/authors/pixel-buddha"
+                title="Pixel Buddha"
+              >
+                Pixel Buddha
+              </a>,
+              " from ",
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Bitcoin icon made by ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Pixel Buddha",
+                "href": "https://www.flaticon.com/authors/pixel-buddha",
+                "title": "Pixel Buddha",
+              },
+              "ref": null,
+              "rendered": "Pixel Buddha",
+              "type": "a",
+            },
+            " from ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Flaticon.com",
+                "href": "https://www.flaticon.com/",
+                "title": "Flaticon",
+              },
+              "ref": null,
+              "rendered": "Flaticon.com",
+              "type": "a",
+            },
+          ],
+          "type": "span",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            Mass icon made by 
+            <a
+              href="http://www.freepik.com"
+              title="Freepik"
+            >
+              Freepik
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Mass icon made by ",
+              <a
+                href="http://www.freepik.com"
+                title="Freepik"
+              >
+                Freepik
+              </a>,
+              " from ",
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Mass icon made by ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Freepik",
+                "href": "http://www.freepik.com",
+                "title": "Freepik",
+              },
+              "ref": null,
+              "rendered": "Freepik",
+              "type": "a",
+            },
+            " from ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Flaticon.com",
+                "href": "https://www.flaticon.com/",
+                "title": "Flaticon",
+              },
+              "ref": null,
+              "rendered": "Flaticon.com",
+              "type": "a",
+            },
+          ],
+          "type": "span",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            Temperature icon made by 
+            <a
+              href="https://www.flaticon.com/authors/hirschwolf"
+              title="hirschwolf"
+            >
+              hirschwolf
+            </a>
+             from 
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+            >
+              Flaticon.com
+            </a>
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Temperature icon made by ",
+              <a
+                href="https://www.flaticon.com/authors/hirschwolf"
+                title="hirschwolf"
+              >
+                hirschwolf
+              </a>,
+              " from ",
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Temperature icon made by ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "hirschwolf",
+                "href": "https://www.flaticon.com/authors/hirschwolf",
+                "title": "hirschwolf",
+              },
+              "ref": null,
+              "rendered": "hirschwolf",
+              "type": "a",
+            },
+            " from ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Flaticon.com",
+                "href": "https://www.flaticon.com/",
+                "title": "Flaticon",
+              },
+              "ref": null,
+              "rendered": "Flaticon.com",
+              "type": "a",
+            },
+          ],
+          "type": "span",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <span>
+            All other icons from 
+            <a
+              href="https://iconmonstr.com/about/#creator"
+            >
+              Iconmonstr
+            </a>
+          </span>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "All other icons from ",
+              <a
+                href="https://iconmonstr.com/about/#creator"
+              >
+                Iconmonstr
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "All other icons from ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Iconmonstr",
+                "href": "https://iconmonstr.com/about/#creator",
+              },
+              "ref": null,
+              "rendered": "Iconmonstr",
+              "type": "a",
+            },
+          ],
+          "type": "span",
+        },
+        "type": "div",
       },
     ],
     "type": Object {
@@ -167,15 +632,100 @@ ShallowWrapper {
           </h3>,
           <ul>
             <li>
-              react
+              React
             </li>
             <li>
-              math.js
+              Math.js
             </li>
             <li>
-              fixe
+              Fixer.io
             </li>
           </ul>,
+          <h4>
+            Icons
+          </h4>,
+          <div>
+            <span>
+              Flag icons made by 
+              <a
+                href="https://www.flaticon.com/authors/twitter"
+                title="Twitter"
+              >
+                Twitter
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>
+          </div>,
+          <div>
+            <span>
+              Bitcoin icon made by 
+              <a
+                href="https://www.flaticon.com/authors/pixel-buddha"
+                title="Pixel Buddha"
+              >
+                Pixel Buddha
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>
+          </div>,
+          <div>
+            <span>
+              Mass icon made by 
+              <a
+                href="http://www.freepik.com"
+                title="Freepik"
+              >
+                Freepik
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>
+          </div>,
+          <div>
+            <span>
+              Temperature icon made by 
+              <a
+                href="https://www.flaticon.com/authors/hirschwolf"
+                title="hirschwolf"
+              >
+                hirschwolf
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>
+          </div>,
+          <div>
+            <span>
+              All other icons from 
+              <a
+                href="https://iconmonstr.com/about/#creator"
+              >
+                Iconmonstr
+              </a>
+            </span>
+          </div>,
         ],
       },
       "ref": null,
@@ -220,13 +770,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                react
+                React
               </li>,
               <li>
-                math.js
+                Math.js
               </li>,
               <li>
-                fixe
+                Fixer.io
               </li>,
             ],
           },
@@ -237,10 +787,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "react",
+                "children": "React",
               },
               "ref": null,
-              "rendered": "react",
+              "rendered": "React",
               "type": "li",
             },
             Object {
@@ -248,10 +798,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "math.js",
+                "children": "Math.js",
               },
               "ref": null,
-              "rendered": "math.js",
+              "rendered": "Math.js",
               "type": "li",
             },
             Object {
@@ -259,14 +809,394 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "fixe",
+                "children": "Fixer.io",
               },
               "ref": null,
-              "rendered": "fixe",
+              "rendered": "Fixer.io",
               "type": "li",
             },
           ],
           "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Icons",
+          },
+          "ref": null,
+          "rendered": "Icons",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              Flag icons made by 
+              <a
+                href="https://www.flaticon.com/authors/twitter"
+                title="Twitter"
+              >
+                Twitter
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Flag icons made by ",
+                <a
+                  href="https://www.flaticon.com/authors/twitter"
+                  title="Twitter"
+                >
+                  Twitter
+                </a>,
+                " from ",
+                <a
+                  href="https://www.flaticon.com"
+                  title="Flaticon"
+                >
+                  Flaticon.com
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Flag icons made by ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Twitter",
+                  "href": "https://www.flaticon.com/authors/twitter",
+                  "title": "Twitter",
+                },
+                "ref": null,
+                "rendered": "Twitter",
+                "type": "a",
+              },
+              " from ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Flaticon.com",
+                  "href": "https://www.flaticon.com",
+                  "title": "Flaticon",
+                },
+                "ref": null,
+                "rendered": "Flaticon.com",
+                "type": "a",
+              },
+            ],
+            "type": "span",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              Bitcoin icon made by 
+              <a
+                href="https://www.flaticon.com/authors/pixel-buddha"
+                title="Pixel Buddha"
+              >
+                Pixel Buddha
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Bitcoin icon made by ",
+                <a
+                  href="https://www.flaticon.com/authors/pixel-buddha"
+                  title="Pixel Buddha"
+                >
+                  Pixel Buddha
+                </a>,
+                " from ",
+                <a
+                  href="https://www.flaticon.com/"
+                  title="Flaticon"
+                >
+                  Flaticon.com
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Bitcoin icon made by ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Pixel Buddha",
+                  "href": "https://www.flaticon.com/authors/pixel-buddha",
+                  "title": "Pixel Buddha",
+                },
+                "ref": null,
+                "rendered": "Pixel Buddha",
+                "type": "a",
+              },
+              " from ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Flaticon.com",
+                  "href": "https://www.flaticon.com/",
+                  "title": "Flaticon",
+                },
+                "ref": null,
+                "rendered": "Flaticon.com",
+                "type": "a",
+              },
+            ],
+            "type": "span",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              Mass icon made by 
+              <a
+                href="http://www.freepik.com"
+                title="Freepik"
+              >
+                Freepik
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Mass icon made by ",
+                <a
+                  href="http://www.freepik.com"
+                  title="Freepik"
+                >
+                  Freepik
+                </a>,
+                " from ",
+                <a
+                  href="https://www.flaticon.com/"
+                  title="Flaticon"
+                >
+                  Flaticon.com
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Mass icon made by ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Freepik",
+                  "href": "http://www.freepik.com",
+                  "title": "Freepik",
+                },
+                "ref": null,
+                "rendered": "Freepik",
+                "type": "a",
+              },
+              " from ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Flaticon.com",
+                  "href": "https://www.flaticon.com/",
+                  "title": "Flaticon",
+                },
+                "ref": null,
+                "rendered": "Flaticon.com",
+                "type": "a",
+              },
+            ],
+            "type": "span",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              Temperature icon made by 
+              <a
+                href="https://www.flaticon.com/authors/hirschwolf"
+                title="hirschwolf"
+              >
+                hirschwolf
+              </a>
+               from 
+              <a
+                href="https://www.flaticon.com/"
+                title="Flaticon"
+              >
+                Flaticon.com
+              </a>
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Temperature icon made by ",
+                <a
+                  href="https://www.flaticon.com/authors/hirschwolf"
+                  title="hirschwolf"
+                >
+                  hirschwolf
+                </a>,
+                " from ",
+                <a
+                  href="https://www.flaticon.com/"
+                  title="Flaticon"
+                >
+                  Flaticon.com
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Temperature icon made by ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hirschwolf",
+                  "href": "https://www.flaticon.com/authors/hirschwolf",
+                  "title": "hirschwolf",
+                },
+                "ref": null,
+                "rendered": "hirschwolf",
+                "type": "a",
+              },
+              " from ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Flaticon.com",
+                  "href": "https://www.flaticon.com/",
+                  "title": "Flaticon",
+                },
+                "ref": null,
+                "rendered": "Flaticon.com",
+                "type": "a",
+              },
+            ],
+            "type": "span",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <span>
+              All other icons from 
+              <a
+                href="https://iconmonstr.com/about/#creator"
+              >
+                Iconmonstr
+              </a>
+            </span>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "All other icons from ",
+                <a
+                  href="https://iconmonstr.com/about/#creator"
+                >
+                  Iconmonstr
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "All other icons from ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Iconmonstr",
+                  "href": "https://iconmonstr.com/about/#creator",
+                },
+                "ref": null,
+                "rendered": "Iconmonstr",
+                "type": "a",
+              },
+            ],
+            "type": "span",
+          },
+          "type": "div",
         },
       ],
       "type": Object {
