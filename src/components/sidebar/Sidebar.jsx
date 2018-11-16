@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import SidebarHeader from './SidebarHeader';
 import SidebarOption from './SidebarOption';
@@ -33,18 +34,15 @@ const StyledSidebarOptions = styled.div`
   grid-auto-rows: 50px;
   overflow-y: auto;
   overflow-x: hidden;
-  ::-webkit-scrollbar {
-    width: 5px;
-  };
-  ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.scrollbarTrack};
-  };
-  ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.scrollbarThumb};
-  };
-  ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.scrollbarThumbHover};
-  };
+`;
+
+const StyledThumb = styled.div`
+  background-color: ${({ theme }) => theme.scrollbarThumb};
+  border-radius: 3px;
+  width: 5px;
+  &:hover {
+    background-color: ${({ theme }) => theme.scrollbarThumbHover};
+  }
 `;
 
 const Sidebar = React.forwardRef(({
@@ -56,19 +54,21 @@ const Sidebar = React.forwardRef(({
       sidebarDocked={sidebarDocked}
       handleHamburgerClick={handleHamburgerClick}
     />
-    <StyledSidebarOptions>
-      {Object.keys(items).map((type) => {
-        const { displayName, mathName } = items[type];
-        return (
-          <SidebarOption
-            handeSidebarLinkClick={handeSidebarLinkClick}
-            key={`sidebar-option-${mathName}`}
-            displayName={displayName}
-            mathName={mathName}
-          />
-        );
-      })}
-    </StyledSidebarOptions>
+    <Scrollbars renderThumbVertical={() => <StyledThumb />}>
+      <StyledSidebarOptions>
+        {Object.keys(items).map((type) => {
+          const { displayName, mathName } = items[type];
+          return (
+            <SidebarOption
+              handeSidebarLinkClick={handeSidebarLinkClick}
+              key={`sidebar-option-${mathName}`}
+              displayName={displayName}
+              mathName={mathName}
+            />
+          );
+        })}
+      </StyledSidebarOptions>
+    </Scrollbars>
   </StyledSidebar>
 ));
 

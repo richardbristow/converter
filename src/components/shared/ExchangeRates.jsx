@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import * as Flags from '../../icons/Flags';
 
@@ -14,12 +15,11 @@ const StyledRatesInfo = styled.div`
   text-align: center;
 `;
 
-const StyledExchangeRates = styled.div`
+const StyledExchangeRatesTable = styled.div`
   display: grid;
   height: 500px;
-  overflow: auto;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   margin-top: 30px;
   margin-bottom: 30px;
   border: 2px solid black;
@@ -27,16 +27,32 @@ const StyledExchangeRates = styled.div`
   h4 {
     grid-column: 1 / -1;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
+    padding-bottom: 40px;
   };
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #21252B;
   color: lightgreen;
 `;
 
-const StyledRate = styled.div`
+const StyledExchangeRates = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   svg {
     padding-right: 10px;
+  };
+`;
+
+const ExchangeRatesTableThumb = styled.div`
+  border-radius: 3px;
+  width: 5px;
+  background-color: ${({ theme }) => theme.scrollbarTrack};
+  &:hover {
+    background-color: ${({ theme }) => theme.scrollbarThumb};
   }
 `;
 
@@ -47,20 +63,24 @@ const ExchangeRates = ({ exchangeRates }) => (
       <br />
       <span>All exchange rates updated hourly.</span>
     </StyledRatesInfo>
-    <StyledExchangeRates>
+    <StyledExchangeRatesTable>
       <h4>Exchange Rates (Base currency: Euro)</h4>
-      {exchangeRates.rates.map((rate) => {
-        const lowerCaseCurrencyCode = rate.mathName.charAt(0)
-          + rate.mathName.slice(1).toLowerCase();
-        const CurrencyFlag = Flags[lowerCaseCurrencyCode];
-        return (
-          <StyledRate key={rate.mathName}>
-            <CurrencyFlag />
-            <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
-          </StyledRate>
-        );
-      })}
-    </StyledExchangeRates>
+      <Scrollbars renderThumbVertical={() => <ExchangeRatesTableThumb />}>
+        <StyledExchangeRates>
+          {exchangeRates.rates.map((rate) => {
+            const lowerCaseCurrencyCode = rate.mathName.charAt(0)
+              + rate.mathName.slice(1).toLowerCase();
+            const CurrencyFlag = Flags[lowerCaseCurrencyCode];
+            return (
+              <div key={rate.mathName}>
+                <CurrencyFlag />
+                <span>{`${rate.mathName}: ${rate.exchangeRate}`}</span>
+              </div>
+            );
+          })}
+        </StyledExchangeRates>
+      </Scrollbars>
+    </StyledExchangeRatesTable>
     <div>
       <span>
         Flag icons made by&nbsp;
