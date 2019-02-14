@@ -9,6 +9,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -81,7 +82,7 @@ ShallowWrapper {
     ],
     "type": Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "Header__StyledHeader-sc-1tp9j3k-0",
         "isStatic": true,
@@ -90,9 +91,11 @@ ShallowWrapper {
         ],
       },
       "displayName": "Header__StyledHeader",
+      "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "Header__StyledHeader-sc-1tp9j3k-0",
       "target": "div",
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     },
@@ -164,7 +167,7 @@ ShallowWrapper {
       ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "Header__StyledHeader-sc-1tp9j3k-0",
           "isStatic": true,
@@ -173,9 +176,11 @@ ShallowWrapper {
           ],
         },
         "displayName": "Header__StyledHeader",
+        "foldedComponentIds": Array [],
         "render": [Function],
         "styledComponentId": "Header__StyledHeader-sc-1tp9j3k-0",
         "target": "div",
+        "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       },
@@ -185,9 +190,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

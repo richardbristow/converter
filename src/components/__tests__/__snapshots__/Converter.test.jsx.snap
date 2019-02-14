@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Converter />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -18,9 +19,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <React.Fragment>
-        <GlobalStyleComponent
-          suppressMultiMountWarning={false}
-        />
+        <GlobalStyleComponent />
         <BrowserRouter>
           <ForwardRef
             onBlur={[Function]}
@@ -1986,9 +1985,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <GlobalStyleComponent
-            suppressMultiMountWarning={false}
-          />,
+          <GlobalStyleComponent />,
           <BrowserRouter>
             <ForwardRef
               onBlur={[Function]}
@@ -3944,9 +3941,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "suppressMultiMountWarning": false,
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -7876,7 +7871,7 @@ ShallowWrapper {
                   "rendered": null,
                   "type": Object {
                     "$$typeof": Symbol(react.forward_ref),
-                    "attrs": undefined,
+                    "attrs": Array [],
                     "componentStyle": ComponentStyle {
                       "componentId": "Converter__Overlay-s55yn7-1",
                       "isStatic": true,
@@ -7885,9 +7880,11 @@ ShallowWrapper {
                       ],
                     },
                     "displayName": "Converter__Overlay",
+                    "foldedComponentIds": Array [],
                     "render": [Function],
                     "styledComponentId": "Converter__Overlay-s55yn7-1",
                     "target": "div",
+                    "toString": [Function],
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   },
@@ -9861,7 +9858,7 @@ ShallowWrapper {
             ],
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
-              "attrs": undefined,
+              "attrs": Array [],
               "componentStyle": ComponentStyle {
                 "componentId": "Converter__StyledConverter-s55yn7-0",
                 "isStatic": false,
@@ -9872,9 +9869,11 @@ ShallowWrapper {
                 ],
               },
               "displayName": "Converter__StyledConverter",
+              "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "Converter__StyledConverter-s55yn7-0",
               "target": "div",
+              "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             },
@@ -9893,9 +9892,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <React.Fragment>
-          <GlobalStyleComponent
-            suppressMultiMountWarning={false}
-          />
+          <GlobalStyleComponent />
           <BrowserRouter>
             <ForwardRef
               onBlur={[Function]}
@@ -11861,9 +11858,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <GlobalStyleComponent
-              suppressMultiMountWarning={false}
-            />,
+            <GlobalStyleComponent />,
             <BrowserRouter>
               <ForwardRef
                 onBlur={[Function]}
@@ -13819,9 +13814,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "suppressMultiMountWarning": false,
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -17751,7 +17744,7 @@ ShallowWrapper {
                     "rendered": null,
                     "type": Object {
                       "$$typeof": Symbol(react.forward_ref),
-                      "attrs": undefined,
+                      "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "Converter__Overlay-s55yn7-1",
                         "isStatic": true,
@@ -17760,9 +17753,11 @@ ShallowWrapper {
                         ],
                       },
                       "displayName": "Converter__Overlay",
+                      "foldedComponentIds": Array [],
                       "render": [Function],
                       "styledComponentId": "Converter__Overlay-s55yn7-1",
                       "target": "div",
+                      "toString": [Function],
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     },
@@ -19736,7 +19731,7 @@ ShallowWrapper {
               ],
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
-                "attrs": undefined,
+                "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "Converter__StyledConverter-s55yn7-0",
                   "isStatic": false,
@@ -19747,9 +19742,11 @@ ShallowWrapper {
                   ],
                 },
                 "displayName": "Converter__StyledConverter",
+                "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "Converter__StyledConverter-s55yn7-0",
                 "target": "div",
+                "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               },
@@ -19766,9 +19763,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

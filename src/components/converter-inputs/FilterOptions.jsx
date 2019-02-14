@@ -85,7 +85,8 @@ const FilterOptions = ({
           onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
         >
           {isCurrency ? `${displayName} (${mathName})` : displayName}
-        </StyledConvertButton>))) : <StyledFilterError disabled tabIndex="-1">No units found.</StyledFilterError>}
+        </StyledConvertButton>
+      ))) : <StyledFilterError disabled tabIndex="-1">No units found.</StyledFilterError>}
     </StyledFilterOptions>
   );
 };
