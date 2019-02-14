@@ -5,6 +5,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 import SidebarHeader from './SidebarHeader';
 import SidebarOption from './SidebarOption';
+import StyledScrollBarThumb from '../shared/StyledScrollBarThumb';
 // TODO: add  tests for the Sidebar
 
 const StyledSidebar = styled.div`
@@ -36,15 +37,6 @@ const StyledSidebarOptions = styled.div`
   overflow-x: hidden;
 `;
 
-const StyledThumb = styled.div`
-  background-color: ${({ theme }) => theme.scrollbarThumb};
-  border-radius: 3px;
-  width: 5px;
-  &:hover {
-    background-color: ${({ theme }) => theme.scrollbarThumbHover};
-  }
-`;
-
 const Sidebar = React.forwardRef(({
   userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
 }, ref) => (
@@ -54,7 +46,7 @@ const Sidebar = React.forwardRef(({
       sidebarDocked={sidebarDocked}
       handleHamburgerClick={handleHamburgerClick}
     />
-    <Scrollbars renderThumbVertical={() => <StyledThumb />}>
+    <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
       <StyledSidebarOptions>
         {Object.keys(items).map((type) => {
           const { displayName, mathName } = items[type];

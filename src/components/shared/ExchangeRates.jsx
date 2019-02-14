@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 import * as Flags from '../../icons/Flags';
+import StyledScrollBarThumb from './StyledScrollBarThumb';
 
 const StyledExchangeWrapper = styled.div`
   grid-column: span 3;
@@ -47,15 +48,6 @@ const StyledExchangeRates = styled.div`
   };
 `;
 
-const ExchangeRatesTableThumb = styled.div`
-  border-radius: 3px;
-  width: 5px;
-  background-color: ${({ theme }) => theme.scrollbarTrack};
-  &:hover {
-    background-color: ${({ theme }) => theme.scrollbarThumb};
-  }
-`;
-
 const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
     <StyledRatesInfo>
@@ -65,7 +57,7 @@ const ExchangeRates = ({ exchangeRates }) => (
     </StyledRatesInfo>
     <StyledExchangeRatesTable>
       <h4>Exchange Rates (Base currency: Euro)</h4>
-      <Scrollbars renderThumbVertical={() => <ExchangeRatesTableThumb />}>
+      <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
         <StyledExchangeRates>
           {exchangeRates.rates.map((rate) => {
             const lowerCaseCurrencyCode = rate.mathName.charAt(0)

@@ -544,7 +544,7 @@ exports[`index matches the snapshot 1`] = `
         }
       >
         <div
-          className="Sidebar__StyledThumb-uyccss-2 mNCp"
+          className="StyledScrollBarThumb-sc-1jjpxcc-0 iHwDqj"
         />
       </div>
     </div>
