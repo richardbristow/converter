@@ -4,19 +4,25 @@ import StyledNavPage from '../shared/StyledNavPage';
 const About = () => (
   <StyledNavPage>
     <h2>About</h2>
+    <p>This is a webapp to convert between various units of measurement.</p>
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Delectus deleniti nam beatae sint voluptas ea blanditiis,
-      sequi itaque animi vero nisi aperiam necessitatibus
-      mollitia est voluptates nemo sit at temporibus?
+      It was built mainly as a way to learn various web technologies,
+      one of them being css-grid, therefore it most likely will not render in IE correctly.
     </p>
-    <h3>Credits</h3>
+    <p>
+      If you are interested in seeing the code it&apos;s available on&nbsp;
+      <a href="https://github.com/richardbristow/converter" title="Github">Github</a>
+      .
+    </p>
+    <br />
+    <h3>Libraries / API&apos;s used</h3>
     <ul>
-      <li>React</li>
-      <li>Math.js</li>
-      <li>Fixer.io</li>
+      <li><a href="https://reactjs.org" title="React">React</a></li>
+      <li><a href="http://mathjs.org/" title="MathJs">Math.js</a></li>
+      <li><a href="https://fixer.io/" title="FixerIO">Fixer.io</a></li>
     </ul>
-    <h4>Icons</h4>
+    <br />
+    <h3>Icons</h3>
     <div>
       <span>
         Flag icons made by&nbsp;
