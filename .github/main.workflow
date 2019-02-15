@@ -44,6 +44,9 @@ action "git config" {
 action "deploy to github pages" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "run deploy"
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "REACT_APP_CACHED_EXCHANGE_RATES_URL",
+  ]
   needs = ["git config"]
 }
