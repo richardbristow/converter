@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <About />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -598,7 +599,7 @@ ShallowWrapper {
     ],
     "type": Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "StyledNavPage-sc-1p2uwrr-0",
         "isStatic": true,
@@ -607,9 +608,11 @@ ShallowWrapper {
         ],
       },
       "displayName": "StyledNavPage",
+      "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "StyledNavPage-sc-1p2uwrr-0",
       "target": "div",
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     },
@@ -1201,7 +1204,7 @@ ShallowWrapper {
       ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "StyledNavPage-sc-1p2uwrr-0",
           "isStatic": true,
@@ -1210,9 +1213,11 @@ ShallowWrapper {
           ],
         },
         "displayName": "StyledNavPage",
+        "foldedComponentIds": Array [],
         "render": [Function],
         "styledComponentId": "StyledNavPage-sc-1p2uwrr-0",
         "target": "div",
+        "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       },
@@ -1222,9 +1227,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

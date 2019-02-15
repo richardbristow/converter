@@ -29,6 +29,7 @@ ShallowWrapper {
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -91,7 +92,7 @@ ShallowWrapper {
         "rendered": null,
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
-          "attrs": undefined,
+          "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
             "isStatic": true,
@@ -100,9 +101,11 @@ ShallowWrapper {
             ],
           },
           "displayName": "InputUnit__StyledNumberInput",
+          "foldedComponentIds": Array [],
           "render": [Function],
           "styledComponentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
           "target": "input",
+          "toString": [Function],
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         },
@@ -139,7 +142,7 @@ ShallowWrapper {
     ],
     "type": Object {
       "$$typeof": Symbol(react.forward_ref),
-      "attrs": undefined,
+      "attrs": Array [],
       "componentStyle": ComponentStyle {
         "componentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
         "isStatic": false,
@@ -150,9 +153,11 @@ ShallowWrapper {
         ],
       },
       "displayName": "InputUnit__StyledInputUnit",
+      "foldedComponentIds": Array [],
       "render": [Function],
       "styledComponentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
       "target": "div",
+      "toString": [Function],
       "warnTooManyClasses": [Function],
       "withComponent": [Function],
     },
@@ -214,7 +219,7 @@ ShallowWrapper {
           "rendered": null,
           "type": Object {
             "$$typeof": Symbol(react.forward_ref),
-            "attrs": undefined,
+            "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
               "isStatic": true,
@@ -223,9 +228,11 @@ ShallowWrapper {
               ],
             },
             "displayName": "InputUnit__StyledNumberInput",
+            "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "InputUnit__StyledNumberInput-sc-7nhp5f-1",
             "target": "input",
+            "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           },
@@ -262,7 +269,7 @@ ShallowWrapper {
       ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
           "isStatic": false,
@@ -273,9 +280,11 @@ ShallowWrapper {
           ],
         },
         "displayName": "InputUnit__StyledInputUnit",
+        "foldedComponentIds": Array [],
         "render": [Function],
         "styledComponentId": "InputUnit__StyledInputUnit-sc-7nhp5f-0",
         "target": "div",
+        "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       },
@@ -285,9 +294,13 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,

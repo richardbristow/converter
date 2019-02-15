@@ -171,7 +171,8 @@ class FilterDropdown extends Component {
             conversionType={conversionType}
             filter={filter}
             handleDropdownItemClick={this.handleDropdownItemClick}
-          />)}
+          />
+          )}
       </StyledFilterDropdown>
     );
   }

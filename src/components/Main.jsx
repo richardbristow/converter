@@ -31,7 +31,8 @@ const renderUnitRoutes = baseUnits => (
             <ConvertPanel conversionType={mathName} baseUnits={baseUnits} />
           </React.Fragment>
         )}
-      />);
+      />
+    );
   })
 );
 
