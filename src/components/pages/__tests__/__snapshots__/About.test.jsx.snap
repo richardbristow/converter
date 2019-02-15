@@ -23,25 +23,55 @@ ShallowWrapper {
           About
         </h2>,
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
+          This is a webapp to convert between various units of measurement.
         </p>,
+        <p>
+          It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.
+        </p>,
+        <p>
+          If you are interested in seeing the code it's available on 
+          <a
+            href="https://github.com/richardbristow/converter"
+            title="Github"
+          >
+            Github
+          </a>
+          .
+        </p>,
+        <br />,
         <h3>
-          Credits
+          Libraries / API's used
         </h3>,
         <ul>
           <li>
-            React
+            <a
+              href="https://reactjs.org"
+              title="React"
+            >
+              React
+            </a>
           </li>
           <li>
-            Math.js
+            <a
+              href="http://mathjs.org/"
+              title="MathJs"
+            >
+              Math.js
+            </a>
           </li>
           <li>
-            Fixer.io
+            <a
+              href="https://fixer.io/"
+              title="FixerIO"
+            >
+              Fixer.io
+            </a>
           </li>
         </ul>,
-        <h4>
+        <br />,
+        <h3>
           Icons
-        </h4>,
+        </h3>,
         <div>
           <span>
             Flag icons made by 
@@ -144,10 +174,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+          "children": "This is a webapp to convert between various units of measurement.",
         },
         "ref": null,
-        "rendered": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+        "rendered": "This is a webapp to convert between various units of measurement.",
         "type": "p",
       },
       Object {
@@ -155,10 +185,66 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Credits",
+          "children": "It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.",
         },
         "ref": null,
-        "rendered": "Credits",
+        "rendered": "It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "If you are interested in seeing the code it's available on ",
+            <a
+              href="https://github.com/richardbristow/converter"
+              title="Github"
+            >
+              Github
+            </a>,
+            ".",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "If you are interested in seeing the code it's available on ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Github",
+              "href": "https://github.com/richardbristow/converter",
+              "title": "Github",
+            },
+            "ref": null,
+            "rendered": "Github",
+            "type": "a",
+          },
+          ".",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Libraries / API's used",
+        },
+        "ref": null,
+        "rendered": "Libraries / API's used",
         "type": "h3",
       },
       Object {
@@ -168,13 +254,28 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
-              React
+              <a
+                href="https://reactjs.org"
+                title="React"
+              >
+                React
+              </a>
             </li>,
             <li>
-              Math.js
+              <a
+                href="http://mathjs.org/"
+                title="MathJs"
+              >
+                Math.js
+              </a>
             </li>,
             <li>
-              Fixer.io
+              <a
+                href="https://fixer.io/"
+                title="FixerIO"
+              >
+                Fixer.io
+              </a>
             </li>,
           ],
         },
@@ -185,10 +286,27 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "React",
+              "children": <a
+                href="https://reactjs.org"
+                title="React"
+              >
+                React
+              </a>,
             },
             "ref": null,
-            "rendered": "React",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "React",
+                "href": "https://reactjs.org",
+                "title": "React",
+              },
+              "ref": null,
+              "rendered": "React",
+              "type": "a",
+            },
             "type": "li",
           },
           Object {
@@ -196,10 +314,27 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Math.js",
+              "children": <a
+                href="http://mathjs.org/"
+                title="MathJs"
+              >
+                Math.js
+              </a>,
             },
             "ref": null,
-            "rendered": "Math.js",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Math.js",
+                "href": "http://mathjs.org/",
+                "title": "MathJs",
+              },
+              "ref": null,
+              "rendered": "Math.js",
+              "type": "a",
+            },
             "type": "li",
           },
           Object {
@@ -207,14 +342,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Fixer.io",
+              "children": <a
+                href="https://fixer.io/"
+                title="FixerIO"
+              >
+                Fixer.io
+              </a>,
             },
             "ref": null,
-            "rendered": "Fixer.io",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fixer.io",
+                "href": "https://fixer.io/",
+                "title": "FixerIO",
+              },
+              "ref": null,
+              "rendered": "Fixer.io",
+              "type": "a",
+            },
             "type": "li",
           },
         ],
         "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "br",
       },
       Object {
         "instance": null,
@@ -225,7 +386,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "Icons",
-        "type": "h4",
+        "type": "h3",
       },
       Object {
         "instance": null,
@@ -628,25 +789,55 @@ ShallowWrapper {
             About
           </h2>,
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?
+            This is a webapp to convert between various units of measurement.
           </p>,
+          <p>
+            It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.
+          </p>,
+          <p>
+            If you are interested in seeing the code it's available on 
+            <a
+              href="https://github.com/richardbristow/converter"
+              title="Github"
+            >
+              Github
+            </a>
+            .
+          </p>,
+          <br />,
           <h3>
-            Credits
+            Libraries / API's used
           </h3>,
           <ul>
             <li>
-              React
+              <a
+                href="https://reactjs.org"
+                title="React"
+              >
+                React
+              </a>
             </li>
             <li>
-              Math.js
+              <a
+                href="http://mathjs.org/"
+                title="MathJs"
+              >
+                Math.js
+              </a>
             </li>
             <li>
-              Fixer.io
+              <a
+                href="https://fixer.io/"
+                title="FixerIO"
+              >
+                Fixer.io
+              </a>
             </li>
           </ul>,
-          <h4>
+          <br />,
+          <h3>
             Icons
-          </h4>,
+          </h3>,
           <div>
             <span>
               Flag icons made by 
@@ -749,10 +940,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+            "children": "This is a webapp to convert between various units of measurement.",
           },
           "ref": null,
-          "rendered": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti nam beatae sint voluptas ea blanditiis, sequi itaque animi vero nisi aperiam necessitatibus mollitia est voluptates nemo sit at temporibus?",
+          "rendered": "This is a webapp to convert between various units of measurement.",
           "type": "p",
         },
         Object {
@@ -760,10 +951,66 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Credits",
+            "children": "It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.",
           },
           "ref": null,
-          "rendered": "Credits",
+          "rendered": "It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "If you are interested in seeing the code it's available on ",
+              <a
+                href="https://github.com/richardbristow/converter"
+                title="Github"
+              >
+                Github
+              </a>,
+              ".",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "If you are interested in seeing the code it's available on ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Github",
+                "href": "https://github.com/richardbristow/converter",
+                "title": "Github",
+              },
+              "ref": null,
+              "rendered": "Github",
+              "type": "a",
+            },
+            ".",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Libraries / API's used",
+          },
+          "ref": null,
+          "rendered": "Libraries / API's used",
           "type": "h3",
         },
         Object {
@@ -773,13 +1020,28 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                React
+                <a
+                  href="https://reactjs.org"
+                  title="React"
+                >
+                  React
+                </a>
               </li>,
               <li>
-                Math.js
+                <a
+                  href="http://mathjs.org/"
+                  title="MathJs"
+                >
+                  Math.js
+                </a>
               </li>,
               <li>
-                Fixer.io
+                <a
+                  href="https://fixer.io/"
+                  title="FixerIO"
+                >
+                  Fixer.io
+                </a>
               </li>,
             ],
           },
@@ -790,10 +1052,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "React",
+                "children": <a
+                  href="https://reactjs.org"
+                  title="React"
+                >
+                  React
+                </a>,
               },
               "ref": null,
-              "rendered": "React",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "React",
+                  "href": "https://reactjs.org",
+                  "title": "React",
+                },
+                "ref": null,
+                "rendered": "React",
+                "type": "a",
+              },
               "type": "li",
             },
             Object {
@@ -801,10 +1080,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Math.js",
+                "children": <a
+                  href="http://mathjs.org/"
+                  title="MathJs"
+                >
+                  Math.js
+                </a>,
               },
               "ref": null,
-              "rendered": "Math.js",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Math.js",
+                  "href": "http://mathjs.org/",
+                  "title": "MathJs",
+                },
+                "ref": null,
+                "rendered": "Math.js",
+                "type": "a",
+              },
               "type": "li",
             },
             Object {
@@ -812,14 +1108,40 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Fixer.io",
+                "children": <a
+                  href="https://fixer.io/"
+                  title="FixerIO"
+                >
+                  Fixer.io
+                </a>,
               },
               "ref": null,
-              "rendered": "Fixer.io",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Fixer.io",
+                  "href": "https://fixer.io/",
+                  "title": "FixerIO",
+                },
+                "ref": null,
+                "rendered": "Fixer.io",
+                "type": "a",
+              },
               "type": "li",
             },
           ],
           "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "br",
         },
         Object {
           "instance": null,
@@ -830,7 +1152,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Icons",
-          "type": "h4",
+          "type": "h3",
         },
         Object {
           "instance": null,
