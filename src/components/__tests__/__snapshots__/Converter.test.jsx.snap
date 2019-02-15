@@ -20,7 +20,9 @@ ShallowWrapper {
     "props": Object {
       "children": <React.Fragment>
         <GlobalStyleComponent />
-        <BrowserRouter>
+        <BrowserRouter
+          basename=""
+        >
           <ForwardRef
             onBlur={[Function]}
             onFocus={[Function]}
@@ -1986,7 +1988,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <GlobalStyleComponent />,
-          <BrowserRouter>
+          <BrowserRouter
+            basename=""
+          >
             <ForwardRef
               onBlur={[Function]}
               onFocus={[Function]}
@@ -3951,6 +3955,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "basename": "",
             "children": <ForwardRef
               onBlur={[Function]}
               onFocus={[Function]}
@@ -9893,7 +9898,9 @@ ShallowWrapper {
       "props": Object {
         "children": <React.Fragment>
           <GlobalStyleComponent />
-          <BrowserRouter>
+          <BrowserRouter
+            basename=""
+          >
             <ForwardRef
               onBlur={[Function]}
               onFocus={[Function]}
@@ -11859,7 +11866,9 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <GlobalStyleComponent />,
-            <BrowserRouter>
+            <BrowserRouter
+              basename=""
+            >
               <ForwardRef
                 onBlur={[Function]}
                 onFocus={[Function]}
@@ -13824,6 +13833,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
+              "basename": "",
               "children": <ForwardRef
                 onBlur={[Function]}
                 onFocus={[Function]}

@@ -109,7 +109,7 @@ class Converter extends Component {
       <ThemeProvider theme={globalTheme}>
         <React.Fragment>
           <GlobalStyle />
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <StyledConverter
               onBlur={this.onBlurHandler}
               onFocus={this.onFocusHandler}
