@@ -34,12 +34,6 @@ action "Checks for master branch" {
   args = "branch master"
 }
 
-action "check for frontend changes" {
-  uses = "netlify/actions/diff-includes@master"
-  needs = ["Checks for master branch"]
-  args = "src"
-}
-
 action "check for backend changes" {
   uses = "netlify/actions/diff-includes@master"
   needs = ["Checks for master branch"]
@@ -48,12 +42,6 @@ action "check for backend changes" {
 
 action "deploy to netlify" {
   uses = "netlify/actions/build@master"
-  needs = ["check for frontend changes"]
-  secrets = [
-    "GITHUB_TOKEN",
-    "NETLIFY_SITE_ID",
-  ]
-  env = {
-    BUILD_DIR = "src"
-  }
+  needs = ["Checks for master branch"]
+  secrets = ["GITHUB_TOKEN"]
 }
