@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 const NoRoute = () => (
-  <React.Fragment>
+  <Fragment>
     Uh-oh! No page exists why dont you go back&nbsp;
     <Link to="/length">home</Link>
     .
-  </React.Fragment>
+  </Fragment>
 );
 
 export default NoRoute;

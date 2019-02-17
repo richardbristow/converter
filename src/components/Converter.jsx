@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
@@ -107,7 +107,7 @@ class Converter extends Component {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
       <ThemeProvider theme={globalTheme}>
-        <React.Fragment>
+        <Fragment>
           <GlobalStyle />
           <Router>
             <StyledConverter
@@ -137,7 +137,7 @@ class Converter extends Component {
               />
             </StyledConverter>
           </Router>
-        </React.Fragment>
+        </Fragment>
       </ThemeProvider>
     );
   }

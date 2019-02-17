@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import InputUnit from './InputUnit';
@@ -7,7 +7,7 @@ import ConvertArrows from './ConvertArrows';
 const InputUnitGroup = ({
   leftInput, rightInput, leftUnit, rightUnit, options, handleChange, conversionType, disableInputs,
 }) => (
-  <React.Fragment>
+  <Fragment>
     <InputUnit
       name="left"
       textValue={leftInput}
@@ -27,7 +27,7 @@ const InputUnitGroup = ({
       conversionType={conversionType}
       disableInputs={disableInputs}
     />
-  </React.Fragment>
+  </Fragment>
 );
 
 InputUnitGroup.defaultProps = {

@@ -23,7 +23,7 @@ ShallowWrapper {
           About
         </h2>,
         <p>
-          This is a webapp to convert between various units of measurement.
+          Converter is a webapp to convert between various units of measurement.
         </p>,
         <p>
           It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.
@@ -174,10 +174,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "This is a webapp to convert between various units of measurement.",
+          "children": "Converter is a webapp to convert between various units of measurement.",
         },
         "ref": null,
-        "rendered": "This is a webapp to convert between various units of measurement.",
+        "rendered": "Converter is a webapp to convert between various units of measurement.",
         "type": "p",
       },
       Object {
@@ -789,7 +789,7 @@ ShallowWrapper {
             About
           </h2>,
           <p>
-            This is a webapp to convert between various units of measurement.
+            Converter is a webapp to convert between various units of measurement.
           </p>,
           <p>
             It was built mainly as a way to learn various web technologies, one of them being css-grid, therefore it most likely will not render in IE correctly.
@@ -940,10 +940,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "This is a webapp to convert between various units of measurement.",
+            "children": "Converter is a webapp to convert between various units of measurement.",
           },
           "ref": null,
-          "rendered": "This is a webapp to convert between various units of measurement.",
+          "rendered": "Converter is a webapp to convert between various units of measurement.",
           "type": "p",
         },
         Object {

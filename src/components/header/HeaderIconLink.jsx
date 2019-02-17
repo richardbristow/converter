@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
-import { Help, About } from '../../icons/InterfaceIcons';
+import { Index, About } from '../../icons/InterfaceIcons';
 import StyledLink from '../shared/StyledLink';
 
 const StyledHeaderIcon = styled.div`
@@ -13,11 +13,11 @@ const StyledHeaderIcon = styled.div`
 `;
 
 const HeaderIconLink = ({ type }) => (
-  <StyledLink header to={`/${type.toLowerCase()}`}>
+  <StyledLink header to={`/${type.toLowerCase().replace(' ', '')}`}>
     <span>{type}</span>
     <StyledHeaderIcon>
-      {type === 'Help'
-        ? <Help width="1.2em" height="1.2em" />
+      {type === 'Unit Index'
+        ? <Index width="1.2em" height="1.2em" />
         : <About width="1.2em" height="1.2em" />}
     </StyledHeaderIcon>
   </StyledLink>

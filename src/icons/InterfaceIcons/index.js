@@ -4,8 +4,8 @@ export const {
   ChevronDown,
   ChevronUp,
   Arrow,
-  Help,
-  HelpFilled,
+  Index,
+  IndexFilled,
   About,
   AboutFilled,
 } = toReactComponent(

@@ -27,7 +27,7 @@ ShallowWrapper {
         />,
         <div />,
         <HeaderIconLink
-          type="Help"
+          type="Unit Index"
         />,
         <HeaderIconLink
           type="About"
@@ -62,7 +62,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "type": "Help",
+          "type": "Unit Index",
         },
         "ref": null,
         "rendered": null,
@@ -112,7 +112,7 @@ ShallowWrapper {
           />,
           <div />,
           <HeaderIconLink
-            type="Help"
+            type="Unit Index"
           />,
           <HeaderIconLink
             type="About"
@@ -147,7 +147,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "type": "Help",
+            "type": "Unit Index",
           },
           "ref": null,
           "rendered": null,

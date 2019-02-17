@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import styled from 'styled-components/macro';
 
-import Help from './pages/Help';
+import UnitIndex from './pages/UnitIndex';
 import About from './pages/About';
 import ConvertPanel from './converter-inputs/ConvertPanel';
 import NoRoute from './NoRoute';
@@ -26,10 +26,10 @@ const renderUnitRoutes = baseUnits => (
         key={`route-${mathName}`}
         path={`/${mathName}`}
         render={() => (
-          <React.Fragment>
+          <Fragment>
             <h3>{displayName}</h3>
             <ConvertPanel conversionType={mathName} baseUnits={baseUnits} />
-          </React.Fragment>
+          </Fragment>
         )}
       />
     );
@@ -44,7 +44,7 @@ const Main = ({ baseUnits, sidebarDocked }) => (
         path="/"
         render={() => <Redirect to="/length" />}
       />
-      <Route path="/help" component={Help} />
+      <Route path="/unitindex" render={() => <UnitIndex baseUnits={baseUnits} />} />
       <Route path="/about" component={About} />
       {renderUnitRoutes(baseUnits)}
       <Route component={NoRoute} />

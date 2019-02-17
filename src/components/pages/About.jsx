@@ -4,7 +4,7 @@ import StyledNavPage from '../shared/StyledNavPage';
 const About = () => (
   <StyledNavPage>
     <h2>About</h2>
-    <p>This is a webapp to convert between various units of measurement.</p>
+    <p>Converter is a webapp to convert between various units of measurement.</p>
     <p>
       It was built mainly as a way to learn various web technologies,
       one of them being css-grid, therefore it most likely will not render in IE correctly.
