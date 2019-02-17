@@ -3,7 +3,8 @@ workflow "PROD - install, lint, test, deploy" {
   resolves = [
     "lint",
     "test",
-    "check for frontend changes",
+    "check for backend changes",
+    "deploy to netlify",
   ]
 }
 
@@ -37,4 +38,19 @@ action "check for frontend changes" {
   uses = "netlify/actions/diff-includes@master"
   needs = ["Checks for master branch"]
   args = "src"
+}
+
+action "check for backend changes" {
+  uses = "netlify/actions/diff-includes@master"
+  needs = ["Checks for master branch"]
+  args = "backend"
+}
+
+action "deploy to netlify" {
+  uses = "netlify/actions/build@master"
+  needs = ["check for frontend changes"]
+  secrets = ["GITHUB_TOKEN"]
+  env = {
+    BUILD_DIR = "src"
+  }
 }
