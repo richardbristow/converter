@@ -49,7 +49,10 @@ action "check for backend changes" {
 action "deploy to netlify" {
   uses = "netlify/actions/build@master"
   needs = ["check for frontend changes"]
-  secrets = ["GITHUB_TOKEN"]
+  secrets = [
+    "GITHUB_TOKEN",
+    "NETLIFY_SITE_ID",
+  ]
   env = {
     BUILD_DIR = "src"
   }
