@@ -1,8 +1,8 @@
 # Converter App
 
-| Master |  Develop |
-| :---: | :---: |
-[![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=master)](https://travis-ci.com/richardbristow/converter) | [![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=develop)](https://travis-ci.com/richardbristow/converter) |
+| Master |  Develop | Netlify |
+| :---: | :---: | :--: |
+[![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=master)](https://travis-ci.com/richardbristow/converter) | [![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=develop)](https://travis-ci.com/richardbristow/converter) | [![Netlify Status](https://api.netlify.com/api/v1/badges/208b27b9-af0a-4746-89b8-a165ff5d18a5/deploy-status)](https://app.netlify.com/sites/converter-app/deploys)
 
 This is a React webapp to convert between various units of measurement.
 
