@@ -4,12 +4,12 @@ provider:
   name: aws
   stage: ${opt:stage, 'dev'}
   runtime: nodejs8.10
-  profile: ${file(.env.yml):AWSprofile}
   versionFunctions: false
   memorySize: 128
   region: us-east-1
   logRetentionInDays: 30
-  environment: ${file(.env.yml):${self:provider.stage}, file(.env.yml):default}
+  environment:
+    FIXER_API_KEY: ${env:FIXER_API_KEY, file(.env.yml):FIXER_API_KEY}
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
@@ -24,28 +24,28 @@ functions:
   updateExchangeRates:
     handler: lambda/updateExchangeRatesCache.updateExchangeRatesCache
     name: ${self:provider.stage}-updateExchangeRatesCache
-    description: 'Updates the latest exchange rates from fixer and stores them in ExchangeRatesTable, triggered hourly'
+    description: 'Updates the latest exchange rates from fixer and stores them in ${self:provider.stage}-ExchangeRatesTable, triggered hourly'
     events:
       - schedule:
-          name: updateExchangeRatesCacheHourly
-          description: 'Triggers the updateExchangeRatesCache function hourly, to update the exchange rates and cache them in ExchangeRatesTable'
+          name: ${self:provider.stage}-updateExchangeRatesCacheHourly
+          description: 'Triggers the ${self:provider.stage}-updateExchangeRatesCache function hourly, to update the exchange rates and cache them in ${self:provider.stage}-ExchangeRatesTable'
           rate: rate(1 hour)
   updateCurrencySymbolsCache:
     handler: lambda/updateCurrencySymbolsCache.updateCurrencySymbolsCache
     name: ${self:provider.stage}-updateCurrencySymbolsCache
-    description: 'Updates the currency symbols cache in ExchangeRatesTable'
+    description: 'Updates the currency symbols cache in ${self:provider.stage}-ExchangeRatesTable'
     events:
       - schedule:
-          name: updateCurrencySymbolsCache
-          description: 'Triggers the updateCurrencySymbolsCache function every 6 hours.'
+          name: ${self:provider.stage}-updateCurrencySymbolsCache
+          description: 'Triggers the ${self:provider.stage}-updateCurrencySymbolsCache function every 6 hours.'
           rate: rate(6 hours)
   getCachedData:
     handler: lambda/getCachedData.getCachedData
     name: ${self:provider.stage}-getCachedData
-    description: 'Gets the exchange rates from ExchangeRatesTable'
+    description: 'Gets the exchange rates from ${self:provider.stage}-ExchangeRatesTable'
     events:
       - http:
-          path: /exchangerates
+          path: /${self:provider.stage}-exchangerates
           method: get
           cors: true
 
@@ -54,7 +54,7 @@ resources:
     ExchangeRatesTable:
       Type: AWS::DynamoDB::Table
       Properties:
-        TableName: ExchangeRatesTable
+        TableName: ${self:provider.stage}-ExchangeRatesTable
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
