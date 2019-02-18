@@ -1,9 +1,9 @@
-workflow "PROD - install, lint, test, deploy" {
+workflow "install, lint, test, build, deploy" {
   on = "push"
   resolves = [
     "lint",
     "test",
-    "check for backend changes",
+    "deploy serverless backend",
     "deploy to netlify",
   ]
 }
@@ -40,8 +40,31 @@ action "check for backend changes" {
   args = "backend"
 }
 
-action "deploy to netlify" {
-  uses = "netlify/actions/build@master"
+action "deploy serverless backend" {
+  uses = "aaronpanch/action-serverless@v1.0.0"
+  needs = ["check for backend changes"]
+  secrets = ["FIXER_API_KEY", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  env = {
+    SERVICE_ROOT = "backend"
+  }
+  args = "deploy --stage prod -v"
+}
+
+action "check for frontend changes" {
+  uses = "netlify/actions/diff-includes@master"
   needs = ["Checks for master branch"]
-  secrets = ["GITHUB_TOKEN"]
+  args = "src"
+}
+
+action "build" {
+  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
+  args = "run build"
+  needs = ["check for frontend changes"]
+}
+
+action "deploy to netlify" {
+  uses = "netlify/actions/cli@master"
+  needs = ["build"]
+  args = "deploy --dir=build --prod"
+  secrets = ["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]
 }
