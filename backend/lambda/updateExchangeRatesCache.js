@@ -12,7 +12,7 @@ exports.updateExchangeRatesCache = async () => {
     console.log('Success fetching ratesData');
 
     const params = {
-      TableName: 'ExchangeRatesTable',
+      TableName: process.env.TABLENAME,
       Item: {
         id: 'exchangeRates',
         dynamoCreatedAt: Date.now(),

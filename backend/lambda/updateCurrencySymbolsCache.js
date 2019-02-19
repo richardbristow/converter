@@ -12,7 +12,7 @@ exports.updateCurrencySymbolsCache = async () => {
     console.log('Success fetching symbolsData');
 
     const params = {
-      TableName: 'ExchangeRatesTable',
+      TableName: process.env.TABLENAME,
       Item: {
         id: 'currencySymbols',
         dynamoCreatedAt: Date.now(),

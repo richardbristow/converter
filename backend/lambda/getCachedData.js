@@ -3,7 +3,7 @@
 const exchangeRatesTableGet = require('../utils/exchangeRatesTableGet');
 
 const params = {
-  TableName: 'ExchangeRatesTable',
+  TableName: process.env.TABLENAME,
 };
 
 const headers = {
@@ -15,7 +15,7 @@ exports.getCachedData = async () => {
   try {
     const dynamoResponse = await exchangeRatesTableGet(params);
     console.log('dynamoResponse', dynamoResponse);
-    console.log('Success getting the ExchangeRatesTable');
+    console.log(`Success getting the ${process.env.TABLENAME}`);
 
     const response = {
       statusCode: 200,
