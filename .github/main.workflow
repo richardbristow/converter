@@ -54,6 +54,6 @@ action "deploy serverless backend" {
   env = {
     SERVICE_ROOT = "backend"
   }
-  args = "deploy --stage prod -v"
+  args = "deploy --stage prod -v --conceal"
   needs = ["checks for master branch"]
 }
