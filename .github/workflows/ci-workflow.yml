@@ -83,12 +83,15 @@ jobs:
         run: |
           cd backend
           serverless deploy --stage prod -v --conceal
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          FIXER_API_KEY: ${{ secrets.FIXER_API_KEY }}
       - name: 'DEV: serverless deploy to AWS'
         if: github.event_name == 'push' && github.ref != 'refs/heads/master'
         run: |
           cd backend
           serverless deploy -v --conceal
-
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
