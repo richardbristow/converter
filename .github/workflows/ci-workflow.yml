@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 13.x
       - name: install netlify-cli
-        run: yarn install netlify-cli -g
+        run: npm install netlify-cli -g
       - run: |
           node --version
           yarn --version
@@ -73,7 +73,7 @@ jobs:
         with:
           node-version: 13.x
       - run: |
-          yarn install serverless -g
+          npm install serverless -g
           node --version
           yarn --version
           serverless --version
