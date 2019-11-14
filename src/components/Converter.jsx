@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
@@ -20,7 +20,7 @@ const StyledConverter = styled.div`
 
 const Overlay = styled.div`
   z-index: 2;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@ const Overlay = styled.div`
   height: 100vh;
   &.overlay-enter {
     opacity: 0;
-  };
+  }
   &.overlay-enter-active {
     opacity: 1;
     transition: opacity 200ms ease-in;
@@ -64,7 +64,8 @@ class Converter extends Component {
     this.onFocusHandler = this.onFocusHandler.bind(this);
   }
 
-  componentWillMount() {
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillMount() {
     mql.addListener(this.mediaQueryChanged);
   }
 
@@ -107,7 +108,7 @@ class Converter extends Component {
     const { userShowSidebar, sidebarDocked } = this.state;
     return (
       <ThemeProvider theme={globalTheme}>
-        <Fragment>
+        <>
           <GlobalStyle />
           <Router>
             <StyledConverter
@@ -131,13 +132,10 @@ class Converter extends Component {
                 handeSidebarLinkClick={this.handeSidebarLinkClick}
                 handleHamburgerClick={this.handleHamburgerClick}
               />
-              <Main
-                baseUnits={baseUnits}
-                sidebarDocked={sidebarDocked}
-              />
+              <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
             </StyledConverter>
           </Router>
-        </Fragment>
+        </>
       </ThemeProvider>
     );
   }

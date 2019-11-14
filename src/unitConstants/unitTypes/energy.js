@@ -23,7 +23,8 @@ const energy = {
     {
       displayName: 'Eletronvolt',
       mathName: 'eV',
-    }],
+    },
+  ],
 };
 
 export default energy;

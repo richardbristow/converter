@@ -14,18 +14,18 @@ const StyledLink = styled(NavLink)`
   }
   &:visited {
     color: black;
-  };
+  }
   &:hover {
     text-decoration: none;
     span {
       display: block;
-    };
-  };
+    }
+  }
   &.active {
     span {
       display: block;
-    };
-  };
+    }
+  }
 `;
 
 export default StyledLink;

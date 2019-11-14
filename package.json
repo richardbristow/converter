@@ -10,33 +10,35 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "aws-sdk": "^2.326.0",
-    "core-js": "^2.6.4",
-    "mathjs": "^5.4.2",
-    "node-fetch": "^2.2.0",
+    "aws-sdk": "^2.572.0",
+    "mathjs": "^6.2.3",
+    "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.1",
-    "react-burgers": "^1.2.0",
+    "react": "^16.11.0",
+    "react-burgers": "^1.3.0",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^16.8.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5",
-    "react-transition-group": "^2.5.3",
-    "styled-components": "^4.1.3",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-transition-group": "^4.3.0",
+    "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.6",
     "svgr.macro": "^1.0.4"
   },
   "devDependencies": {
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "eslint": "5.12.0",
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "jest-styled-components": "^6.3.1",
-    "react-test-renderer": "^16.8.1",
-    "serverless": "^1.32.0"
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "jest-styled-components": "^6.3.4",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.11.0",
+    "serverless": "^1.57.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -50,5 +52,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "babelMacros": {
+    "styledComponents": {}
+  }
 }

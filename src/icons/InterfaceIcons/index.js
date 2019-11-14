@@ -8,7 +8,4 @@ export const {
   IndexFilled,
   About,
   AboutFilled,
-} = toReactComponent(
-  './svg/*.svg',
-  { icon: true },
-);
+} = toReactComponent('./svg/*.svg', { icon: true });

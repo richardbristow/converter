@@ -43,7 +43,8 @@ const surfaceArea = {
     {
       displayName: 'Hectare',
       mathName: 'hectare',
-    }],
+    },
+  ],
 };
 
 export default surfaceArea;

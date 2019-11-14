@@ -19,7 +19,8 @@ const force = {
     {
       displayName: 'Kip',
       mathName: 'kip',
-    }],
+    },
+  ],
 };
 
 export default force;

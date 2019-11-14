@@ -11,7 +11,8 @@ const dataStorage = {
     {
       displayName: 'Byte',
       mathName: 'B',
-    }],
+    },
+  ],
 };
 
 export default dataStorage;

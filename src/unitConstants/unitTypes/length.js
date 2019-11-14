@@ -44,7 +44,8 @@ const length = {
     {
       displayName: 'Thousandth of an inch',
       mathName: 'mil',
-    }],
+    },
+  ],
 };
 
 export default length;

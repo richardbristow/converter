@@ -8,7 +8,8 @@ const frequency = {
       displayName: 'Hertz',
       mathName: 'Hz',
       allowPrefixes: true,
-    }],
+    },
+  ],
 };
 
 export default frequency;

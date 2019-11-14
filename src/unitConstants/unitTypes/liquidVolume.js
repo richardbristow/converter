@@ -51,7 +51,8 @@ const volume = {
     {
       displayName: 'Drop',
       mathName: 'gtt',
-    }],
+    },
+  ],
 };
 
 export default volume;

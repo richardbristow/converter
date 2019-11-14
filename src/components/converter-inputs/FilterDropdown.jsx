@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 
-import '../../polyfills';
 import { ChevronDown, ChevronUp } from '../../icons/InterfaceIcons';
 
 import FilterOptions from './FilterOptions';
@@ -117,41 +116,45 @@ class FilterDropdown extends Component {
 
   render() {
     const {
-      options, name, conversionType, dropdownValue, disableInputs,
+      options,
+      name,
+      conversionType,
+      dropdownValue,
+      disableInputs,
     } = this.props;
     const { filter, dropdownOpen } = this.state;
-    const arrowIcon = dropdownOpen === false
-      ? <ChevronDown />
-      : <ChevronUp />;
-    const { displayName, mathName } = options.find(option => (
-      option.mathName === dropdownValue && option
-    ));
+    const arrowIcon = dropdownOpen === false ? <ChevronDown /> : <ChevronUp />;
+    const { displayName, mathName } = options.find(
+      option => option.mathName === dropdownValue && option,
+    );
     const isCurrency = conversionType === 'currency';
     return (
-      <StyledFilterDropdown onBlur={this.onBlurHandler} onFocus={this.onFocusHandler}>
-        {dropdownOpen
-          ? (
-            <StyledFilterInput
-              ref={this.unitInput}
-              placeholder="Search units..."
-              name="filter"
-              type="text"
-              value={filter}
-              onKeyDown={this.handleEscKey}
-              onChange={this.updateFilter}
-            />
-          ) : (
-            <StyledConvertButton
-              header
-              name="header"
-              tabIndex="0"
-              onFocus={this.handleHeaderFocus}
-              onClick={this.handleDropdownClick}
-              disabled={disableInputs}
-            >
-              {isCurrency ? `${displayName} (${mathName})` : displayName}
-            </StyledConvertButton>
-          )}
+      <StyledFilterDropdown
+        onBlur={this.onBlurHandler}
+        onFocus={this.onFocusHandler}
+      >
+        {dropdownOpen ? (
+          <StyledFilterInput
+            ref={this.unitInput}
+            placeholder="Search units..."
+            name="filter"
+            type="text"
+            value={filter}
+            onKeyDown={this.handleEscKey}
+            onChange={this.updateFilter}
+          />
+        ) : (
+          <StyledConvertButton
+            header
+            name="header"
+            tabIndex="0"
+            onFocus={this.handleHeaderFocus}
+            onClick={this.handleDropdownClick}
+            disabled={disableInputs}
+          >
+            {isCurrency ? `${displayName} (${mathName})` : displayName}
+          </StyledConvertButton>
+        )}
         <StyledArrowButton
           arrow
           dropdownOpen={dropdownOpen}
@@ -162,8 +165,7 @@ class FilterDropdown extends Component {
         >
           {arrowIcon}
         </StyledArrowButton>
-        {dropdownOpen
-          && (
+        {dropdownOpen && (
           <FilterOptions
             currentDisplayName={displayName}
             options={options}
@@ -172,7 +174,7 @@ class FilterDropdown extends Component {
             filter={filter}
             handleDropdownItemClick={this.handleDropdownItemClick}
           />
-          )}
+        )}
       </StyledFilterDropdown>
     );
   }
@@ -184,10 +186,12 @@ FilterDropdown.defaultProps = {
 
 FilterDropdown.propTypes = {
   name: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    displayName: PropTypes.string.isRequired,
-    mathName: PropTypes.string.isRequired,
-  })).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      displayName: PropTypes.string.isRequired,
+      mathName: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,
   dropdownValue: PropTypes.string.isRequired,

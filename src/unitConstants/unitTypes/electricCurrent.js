@@ -8,7 +8,8 @@ const electricCurrent = {
       displayName: 'Ampere',
       mathName: 'A',
       allowPrefixes: true,
-    }],
+    },
+  ],
 };
 
 export default electricCurrent;

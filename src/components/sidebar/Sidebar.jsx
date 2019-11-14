@@ -17,16 +17,22 @@ const StyledSidebar = styled.div`
   font-size: 18px;
   display: grid;
   grid-template-columns: auto;
-  width: ${({ sidebarDocked, userShowSidebar }) => (sidebarDocked || userShowSidebar ? '300px' : '75px')};
-  grid-template-rows: ${({ sidebarDocked }) => (sidebarDocked ? '100px 1fr' : '50px 1fr')};
+  width: ${({ sidebarDocked, userShowSidebar }) =>
+    sidebarDocked || userShowSidebar ? '300px' : '75px'};
+  grid-template-rows: ${({ sidebarDocked }) =>
+    sidebarDocked ? '100px 1fr' : '50px 1fr'};
   background-color: ${({ theme }) => theme.sidebarBackground};
   z-index: 3;
   outline: none;
   -webkit-transform: translateZ(0px);
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
   -webkit-perspective: 1000;
-  ${({ userShowSidebar }) => userShowSidebar && 'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
-  ${({ sidebarDocked }) => !sidebarDocked && 'transition: width 200ms ease-in-out, box-shadow 200ms ease-in-out'};
+  ${({ userShowSidebar }) =>
+    userShowSidebar &&
+    'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
+  ${({ sidebarDocked }) =>
+    !sidebarDocked &&
+    'transition: width 200ms ease-in-out, box-shadow 200ms ease-in-out'};
 `;
 
 const StyledSidebarOptions = styled.div`
@@ -37,32 +43,46 @@ const StyledSidebarOptions = styled.div`
   overflow-x: hidden;
 `;
 
-const Sidebar = React.forwardRef(({
-  userShowSidebar, sidebarDocked, items, handeSidebarLinkClick, handleHamburgerClick,
-}, ref) => (
-  <StyledSidebar tabIndex="0" ref={ref} sidebarDocked={sidebarDocked} userShowSidebar={userShowSidebar}>
-    <SidebarHeader
-      userShowSidebar={userShowSidebar}
+const Sidebar = React.forwardRef(
+  (
+    {
+      userShowSidebar,
+      sidebarDocked,
+      items,
+      handeSidebarLinkClick,
+      handleHamburgerClick,
+    },
+    ref,
+  ) => (
+    <StyledSidebar
+      tabIndex="0"
+      ref={ref}
       sidebarDocked={sidebarDocked}
-      handleHamburgerClick={handleHamburgerClick}
-    />
-    <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
-      <StyledSidebarOptions>
-        {Object.keys(items).map((type) => {
-          const { displayName, mathName } = items[type];
-          return (
-            <SidebarOption
-              handeSidebarLinkClick={handeSidebarLinkClick}
-              key={`sidebar-option-${mathName}`}
-              displayName={displayName}
-              mathName={mathName}
-            />
-          );
-        })}
-      </StyledSidebarOptions>
-    </Scrollbars>
-  </StyledSidebar>
-));
+      userShowSidebar={userShowSidebar}
+    >
+      <SidebarHeader
+        userShowSidebar={userShowSidebar}
+        sidebarDocked={sidebarDocked}
+        handleHamburgerClick={handleHamburgerClick}
+      />
+      <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
+        <StyledSidebarOptions>
+          {Object.keys(items).map(type => {
+            const { displayName, mathName } = items[type];
+            return (
+              <SidebarOption
+                handeSidebarLinkClick={handeSidebarLinkClick}
+                key={`sidebar-option-${mathName}`}
+                displayName={displayName}
+                mathName={mathName}
+              />
+            );
+          })}
+        </StyledSidebarOptions>
+      </Scrollbars>
+    </StyledSidebar>
+  ),
+);
 
 const typeProps = {
   displayName: PropTypes.string,
@@ -73,11 +93,14 @@ Sidebar.propTypes = {
   userShowSidebar: PropTypes.bool.isRequired,
   sidebarDocked: PropTypes.bool.isRequired,
   handeSidebarLinkClick: PropTypes.func.isRequired,
-  items: PropTypes.shape({
-    length: PropTypes.shape({ ...typeProps }),
-  }, {
-    surfaceArea: PropTypes.shape({ ...typeProps }),
-  }).isRequired,
+  items: PropTypes.shape(
+    {
+      length: PropTypes.shape({ ...typeProps }),
+    },
+    {
+      surfaceArea: PropTypes.shape({ ...typeProps }),
+    },
+  ).isRequired,
   handleHamburgerClick: PropTypes.func.isRequired,
 };
 

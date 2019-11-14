@@ -8,17 +8,19 @@ const StyledLogoLink = styled(Link)`
   color: black;
   &:visited {
     color: black;
-  };
+  }
   h1 {
-    margin: ${({ sidebarDocked }) => (sidebarDocked ? '0 0 20px 0' : '0 0 0 115px')};
+    margin: ${({ sidebarDocked }) =>
+      sidebarDocked ? '0 0 20px 0' : '0 0 0 115px'};
     user-select: none;
     font-size: ${({ sidebarDocked }) => (sidebarDocked ? '2.4em' : '1.8em')};
   }
 `;
 
 const StyledLogoBorder = styled.div`
-  ${({ sidebarDocked }) => sidebarDocked
-    && 'margin-left: 25px; margin-right: 25px; border-bottom: 2px solid black;'}
+  ${({ sidebarDocked }) =>
+    sidebarDocked &&
+    'margin-left: 25px; margin-right: 25px; border-bottom: 2px solid black;'}
 `;
 
 const Logo = ({ sidebarDocked }) => (

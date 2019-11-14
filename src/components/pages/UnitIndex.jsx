@@ -13,17 +13,15 @@ const UnitIndex = ({ baseUnits }) => (
   <StyledNavPage>
     <h2>Complete Unit Index</h2>
     <StyledUnitIndex>
-      {
-        Object.keys(baseUnits).map((type) => {
-          const unitObject = baseUnits[type];
-          return (
-            <Fragment key={type}>
-              <h4>{unitObject.displayName}</h4>
-              <p>{unitObject.units.map(unit => unit.displayName).join(', ')}</p>
-            </Fragment>
-          );
-        })
-      }
+      {Object.keys(baseUnits).map(type => {
+        const unitObject = baseUnits[type];
+        return (
+          <Fragment key={type}>
+            <h4>{unitObject.displayName}</h4>
+            <p>{unitObject.units.map(unit => unit.displayName).join(', ')}</p>
+          </Fragment>
+        );
+      })}
     </StyledUnitIndex>
   </StyledNavPage>
 );

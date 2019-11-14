@@ -27,7 +27,8 @@ const angles = {
     {
       displayName: 'Minute of arc',
       mathName: 'arcminute',
-    }],
+    },
+  ],
 };
 
 export default angles;

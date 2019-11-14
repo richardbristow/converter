@@ -1,6 +1,5 @@
 import styled from 'styled-components/macro';
 
-
 const StyledScrollBarThumb = styled.div`
   border-radius: 3px;
   width: 5px;

@@ -30,10 +30,10 @@ const StyledExchangeRatesTable = styled.div`
     text-align: center;
     margin: 0;
     padding-bottom: 40px;
-  };
+  }
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #21252B;
+  background-color: #21252b;
   color: lightgreen;
 `;
 
@@ -45,13 +45,15 @@ const StyledExchangeRates = styled.div`
   padding-right: 40px;
   svg {
     padding-right: 10px;
-  };
+  }
 `;
 
 const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
     <StyledRatesInfo>
-      <span>{`Exchange rates last updated: ${new Date(exchangeRates.dynamoCreatedAt).toLocaleString()}`}</span>
+      <span>{`Exchange rates last updated: ${new Date(
+        exchangeRates.dynamoCreatedAt,
+      ).toLocaleString()}`}</span>
       <br />
       <span>All exchange rates updated hourly.</span>
     </StyledRatesInfo>
@@ -59,9 +61,9 @@ const ExchangeRates = ({ exchangeRates }) => (
       <h4>Exchange Rates (Base currency: Euro)</h4>
       <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
         <StyledExchangeRates>
-          {exchangeRates.rates.map((rate) => {
-            const lowerCaseCurrencyCode = rate.mathName.charAt(0)
-              + rate.mathName.slice(1).toLowerCase();
+          {exchangeRates.rates.map(rate => {
+            const lowerCaseCurrencyCode =
+              rate.mathName.charAt(0) + rate.mathName.slice(1).toLowerCase();
             const CurrencyFlag = Flags[lowerCaseCurrencyCode];
             return (
               <div key={rate.mathName}>
@@ -76,16 +78,27 @@ const ExchangeRates = ({ exchangeRates }) => (
     <div>
       <span>
         Flag icons made by&nbsp;
-        <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a>
+        <a href="https://www.flaticon.com/authors/twitter" title="Twitter">
+          Twitter
+        </a>
         &nbsp;from&nbsp;
-        <a href="https://www.flaticon.com" title="Flaticon">Flaticon.com</a>
+        <a href="https://www.flaticon.com" title="Flaticon">
+          Flaticon.com
+        </a>
       </span>
       <br />
       <span>
         Bitcoin icon made by&nbsp;
-        <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a>
+        <a
+          href="https://www.flaticon.com/authors/pixel-buddha"
+          title="Pixel Buddha"
+        >
+          Pixel Buddha
+        </a>
         &nbsp;from&nbsp;
-        <a href="https://www.flaticon.com/" title="Flaticon">Flaticon.com</a>
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          Flaticon.com
+        </a>
       </span>
     </div>
   </StyledExchangeWrapper>

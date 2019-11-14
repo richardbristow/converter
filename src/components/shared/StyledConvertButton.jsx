@@ -3,7 +3,8 @@ import styled from 'styled-components/macro';
 const StyledConvertButton = styled.button`
   padding-left: 15px;
   text-align: left;
-  background-color: ${({ selected, theme }) => (selected ? `${theme.selectedBackground}` : 'whitesmoke')};;
+  background-color: ${({ selected, theme }) =>
+    selected ? `${theme.selectedBackground}` : 'whitesmoke'};
   border-top: 0px;
   border-bottom: ${({ header }) => (header ? '1px solid black' : '0px')};
   border-left: ${({ header }) => (header ? '1px solid black' : '0px')};
@@ -13,8 +14,9 @@ const StyledConvertButton = styled.button`
   min-width: 0;
   overflow: hidden;
   &:focus {
-    background-color: ${({ arrow, selected }) => !arrow && !selected && 'lightgrey'};
-  };
+    background-color: ${({ arrow, selected }) =>
+      !arrow && !selected && 'lightgrey'};
+  }
   &:disabled {
     cursor: not-allowed;
   }

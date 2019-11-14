@@ -12,8 +12,7 @@ import convertCurrency from '../../utils/convertCurrency';
 
 const StyeldConvertPanel = styled.div`
   display: grid;
-  grid-template-areas:
-    'left arrows right';
+  grid-template-areas: 'left arrows right';
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 120px auto;
 `;
@@ -59,23 +58,47 @@ class ConvertPanel extends Component {
 
     if (conversionType === 'currency') {
       if (name === 'rightInput' || name === 'leftInput') {
-        leftInput = name === 'rightInput' ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, false) : value;
-        rightInput = name === 'leftInput' ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, true) : value;
+        leftInput =
+          name === 'rightInput'
+            ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, false)
+            : value;
+        rightInput =
+          name === 'leftInput'
+            ? convertCurrency(value, leftUnit, rightUnit, exchangeRates, true)
+            : value;
       }
 
       if (name === 'leftUnit' || name === 'rightUnit') {
-        leftInput = name === 'rightUnit' ? convertCurrency(rightInput, leftUnit, value, exchangeRates, false) : leftInput;
-        rightInput = name === 'leftUnit' ? convertCurrency(leftInput, value, rightUnit, exchangeRates, true) : rightInput;
+        leftInput =
+          name === 'rightUnit'
+            ? convertCurrency(rightInput, leftUnit, value, exchangeRates, false)
+            : leftInput;
+        rightInput =
+          name === 'leftUnit'
+            ? convertCurrency(leftInput, value, rightUnit, exchangeRates, true)
+            : rightInput;
       }
     } else {
       if (name === 'rightInput' || name === 'leftInput') {
-        leftInput = name === 'rightInput' ? tryConvert(value, leftUnit, rightUnit, false) : value;
-        rightInput = name === 'leftInput' ? tryConvert(value, leftUnit, rightUnit, true) : value;
+        leftInput =
+          name === 'rightInput'
+            ? tryConvert(value, leftUnit, rightUnit, false)
+            : value;
+        rightInput =
+          name === 'leftInput'
+            ? tryConvert(value, leftUnit, rightUnit, true)
+            : value;
       }
 
       if (name === 'leftUnit' || name === 'rightUnit') {
-        leftInput = name === 'rightUnit' ? tryConvert(rightInput, leftUnit, value, false) : leftInput;
-        rightInput = name === 'leftUnit' ? tryConvert(leftInput, value, rightUnit, true) : rightInput;
+        leftInput =
+          name === 'rightUnit'
+            ? tryConvert(rightInput, leftUnit, value, false)
+            : leftInput;
+        rightInput =
+          name === 'leftUnit'
+            ? tryConvert(leftInput, value, rightUnit, true)
+            : rightInput;
       }
     }
 
@@ -89,7 +112,10 @@ class ConvertPanel extends Component {
   render() {
     const { conversionType, baseUnits } = this.props;
     const {
-      leftInput, rightInput, exchangeRates, errorFetchingRates,
+      leftInput,
+      rightInput,
+      exchangeRates,
+      errorFetchingRates,
     } = this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
     const options = baseUnits[conversionType].units;
@@ -106,11 +132,12 @@ class ConvertPanel extends Component {
           conversionType={conversionType}
           disableInputs={isCurrency && !exchangeRates}
         />
-        {isCurrency && (
-          !exchangeRates
-            ? <Loading error={errorFetchingRates} />
-            : <ExchangeRates exchangeRates={exchangeRates} />
-        )}
+        {isCurrency &&
+          (!exchangeRates ? (
+            <Loading error={errorFetchingRates} />
+          ) : (
+            <ExchangeRates exchangeRates={exchangeRates} />
+          ))}
       </StyeldConvertPanel>
     );
   }

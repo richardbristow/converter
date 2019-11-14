@@ -30,10 +30,9 @@ const StyledSidebarLink = styled(StyledLink)`
   }
 `;
 
-const SidebarOption = ({
-  displayName, mathName, handeSidebarLinkClick,
-}) => {
-  const upperCaseMathName = mathName.charAt(0).toUpperCase() + mathName.slice(1);
+const SidebarOption = ({ displayName, mathName, handeSidebarLinkClick }) => {
+  const upperCaseMathName =
+    mathName.charAt(0).toUpperCase() + mathName.slice(1);
   const SideIcon = SidebarIcons[upperCaseMathName];
   return (
     <StyledSidebarLink
@@ -48,7 +47,6 @@ const SidebarOption = ({
     </StyledSidebarLink>
   );
 };
-
 
 SidebarOption.propTypes = {
   displayName: PropTypes.string.isRequired,

@@ -9,16 +9,18 @@ const StyledHeaderIcon = styled.div`
   color: darkblue;
   &:hover {
     color: purple;
-  };
+  }
 `;
 
 const HeaderIconLink = ({ type }) => (
   <StyledLink header to={`/${type.toLowerCase().replace(' ', '')}`}>
     <span>{type}</span>
     <StyledHeaderIcon>
-      {type === 'Unit Index'
-        ? <Index width="1.2em" height="1.2em" />
-        : <About width="1.2em" height="1.2em" />}
+      {type === 'Unit Index' ? (
+        <Index width="1.2em" height="1.2em" />
+      ) : (
+        <About width="1.2em" height="1.2em" />
+      )}
     </StyledHeaderIcon>
   </StyledLink>
 );

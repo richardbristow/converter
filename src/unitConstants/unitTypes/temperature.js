@@ -19,7 +19,8 @@ const temperature = {
     {
       displayName: 'Rankine',
       mathName: 'degR',
-    }],
+    },
+  ],
 };
 
 export default temperature;

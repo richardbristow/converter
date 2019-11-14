@@ -11,7 +11,8 @@ const power = {
     {
       displayName: 'Horsepower',
       mathName: 'hp',
-    }],
+    },
+  ],
 };
 
 export default power;

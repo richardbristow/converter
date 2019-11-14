@@ -20,7 +20,4 @@ export const {
   Temperature,
   Time,
   Volume,
-} = toReactComponent(
-  './svg/*.svg',
-  { icon: true },
-);
+} = toReactComponent('./svg/*.svg', { icon: true });

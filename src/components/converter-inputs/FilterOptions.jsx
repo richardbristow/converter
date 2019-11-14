@@ -16,16 +16,16 @@ const StyledFilterOptions = styled.div`
   margin-top: 10px;
   ::-webkit-scrollbar {
     width: 5px;
-  };
+  }
   ::-webkit-scrollbar-track {
     background: ${({ theme }) => theme.scrollbarTrack};
-  };
+  }
   ::-webkit-scrollbar-thumb {
     background: ${({ theme }) => theme.scrollbarThumb};
-  };
+  }
   ::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => theme.scrollbarThumbHover};
-  };
+  }
 `;
 
 const StyledFilterError = styled(StyledConvertButton)`
@@ -61,42 +61,61 @@ const handleMouseOver = (options, refs, { target }) => {
 };
 
 const FilterOptions = ({
-  options, name, conversionType, filter, handleDropdownItemClick, currentDisplayName,
+  options,
+  name,
+  conversionType,
+  filter,
+  handleDropdownItemClick,
+  currentDisplayName,
 }) => {
   const isCurrency = conversionType === 'currency';
-  const filteredOptions = options.filter((option) => {
+  const filteredOptions = options.filter(option => {
     const { displayName, mathName } = option;
-    const filterText = isCurrency ? `${displayName} (${mathName})` : displayName;
+    const filterText = isCurrency
+      ? `${displayName} (${mathName})`
+      : displayName;
     return filterText.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
   });
   const dropdownOptionRefs = filteredOptions.map(() => React.createRef());
   return (
     <StyledFilterOptions>
-      {filteredOptions.length > 0 ? (filteredOptions.map(({ mathName, displayName }, index) => (
-        <StyledConvertButton
-          name={`${name}Unit`}
-          tabIndex={index === 0 ? '0' : '-1'}
-          key={`${name}-${mathName}`}
-          value={mathName}
-          onMouseDown={e => handleDropdownItemClick(conversionType, e)}
-          onKeyDown={e => onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)}
-          ref={dropdownOptionRefs[index]}
-          selected={currentDisplayName === displayName}
-          onMouseEnter={e => handleMouseOver(filteredOptions, dropdownOptionRefs, e)}
-        >
-          {isCurrency ? `${displayName} (${mathName})` : displayName}
-        </StyledConvertButton>
-      ))) : <StyledFilterError disabled tabIndex="-1">No units found.</StyledFilterError>}
+      {filteredOptions.length > 0 ? (
+        filteredOptions.map(({ mathName, displayName }, index) => (
+          <StyledConvertButton
+            name={`${name}Unit`}
+            tabIndex={index === 0 ? '0' : '-1'}
+            key={`${name}-${mathName}`}
+            value={mathName}
+            onMouseDown={e => handleDropdownItemClick(conversionType, e)}
+            onKeyDown={e =>
+              onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)
+            }
+            ref={dropdownOptionRefs[index]}
+            selected={currentDisplayName === displayName}
+            onMouseEnter={e =>
+              handleMouseOver(filteredOptions, dropdownOptionRefs, e)
+            }
+          >
+            {isCurrency ? `${displayName} (${mathName})` : displayName}
+          </StyledConvertButton>
+        ))
+      ) : (
+        <StyledFilterError disabled tabIndex="-1">
+          No units found.
+        </StyledFilterError>
+      )}
     </StyledFilterOptions>
   );
 };
 
 FilterOptions.propTypes = {
   name: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    displayName: PropTypes.string.isRequired,
-    mathName: PropTypes.string.isRequired,
-  })).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      displayName: PropTypes.string.isRequired,
+      mathName: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   conversionType: PropTypes.string.isRequired,
   filter: PropTypes.string.isRequired,
   handleDropdownItemClick: PropTypes.func.isRequired,

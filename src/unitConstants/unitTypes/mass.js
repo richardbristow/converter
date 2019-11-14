@@ -43,7 +43,8 @@ const mass = {
     {
       displayName: 'Stone',
       mathName: 'stone',
-    }],
+    },
+  ],
 };
 
 export default mass;

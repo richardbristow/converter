@@ -44,7 +44,8 @@ const time = {
     {
       displayName: 'Millennium',
       mathName: 'millennia',
-    }],
+    },
+  ],
 };
 
 export default time;

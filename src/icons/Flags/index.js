@@ -169,7 +169,4 @@ export const {
   Zmk,
   Zmw,
   Zwl,
-} = toReactComponent(
-  './svg/*.svg',
-  { icon: true },
-);
+} = toReactComponent('./svg/*.svg', { icon: true });

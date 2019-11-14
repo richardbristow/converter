@@ -7,24 +7,31 @@ import Logo from '../shared/Logo';
 
 const StyledSidebarHeader = styled.div`
   display: grid;
-  grid-template-columns: ${({ sidebarDocked }) => (sidebarDocked ? '300px' : '75px')};
+  grid-template-columns: ${({ sidebarDocked }) =>
+    sidebarDocked ? '300px' : '75px'};
   align-items: center;
-  ${({ sidebarDocked, theme }) => !sidebarDocked && `background-color: ${theme.sidebarHeaderBackground}`};
+  ${({ sidebarDocked, theme }) =>
+    !sidebarDocked && `background-color: ${theme.sidebarHeaderBackground}`};
 `;
 
-const SidebarHeader = ({ userShowSidebar, sidebarDocked, handleHamburgerClick }) => (
+const SidebarHeader = ({
+  userShowSidebar,
+  sidebarDocked,
+  handleHamburgerClick,
+}) => (
   <StyledSidebarHeader sidebarDocked={sidebarDocked}>
-    {!sidebarDocked
-      ? (
-        <Slider
-          width={24}
-          lineHeight={3}
-          lineSpacing={5}
-          active={userShowSidebar}
-          borderRadius={5}
-          onClick={handleHamburgerClick}
-        />
-      ) : (<Logo sidebarDocked={sidebarDocked} />)}
+    {!sidebarDocked ? (
+      <Slider
+        width={24}
+        lineHeight={3}
+        lineSpacing={5}
+        active={userShowSidebar}
+        borderRadius={5}
+        onClick={handleHamburgerClick}
+      />
+    ) : (
+      <Logo sidebarDocked={sidebarDocked} />
+    )}
   </StyledSidebarHeader>
 );
 

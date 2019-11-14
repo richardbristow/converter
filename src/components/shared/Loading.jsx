@@ -10,10 +10,11 @@ const StyledLoading = styled.div`
 
 const Loading = ({ error }) => (
   <StyledLoading>
-    {error
-      ? <span>Oops! There was an error fetching the exchange rates.</span>
-      : <span>Loading exchange rates...</span>
-    }
+    {error ? (
+      <span>Oops! There was an error fetching the exchange rates.</span>
+    ) : (
+      <span>Loading exchange rates...</span>
+    )}
   </StyledLoading>
 );
 

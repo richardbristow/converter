@@ -3,5 +3,13 @@
     "browser": true,
     "jest": true
   },
-  "extends": "airbnb"
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "rules": {
+    "react/jsx-props-no-spreading": 0
+  }
 }

@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import '../../__mocks__/matchMedia';
 
 import Converter from '../Converter';
-import '../../polyfills';
 
 describe('handleChange', () => {
   it('should render Converter wihout errors', () => {

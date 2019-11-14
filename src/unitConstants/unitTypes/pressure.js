@@ -35,7 +35,8 @@ const pressure = {
     {
       displayName: 'Centimetre of water',
       mathName: 'cmH2O',
-    }],
+    },
+  ],
 };
 
 export default pressure;
