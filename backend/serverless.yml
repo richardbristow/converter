@@ -6,7 +6,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   versionFunctions: false
   memorySize: 128
   region: us-east-1
