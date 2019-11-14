@@ -2,7 +2,8 @@
 
 | Master |  Develop | Netlify |
 | :---: | :---: | :--: |
-[![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=master)](https://travis-ci.com/richardbristow/converter) | [![Build Status](https://travis-ci.com/richardbristow/converter.svg?token=amuuYP2DpkFefHYPc6eb&branch=develop)](https://travis-ci.com/richardbristow/converter) | [![Netlify Status](https://api.netlify.com/api/v1/badges/651c9d62-6348-4631-b5fa-d0eb79517db7/deploy-status)](https://app.netlify.com/sites/converter-app/deploys)
+| ![](https://github.com/richardbristow/converter/workflows/CI%20workflow/badge.svg?branch=master) | ![](https://github.com/richardbristow/converter/workflows/CI%20workflow/badge.svg?branch=develop) | [![Netlify Status](https://api.netlify.com/api/v1/badges/651c9d62-6348-4631-b5fa-d0eb79517db7/deploy-status)](https://app.netlify.com/sites/converter-app/deploys) |
+
 This is a React webapp to convert between various units of measurement.
 
 It has serverless backend to support the currency conversion. This is used to cache the API responses from fixer.io to a dynamodb table, to remain within the API rate limits of the free fixer account.
