@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
@@ -46,99 +46,72 @@ const Overlay = styled.div`
 
 const mql = window.matchMedia('(min-width: 1024px)');
 
-class Converter extends Component {
-  constructor(props) {
-    super(props);
+const Converter = () => {
+  const [userShowSidebar, setUserShowSidebar] = useState(false);
+  const [sidebarDocked, setSidebarDocked] = useState(mql.matches);
+  const timeOutId = useRef();
+  const sidebar = useRef();
 
-    this.state = {
-      userShowSidebar: false,
-      sidebarDocked: mql.matches,
-    };
+  const mediaQueryChanged = () => {
+    setUserShowSidebar(false);
+    setSidebarDocked(mql.matches);
+  };
 
-    this.timeOutId = null;
-    this.sidebar = React.createRef();
-    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
-    this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-    this.handeSidebarLinkClick = this.handeSidebarLinkClick.bind(this);
-    this.onBlurHandler = this.onBlurHandler.bind(this);
-    this.onFocusHandler = this.onFocusHandler.bind(this);
-  }
+  useEffect(() => {
+    mql.addListener(mediaQueryChanged);
+    return () => mql.removeListener(mediaQueryChanged);
+  });
 
-  // eslint-disable-next-line camelcase
-  UNSAFE_componentWillMount() {
-    mql.addListener(this.mediaQueryChanged);
-  }
+  const onFocusHandler = () => {
+    clearTimeout(timeOutId.current);
+  };
 
-  componentWillUnmount() {
-    mql.removeListener(this.mediaQueryChanged);
-  }
-
-  onFocusHandler() {
-    clearTimeout(this.timeOutId);
-  }
-
-  onBlurHandler() {
-    this.timeOutId = setTimeout(() => {
-      this.setState({
-        userShowSidebar: false,
-      });
+  const onBlurHandler = () => {
+    const id = setTimeout(() => {
+      setUserShowSidebar(false);
     });
-  }
+    timeOutId.current = id;
+  };
 
-  handleHamburgerClick() {
-    this.setState(prevState => ({
-      userShowSidebar: !prevState.userShowSidebar,
-    }));
-  }
+  const handleHamburgerClick = () => {
+    setUserShowSidebar(!userShowSidebar);
+  };
 
-  handeSidebarLinkClick() {
-    const { userShowSidebar } = this.state;
+  const handeSidebarLinkClick = () => {
     if (userShowSidebar) {
-      this.setState({
-        userShowSidebar: false,
-      });
+      setUserShowSidebar(false);
     }
-  }
+  };
 
-  mediaQueryChanged() {
-    this.setState({ sidebarDocked: mql.matches, userShowSidebar: false });
-  }
-
-  render() {
-    const { userShowSidebar, sidebarDocked } = this.state;
-    return (
-      <ThemeProvider theme={globalTheme}>
-        <>
-          <GlobalStyle />
-          <Router>
-            <StyledConverter
-              onBlur={this.onBlurHandler}
-              onFocus={this.onFocusHandler}
+  return (
+    <ThemeProvider theme={globalTheme}>
+      <>
+        <GlobalStyle />
+        <Router>
+          <StyledConverter onBlur={onBlurHandler} onFocus={onFocusHandler}>
+            <CSSTransition
+              in={userShowSidebar}
+              classNames="overlay"
+              timeout={200}
+              unmountOnExit
             >
-              <CSSTransition
-                in={userShowSidebar}
-                classNames="overlay"
-                timeout={200}
-                unmountOnExit
-              >
-                <Overlay />
-              </CSSTransition>
-              <Header sidebarDocked={sidebarDocked} />
-              <Sidebar
-                ref={this.sidebar}
-                sidebarDocked={sidebarDocked}
-                userShowSidebar={userShowSidebar}
-                items={baseUnits}
-                handeSidebarLinkClick={this.handeSidebarLinkClick}
-                handleHamburgerClick={this.handleHamburgerClick}
-              />
-              <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
-            </StyledConverter>
-          </Router>
-        </>
-      </ThemeProvider>
-    );
-  }
-}
+              <Overlay />
+            </CSSTransition>
+            <Header sidebarDocked={sidebarDocked} />
+            <Sidebar
+              ref={sidebar}
+              sidebarDocked={sidebarDocked}
+              userShowSidebar={userShowSidebar}
+              items={baseUnits}
+              handeSidebarLinkClick={handeSidebarLinkClick}
+              handleHamburgerClick={handleHamburgerClick}
+            />
+            <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
+          </StyledConverter>
+        </Router>
+      </>
+    </ThemeProvider>
+  );
+};
 
 export default Converter;
