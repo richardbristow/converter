@@ -26,6 +26,7 @@ const StyledFilterOptions = styled.div`
   ::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => theme.scrollbarThumbHover};
   }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 const StyledFilterError = styled(StyledConvertButton)`
