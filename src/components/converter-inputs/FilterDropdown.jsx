@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/macro';
 
@@ -32,153 +32,110 @@ const StyledFilterInput = styled.input`
   min-width: 0;
 `;
 
-class FilterDropdown extends Component {
-  constructor(props) {
-    super(props);
+const FilterDropdown = ({
+  handleChange,
+  options,
+  name,
+  conversionType,
+  dropdownValue,
+  disableInputs,
+}) => {
+  const [filter, setFilter] = useState('');
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const timeOutId = useRef();
+  const unitInput = useRef();
 
-    this.state = {
-      filter: '',
-      dropdownOpen: false,
-    };
-
-    this.timeOutId = null;
-    this.unitInput = React.createRef();
-    this.updateFilter = this.updateFilter.bind(this);
-    this.handleDropdownClick = this.handleDropdownClick.bind(this);
-    this.handleDropdownItemClick = this.handleDropdownItemClick.bind(this);
-    this.handleHeaderFocus = this.handleHeaderFocus.bind(this);
-    this.onFocusHandler = this.onFocusHandler.bind(this);
-    this.onBlurHandler = this.onBlurHandler.bind(this);
-    this.handleEscKey = this.handleEscKey.bind(this);
-  }
-
-  componentDidUpdate() {
-    if (this.unitInput.current) {
-      this.unitInput.current.focus();
+  useEffect(() => {
+    if (unitInput.current) {
+      unitInput.current.focus();
     }
-  }
+  });
 
-  onFocusHandler() {
-    clearTimeout(this.timeOutId);
-  }
+  const onFocusHandler = () => {
+    clearTimeout(timeOutId.current);
+  };
 
-  onBlurHandler() {
-    this.timeOutId = setTimeout(() => {
-      this.setState({
-        dropdownOpen: false,
-      });
+  const onBlurHandler = () => {
+    const id = setTimeout(() => {
+      setDropdownOpen(false);
     });
-  }
+    timeOutId.current = id;
+  };
 
-  handleDropdownClick(e) {
-    e.preventDefault();
-    const clicked = e.target.getAttribute('name');
+  const handleDropdownClick = event => {
+    event.preventDefault();
+    const clicked = event.target.getAttribute('name');
     if (clicked === 'header') {
-      this.setState({
-        dropdownOpen: true,
-      });
+      setDropdownOpen(true);
     } else {
-      this.setState(prevState => ({
-        dropdownOpen: !prevState.dropdownOpen,
-      }));
+      setDropdownOpen(!dropdownOpen);
     }
-  }
+  };
 
-  handleDropdownItemClick(conversionType, e) {
-    const { handleChange } = this.props;
-    handleChange(conversionType, e);
-    this.setState({
-      dropdownOpen: false,
-      filter: '',
-    });
-  }
+  const handleDropdownItemClick = (type, event) => {
+    handleChange(type, event);
+    setDropdownOpen(false);
+    setFilter('');
+  };
 
-  handleHeaderFocus() {
-    this.setState({
-      dropdownOpen: true,
-    });
-  }
-
-  updateFilter({ target }) {
-    const { value } = target;
-    this.setState({
-      filter: value,
-    });
-  }
-
-  handleEscKey({ key }) {
-    if (key === 'Escape') {
-      this.setState({
-        dropdownOpen: false,
-      });
-    }
-  }
-
-  render() {
-    const {
-      options,
-      name,
-      conversionType,
-      dropdownValue,
-      disableInputs,
-    } = this.props;
-    const { filter, dropdownOpen } = this.state;
-    const arrowIcon = dropdownOpen === false ? <ChevronDown /> : <ChevronUp />;
-    const { displayName, mathName } = options.find(
-      option => option.mathName === dropdownValue && option,
-    );
-    const isCurrency = conversionType === 'currency';
-    return (
-      <StyledFilterDropdown
-        onBlur={this.onBlurHandler}
-        onFocus={this.onFocusHandler}
-      >
-        {dropdownOpen ? (
-          <StyledFilterInput
-            ref={this.unitInput}
-            placeholder="Search units..."
-            name="filter"
-            type="text"
-            value={filter}
-            onKeyDown={this.handleEscKey}
-            onChange={this.updateFilter}
-          />
-        ) : (
-          <StyledConvertButton
-            header
-            name="header"
-            tabIndex="0"
-            onFocus={this.handleHeaderFocus}
-            onClick={this.handleDropdownClick}
-            disabled={disableInputs}
-          >
-            {isCurrency ? `${displayName} (${mathName})` : displayName}
-          </StyledConvertButton>
-        )}
-        <StyledArrowButton
-          arrow
-          dropdownOpen={dropdownOpen}
-          tabIndex="-1"
-          name="arrow"
-          onClick={this.handleDropdownClick}
+  const { displayName, mathName } = options.find(
+    option => option.mathName === dropdownValue && option,
+  );
+  const isCurrency = conversionType === 'currency';
+  return (
+    <StyledFilterDropdown onBlur={onBlurHandler} onFocus={onFocusHandler}>
+      {dropdownOpen ? (
+        <StyledFilterInput
+          ref={unitInput}
+          placeholder="Search units..."
+          name="filter"
+          type="text"
+          value={filter}
+          onKeyDown={({ key }) => {
+            if (key === 'Escape') {
+              setDropdownOpen(false);
+            }
+          }}
+          onChange={({ target }) => {
+            const { value } = target;
+            setFilter(value);
+          }}
+        />
+      ) : (
+        <StyledConvertButton
+          header
+          name="header"
+          tabIndex="0"
+          onFocus={() => setDropdownOpen(true)}
+          onClick={handleDropdownClick}
           disabled={disableInputs}
         >
-          {arrowIcon}
-        </StyledArrowButton>
-        {dropdownOpen && (
-          <FilterOptions
-            currentDisplayName={displayName}
-            options={options}
-            name={name}
-            conversionType={conversionType}
-            filter={filter}
-            handleDropdownItemClick={this.handleDropdownItemClick}
-          />
-        )}
-      </StyledFilterDropdown>
-    );
-  }
-}
+          {isCurrency ? `${displayName} (${mathName})` : displayName}
+        </StyledConvertButton>
+      )}
+      <StyledArrowButton
+        arrow
+        dropdownOpen={dropdownOpen}
+        tabIndex="-1"
+        name="arrow"
+        onClick={handleDropdownClick}
+        disabled={disableInputs}
+      >
+        {dropdownOpen === false ? <ChevronDown /> : <ChevronUp />}
+      </StyledArrowButton>
+      {dropdownOpen && (
+        <FilterOptions
+          currentDisplayName={displayName}
+          options={options}
+          name={name}
+          conversionType={conversionType}
+          filter={filter}
+          handleDropdownItemClick={handleDropdownItemClick}
+        />
+      )}
+    </StyledFilterDropdown>
+  );
+};
 
 FilterDropdown.defaultProps = {
   disableInputs: false,
