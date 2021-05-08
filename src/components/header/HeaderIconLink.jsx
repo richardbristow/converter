@@ -10,6 +10,7 @@ const StyledHeaderIcon = styled.div`
   &:hover {
     color: purple;
   }
+  padding-right: 10px;
 `;
 
 const HeaderIconLink = ({ type }) => (

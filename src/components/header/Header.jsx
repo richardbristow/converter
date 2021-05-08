@@ -11,7 +11,6 @@ const StyledHeader = styled.div`
   display: grid;
   grid-template-columns: auto 1fr repeat(2, auto);
   align-items: center;
-  padding-right: 10px;
 `;
 
 const Header = ({ sidebarDocked }) => (
