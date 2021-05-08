@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import styled, { ThemeProvider } from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import { CSSTransition } from 'react-transition-group';
 
-import { GlobalStyle, globalTheme } from '../theme/globalStyle';
 import baseUnits from '../unitConstants/baseUnits';
 
 import Header from './header/Header';
@@ -84,33 +82,26 @@ const Converter = () => {
   };
 
   return (
-    <ThemeProvider theme={globalTheme}>
-      <>
-        <GlobalStyle />
-        <Router>
-          <StyledConverter onBlur={onBlurHandler} onFocus={onFocusHandler}>
-            <CSSTransition
-              in={userShowSidebar}
-              classNames="overlay"
-              timeout={200}
-              unmountOnExit
-            >
-              <Overlay />
-            </CSSTransition>
-            <Header sidebarDocked={sidebarDocked} />
-            <Sidebar
-              ref={sidebar}
-              sidebarDocked={sidebarDocked}
-              userShowSidebar={userShowSidebar}
-              items={baseUnits}
-              handeSidebarLinkClick={handeSidebarLinkClick}
-              handleHamburgerClick={handleHamburgerClick}
-            />
-            <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
-          </StyledConverter>
-        </Router>
-      </>
-    </ThemeProvider>
+    <StyledConverter onBlur={onBlurHandler} onFocus={onFocusHandler}>
+      <CSSTransition
+        in={userShowSidebar}
+        classNames="overlay"
+        timeout={200}
+        unmountOnExit
+      >
+        <Overlay />
+      </CSSTransition>
+      <Header sidebarDocked={sidebarDocked} />
+      <Sidebar
+        ref={sidebar}
+        sidebarDocked={sidebarDocked}
+        userShowSidebar={userShowSidebar}
+        items={baseUnits}
+        handeSidebarLinkClick={handeSidebarLinkClick}
+        handleHamburgerClick={handleHamburgerClick}
+      />
+      <Main baseUnits={baseUnits} sidebarDocked={sidebarDocked} />
+    </StyledConverter>
   );
 };
 
