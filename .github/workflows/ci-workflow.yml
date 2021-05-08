@@ -8,24 +8,23 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 13.x]
+        node-version: [14, 16]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install, lint, test, build
-        run: |
-          node --version
-          yarn --version
-          yarn install
-          yarn lint
-          yarn test --coverage
-          yarn build
+      - run: node --version
+      - run: yarn --version
+      - run: yarn install
+      - run: yarn lint
+      - name: yarn test
         env:
           CI: true
+        run: yarn test --coverage
+      - run: yarn build
 
   deploy_netlify:
     name: deploy to netlify
@@ -33,19 +32,16 @@ jobs:
     needs: test
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 13
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
         with:
-          node-version: 13.x
-      - name: install netlify-cli
-        run: npm install netlify-cli -g
-      - run: |
-          node --version
-          yarn --version
-          netlify --version
-          yarn install
-          yarn build
+          node-version: 14.x
+      - run: node --version
+      - run: yarn --version
+      - run: netlify --version
+      - run: yarn install
+      - run: yarn build
       - name: 'PROD: deploy to netlify'
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: netlify deploy --prod
@@ -67,17 +63,16 @@ jobs:
     needs: test
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 13
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
         with:
-          node-version: 13.x
-      - run: |
-          npm install serverless -g
-          node --version
-          yarn --version
-          serverless --version
-          yarn install
+          node-version: 14.x
+      - run: npm install serverless -g
+      - run: node --version
+      - run: yarn --version
+      - run: serverless --version
+      - run: yarn install
       - name: 'PROD: serverless deploy to AWS'
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
