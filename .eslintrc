@@ -6,8 +6,8 @@
   "extends": [
     "react-app",
     "airbnb",
-    "plugin:prettier/recommended",
-    "prettier/react"
+    "airbnb/hooks",
+    "prettier"
   ],
   "rules": {
     "react/jsx-props-no-spreading": 0

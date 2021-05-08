@@ -24,9 +24,6 @@ const StyledSidebar = styled.div`
   background-color: ${({ theme }) => theme.sidebarBackground};
   z-index: 3;
   outline: none;
-  -webkit-transform: translateZ(0px);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
   ${({ userShowSidebar }) =>
     userShowSidebar &&
     'box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'};
@@ -50,9 +47,9 @@ const Sidebar = React.forwardRef(
       sidebarDocked,
       items,
       handeSidebarLinkClick,
-      handleHamburgerClick,
+      handleHamburgerClick
     },
-    ref,
+    ref
   ) => (
     <StyledSidebar
       tabIndex="0"
@@ -81,12 +78,12 @@ const Sidebar = React.forwardRef(
         </StyledSidebarOptions>
       </Scrollbars>
     </StyledSidebar>
-  ),
+  )
 );
 
 const typeProps = {
   displayName: PropTypes.string,
-  mathName: PropTypes.string,
+  mathName: PropTypes.string
 };
 
 Sidebar.propTypes = {
@@ -95,13 +92,13 @@ Sidebar.propTypes = {
   handeSidebarLinkClick: PropTypes.func.isRequired,
   items: PropTypes.shape(
     {
-      length: PropTypes.shape({ ...typeProps }),
+      length: PropTypes.shape({ ...typeProps })
     },
     {
-      surfaceArea: PropTypes.shape({ ...typeProps }),
-    },
+      surfaceArea: PropTypes.shape({ ...typeProps })
+    }
   ).isRequired,
-  handleHamburgerClick: PropTypes.func.isRequired,
+  handleHamburgerClick: PropTypes.func.isRequired
 };
 
 export default Sidebar;
