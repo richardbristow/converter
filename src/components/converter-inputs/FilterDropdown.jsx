@@ -28,6 +28,8 @@ const StyledFilterInput = styled.input`
   padding-left: 15px;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
   border-radius: 0px 0px 0px 4px;
   min-width: 0;
 `;
@@ -62,7 +64,7 @@ const FilterDropdown = ({
     timeOutId.current = id;
   };
 
-  const handleDropdownClick = event => {
+  const handleDropdownClick = (event) => {
     event.preventDefault();
     const clicked = event.target.getAttribute('name');
     if (clicked === 'header') {
@@ -79,7 +81,7 @@ const FilterDropdown = ({
   };
 
   const { displayName, mathName } = options.find(
-    option => option.mathName === dropdownValue && option,
+    (option) => option.mathName === dropdownValue && option
   );
   const isCurrency = conversionType === 'currency';
   return (
@@ -147,7 +149,7 @@ FilterDropdown.propTypes = {
     PropTypes.shape({
       displayName: PropTypes.string.isRequired,
       mathName: PropTypes.string.isRequired,
-    }),
+    })
   ).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,

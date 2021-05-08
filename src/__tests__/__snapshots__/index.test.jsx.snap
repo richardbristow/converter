@@ -7,7 +7,7 @@ exports[`index matches the snapshot 1`] = `
   onFocus={[Function]}
 >
   <div
-    className="Header__StyledHeader-sc-1tp9j3k-0 loKETh"
+    className="Header__StyledHeader-sc-1tp9j3k-0 cQhCsx"
   >
     <a
       className="Logo__StyledLogoLink-sc-1falnfx-0 vcSiN"
@@ -35,7 +35,7 @@ exports[`index matches the snapshot 1`] = `
         Unit Index
       </span>
       <div
-        className="HeaderIconLink__StyledHeaderIcon-gnq95h-0 dEIFNW"
+        className="HeaderIconLink__StyledHeaderIcon-gnq95h-0 TjAcq"
       >
         <svg
           height="1.2em"
@@ -59,7 +59,7 @@ exports[`index matches the snapshot 1`] = `
         About
       </span>
       <div
-        className="HeaderIconLink__StyledHeaderIcon-gnq95h-0 dEIFNW"
+        className="HeaderIconLink__StyledHeaderIcon-gnq95h-0 TjAcq"
       >
         <svg
           height="1.2em"
