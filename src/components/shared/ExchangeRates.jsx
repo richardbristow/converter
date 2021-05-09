@@ -52,7 +52,7 @@ const ExchangeRates = ({ exchangeRates }) => (
   <StyledExchangeWrapper>
     <StyledRatesInfo>
       <span>{`Exchange rates last updated: ${new Date(
-        exchangeRates.dynamoCreatedAt,
+        exchangeRates.dynamoCreatedAt
       ).toLocaleString()}`}</span>
       <br />
       <span>All exchange rates updated hourly.</span>
@@ -61,7 +61,7 @@ const ExchangeRates = ({ exchangeRates }) => (
       <h4>Exchange Rates (Base currency: Euro)</h4>
       <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
         <StyledExchangeRates>
-          {exchangeRates.rates.map(rate => {
+          {exchangeRates.rates.map((rate) => {
             const lowerCaseCurrencyCode =
               rate.mathName.charAt(0) + rate.mathName.slice(1).toLowerCase();
             const CurrencyFlag = Flags[lowerCaseCurrencyCode];

@@ -22,7 +22,7 @@ const globalTheme = {
   selectedBackground: 'lightblue',
   scrollbarTrack: '#f1f1f1',
   scrollbarThumb: '#888',
-  scrollbarThumbHover: '#555'
+  scrollbarThumbHover: '#555',
 };
 
 export { GlobalStyle, globalTheme };

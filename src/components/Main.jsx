@@ -19,8 +19,8 @@ const StyledMain = styled.div`
   }
 `;
 
-const renderUnitRoutes = baseUnits =>
-  Object.keys(baseUnits).map(type => {
+const renderUnitRoutes = (baseUnits) =>
+  Object.keys(baseUnits).map((type) => {
     const { mathName, displayName } = baseUnits[type];
     return (
       <Route

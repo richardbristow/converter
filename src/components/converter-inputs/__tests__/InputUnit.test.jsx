@@ -26,7 +26,7 @@ describe('InputUnit', () => {
   it('should call onChange when textInput value is changed', () => {
     const wrapper = shallow(<InputUnit {...props} />);
     expect(wrapper.find({ name: 'nameInput' }).props().value).toBe(
-      'InputValue',
+      'InputValue'
     );
     wrapper
       .find({ name: 'nameInput' })

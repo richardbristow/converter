@@ -42,7 +42,7 @@ const focusNextOption = (name, value, nextOption, refs) => {
 const onArrowKeyDown = (options, refs, e) => {
   const { key, target } = e;
   const { name, value } = target;
-  const optionsMathNames = options.map(option => option.mathName);
+  const optionsMathNames = options.map((option) => option.mathName);
   if (key === 'ArrowDown') {
     e.preventDefault();
     const nextOption = optionsMathNames.indexOf(value) + 1;
@@ -56,7 +56,7 @@ const onArrowKeyDown = (options, refs, e) => {
 
 const handleMouseOver = (options, refs, { target }) => {
   const { value } = target;
-  const optionsMathNames = options.map(option => option.mathName);
+  const optionsMathNames = options.map((option) => option.mathName);
   const current = optionsMathNames.indexOf(value);
   refs[current].current.focus();
 };
@@ -70,7 +70,7 @@ const FilterOptions = ({
   currentDisplayName,
 }) => {
   const isCurrency = conversionType === 'currency';
-  const filteredOptions = options.filter(option => {
+  const filteredOptions = options.filter((option) => {
     const { displayName, mathName } = option;
     const filterText = isCurrency
       ? `${displayName} (${mathName})`
@@ -87,13 +87,13 @@ const FilterOptions = ({
             tabIndex={index === 0 ? '0' : '-1'}
             key={`${name}-${mathName}`}
             value={mathName}
-            onMouseDown={e => handleDropdownItemClick(conversionType, e)}
-            onKeyDown={e =>
+            onMouseDown={(e) => handleDropdownItemClick(conversionType, e)}
+            onKeyDown={(e) =>
               onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)
             }
             ref={dropdownOptionRefs[index]}
             selected={currentDisplayName === displayName}
-            onMouseEnter={e =>
+            onMouseEnter={(e) =>
               handleMouseOver(filteredOptions, dropdownOptionRefs, e)
             }
           >
@@ -115,7 +115,7 @@ FilterOptions.propTypes = {
     PropTypes.shape({
       displayName: PropTypes.string.isRequired,
       mathName: PropTypes.string.isRequired,
-    }),
+    })
   ).isRequired,
   conversionType: PropTypes.string.isRequired,
   filter: PropTypes.string.isRequired,

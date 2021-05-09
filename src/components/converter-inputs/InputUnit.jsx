@@ -39,7 +39,7 @@ const InputUnit = ({
       name={`${name}Input`}
       value={textValue}
       type="text"
-      onChange={e => handleChange(conversionType, e)}
+      onChange={(e) => handleChange(conversionType, e)}
       disabled={disableInputs}
     />
     <FilterDropdown
@@ -65,7 +65,7 @@ InputUnit.propTypes = {
     PropTypes.shape({
       displayName: PropTypes.string.isRequired,
       mathName: PropTypes.string.isRequired,
-    }),
+    })
   ).isRequired,
   handleChange: PropTypes.func.isRequired,
   conversionType: PropTypes.string.isRequired,

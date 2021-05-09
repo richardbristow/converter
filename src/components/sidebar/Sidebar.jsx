@@ -47,7 +47,7 @@ const Sidebar = React.forwardRef(
       sidebarDocked,
       items,
       handeSidebarLinkClick,
-      handleHamburgerClick
+      handleHamburgerClick,
     },
     ref
   ) => (
@@ -64,7 +64,7 @@ const Sidebar = React.forwardRef(
       />
       <Scrollbars renderThumbVertical={() => <StyledScrollBarThumb />}>
         <StyledSidebarOptions>
-          {Object.keys(items).map(type => {
+          {Object.keys(items).map((type) => {
             const { displayName, mathName } = items[type];
             return (
               <SidebarOption
@@ -83,7 +83,7 @@ const Sidebar = React.forwardRef(
 
 const typeProps = {
   displayName: PropTypes.string,
-  mathName: PropTypes.string
+  mathName: PropTypes.string,
 };
 
 Sidebar.propTypes = {
@@ -92,13 +92,13 @@ Sidebar.propTypes = {
   handeSidebarLinkClick: PropTypes.func.isRequired,
   items: PropTypes.shape(
     {
-      length: PropTypes.shape({ ...typeProps })
+      length: PropTypes.shape({ ...typeProps }),
     },
     {
-      surfaceArea: PropTypes.shape({ ...typeProps })
+      surfaceArea: PropTypes.shape({ ...typeProps }),
     }
   ).isRequired,
-  handleHamburgerClick: PropTypes.func.isRequired
+  handleHamburgerClick: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

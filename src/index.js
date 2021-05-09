@@ -16,6 +16,6 @@ ReactDOM.render(
       <Converter />
     </Router>
   </ThemeProvider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 registerServiceWorker();

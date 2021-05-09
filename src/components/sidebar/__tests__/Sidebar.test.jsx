@@ -16,7 +16,7 @@ describe('Sidebar', () => {
   it('should have the same number of links as there are unit types in baseUnits.js', () => {
     const wrapper = shallow(<Sidebar {...props} />);
     expect(wrapper.find('SidebarOption')).toHaveLength(
-      Object.keys(baseUnits).length,
+      Object.keys(baseUnits).length
     );
   });
 });

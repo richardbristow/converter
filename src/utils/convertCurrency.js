@@ -5,7 +5,7 @@ const convertCurrency = (
   leftUnit,
   rightUnit,
   exchangeRates,
-  leftToRight,
+  leftToRight
 ) => {
   const { base, rates } = exchangeRates;
 
@@ -20,7 +20,7 @@ const convertCurrency = (
 
   // console.log(((Date.now() - exchangeRates.dynamoCreatedAt) / 1000) > 3600);
 
-  rates.forEach(rate => {
+  rates.forEach((rate) => {
     const { mathName, exchangeRate } = rate;
     if (mathName !== 'EUR') {
       math.createUnit(mathName, math.unit(1 / exchangeRate, base), {
