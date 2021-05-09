@@ -10,10 +10,10 @@ const StyledLogoLink = styled(Link)`
     color: black;
   }
   h1 {
-    margin: ${({ sidebarDocked }) =>
-      sidebarDocked ? '0 0 20px 0' : '0 0 0 115px'};
+    margin: ${({ $sidebarDocked }) =>
+      $sidebarDocked ? '0 0 20px 0' : '0 0 0 115px'};
     user-select: none;
-    font-size: ${({ sidebarDocked }) => (sidebarDocked ? '2.4em' : '1.8em')};
+    font-size: ${({ $sidebarDocked }) => ($sidebarDocked ? '2.4em' : '1.8em')};
   }
 `;
 
@@ -24,7 +24,7 @@ const StyledLogoBorder = styled.div`
 `;
 
 const Logo = ({ sidebarDocked }) => (
-  <StyledLogoLink sidebarDocked={sidebarDocked} to="/">
+  <StyledLogoLink $sidebarDocked={sidebarDocked} to="/">
     <StyledLogoBorder sidebarDocked={sidebarDocked}>
       <h1>CONVERTER</h1>
     </StyledLogoBorder>

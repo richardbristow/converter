@@ -13,7 +13,6 @@ exports[`index matches the snapshot 1`] = `
       className="Logo__StyledLogoLink-sc-1falnfx-0 vcSiN"
       href="/"
       onClick={[Function]}
-      sidebarDocked={false}
     >
       <div
         className="Logo__StyledLogoBorder-sc-1falnfx-1"
@@ -27,7 +26,6 @@ exports[`index matches the snapshot 1`] = `
     <a
       aria-current={null}
       className="StyledLink-sc-6w75q-0 fKBhpR"
-      header={true}
       href="/unitindex"
       onClick={[Function]}
     >
@@ -51,7 +49,6 @@ exports[`index matches the snapshot 1`] = `
     <a
       aria-current={null}
       className="StyledLink-sc-6w75q-0 fKBhpR"
-      header={true}
       href="/about"
       onClick={[Function]}
     >

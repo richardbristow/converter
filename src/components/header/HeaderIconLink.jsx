@@ -14,7 +14,7 @@ const StyledHeaderIcon = styled.div`
 `;
 
 const HeaderIconLink = ({ type }) => (
-  <StyledLink header to={`/${type.toLowerCase().replace(' ', '')}`}>
+  <StyledLink $header to={`/${type.toLowerCase().replace(' ', '')}`}>
     <span>{type}</span>
     <StyledHeaderIcon>
       {type === 'Unit Index' ? (
