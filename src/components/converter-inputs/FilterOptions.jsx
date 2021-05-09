@@ -87,7 +87,7 @@ const FilterOptions = ({
             tabIndex={index === 0 ? '0' : '-1'}
             key={`${name}-${mathName}`}
             value={mathName}
-            onMouseDown={(e) => handleDropdownItemClick(conversionType, e)}
+            onClick={(e) => handleDropdownItemClick(conversionType, e)}
             onKeyDown={(e) =>
               onArrowKeyDown(filteredOptions, dropdownOptionRefs, e)
             }
