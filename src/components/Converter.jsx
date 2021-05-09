@@ -56,8 +56,8 @@ const Converter = () => {
   };
 
   useEffect(() => {
-    mql.addListener(mediaQueryChanged);
-    return () => mql.removeListener(mediaQueryChanged);
+    mql.addEventListener('change', mediaQueryChanged);
+    return () => mql.removeEventListener('change', mediaQueryChanged);
   });
 
   const onFocusHandler = () => {
