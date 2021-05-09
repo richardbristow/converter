@@ -7,7 +7,6 @@ import { ThemeProvider } from 'styled-components/macro';
 
 import { GlobalStyle, globalTheme } from './theme/globalStyle';
 import Converter from './components/Converter';
-import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <ThemeProvider theme={globalTheme}>
@@ -18,4 +17,3 @@ ReactDOM.render(
   </ThemeProvider>,
   document.getElementById('root')
 );
-registerServiceWorker();
