@@ -52,6 +52,7 @@ jobs:
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV }}
           REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV }}
+        run: yarn build
       - name: 'PROD: deploy to netlify'
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: netlify deploy --dir=build --prod
