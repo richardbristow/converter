@@ -1,6 +1,6 @@
 # Converter App
 
-| Master |  Develop | Netlify |
+| Main |  Develop | Netlify |
 | :---: | :---: | :--: |
 | [![CI workflow](https://github.com/richardbristow/converter/actions/workflows/ci-workflow.yml/badge.svg)](https://github.com/richardbristow/converter/actions/workflows/ci-workflow.yml) | [![CI workflow](https://github.com/richardbristow/converter/actions/workflows/ci-workflow.yml/badge.svg?branch=develop)](https://github.com/richardbristow/converter/actions/workflows/ci-workflow.yml) | [![Netlify Status](https://api.netlify.com/api/v1/badges/651c9d62-6348-4631-b5fa-d0eb79517db7/deploy-status)](https://app.netlify.com/sites/converter-app/deploys) |
 

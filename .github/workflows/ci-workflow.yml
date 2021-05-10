@@ -43,14 +43,14 @@ jobs:
       - run: yarn install
       - run: yarn build
       - name: 'PROD: deploy to netlify'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: netlify deploy --prod
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       - name: 'DEV: deploy to netlify'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
         run: netlify deploy
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_DEV_CACHED_EXCHANGE_RATES_URL }}
@@ -74,7 +74,7 @@ jobs:
       - run: serverless --version
       - run: yarn install
       - name: 'PROD: serverless deploy to AWS'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           cd backend
           serverless deploy --stage prod -v --conceal
@@ -83,7 +83,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           FIXER_API_KEY: ${{ secrets.FIXER_API_KEY }}
       - name: 'DEV: serverless deploy to AWS'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
         run: |
           cd backend
           serverless deploy -v --conceal
