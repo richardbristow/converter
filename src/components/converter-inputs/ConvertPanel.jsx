@@ -34,8 +34,18 @@ class ConvertPanel extends Component {
     const { conversionType } = this.props;
     if (conversionType === 'currency') {
       try {
-        const url = process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL;
-        const response = await fetch(url);
+        const url =
+          process.env.REACT_APP_STAGE === 'production'
+            ? process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL
+            : process.env.REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV;
+        const response = await fetch(url, {
+          headers: {
+            'x-api-key':
+              process.env.REACT_APP_STAGE === 'production'
+                ? process.env.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY
+                : process.env.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV,
+          },
+        });
         const data = await response.json();
         const exchangeRates = mergeRatesAndSymbols(data);
         this.setState({

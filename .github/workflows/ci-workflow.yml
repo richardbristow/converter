@@ -41,19 +41,27 @@ jobs:
       - run: yarn --version
       - run: netlify --version
       - run: yarn install
-      - run: yarn build
-      - name: 'PROD: deploy to netlify'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: netlify deploy --prod
+      - name: 'PROD: yarn build:prod'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL }}
+          REACT_APP_CACHED_EXCHANGE_RATES_APIKEY: ${{ secrets. REACT_APP_CACHED_EXCHANGE_RATES_APIKEY }}
+        run: yarn build:prod
+      - name: 'DEV: yarn build'
+        if: github.event_name == 'push' && github.ref != 'refs/heads/master'
+        env:
+          REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV }}
+          REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV }}
+      - name: 'PROD: deploy to netlify'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: netlify deploy --dir=build --prod
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       - name: 'DEV: deploy to netlify'
         if: github.event_name == 'push' && github.ref != 'refs/heads/main'
-        run: netlify deploy
+        run: netlify deploy --dir=build
         env:
-          REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_DEV_CACHED_EXCHANGE_RATES_URL }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 

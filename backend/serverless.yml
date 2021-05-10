@@ -1,58 +1,72 @@
 service: converter-backend
 
+useDotenv: true
+
 custom:
   stage: ${opt:stage, self:provider.stage}
-  tableName: ${self:custom.stage}-ExchangeRatesTable
+  tableName: ${self:custom.stage}-converter-ExchangeRatesTable
+  prod:
+    updateExchangeRates_rate: rate(1 hour)
+    updateCurrencySymbolsCache_rate: rate(6 hours)
+  dev:
+    updateExchangeRates_rate: rate(30 days)
+    updateCurrencySymbolsCache_rate: rate(30 days)
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs14.x
   versionFunctions: false
   memorySize: 128
   region: us-east-1
   logRetentionInDays: 30
   stage: dev
   environment:
-    FIXER_API_KEY: ${env:FIXER_API_KEY, file(.env.yml):FIXER_API_KEY}
+    FIXER_API_KEY: ${env:FIXER_API_KEY}
     TABLENAME: ${self:custom.tableName}
-  iamRoleStatements:
-    - Effect: 'Allow'
-      Action:
-        - dynamodb:Scan
-        - dynamodb:PutItem
-      Resource:
-        Fn::GetAtt:
-          - ExchangeRatesTable
-          - Arn
+  apiGateway:
+    apiKeys:
+      - converter-${self:custom.stage}
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Action:
+            - dynamodb:Scan
+            - dynamodb:PutItem
+          Resource:
+            Fn::GetAtt:
+              - ExchangeRatesTable
+              - Arn
 
 functions:
   updateExchangeRates:
     handler: lambda/updateExchangeRatesCache.updateExchangeRatesCache
-    name: ${self:custom.stage}-updateExchangeRatesCache
+    name: ${self:custom.stage}-converter-updateExchangeRatesCache
     description: 'Updates the latest exchange rates from fixer and stores them in ${self:custom.tableName}, triggered hourly'
     events:
       - schedule:
-          name: ${self:custom.stage}-updateExchangeRatesCacheHourly
+          name: ${self:custom.stage}-converter-updateExchangeRatesCacheHourly
           description: 'Triggers the ${self:custom.stage}-updateExchangeRatesCache function hourly, to update the exchange rates and cache them in ${self:custom.tableName}'
-          rate: rate(1 hour)
+          rate: ${self:custom.${self:custom.stage}.updateExchangeRates_rate}
   updateCurrencySymbolsCache:
     handler: lambda/updateCurrencySymbolsCache.updateCurrencySymbolsCache
-    name: ${self:custom.stage}-updateCurrencySymbolsCache
+    name: ${self:custom.stage}-converter-updateCurrencySymbolsCache
     description: 'Updates the currency symbols cache in ${self:custom.tableName}'
     events:
       - schedule:
-          name: ${self:custom.stage}-updateCurrencySymbolsCache
+          name: ${self:custom.stage}-converter-updateCurrencySymbolsCache
           description: 'Triggers the ${self:custom.stage}-updateCurrencySymbolsCache function every 6 hours.'
-          rate: rate(6 hours)
+          rate: ${self:custom.${self:custom.stage}.updateCurrencySymbolsCache_rate}
   getCachedData:
     handler: lambda/getCachedData.getCachedData
-    name: ${self:custom.stage}-getCachedData
+    name: ${self:custom.stage}-converter-getCachedData
     description: 'Gets the exchange rates from ${self:custom.tableName}'
     events:
       - http:
-          path: /${self:custom.stage}-exchangerates
+          path: /${self:custom.stage}-converter-exchangerates
           method: get
           cors: true
+          private: true
 
 resources:
   Resources:
@@ -71,5 +85,5 @@ resources:
           WriteCapacityUnits: 1
 
 package:
-  include:
+  patterns:
     - ../node_modules/node-fetch/**

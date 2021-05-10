@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "REACT_APP_STAGE=development react-scripts start",
+    "build": "REACT_APP_STAGE=development react-scripts build",
+    "build:prod": "REACT_APP_STAGE=production react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "lint": "stylelint './src/**/*.{js,jsx}' && eslint 'src/**/*.{js,jsx}' 'backend/**/*.js' --ignore-pattern 'backend/node_modules/*' --ignore-pattern 'node_modules/*'",
     "lint:js": "eslint 'src/**/*.{js,jsx}' 'backend/**/*.js' --ignore-pattern 'backend/node_modules/*' --ignore-pattern 'node_modules/*'",
