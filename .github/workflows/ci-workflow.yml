@@ -42,13 +42,13 @@ jobs:
       - run: netlify --version
       - run: yarn install
       - name: 'PROD: yarn build:prod'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL }}
           REACT_APP_CACHED_EXCHANGE_RATES_APIKEY: ${{ secrets. REACT_APP_CACHED_EXCHANGE_RATES_APIKEY }}
         run: yarn build:prod
       - name: 'DEV: yarn build'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV }}
           REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV }}
