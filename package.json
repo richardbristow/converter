@@ -13,7 +13,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "aws-sdk": "^2.903.0",
+    "aws-sdk": "^2.904.0",
     "mathjs": "^9.3.2",
     "node-fetch": "^2.6.1",
     "prop-types": "^15.7.2",
@@ -39,9 +39,9 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "jest-styled-components": "^7.0.4",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "react-test-renderer": "^17.0.2",
-    "serverless": "^2.40.0",
+    "serverless": "^2.41.0",
     "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^5.0.0",
     "stylelint-config-styled-components": "^0.1.1",
