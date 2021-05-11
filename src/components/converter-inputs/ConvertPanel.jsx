@@ -121,12 +121,8 @@ class ConvertPanel extends Component {
 
   render() {
     const { conversionType, baseUnits } = this.props;
-    const {
-      leftInput,
-      rightInput,
-      exchangeRates,
-      errorFetchingRates,
-    } = this.state;
+    const { leftInput, rightInput, exchangeRates, errorFetchingRates } =
+      this.state;
     const { leftUnit, rightUnit } = getUnits(this.state, conversionType);
     const options = baseUnits[conversionType].units;
     const isCurrency = conversionType === 'currency';
