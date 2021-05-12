@@ -94,7 +94,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           FIXER_API_KEY: ${{ secrets.FIXER_API_KEY }}
       - name: 'DEV: serverless deploy to AWS'
-        if: github.ref != 'refs/heads/develop'
+        if: github.ref == 'refs/heads/develop'
         run: |
           cd backend
           serverless deploy -v --conceal
