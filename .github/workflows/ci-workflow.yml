@@ -30,6 +30,7 @@ jobs:
     name: deploy to netlify
     runs-on: ubuntu-latest
     needs: test
+    if: github.event_name != 'pull_request'
 
     steps:
       - uses: actions/checkout@v2
@@ -42,25 +43,25 @@ jobs:
       - run: netlify --version
       - run: yarn install
       - name: 'PROD: yarn build:prod'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL }}
           REACT_APP_CACHED_EXCHANGE_RATES_APIKEY: ${{ secrets. REACT_APP_CACHED_EXCHANGE_RATES_APIKEY }}
         run: yarn build:prod
       - name: 'DEV: yarn build'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
+        if: github.ref == 'refs/heads/develop'
         env:
           REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_URL_DEV }}
           REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV: ${{ secrets.REACT_APP_CACHED_EXCHANGE_RATES_APIKEY_DEV }}
         run: yarn build
       - name: 'PROD: deploy to netlify'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         run: netlify deploy --dir=build --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       - name: 'DEV: deploy to netlify'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
+        if: github.ref == 'refs/heads/develop'
         run: netlify deploy --dir=build
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -70,6 +71,7 @@ jobs:
     name: serverless deploy to AWS
     runs-on: ubuntu-latest
     needs: test
+    if: github.event_name != 'pull_request'
 
     steps:
       - uses: actions/checkout@v2
@@ -83,7 +85,7 @@ jobs:
       - run: serverless --version
       - run: yarn install
       - name: 'PROD: serverless deploy to AWS'
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         run: |
           cd backend
           serverless deploy --stage prod -v --conceal
@@ -92,7 +94,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           FIXER_API_KEY: ${{ secrets.FIXER_API_KEY }}
       - name: 'DEV: serverless deploy to AWS'
-        if: github.event_name == 'push' && github.ref != 'refs/heads/main'
+        if: github.ref != 'refs/heads/develop'
         run: |
           cd backend
           serverless deploy -v --conceal
