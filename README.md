@@ -91,6 +91,12 @@ To lint the code:
   yarn lint:css # lint css
 ```
 
+## Demo site
+
+A deployed demo site is available at the link below:
+
+<https://converter-app.netlify.com>
+
 ## Other Info
 
 Made with:
